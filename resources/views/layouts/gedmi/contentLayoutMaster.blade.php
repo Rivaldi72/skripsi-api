@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 @php
-$configData = Helper::applClassesChairiah();
+$configData = Helper::applClassesGedmi();
 @endphp
 
 <html class="loading {{ $configData['theme'] === 'light' ? '' : $configData['layoutTheme'] }}"
@@ -29,12 +29,12 @@ $configData = Helper::applClassesChairiah();
         rel="stylesheet">
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/gedmi/styles')
 
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 @isset($configData['mainLayoutType'])
-    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.horizontalLayoutMaster' : 'layouts.verticalLayoutMaster')
+    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.gedmi.horizontalLayoutMaster' : 'layouts.gedmi.verticalLayoutMaster')
 @endisset

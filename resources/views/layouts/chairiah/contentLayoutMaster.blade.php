@@ -29,12 +29,12 @@ $configData = Helper::applClassesChairiah();
         rel="stylesheet">
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/chairiah/styles')
 
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 @isset($configData['mainLayoutType'])
-    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.horizontalLayoutMaster' : 'layouts.verticalLayoutMaster')
+    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.chairiah.horizontalLayoutMaster' : 'layouts.chairiah.verticalLayoutMaster')
 @endisset

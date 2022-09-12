@@ -27,9 +27,9 @@
         rel="stylesheet">
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/chairiah/styles')
 </head>
 
 @isset($configData['mainLayoutType'])
-    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.horizontalDetachedLayoutMaster' : 'layouts.verticalDetachedLayoutMaster')
+    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.chairiah.horizontalDetachedLayoutMaster' : 'layouts.chairiah.verticalDetachedLayoutMaster')
 @endisset

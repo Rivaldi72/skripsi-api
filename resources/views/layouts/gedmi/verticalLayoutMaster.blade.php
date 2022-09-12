@@ -4,12 +4,12 @@
     data-col="{{ $configData['showMenu'] ? $configData['contentLayout'] : '1-column' }}" data-framework="laravel"
     data-asset-path="{{ asset('/') }}">
     <!-- BEGIN: Header-->
-    @include('panels.navbar')
+    @include('panels.gedmi.navbar')
     <!-- END: Header-->
 
     <!-- BEGIN: Main Menu-->
     @if (isset($configData['showMenu']) && $configData['showMenu'] === true)
-        @include('panels.sidebar')
+        @include('panels.gedmi.sidebar')
     @endif
     <!-- END: Main Menu-->
 
@@ -40,7 +40,7 @@
             <div class="content-wrapper {{ $configData['layoutWidth'] === 'boxed' ? 'container-xxl p-0' : '' }}">
                 {{-- Include Breadcrumb --}}
                 @if ($configData['pageHeader'] === true && isset($configData['pageHeader']))
-                    @include('panels.breadcrumb')
+                    @include('panels.gedmi.breadcrumb')
                 @endif
 
                 <div class="content-body">
@@ -53,22 +53,22 @@
     </div>
     <!-- End: Content-->
 
-    @if ($configData['blankPage'] == false && isset($configData['blankPage']))
+    {{-- @if ($configData['blankPage'] == false && isset($configData['blankPage']))
         <!-- BEGIN: Customizer-->
         @include('content/pages/customizer')
         <!-- End: Customizer-->
         <!-- Buynow Button-->
         @include('content/pages/buy-now')
-    @endif
+    @endif --}}
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
     {{-- include footer --}}
-    @include('panels/footer')
+    @include('panels/gedmi/footer')
 
     {{-- include default scripts --}}
-    @include('panels/scripts')
+    @include('panels/gedmi/scripts')
 
     <script type="text/javascript">
         $(window).on('load', function() {

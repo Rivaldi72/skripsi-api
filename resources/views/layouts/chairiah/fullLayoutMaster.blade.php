@@ -27,10 +27,10 @@
         rel="stylesheet">
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/chairiah/styles')
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    {{-- @include('panels/chairiah/styles') --}}
 </head>
 
 
@@ -57,7 +57,7 @@
     <!-- End: Content-->
 
     {{-- include default scripts --}}
-    @include('panels/scripts')
+    @include('panels/chairiah/scripts')
 
     <script type="text/javascript">
         $(window).on('load', function() {

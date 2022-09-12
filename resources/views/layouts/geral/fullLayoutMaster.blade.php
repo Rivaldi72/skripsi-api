@@ -3,7 +3,7 @@
 @endisset
 
 <!DOCTYPE html>
-@php $configData = Helper::applClassesChairiah(); @endphp
+@php $configData = Helper::applClassesGeral(); @endphp
 
 <html class="loading {{ $configData['theme'] === 'light' ? '' : $configData['layoutTheme'] }}"
     lang="@if (session()->has('locale')) {{ session()->get('locale') }}@else{{ $configData['defaultLanguage'] }} @endif"
@@ -27,10 +27,10 @@
         rel="stylesheet">
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/geral/styles')
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/geral/styles')
 </head>
 
 

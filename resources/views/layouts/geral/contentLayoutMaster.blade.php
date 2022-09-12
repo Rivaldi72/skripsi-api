@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 @php
-$configData = Helper::applClassesChairiah();
+$configData = Helper::applClassesGeral();
 @endphp
 
 <html class="loading {{ $configData['theme'] === 'light' ? '' : $configData['layoutTheme'] }}"
