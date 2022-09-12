@@ -3,22 +3,29 @@
     {
       "menu": [
         {
-          "navheader": "Apps & Pages",
-          "slug": ""
+            "url": "/",
+            "name": "Home",
+            "slug": "/",
+            "badge": "2",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
         },
         {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
+            "url": "/chairiah/products-gudang",
+            "name": "Products Gudang",
+            "slug": "chairiah/products-gudang",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
         },
         {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
+            "url": "/chairiah/profil-gudang",
+            "name": "Profil Gudang",
+            "slug": "chairiah/profil-gudang",
+             "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
         }
-      ]
+        
+    ]
     }
   ],
   "dedi": [
