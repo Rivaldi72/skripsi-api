@@ -1,12 +1,16 @@
 <!-- BEGIN: Footer-->
-<footer class="footer footer-light {{($configData['footerType'] === 'footer-hidden') ? 'd-none':''}} {{$configData['footerType']}}">
-  <p class="clearfix mb-0">
-    <span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy;
-      <script>document.write(new Date().getFullYear())</script><a class="ms-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a>,
-      <span class="d-none d-sm-inline-block">All rights Reserved</span>
-    </span>
-    <span class="float-md-end d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span>
-  </p>
+@if ($configData['mainLayoutType'] == 'horizontal' && isset($configData['mainLayoutType']))
+    <footer
+        class="footer {{ $configData['footerType'] }} {{ $configData['footerType'] === 'footer-hidden' ? 'd-none' : '' }} footer-light navbar-shadow">
+    @else
+        <footer
+            class="footer {{ $configData['footerType'] }}  {{ $configData['footerType'] === 'footer-hidden' ? 'd-none' : '' }} footer-light">
+@endif
+<p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy;
+        2019<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio"
+            target="_blank">internzeep,</a>All rights Reserved</span><span
+        class="float-md-right d-none d-md-block">Hand-crafted & Made with brain<i class="feather icon-brain"></i></span>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
+</p>
 </footer>
-<button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
