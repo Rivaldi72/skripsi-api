@@ -21,11 +21,10 @@
             "url": "/chairiah/profil-gudang",
             "name": "Profil Gudang",
             "slug": "chairiah/profil-gudang",
-             "badgeClass": "badge badge-warning badge-pill float-right",
+            "badgeClass": "badge badge-warning badge-pill float-right",
             "icon": "feather icon-home"
         }
-        
-    ]
+      ]
     }
   ],
   "dedi": [
@@ -48,7 +47,8 @@
           "slug": "app-email"
         }
       ]
-    }  ],
+    }  
+  ],
   "gedmi": [
     {
       "menu": [
@@ -75,20 +75,16 @@
             "badgeClass": "badge badge-warning badge-pill float-right",
             "icon": "feather icon-user"
         }
-       
-       
-        
-    
-
-]
-    }  ],
+      ]
+    }
+  ],
   "geral": [
     {
       "menu": [
         {
           "url": "",
           "navheader": "Menu",
-          "icon": "",
+          "icon": "home",
           "slug": ""
       },
       {
