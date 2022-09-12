@@ -20,14 +20,11 @@
     <meta name="keywords"
         content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>@yield('title') - Vuexy - Bootstrap HTML & Laravel admin template</title>
+    <title>@yield('title')</title>
     <link rel="apple-touch-icon" href="{{ asset('images/ico/apple-icon-120.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
         rel="stylesheet">
-
-    {{-- Include core + vendor Styles --}}
-    @include('panels/geral/styles')
 
     {{-- Include core + vendor Styles --}}
     @include('panels/geral/styles')
@@ -57,7 +54,7 @@
     <!-- End: Content-->
 
     {{-- include default scripts --}}
-    @include('panels/scripts')
+    @include('panels/geral/scripts')
 
     <script type="text/javascript">
         $(window).on('load', function() {
