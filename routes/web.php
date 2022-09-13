@@ -45,6 +45,12 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
 // Route Geral
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
     Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/', 'LowonganController@index');
+    Route::get('/index', 'LowonganController@index');
+    Route::get('/data-lowongan/index', 'LowonganController@indexLowongan');
+    Route::get('/login', 'AuthController@login');
+    Route::get('/data-user/user', 'UserController@userPage');
+    Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage');
 });
 
 
