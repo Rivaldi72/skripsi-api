@@ -46,22 +46,34 @@
     {
       "menu": [
         {
-          "navheader": "Apps & Pages",
-          "slug": ""
+            "url": "/home",
+            "name": "Home",
+            "slug": "home",
+            "badge": "",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
+        },
+        
+        {
+            "url": "/gedmi/guru/index",
+            "name": "Data Guru",
+            "slug": "gedmi/guru/index",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-user"
         },
         {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
-        },
-        {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
+            "url": "/gedmi/siswa/indexsiswa",
+            "name": "Data Siswa",
+            "slug": "gedmi/siswa/indexsiswa",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-user"
         }
-      ]
+       
+       
+        
+    
+
+]
     }  ],
   "geral": [
     {
