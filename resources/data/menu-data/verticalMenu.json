@@ -31,20 +31,95 @@
         {
             "menu": [
                 {
-                    "navheader": "Apps & Pages",
-                    "slug": ""
+                    "url": "/dedi/dashboard",
+                    "name": "Home",
+                    "slug": "home",
+                    "badge": "",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "home"
                 },
                 {
-                    "url": "app/email",
-                    "name": "Email",
-                    "icon": "mail",
-                    "slug": "app-email"
+                    "name": "User",
+                    "icon": "user",
+                    "slug": "",
+                    "submenu": [
+                        {
+                            "url": "/dedi/indexdaftar",
+                            "name": "Akun Siswa",
+                            "slug": "dedi/indexdaftar"
+                        },
+                        {
+                            "url": "/dedi/daftarakun",
+                            "name": "Daftar Akun",
+                            "slug": "dedi/daftarakun"
+                        }
+                    ]
                 },
                 {
-                    "url": "app/email",
-                    "name": "Email",
-                    "icon": "mail",
-                    "slug": "app-email"
+                    "name": "Materi",
+                    "icon": "file-text",
+                    "slug": "",
+                    "submenu": [
+                        {
+                            "url": "/dedi/indexmateri",
+                            "name": "Mata Pelajaran",
+                            "slug": "dedi/indexmateri"
+                        },
+                        {
+                            "url": "/dedi/tambahmateri",
+                            "name": "Tambah Materi",
+                            "slug": "dedi/tambahmateri"
+                        },
+                        {
+                            "url": "/dedi/editmateri",
+                            "name": "Edit Materi",
+                            "slug": "dedi/editmateri"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pratikum",
+                    "icon": "file-text",
+                    "slug": "",
+                    "submenu": [
+                        {
+                            "url": "/dedi/indexpratikum",
+                            "name": "Mata Pelajaran",
+                            "slug": "dedi/indexpratikum"
+                        },
+                        {
+                            "url": "/dedi/tambahpratikum",
+                            "name": "Tambah Pratikum",
+                            "slug": "dedi/tambahpratikum"
+                        },
+                        {
+                            "url": "/dedi/editpratikum",
+                            "name": "Edit Pratikum",
+                            "slug": "dedi/editpratikum"
+                        }
+                    ]
+                },
+                {
+                    "name": "Latihan",
+                    "icon": "file-text",
+                    "slug": "",
+                    "submenu": [
+                        {
+                            "url": "/dedi/indexlatihan",
+                            "name": "Mata Pelajaran",
+                            "slug": "dedi/indexlatihan"
+                        },
+                        {
+                            "url": "/dedi/tambahlatihan",
+                            "name": "Tambah Soal",
+                            "slug": "dedi/tambahlatihan"
+                        },
+                        {
+                            "url": "/dedi/editlatihan",
+                            "name": "Edit Soal",
+                            "slug": "dedi/editlatihan"
+                        }
+                    ]
                 }
             ]
         }

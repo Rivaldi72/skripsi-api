@@ -62,10 +62,10 @@ $configData = Helper::applClassesChairiah();
             {{-- Foreach menu item starts --}}
             {{-- {{ dd($menuData[0]->chairiah[0]->menu) }} --}}
             @if (isset($menuData[0]))
-                @foreach ($menuData[0]->chairiah[0]->menu as $menu)
+                @foreach ($menuData[0]->dedi[0]->menu as $menu)
                     @if (isset($menu->navheader))
                         <li class="navigation-header">
-                            <span>{{ __('locale.' . $menu->navheader) }}</span>
+                            <span>{{ $menu->navheader }}</span>
                             <i data-feather="more-horizontal"></i>
                         </li>
                     @else
@@ -82,7 +82,7 @@ $configData = Helper::applClassesChairiah();
                                 class="d-flex align-items-center"
                                 target="{{ isset($menu->newTab) ? '_blank' : '_self' }}">
                                 <i data-feather="{{ $menu->icon }}"></i>
-                                <span class="menu-title text-truncate">{{ __('locale.' . $menu->name) }}</span>
+                                <span class="menu-title text-truncate">{{ $menu->name }}</span>
                                 @if (isset($menu->badge))
                                     <?php $badgeClasses = 'badge rounded-pill badge-light-primary ms-auto me-1'; ?>
                                     <span
@@ -90,7 +90,7 @@ $configData = Helper::applClassesChairiah();
                                 @endif
                             </a>
                             @if (isset($menu->submenu))
-                                @include('panels/submenu', ['menu' => $menu->submenu])
+                                @include('panels/dedi/submenu', ['menu' => $menu->submenu])
                             @endif
                         </li>
                     @endif
