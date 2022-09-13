@@ -126,7 +126,7 @@ $configData = Helper::applClassesGedmi();
                                 @endif
                             </a>
                             @if (isset($menu->submenu))
-                                @include('panels/submenu', ['menu' => $menu->submenu])
+                                @include('panels/gedmi/submenu', ['menu' => $menu->submenu])
                             @endif
                         </li>
                     @endif

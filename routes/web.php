@@ -44,6 +44,13 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
 // Route Gedmi
 Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')->group(function () {
     Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+Route::get('/index','DashboardController@index');
+Route::get('/guru/index','GuruController@index');
+Route::get('/siswa/indexsiswa','SiswaController@siswa1');
+Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
+Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1');
+Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
+Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
 });
 
 // Route Geral
@@ -288,3 +295,14 @@ Route::get('/maps/leaflet', [ChartsController::class, 'maps_leaflet'])->name('ma
 
 // locale Route
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);
+
+
+
+
+
+
+
+
+
+
+
