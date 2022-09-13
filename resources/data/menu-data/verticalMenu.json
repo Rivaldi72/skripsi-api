@@ -3,22 +3,29 @@
     {
       "menu": [
         {
-          "navheader": "Apps & Pages",
-          "slug": ""
+            "url": "/",
+            "name": "Home",
+            "slug": "/",
+            "badge": "2",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
         },
         {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
+            "url": "/chairiah/products-gudang",
+            "name": "Products Gudang",
+            "slug": "chairiah/products-gudang",
+            "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
         },
         {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
+            "url": "/chairiah/profil-gudang",
+            "name": "Profil Gudang",
+            "slug": "chairiah/profil-gudang",
+             "badgeClass": "badge badge-warning badge-pill float-right",
+            "icon": "feather icon-home"
         }
-      ]
+        
+    ]
     }
   ],
   "dedi": [
@@ -79,21 +86,44 @@
     {
       "menu": [
         {
-          "navheader": "Apps & Pages",
+          "url": "",
+          "navheader": "Menu",
+          "icon": "",
           "slug": ""
-        },
-        {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
-        },
-        {
-          "url": "app/email",
-          "name": "Email",
-          "icon": "mail",
-          "slug": "app-email"
-        }
+      },
+      {
+          "url": "/",
+          "name": "Home",
+          "slug": "dashboard",
+          "icon": "feather icon-home"
+          
+      },
+      
+      {
+          "url": "/geral/data-user/user",
+          "name": "Data User",
+          "icon": "feather icon-users",
+          "slug": "geral/data-user/user"
+          
+      },
+      {
+          "url": "/geral/data-lowongan/index",
+          "name": "Data Lowongan",
+          "icon": "feather icon-book",
+          "slug": "geral/data-lowongan/index"
+      },
+      {
+          "url": "/geral/data-lowongan/tambah",
+          "name": "Tambah Lowongan",
+          "icon": "feather icon-plus",
+          "slug": "geral/data-lowongan/tambah"
+      },
+      {
+          "url": "/geral/login",
+          "name": "Tentang",
+          "icon": "feather icon-alert-circle",
+          "slug": "geral/login"
+      }
       ]
     }  
   ],

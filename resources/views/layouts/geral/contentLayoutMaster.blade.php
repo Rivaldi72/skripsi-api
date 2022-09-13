@@ -29,12 +29,12 @@ $configData = Helper::applClassesGeral();
         rel="stylesheet">
 
     {{-- Include core + vendor Styles --}}
-    @include('panels/styles')
+    @include('panels/geral/styles')
 
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 @isset($configData['mainLayoutType'])
-    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.horizontalLayoutMaster' : 'layouts.verticalLayoutMaster')
+    @extends($configData['mainLayoutType'] === 'horizontal' ? 'layouts.geral.horizontalLayoutMaster' : 'layouts.geral.verticalLayoutMaster')
 @endisset
