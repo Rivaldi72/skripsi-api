@@ -157,7 +157,7 @@
         {
             "menu": [
                 {
-                    "url": "/",
+                    "url": "/geral/",
                     "name": "Home",
                     "slug": "dashboard",
                     "icon": "home"
