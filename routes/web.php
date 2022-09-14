@@ -47,10 +47,10 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
 Route::get('/index','DashboardController@index');
 Route::get('/guru/index','GuruController@index');
 Route::get('/siswa/indexsiswa','SiswaController@siswa1');
-Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
+Route::get('/guru/create','GuruController@tambahGuru')->name('gedmi.index.test');
 Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1');
-Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
-Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
+Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('gedmi.tambah.test');
+Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('gedmi.siswa.test');
 });
 
 // Route Geral

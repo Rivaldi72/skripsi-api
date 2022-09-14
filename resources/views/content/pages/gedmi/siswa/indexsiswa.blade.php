@@ -57,7 +57,7 @@
                                     <td>sincere@april.biz</td>
                                     <td>sincere@april.biz</td>
                                     <td class="product-action">
-                                        <span class="action-create"><a href="{{ route('siswa.test') }}"><i
+                                        <span class="action-create"><a href="{{ route('gedmi.siswa.test') }}"><i
                                                     class="feather icon-eye"></i></span>
 
 
