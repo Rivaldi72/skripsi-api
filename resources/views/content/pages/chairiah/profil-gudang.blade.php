@@ -133,27 +133,20 @@
                                                             <div class="controls">
                                                                 <label for="account-company">Foto Gudang Kopi</label>
                                                                 <div class="row">
-                                                                    <div class="col-3">
+                                                                    <div class="col-12">
                                                                         <img id="previewGudangImage"
                                                                             class="img-fluid bg-cover rounded-lg mb-1 mt-1"
                                                                             style="width: 225px; height: 225px; object-fit: contain"
                                                                             src="{{ asset('images/no-image.png') }}"
                                                                             alt="User Profile Image">
                                                                     </div>
+                                                                    <div class="col-3"><input class="form-control"
+                                                                            type="file" id="gudangImage"
+                                                                            onchange="readURL(this);" /></div>
                                                                 </div>
-                                                                <label for="formFileMultiple" class="form-label">Multiple
-                                                                    files input
-                                                                </label>
-                                                                <input class="form-control" type="file" id="gudangImage"
-                                                                    onchange="readURL(this);" />
-
                                                             </div>
                                                         </div>
                                                     </div>
-
-
-
-
                                                     <div class="d-grid col-lg-12 col-md-12 mb-1 mb-lg-0 mt-2">
                                                         <button type="button"
                                                             class="btn btn-relief-success btn-primary">Simpan</button>
