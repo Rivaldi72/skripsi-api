@@ -7,6 +7,7 @@ $(function () {
 
   var dt_basic_table = $('.datatables-basic'),
     dt_date_table = $('.dt-date'),
+    datatable_ch = $('.datatables-gudang'),
     dt_complex_header_table = $('.dt-complex-header'),
     dt_row_grouping_table = $('.dt-row-grouping'),
     dt_multilingual_table = $('.dt-multilingual'),

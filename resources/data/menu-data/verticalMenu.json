@@ -3,24 +3,23 @@
         {
             "menu": [
                 {
-                    "url": "/",
+                    "url": "/index",
                     "name": "Home",
-                    "slug": "/",
-                    "badge": "2",
+                    "slug": "chairiah.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 },
                 {
                     "url": "/chairiah/products-gudang",
                     "name": "Products Gudang",
-                    "slug": "chairiah/products-gudang",
+                    "slug": "chairiah.products.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 },
                 {
                     "url": "/chairiah/profil-gudang",
                     "name": "Profil Gudang",
-                    "slug": "chairiah/profil-gudang",
+                    "slug": "chairiah.profil.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 }
