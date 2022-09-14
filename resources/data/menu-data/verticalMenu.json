@@ -157,12 +157,6 @@
         {
             "menu": [
                 {
-                    "url": "",
-                    "navheader": "Menu",
-                    "icon": "home",
-                    "slug": ""
-                },
-                {
                     "url": "/",
                     "name": "Home",
                     "slug": "dashboard",

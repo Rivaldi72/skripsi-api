@@ -55,12 +55,11 @@ Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test
 
 // Route Geral
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
-    Route::get('/', 'LowonganController@index');
-    Route::get('/index', 'LowonganController@index');
-    Route::get('/data-lowongan/index', 'LowonganController@indexLowongan');
-    Route::get('/login', 'AuthController@login');
-    Route::get('/data-user/user', 'UserController@userPage');
-    Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage');
+    Route::get('/', 'LowonganController@index')->name('index');
+    Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
+    Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
+    Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
+    Route::get('/login', 'AuthController@login')->name('page.login');
 });
 
 
