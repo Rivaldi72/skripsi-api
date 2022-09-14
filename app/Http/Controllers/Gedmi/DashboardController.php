@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     public function dashboard()
     {
-        $pageConfigs = ['pageHeader' => false];
-        return view('/content/pages/gedmi/dashboard', ['pageConfigs' => $pageConfigs]);
-    }
+        public function index(){
+            return view('pages.gedmi.dashboard');
+        }
 }
