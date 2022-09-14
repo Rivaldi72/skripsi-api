@@ -34,8 +34,21 @@ Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Ch
 
 // Route Dedi
 Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+
+    Route::get('/dashboard','UserController@dashboard')->name('dashboard');
+    Route::get('/daftarsiswa','UserController@daftarsiswa')->name('siswa.daftar');
+    Route::get('/siswatambah','UserController@tambahsiswa')->name('siswa.tambah');
+    Route::get('/materiindex','MateriController@materiindex')->name('materi.index');
+    Route::get('/materitambah','MateriController@materitambah')->name('materi.tambah');
+    Route::get('/materiedit','MateriController@materiedit')->name('materi.edit');
+    Route::get('/pratikumindex','PratikumController@pratikumindex')->name('pratikum.index');
+    Route::get('/pratikumtambah','PratikumController@pratikumtambah')->name('pratikum.tambah');
+    Route::get('/pratikumedit','PratikumController@pratikumedit')->name('pratikum.edit');
+    Route::get('/latihanindex','LatihanController@latihanindex')->name('latihan.index');
+    Route::get('/latihantambah','LatihanController@latihantambah')->name('latihan.tambah');
+    Route::get('/latihanedit','LatihanController@latihanedit')->name('latihan.edit');
 });
+
 
 // Route Gedmi
 Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')->group(function () {

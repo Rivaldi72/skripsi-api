@@ -8,7 +8,7 @@
     <!-- Bordered table start -->
     <div class="row" id="table-bordered">
         <div class="col-12">
-            <a href="{{ route('tambah.materi') }}"><button type="button"
+            <a href="{{ route('dedi.materi.index') }}"><button type="button"
                     class="btn btn-relief-info mr-1 mb-1 btn-success float-right">Tambah Materi</button>
         </div>
         <div class="col-12">
@@ -45,7 +45,7 @@
                                     </td>
                                     <td></td>
                                     <td>
-                                    <td><a href="{{ route('edit.materi') }}"><span class="action-edit"><i
+                                    <td><a href="{{ route('dedi.materi.edit') }}"><span class="action-edit"><i
                                                     class="feather icon-edit"></i></span>
                                             <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
