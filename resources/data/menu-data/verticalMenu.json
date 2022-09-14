@@ -3,24 +3,23 @@
         {
             "menu": [
                 {
-                    "url": "/",
+                    "url": "/index",
                     "name": "Home",
-                    "slug": "/",
-                    "badge": "2",
+                    "slug": "chairiah.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 },
                 {
                     "url": "/chairiah/products-gudang",
                     "name": "Products Gudang",
-                    "slug": "chairiah/products-gudang",
+                    "slug": "chairiah.products.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 },
                 {
                     "url": "/chairiah/profil-gudang",
                     "name": "Profil Gudang",
-                    "slug": "chairiah/profil-gudang",
+                    "slug": "chairiah.profil.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 }
@@ -128,9 +127,9 @@
         {
             "menu": [
                 {
-                    "url": "/home",
+                    "url": "gedmi/index",
                     "name": "Home",
-                    "slug": "home",
+                    "slug": "gedmi.index",
                     "badge": "",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
@@ -139,14 +138,14 @@
                 {
                     "url": "/gedmi/guru/index",
                     "name": "Data Guru",
-                    "slug": "gedmi/guru/index",
+                    "slug": "gedmi.guru.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
                 },
                 {
                     "url": "/gedmi/siswa/indexsiswa",
                     "name": "Data Siswa",
-                    "slug": "gedmi/siswa/indexsiswa",
+                    "slug": "gedmi.siswa.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
                 }
@@ -157,13 +156,7 @@
         {
             "menu": [
                 {
-                    "url": "",
-                    "navheader": "Menu",
-                    "icon": "home",
-                    "slug": ""
-                },
-                {
-                    "url": "/",
+                    "url": "/geral/",
                     "name": "Home",
                     "slug": "dashboard",
                     "icon": "home"

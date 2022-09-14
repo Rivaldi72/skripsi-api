@@ -30,6 +30,10 @@ use App\Http\Controllers\ChartsController;
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/','GudangController@index');
+    Route::get('/index','GudangController@index')->name('index');
+    Route::get('/products-gudang','GudangController@productsGudang')->name('products.gudang');
+    Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
 });
 
 // Route Dedi
@@ -52,12 +56,28 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
 
 // Route Gedmi
 Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
-});
+    
+    Route::get('/index','DashboardController@index')->name('dashboard');
+    Route::get('/guru/index','GuruController@index')->name('guru.index');
+    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
+    Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
+    Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
+    Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
+    Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
+    Route::get('/guru/edit','GuruController@editGuru')->name('edit.guru');
+    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
+    Route::get('/siswa/edit','SiswaController@editSiswa')->name('edit.siswa');
+    Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
+    
+    });
 
 // Route Geral
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/', 'LowonganController@index')->name('index');
+    Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
+    Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
+    Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
+    Route::get('/login', 'AuthController@login')->name('page.login');
 });
 
 
@@ -297,3 +317,14 @@ Route::get('/maps/leaflet', [ChartsController::class, 'maps_leaflet'])->name('ma
 
 // locale Route
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);
+
+
+
+
+
+
+
+
+
+
+
