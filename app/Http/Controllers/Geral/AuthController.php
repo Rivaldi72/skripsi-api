@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function login() {
-        return view('pages.geral.login');
+        return view('content.pages.geral.login');
      }
 }

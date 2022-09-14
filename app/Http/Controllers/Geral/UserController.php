@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function userPage() {
-        return view('pages.geral.data-user.user');
+        return view('content.pages.geral.data-user.user');
      }
 }

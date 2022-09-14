@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class LowonganController extends Controller
 {
     public function index() {
-        return view('pages.geral.index');
+        return view('content.pages.geral.index');
      }
     
      public function indexLowongan() {
-        return view('pages.geral.data-lowongan.index');
+        return view('content.pages.geral.data-lowongan.index');
      }
      public function tambahPage() {
-      return view('pages.geral.data-lowongan.tambah');
+      return view('content.pages.geral.data-lowongan.tambah');
    }
 }

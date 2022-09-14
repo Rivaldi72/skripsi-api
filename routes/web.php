@@ -55,7 +55,6 @@ Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test
 
 // Route Geral
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
     Route::get('/', 'LowonganController@index');
     Route::get('/index', 'LowonganController@index');
     Route::get('/data-lowongan/index', 'LowonganController@indexLowongan');
