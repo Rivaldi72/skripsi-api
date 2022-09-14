@@ -1,69 +1,71 @@
+@php
+$configData = Helper::applClassesChairiah();
+@endphp
 @extends('layouts/geral/fullLayoutMaster')
 
 @section('Title', 'Login page')
 
 @section('page-style')
-    <link rel="stylesheet" href="{{ asset(mix('css/pages/login.css')) }}">
+    {{-- Page Css files --}}
+    <link rel="stylesheet" href="{{ asset(mix('css/base/plugins/forms/form-validation.css')) }}">
+    <link rel="stylesheet" href="{{ asset(mix('css/base/pages/authentication.css')) }}">
 @endsection
 
 @section('content')
+    <div class="auth-wrapper auth-cover">
+        <div class="auth-inner row m-0">
+            <!-- Brand logo-->
+            <a class="brand-logo" href="#">
+                <img width="30" height="30" src="{{ asset('images/geral/logo.png') }}" alt="">
+                <h2 class="brand-text text-primary ms-1">Internzeep</h2>
+            </a>
+            <!-- /Brand logo-->
 
-
-    <section class="row flexbox-container justify-content-center mt-5">
-        <div class="col-xl-8 col-11 d-flex justify-content-center ">
-            <div class="card bg-authentication rounded-0 mb-0">
-                <div class="row m-0 py-5">
-                    <div class="col-lg-6 d-lg-block d-none text-center align-self-center px-1 py-0">
-                        <img src="{{ asset('images/pages/login.png') }}" alt="branding logo">
-                    </div>
-                    <div class="col-lg-6 col-12 p-0">
-                        <div class="card rounded-0 mb-0 px-2">
-                            <div class="card-header pb-1">
-                                <div class="card-title">
-                                    <h4 class="mb-0">Login</h4>
-                                </div>
-                            </div>
-                            <p class="px-2">Selamat datang, Silahkan masukkan password terlebih dahulu.</p>
-                            <div class="card-content">
-                                <div class="card-body pt-1">
-                                    <form action="index.html">
-                                        <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                            <input type="text" class="form-control" id="user-name" placeholder="Username"
-                                                required>
-                                            <div class="form-control-position">
-
-                                            </div>
-                                            <label for="user-name">Username</label>
-                                        </fieldset>
-
-                                        <fieldset class="form-label-group position-relative has-icon-left">
-                                            <input type="password" class="form-control" id="user-password"
-                                                placeholder="Password" required>
-                                            <div class="form-control-position">
-
-                                            </div>
-                                            <label for="user-password">Password</label>
-                                        </fieldset>
-                                        <button type="submit"
-                                            class="btn float-right btn-inline btn-block bg-gradient-info">Masuk</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="login-footer">
-                                <div class="divider">
-                                    <div></div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+            <!-- Left Text-->
+            <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
+                <div class="w-100 d-lg-flex align-items-center justify-content-center px-5">
+                    @if ($configData['theme'] === 'dark')
+                        <img class="img-fluid" src="{{ asset('images/geral/login_background.jpg') }}" alt="Login V2" />
+                    @else
+                        <img class="img-fluid" src="{{ asset('images/geral/login_background.jpg') }}" alt="Login V2" />
+                    @endif
                 </div>
             </div>
-        </div>
-    </section>
+            <!-- /Left Text-->
 
-@endsection
+            <!-- Login-->
+            <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
+                    <h2 class="card-title fw-bold mb-1">Selamat Datang di Internzeep👋</h2>
+                    <p class="card-text mb-2">silahkan login terlebih dahulu</p>
+                    <form class="auth-login-form mt-2" action="/" method="GET">
+                        <div class="mb-1">
+                            <label class="form-label" for="login-email">Email</label>
+                            <input class="form-control" id="login-email" type="text" name="login-email"
+                                placeholder="john@example.com" aria-describedby="login-email" autofocus=""
+                                tabindex="1" />
+                        </div>
+                        <div class="mb-1">
+                            <div class="d-flex justify-content-between">
+                                <label class="form-label" for="login-password">Password</label>
+                            </div>
+                            <div class="input-group input-group-merge form-password-toggle">
+                                <input class="form-control form-control-merge" id="login-password" type="password"
+                                    name="login-password" placeholder="············" aria-describedby="login-password"
+                                    tabindex="2" />
+                                <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary w-100" tabindex="4">Sign in</button>
+                    </form><!-- /Login-->
+                </div>
+            </div>
+        @endsection
 
-@section('page-script')
+        @section('vendor-script')
+            <script src="{{ asset(mix('vendors/js/forms/validation/jquery.validate.min.js')) }}"></script>
+        @endsection
 
-@endsection
+        @section('page-script')
+            <script src="{{ asset(mix('js/scripts/pages/auth-login.js')) }}"></script>
+        @endsection
