@@ -139,14 +139,14 @@
                 {
                     "url": "/gedmi/guru/index",
                     "name": "Data Guru",
-                    "slug": "gedmi/guru/index",
+                    "slug": "gedmi.guru.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
                 },
                 {
                     "url": "/gedmi/siswa/indexsiswa",
                     "name": "Data Siswa",
-                    "slug": "gedmi/siswa/indexsiswa",
+                    "slug": "gedmi.siswa.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
                 }
