@@ -24,14 +24,18 @@
     <!-- Page js files -->
     <script src="{{ asset(mix('js/scripts/forms/pickers/form-pickers.js')) }}"></script>
     <script>
-        var gudangImage = $("#gudangImage");
-        var previewGudangImage = $("#previewGudangImage");
-        gudangImage.change(function(e) {
-            const [file] = gudangImage.files
-            if (file) {
-                previewGudangImage.src = URL.createObjectURL(file)
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#previewGudangImage')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
             }
-        });
+        }
     </script>
 
 
@@ -124,23 +128,24 @@
                                                             </fieldset>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
+                                                    <div class="col-12 mt-2">
                                                         <div class="form-group">
                                                             <div class="controls">
                                                                 <label for="account-company">Foto Gudang Kopi</label>
                                                                 <div class="row">
-                                                                    <div class="col-3"><img id="previewGudangImage"
-                                                                            class="img-fluid bg-cover rounded-lg mb-1 "
-                                                                            style="width: 225px; height: 225px "
-                                                                            src="{{ asset('images/chairiah/gudang.jpg') }}"
+                                                                    <div class="col-3">
+                                                                        <img id="previewGudangImage"
+                                                                            class="img-fluid bg-cover rounded-lg mb-1 mt-1"
+                                                                            style="width: 225px; height: 225px; object-fit: contain"
+                                                                            src="{{ asset('images/no-image.png') }}"
                                                                             alt="User Profile Image">
                                                                     </div>
                                                                 </div>
-                                                                <div class="custom-file">
-                                                                    <input type="file" class name="file[gambar]"
-                                                                        id="gudangImage" placeholder="Pilih Foto">
-
-                                                                </div>
+                                                                <label for="formFileMultiple" class="form-label">Multiple
+                                                                    files input
+                                                                </label>
+                                                                <input class="form-control" type="file" id="gudangImage"
+                                                                    onchange="readURL(this);" />
 
                                                             </div>
                                                         </div>
