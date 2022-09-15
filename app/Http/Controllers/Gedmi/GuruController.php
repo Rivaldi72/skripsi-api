@@ -14,5 +14,8 @@ class GuruController extends Controller
     public function tambahGuru(){
         return view('content.pages.gedmi.guru.create');
     }
+    public function editGuru(){
+        return view('content.pages.gedmi.guru.edit');
+    }
     
 }
