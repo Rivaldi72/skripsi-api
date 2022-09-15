@@ -52,6 +52,10 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
     Route::get('/guru/edit','GuruController@editGuru')->name('edit.guru');
+    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
+    Route::get('/siswa/edit','SiswaController@editSiswa')->name('edit.siswa');
+    Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
+    
     });
 
 // Route Geral

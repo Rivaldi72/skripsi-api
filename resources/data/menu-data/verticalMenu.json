@@ -128,9 +128,9 @@
         {
             "menu": [
                 {
-                    "url": "/home",
+                    "url": "gedmi/index",
                     "name": "Home",
-                    "slug": "home",
+                    "slug": "gedmi.index",
                     "badge": "",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"

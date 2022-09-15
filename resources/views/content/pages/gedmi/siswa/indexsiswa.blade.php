@@ -66,6 +66,28 @@
                                         <td>sincere@april.biz</td>
                                         <td>sincere@april.biz</td>
                                         <td>sincere@april.biz</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
+                                                    data-bs-toggle="dropdown">
+                                                    <i data-feather="more-vertical"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="{{ route('gedmi.edit.siswa') }}">
+                                                        <i data-feather="edit-2" class="me-50"></i>
+                                                        <span>Edit</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i data-feather="trash" class="me-50"></i>
+                                                        <span>Delete</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="{{ route('gedmi.detail.siswa') }}">
+                                                        <i data-feather="info" class="me-50"></i>
+                                                        <span>Detail</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>

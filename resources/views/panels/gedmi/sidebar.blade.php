@@ -44,7 +44,7 @@ $configData = Helper::applClassesGedmi();
                         </g>
                     </svg>
                     </span> --}}
-                    <img src="{{ asset('images/gedmi/logo.png') }}" width="40px"height="50px">
+                    <img src="{{ asset('images/gedmi/logo.png') }}" width="30" height="35">
                     <h5 class="brand-text mb-0" style="font-size: 12px !important">SMP BINA TARUNA MEDAN</h5>
                 </a>
             </li>

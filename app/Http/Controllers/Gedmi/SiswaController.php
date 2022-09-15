@@ -16,4 +16,7 @@ class SiswaController extends Controller
     public function detailSiswa(){
         return view('content.pages.gedmi.siswa.detailsiswa');
     }
+    public function editSiswa(){
+        return view('content.pages.gedmi.siswa.edit');
+    }
 }

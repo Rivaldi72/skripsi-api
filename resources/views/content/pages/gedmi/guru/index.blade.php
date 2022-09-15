@@ -62,7 +62,7 @@
                                                 <i data-feather="trash" class="me-50"></i>
                                                 <span>Delete</span>
                                             </a>
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="{{ route('gedmi.detail.guru') }}">
                                                 <i data-feather="info" class="me-50"></i>
                                                 <span>Detail</span>
                                             </a>
