@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('page-style')
-    <link rel="stylesheet" href="{{ asset(mix('css/pages/chairiah/index.css')) }}">
+    {{-- <link rel="stylesheet" href="{{ asset(mix('css/content/pages/chairiah/index.css')) }}"> --}}
 @endsection
 
 @section('content')
@@ -15,8 +15,8 @@
                     <div class="profile-header mb-2">
                         <div class="relative">
                             <div class="cover-container">
-                                <img class="img-fluid bg-cover rounded-0 w-100"
-                                    src="{{ asset('images/chairiah/cover.jpg') }}" alt="User Profile Image">
+                                <img class="img-fluid bg-cover rounded-0 w-100" src="{{ asset('images/chairiah/cover.jpg') }}"
+                                    alt="User Profile Image">
                             </div>
                             <div class="profile-img-container d-flex align-items-center justify-content-between">
 

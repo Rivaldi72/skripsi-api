@@ -31,9 +31,9 @@ use App\Http\Controllers\ChartsController;
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/', 'DashboardController@dashboard')->name('dashboard');
     Route::get('/','GudangController@index');
-    Route::get('/index','GudangController@index');
-    Route::get('/products-gudang','GudangController@productsGudang');
-    Route::get('/profil-gudang','GudangController@profilGudang');
+    Route::get('/index','GudangController@index')->name('index');
+    Route::get('/products-gudang','GudangController@productsGudang')->name('products.gudang');
+    Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
 });
 
 // Route Dedi
