@@ -52,7 +52,7 @@
                                     <td>Islam</td>
                                     <td>JL. TS 01 Blok 6. Martubung</td>
                                     <td class="product-action">
-                                        <span class="action-create"><a href="{{ route('index.test') }}"><i
+                                        <span class="action-create"><a href="{{ route('gedmi.index.test') }}"><i
                                                     class="feather icon-eye"></i></span>
 
 
@@ -306,7 +306,7 @@
             </div>
         </div>
     </div>
-    <a href="{{ route('index.test') }}"><button type="button"
+    <a href="{{ route('gedmi.index.test') }}"><button type="button"
             class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
 
         </button>
