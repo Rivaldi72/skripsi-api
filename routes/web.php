@@ -30,6 +30,10 @@ use App\Http\Controllers\ChartsController;
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/','GudangController@index');
+    Route::get('/index','GudangController@index');
+    Route::get('/products-gudang','GudangController@productsGudang');
+    Route::get('/profil-gudang','GudangController@profilGudang');
 });
 
 // Route Dedi
@@ -51,7 +55,12 @@ Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('gedmi.sisw
 
 // Route Geral
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/', 'LowonganController@index');
+    Route::get('/index', 'LowonganController@index');
+    Route::get('/data-lowongan/index', 'LowonganController@indexLowongan');
+    Route::get('/login', 'AuthController@login');
+    Route::get('/data-user/user', 'UserController@userPage');
+    Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage');
 });
 
 
