@@ -68,8 +68,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
     Route::get('/siswa/edit','SiswaController@editSiswa')->name('edit.siswa');
     Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
-    
-    });
+});
 
 // Route Geral
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
