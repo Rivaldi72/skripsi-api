@@ -20,4 +20,8 @@ class LatihanModel extends Model
         'pilihan_jawaban3',
 
     ];
+     public function matapelajaran()
+    {
+        return $this->hasOne('App\Models\Dedi\MapelModel', 'id', 'id_mapel');
+    }
 }

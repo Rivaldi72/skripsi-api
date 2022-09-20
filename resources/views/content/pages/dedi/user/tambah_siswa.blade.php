@@ -19,7 +19,7 @@
                                     Nama Lengkap
                                 </div>
                                 <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Pilihan Jawaban Benar" />
+                                    placeholder="Masukkan Nama Lengkap" />
                             </div>
                         </div>
                         <div class="col-xl-12 col-md-12 col-12">
@@ -28,16 +28,25 @@
                                     Angkatan
                                 </div>
                                 <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Pilihan Jawaban Benar" />
+                                    placeholder="Masukkan Angkatan" />
                             </div>
                         </div>
                         <div class="col-xl-12 col-md-12 col-12">
                             <div class="mb-1">
                                 <div class="text-bold-600 font-medium-2 mb-1">
-                                    Tempat, Tanggal Lahir
+                                    Tempat Lahir
                                 </div>
                                 <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Pilihan Jawaban Benar" />
+                                    placeholder="Masukkan Tempat Lahir" />
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-md-12 col-12">
+                            <div class="mb-1">
+                                <div class="text-bold-600 font-medium-2 mb-1">
+                                    Tanggal Lahir
+                                </div>
+                                <input type="text" class="form-control form-control-lg" id="helpInputTop"
+                                    placeholder="Masukkan Tanggal Lahir" />
                             </div>
                         </div>
                         <div class="col-xl-12 col-md-12 col-12">
@@ -46,7 +55,7 @@
                                     Alamat
                                 </div>
                                 <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Pilihan Jawaban Benar" />
+                                    placeholder="Masukkan Alamat" />
                             </div>
                         </div>
                         <div class="col-xl-12 col-md-12 col-12">
@@ -55,7 +64,7 @@
                                     Email
                                 </div>
                                 <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Pilihan Jawaban Benar" />
+                                    placeholder="Masukkan Email" />
                             </div>
                         </div>
                         <div class="col-xl-12 col-md-12 col-12">
@@ -63,16 +72,17 @@
                                 <div class="text-bold-600 font-medium-2 mb-1">
                                     Password
                                 </div>
-                                <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Pilihan Jawaban Benar" />
+                                <input type="password" class="form-control form-control-lg" id="helpInputTop"
+                                    placeholder="Masukkan Password" />
                             </div>
                         </div>
                         </tbody>
                         </table>
+                        <button type="button" class="btn btn-success pull-right mb-2 mt-2 ml-5 font-weight-bold"
+                            data-toggle="modal" data-target="#xSmall">
+                            Simpan</button>
                     </div>
-                    <button type="button" class="btn btn-success pull-right mb-3 mr-2 font-weight-bold" data-toggle="modal"
-                        data-target="#xSmall">
-                        Daftar</button>
+
                     <!-- Modal -->
                     <div class="modal fade text-left" id="xSmall" tabindex="-1" role="dialog"
                         aria-labelledby="myModalLabel20" aria-hidden="true">

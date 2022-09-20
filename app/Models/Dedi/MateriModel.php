@@ -17,5 +17,11 @@ class MateriModel extends Model
         'judul_materi',
         'detail_materi',
         'gambar',
+
     ];
+     public function matapelajaran()
+    {
+        return $this->hasOne('App\Models\Dedi\MapelModel', 'id', 'id_mapel');
+    }
 }
+

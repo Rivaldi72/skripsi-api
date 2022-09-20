@@ -19,4 +19,8 @@ class PratikumModel extends Model
         'detail_pratikum',
         'gambar',
     ];
+     public function matapelajaran()
+    {
+        return $this->hasOne('App\Models\Dedi\MapelModel', 'id', 'id_mapel');
+    }
 }

@@ -27,9 +27,9 @@ class UserController extends Controller
         return view('/content/pages/dedi/materi/dashboard');
     }
     public function daftarsiswa(){
+        $siswa = UserModel::all();
 
-
-        return view('/content/pages/dedi/user/daftar_siswa');
+        return view('/content/pages/dedi/user/daftar_siswa', compact('siswa'));
     }
     public function tambahsiswa(){
 

@@ -15,4 +15,5 @@ class MapelModel extends Model
         'id',
         'mata_pelajaran',
     ];
+
 }
