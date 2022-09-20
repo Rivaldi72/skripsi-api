@@ -15,14 +15,13 @@ class CreateGeralLowonganTable extends Migration
     {
         Schema::create('geral_lowongan_', function (Blueprint $table) {
             $table->id();
-            $table->string('pekerjaan');
+            $table->string('posisi_pekerjaan');
             $table->string('nama_perusahaan');
             $table->string('alamat');
             $table->string('kota');
             $table->string('deskripsi');
-            $table->string('tuntutan');
+            $table->string('pendidikan');
             $table->string('syarat');
-            $table->timestamp('tgl_lahir');
             $table->string('tipe_pekerjaan');
             $table->string('tipe_posisi');
             $table->timestamps();
