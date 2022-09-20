@@ -2,6 +2,11 @@
 
 @section('title', 'DATA LOWONGAN ')
 
+@section('vendor-style')
+    <link rel="stylesheet" href="{{ asset(mix('vendors/css/animate/animate.min.css')) }}">
+    <link rel="stylesheet" href="{{ asset(mix('vendors/css/extensions/sweetalert2.min.css')) }}">
+@endsection
+
 {{-- page main content --}}
 @section('content')
 
@@ -26,11 +31,12 @@
                                     <th>Nama Perusahaan</th>
                                     <th>Kota</th>
                                     <th>Deskripsi</th>
-                                    <th>Kewajiban</th>
+                                    <th>alamat</th>
                                     <th>Syarat</th>
                                     <th>Fasilitas</th>
                                     <th>Tipe Pekerjaan</th>
                                     <th>Tipe Posisi</th>
+                                    <th>Pendidikan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -47,8 +53,9 @@
                                     <td>Magang</td>
                                     <td>Junior</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i data-feather=edit></i></span>
-                                        <span class="action-delete"><i data-feather=trash></i></span>
+                                        <button class="btn"><i id="btn-edit" data-feather="edit"></i></button>
+                                        <button class="btn" id="btn-hapus"><i data-feather=trash></i></button>
+
                                     </td>
                                 </tr>
                             </tbody>
@@ -61,4 +68,39 @@
 
 
     <!-- Bordered table end -->
+@endsection
+
+@section('vendor-script')
+    <script src="{{ asset(mix('vendors/js/extensions/sweetalert2.all.min.js')) }}"></script>
+    <script src="{{ asset(mix('vendors/js/extensions/polyfill.min.js')) }}"></script>
+@endsection
+
+@section('page-script')
+    <script>
+        $('#btn-hapus').on('click', function() {
+            Swal.fire({
+                title: 'Apakah anda ingin menghapus data?',
+                text: "data tidak dapat dikembalikan",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Ya, hapus',
+                customClass: {
+                    confirmButton: 'btn btn-primary',
+                    cancelButton: 'btn btn-outline-danger ms-1'
+                },
+                buttonsStyling: false
+            }).then(function(result) {
+                if (result.value) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Terhapus',
+                        text: 'Data berhasil di hapus',
+                        customClass: {
+                            confirmButton: 'btn btn-success'
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 @endsection

@@ -22,9 +22,9 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
+                                    <th>Username</th>
                                     <th>Nama</th>
                                     <th>Email</th>
-                                    <th>Password</th>
                                     <th>Tanggal Lahir</th>
                                     <th>No. Handphone</th>
                                     <th>Keahlian</th>
@@ -34,9 +34,9 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
+                                    <td>geral123</td>
                                     <td>Geral Aditya Hanif</td>
                                     <td>Geral@fakeemail.com</td>
-                                    <td>123456</td>
                                     <td>14-11-2000</td>
                                     <td>08526371623</td>
                                     <td>Programmer</td>
