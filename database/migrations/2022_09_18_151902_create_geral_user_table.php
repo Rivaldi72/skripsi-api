@@ -19,7 +19,6 @@ class CreateGeralUserTable extends Migration
             $table->string('password');
             $table->boolean('isAdmin')->default(false);
             $table->string('nama_lengkap');
-            $table->string('foto');
             $table->string('email');
             $table->date('tanggal_lahir');
             $table->string('no_hp');
