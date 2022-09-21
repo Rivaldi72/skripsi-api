@@ -32,19 +32,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>geral123</td>
-                                    <td>Geral Aditya Hanif</td>
-                                    <td>Geral@fakeemail.com</td>
-                                    <td>14-11-2000</td>
-                                    <td>08526371623</td>
-                                    <td>Programmer</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i data-feather=edit></i></span>
-                                        <span class="action-delete"><i data-feather=trash></i></span>
-                                    </td>
-                                </tr>
+                                @foreach ($dataUser as $item)
+                                    <tr>
+                                        <th scope="row">{{ $loop->index + 1 }}</th>
+                                        <td>{{ $item->username }}</td>
+                                        <td>{{ $item->nama_lengkap }}</td>
+                                        <td>{{ $item->email }}</td>
+                                        <td>{{ $item->tanggal_lahir }}</td>
+                                        <td>{{ $item->no_hp }}</td>
+                                        <td>{{ $item->keahlian }}</td>
+                                        <td class="product-action">
+                                            <span class="action-edit"><i data-feather=edit></i></span>
+                                            <span class="action-delete"><i data-feather=trash></i></span>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
