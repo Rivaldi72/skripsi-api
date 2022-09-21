@@ -8,7 +8,7 @@
     <!-- Bordered table start -->
     <div class="row" id="table-bordered">
         <div class="col-12">
-            <a href="{{ route('tambah.pratikum') }}"><button type="button"
+            <a href="{{ route('dedi.pratikum.tambah') }}"><button type="button"
                     class="btn btn-relief-info mr-1 mb-1 btn-success float-right">Tambah Pratikum</button>
         </div>
         <div class="col-12">
@@ -44,7 +44,7 @@
                                         ererererererererererklekrlkekrkekrkekrkelrlekrlkelkrlekrlekrlkelrkelk
                                     </td>
                                     <td width="60px"> </td>
-                                    <td><a href="{{ route('edit.pratikum') }}"><span class="action-edit"><i
+                                    <td><a href="{{ route('dedi.pratikum.edit') }}"><span class="action-edit"><i
                                                     class="feather icon-edit"></i></span>
                                             <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>

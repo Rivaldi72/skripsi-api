@@ -8,7 +8,7 @@
     <!-- Bordered table start -->
     <div class="row" id="table-bordered">
         <div class="col-12">
-            <a href="{{ route('daftar.akun') }}"><button type="button"
+            <a href="{{ route('dedi.siswa.daftar') }}"><button type="button"
                     class="btn btn-relief-info mr-1 mb-1 btn-success float-right">Datar Akun</button>
         </div>
         <div class="col-12">

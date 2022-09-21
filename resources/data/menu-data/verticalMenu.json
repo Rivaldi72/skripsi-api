@@ -43,14 +43,14 @@
                     "slug": "",
                     "submenu": [
                         {
-                            "url": "/dedi/indexdaftar",
-                            "name": "Akun Siswa",
-                            "slug": "dedi/indexdaftar"
+                            "url": "/dedi/daftarsiswa",
+                            "name": "Daftar Siswa",
+                            "slug": "dedi/daftarsiswa"
                         },
                         {
-                            "url": "/dedi/daftarakun",
-                            "name": "Daftar Akun",
-                            "slug": "dedi/daftarakun"
+                            "url": "/dedi/siswatambah",
+                            "name": "Tambah Siswa",
+                            "slug": "dedi/siswatambah"
                         }
                     ]
                 },
@@ -60,19 +60,19 @@
                     "slug": "",
                     "submenu": [
                         {
-                            "url": "/dedi/indexmateri",
+                            "url": "/dedi/materiindex",
                             "name": "Mata Pelajaran",
-                            "slug": "dedi/indexmateri"
+                            "slug": "dedi/materiindex"
                         },
                         {
-                            "url": "/dedi/tambahmateri",
+                            "url": "/dedi/materitambah",
                             "name": "Tambah Materi",
-                            "slug": "dedi/tambahmateri"
+                            "slug": "dedi/materitambah"
                         },
                         {
-                            "url": "/dedi/editmateri",
+                            "url": "/dedi/materiedit",
                             "name": "Edit Materi",
-                            "slug": "dedi/editmateri"
+                            "slug": "dedi/materiedit"
                         }
                     ]
                 },
@@ -82,19 +82,19 @@
                     "slug": "",
                     "submenu": [
                         {
-                            "url": "/dedi/indexpratikum",
+                            "url": "/dedi/pratikumindex",
                             "name": "Mata Pelajaran",
                             "slug": "dedi/indexpratikum"
                         },
                         {
-                            "url": "/dedi/tambahpratikum",
+                            "url": "/dedi/pratikumtambah",
                             "name": "Tambah Pratikum",
-                            "slug": "dedi/tambahpratikum"
+                            "slug": "dedi/pratikumtambah"
                         },
                         {
-                            "url": "/dedi/editpratikum",
+                            "url": "/dedi/pratikumedit",
                             "name": "Edit Pratikum",
-                            "slug": "dedi/editpratikum"
+                            "slug": "dedi/pratikumedit"
                         }
                     ]
                 },
@@ -104,19 +104,19 @@
                     "slug": "",
                     "submenu": [
                         {
-                            "url": "/dedi/indexlatihan",
+                            "url": "/dedi/latihanindex",
                             "name": "Mata Pelajaran",
-                            "slug": "dedi/indexlatihan"
+                            "slug": "dedi/latihanindex"
                         },
                         {
-                            "url": "/dedi/tambahlatihan",
+                            "url": "/dedi/latihantambah",
                             "name": "Tambah Soal",
-                            "slug": "dedi/tambahlatihan"
+                            "slug": "dedi/latihantambah"
                         },
                         {
-                            "url": "/dedi/editlatihan",
+                            "url": "/dedi/latihanedit",
                             "name": "Edit Soal",
-                            "slug": "dedi/editlatihan"
+                            "slug": "dedi/latihanedit"
                         }
                     ]
                 }
