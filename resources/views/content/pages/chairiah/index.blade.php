@@ -16,11 +16,7 @@
                         <div class="relative">
                             <div class="cover-container">
                                 <img class="img-fluid bg-cover rounded-0 w-100" src="{{ asset('images/chairiah/cover.jpg') }}"
-                                    alt="User Profile Image">
-                            </div>
-                            <div class="profile-img-container d-flex align-items-center justify-content-between">
-
-
+                                    alt="User Profile Image" style="height: 250px; object-fit:cover;">
                             </div>
                         </div>
                         <div class="d-flex justify-content-end align-items-center profile-header-nav">

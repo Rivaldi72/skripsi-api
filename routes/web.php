@@ -29,10 +29,10 @@ use App\Http\Controllers\ChartsController;
 
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/login','AuthController@login')->name('login');
+    Route::get('/register','AuthController@register')->name('register');
     Route::get('/','GudangController@index');
     Route::get('/index','GudangController@index')->name('index');
-    Route::get('/products-gudang','GudangController@productsGudang')->name('products.gudang');
     Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
 });
 

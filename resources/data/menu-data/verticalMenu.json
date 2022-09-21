@@ -10,13 +10,6 @@
                     "icon": "home"
                 },
                 {
-                    "url": "/chairiah/products-gudang",
-                    "name": "Products Gudang",
-                    "slug": "chairiah.products.gudang",
-                    "badgeClass": "badge badge-warning badge-pill float-right",
-                    "icon": "home"
-                },
-                {
                     "url": "/chairiah/profil-gudang",
                     "name": "Profil Gudang",
                     "slug": "chairiah.profil.gudang",
