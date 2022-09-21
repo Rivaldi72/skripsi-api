@@ -34,6 +34,7 @@ Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Ch
     Route::get('/','GudangController@index');
     Route::get('/index','GudangController@index')->name('index');
     Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
+    Route::post('/profil-gudang/post','GudangController@profilGudangPost')->name('profil.gudang.post');
 });
 
 // Route Dedi
