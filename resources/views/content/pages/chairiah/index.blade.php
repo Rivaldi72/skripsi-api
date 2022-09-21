@@ -56,7 +56,7 @@
                             <img src="{{ asset('images/chairiah/2.png') }}" alt="avtar img holder" height="45"
                                 width="45">
                         </div>
-                        <div class="user-page-info">
+                        <div class="user-page-info" style="margin-left: 10px">
                             <p class="mb-0">Takengon, Aceh Tengah</p>
                             <span class="font-small-2">12 Dec 2018 at 1:16 AM</span>
                         </div>
