@@ -2,71 +2,57 @@
 
 @section('title', 'DATA USER ')
 
-@section('vendor-style')
-    {{-- Page Css files --}}
-    <link rel="stylesheet" href="{{ asset(mix('vendors/css/forms/select/select2.min.css')) }}">
-    <link rel="stylesheet" href="{{ asset(mix('vendors/css/tables/datatable/dataTables.bootstrap5.min.css')) }}">
-    <link rel="stylesheet" href="{{ asset(mix('vendors/css/tables/datatable/responsive.bootstrap5.min.css')) }}">
-    <link rel="stylesheet" href="{{ asset(mix('vendors/css/tables/datatable/buttons.bootstrap5.min.css')) }}">
-    <link rel="stylesheet" href="{{ asset(mix('vendors/css/tables/datatable/rowGroup.bootstrap5.min.css')) }}">
-@endsection
-
-@section('page-style')
-    {{-- Page Css files --}}
-    <link rel="stylesheet" href="{{ asset(mix('css/base/plugins/forms/form-validation.css')) }}">
-@endsection
-
-
 {{-- page main content --}}
 @section('content')
-    <!-- users list start -->
-    <section class="app-user-list">
-        <!-- list and filter start -->
-        <div class="card">
-            <div class="card-body border-bottom">
-                <h4 class="card-title">Search & Filter</h4>
-            </div>
-            <div class="card-datatable table-responsive pt-0">
-                <table class="user-list-table table">
-                    <thead class="table-light">
-                        <tr>
-                            <th>No</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>Password</th>
-                            <th>Tanggal Lahir</th>
-                            <th>No. Handphone</th>
-                            <th>Keahlian</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                </table>
+
+
+
+    <!-- Bordered table start -->
+    <div class="row" id="table-bordered">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Username</th>
+                                    <th>Nama</th>
+                                    <th>Email</th>
+                                    <th>Tanggal Lahir</th>
+                                    <th>No. Handphone</th>
+                                    <th>Keahlian</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>geral123</td>
+                                    <td>Geral Aditya Hanif</td>
+                                    <td>Geral@fakeemail.com</td>
+                                    <td>14-11-2000</td>
+                                    <td>08526371623</td>
+                                    <td>Programmer</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i data-feather=edit></i></span>
+                                        <span class="action-delete"><i data-feather=trash></i></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- list and filter end -->
-    </section>
-    <!-- users list ends -->
-@endsection
-@section('vendor-script')
-    {{-- Vendor js files --}}
-    <script src="{{ asset(mix('vendors/js/forms/select/select2.full.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/jquery.dataTables.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/dataTables.bootstrap5.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/dataTables.responsive.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/responsive.bootstrap5.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/datatables.buttons.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/jszip.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/pdfmake.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/vfs_fonts.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/buttons.html5.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/buttons.print.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/tables/datatable/dataTables.rowGroup.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/forms/validation/jquery.validate.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/forms/cleave/cleave.min.js')) }}"></script>
-    <script src="{{ asset(mix('vendors/js/forms/cleave/addons/cleave-phone.us.js')) }}"></script>
-@endsection
+    </div>
 
-@section('page-script')
-    {{-- Page js files --}}
-    <script src="{{ asset(mix('js/scripts/pages/app-user-list.js')) }}"></script>
+
+    <!-- Bordered table end -->
 @endsection

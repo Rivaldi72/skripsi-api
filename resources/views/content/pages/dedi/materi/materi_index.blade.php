@@ -32,24 +32,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Leanne Graham</td>
-                                    <td>sincere@april.biz</td>
-                                    <td width="200px">sfjjjrjajkj;l;lsd;las;ld;laskd;laskd;lkaskdkaskdlk;sdkldklskdks
-                                        sds;ldlskd;lskd;lks;ldk;laskd;lskdlskd;lks;lkd;lskdlskdlksldksd
-                                        asdsdasdadasdasdasdasdasddasdsdsdsdsdppriei asksalkdksd;lakldasd
-                                        asdasdaskdk aslkdlkkrk;lkrkrwekr;k aslk;lak;lkek al;lask;lklakfa-spinas
-                                        sdmfm;ldmfdmflmlfme;lmf;lsm;dmf;smd;lfm;ldflsm;ldfm;ldmlmlemeererrer
-                                        ererererererererererklekrlkekrkekrkekrkelrlekrlkelkrlekrlekrlkelrkelk
-                                    </td>
-                                    <td></td>
-                                    <td>
-                                    <td><a href="{{ route('dedi.materi.edit') }}"><span class="action-edit"><i
-                                                    class="feather icon-edit"></i></span>
-                                            <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
+                                @foreach ($materi as $item)
+                                    <tr>
+                                        <td scope="row">{{ $loop->index + 1 }}</td>
+                                        <td>{{ $item->matapelajaran->mata_pelajaran }}</td>
+                                        <td>{{ $item->judul_materi }}</td>
+                                        <td width="200px">
+                                            {{ $item->detail_materi }}
+                                        </td>
+                                        <td>{{ $item->gambar }}</td>
+                                        <td><a href="{{ route('dedi.materi.edit') }}"><span class="action-edit"><i
+                                                        class="feather icon-edit"></i></span>
+                                                <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                        </td>
+                                    </tr>
+                                @endforeach
 
                             </tbody>
                         </table>

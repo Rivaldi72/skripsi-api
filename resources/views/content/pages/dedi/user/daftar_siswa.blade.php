@@ -8,8 +8,8 @@
     <!-- Bordered table start -->
     <div class="row" id="table-bordered">
         <div class="col-12">
-            <a href="{{ route('dedi.siswa.daftar') }}"><button type="button"
-                    class="btn btn-relief-info mr-1 mb-1 btn-success float-right">Datar Akun</button>
+            <a href="{{ route('dedi.siswa.tambah') }}"><button type="button"
+                    class="btn btn-relief-info mr-1 mb-1 btn-success float-right">Tambahkan Akun</button>
         </div>
         <div class="col-12">
             <div class="card">
@@ -29,20 +29,25 @@
                                     <th>Tempat, Tanggal Lahir</th>
                                     <th>Alamat</th>
                                     <th>Email</th>
-                                    <th>Password</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Leanne Graham</td>
-                                    <td>sincere@april.biz</td>
-                                    <td>@mdo</td>
-                                    <td>sincere@april.biz</td>
-                                    <td>sincere@april.biz</td>
-                                    <td>sincere@april.biz</td>
-                                </tr>
+                                @foreach ($siswa as $item)
+                                    <tr>
+                                        <th scope="row">{{ $loop->index + 1 }}</th>
+                                        <td>{{ $item->name }}</td>
+                                        <td>{{ $item->angkatan }}</td>
+                                        <td>{{ $item->tempat }},{{ $item->tanggal_lahir }}</td>
+                                        <td>{{ $item->alamat }}</td>
+                                        <td>{{ $item->email }}</td>
+                                        <td>
+                                            <button type="button" class="btn btn-icon btn-icon rounded-circle btn-warning">
+                                                <i data-feather="trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                @endforeach
 
                             </tbody>
                         </table>
