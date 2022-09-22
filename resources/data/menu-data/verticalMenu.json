@@ -3,16 +3,9 @@
         {
             "menu": [
                 {
-                    "url": "/index",
+                    "url": "/chairiah/index",
                     "name": "Home",
                     "slug": "chairiah.index",
-                    "badgeClass": "badge badge-warning badge-pill float-right",
-                    "icon": "home"
-                },
-                {
-                    "url": "/chairiah/products-gudang",
-                    "name": "Products Gudang",
-                    "slug": "chairiah.products.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 },

@@ -10,10 +10,6 @@ class GudangController extends Controller
     public function index(){
         return view('content.pages.chairiah.index');
     }
-    
-    public function productsGudang(){
-        return view('content.pages.chairiah.products-gudang');
-    }
 
     public function profilGudang(){
         return view('content.pages.chairiah.profil-gudang');

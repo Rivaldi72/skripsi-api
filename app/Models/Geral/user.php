@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Model\Geral;
+namespace App\Models\Geral;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;

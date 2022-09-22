@@ -29,35 +29,36 @@
                                     <th>No.</th>
                                     <th>Posisi</th>
                                     <th>Nama Perusahaan</th>
+                                    <th>Alamat</th>
                                     <th>Kota</th>
                                     <th>Deskripsi</th>
-                                    <th>alamat</th>
+                                    <th>Pendidikan</th>
                                     <th>Syarat</th>
-                                    <th>Fasilitas</th>
                                     <th>Tipe Pekerjaan</th>
                                     <th>Tipe Posisi</th>
-                                    <th>Pendidikan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>UI/UX Designer</td>
-                                    <td>Cv. Jaya Abadi Mesra</td>
-                                    <td>Medan</td>
-                                    <td>..........</td>
-                                    <td>..........</td>
-                                    <td>..........</td>
-                                    <td>..........</td>
-                                    <td>Magang</td>
-                                    <td>Junior</td>
-                                    <td class="product-action">
-                                        <button class="btn"><i id="btn-edit" data-feather="edit"></i></button>
-                                        <button class="btn" id="btn-hapus"><i data-feather=trash></i></button>
+                                @foreach ($dataLowongan as $item)
+                                    <tr>
+                                        <th scope="row">{{ $loop->index + 1 }}</th>
+                                        <td>{{ $item->posisi_pekerjaan }}</td>
+                                        <td>{{ $item->nama_perusahaan }}</td>
+                                        <td>{{ $item->alamat }}</td>
+                                        <td>{{ $item->kota }}</td>
+                                        <td>{{ $item->deskripsi }}</td>
+                                        <td>{{ $item->pendidikan }}</td>
+                                        <td>{{ $item->syarat }}</td>
+                                        <td>{{ $item->tipe_pekerjaan }}</td>
+                                        <td>{{ $item->tipe_posisi }}</td>
+                                        <td class="product-action">
+                                            <button class="btn"><i id="btn-edit" data-feather="edit"></i></button>
+                                            <button class="btn" id="btn-hapus"><i data-feather=trash></i></button>
 
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
