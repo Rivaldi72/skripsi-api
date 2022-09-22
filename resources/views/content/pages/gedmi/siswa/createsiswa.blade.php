@@ -25,42 +25,59 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="text-bold-600 font-medium-2 mb-1">
+                                    NIS Siswa
+                                </div>
+                                <fieldset class="form-label-group">
+                                    <input type="text" class="form-control form-control-lg" id="label-large"
+                                        placeholder="Masukkan NIS Siswa">
+
+                                </fieldset>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-bold-600 font-medium-2 mb-1">
                                     Nama Siswa
                                 </div>
                                 <fieldset class="form-label-group">
                                     <input type="text" class="form-control form-control-lg" id="label-large"
                                         placeholder="Masukkan Nama Siswa">
-                                    <label for="label-large">Masukkan Mata Pelajaran</label>
+
                                 </fieldset>
                             </div>
                             <div class="col-6">
                                 <div class="text-bold-600 font-medium-2 mb-1">
-                                    Jabatan
+                                    Tempat Lahir
                                 </div>
                                 <fieldset class="form-label-group">
                                     <input type="text" class="form-control form-control-lg" id="label-large"
-                                        placeholder="Masukkan Jabatan">
-                                    <label for="label-large">Masukkan Jabatan</label>
+                                        placeholder="Masukkan Tempat Lahir">
+
                                 </fieldset>
                             </div>
                             <div class="col-6">
                                 <div class="text-bold-600 font-medium-2 mb-1">
-                                    Pendidikan Tahun
+                                    Tanggal Lahir
                                 </div>
                                 <fieldset class="form-label-group">
                                     <input type="text" class="form-control form-control-lg" id="label-large"
-                                        placeholder="Masukkan Tahun Pendidikan">
-                                    <label for="label-large">Masukkan Tahun Pendidikan</label>
+                                        placeholder="Masukkan Tanggal Lahir">
                                 </fieldset>
                             </div>
                             <div class="col-6">
                                 <div class="text-bold-600 font-medium-2 mb-1">
-                                    Bidang Study
+                                    Tahun Masuk
                                 </div>
                                 <fieldset class="form-label-group">
                                     <input type="text" class="form-control form-control-lg" id="label-large"
-                                        placeholder="Masukkan Bidang Study">
-                                    <label for="label-large">Masukkan Bidang Study</label>
+                                        placeholder="Masukkan Tahun Masuk">
+                                </fieldset>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-bold-600 font-medium-2 mb-1">
+                                    Jenis Kelamin
+                                </div>
+                                <fieldset class="form-label-group">
+                                    <input type="text" class="form-control form-control-lg" id="label-large"
+                                        placeholder="Masukkan Jenis Kelamin">
                                 </fieldset>
                             </div>
                             <div class="col-6">
@@ -70,7 +87,6 @@
                                 <fieldset class="form-label-group">
                                     <input type="text" class="form-control form-control-lg" id="label-large"
                                         placeholder="Masukkan Agama">
-                                    <label for="label-large">Masukkan Agama</label>
                                 </fieldset>
                             </div>
                             <div class="col-6">
@@ -79,8 +95,7 @@
                                 </div>
                                 <fieldset class="form-label-group">
                                     <input type="text" class="form-control form-control-lg" id="label-large"
-                                        placeholder="Masukkan Agama">
-                                    <label for="label-large">Masukkan Alamat</label>
+                                        placeholder="Masukkan Alamat">
                                 </fieldset>
                             </div>
                             </tbody>

@@ -35,78 +35,52 @@
                                         <th>No.</th>
                                         <th>NIS</th>
                                         <th>Nama</th>
-                                        <th>Tempat, Tanggal Lahir</th>
-                                        <th>Angkatan</th>
-                                        <th>Alamat</th>
+                                        <th>Tempat Lahir</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Tahun Masuk</th>
+                                        <th>Jenis Kelamin</th>
                                         <th>Agama</th>
+                                        <th>Alamat</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Leanne Graham</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>@mdo</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                        <td class="product-action">
-                                            <span class="action-create"><a href="{{ route('gedmi.siswa.test') }}"><i
-                                                        class="feather icon-eye"></i></span>
-
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Leanne Graham</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>@TwBootstrap</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
-                                                    data-bs-toggle="dropdown">
-                                                    <i data-feather="more-vertical"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="{{ route('gedmi.edit.siswa') }}">
-                                                        <i data-feather="edit-2" class="me-50"></i>
-                                                        <span>Edit</span>
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        <i data-feather="trash" class="me-50"></i>
-                                                        <span>Delete</span>
-                                                    </a>
-                                                    <a class="dropdown-item" href="{{ route('gedmi.detail.siswa') }}">
-                                                        <i data-feather="info" class="me-50"></i>
-                                                        <span>Detail</span>
-                                                    </a>
+                                    @foreach ($dataSiswa as $item)
+                                        <tr>
+                                            <th scope="row">{{ $loop->index + 1 }}</th>
+                                            <td>{{ $item->nis }}</td>
+                                            <td>{{ $item->nama }}</td>
+                                            <td>{{ $item->tempat_lahir }}</td>
+                                            <td>{{ $item->tanggal_lahir }}</td>
+                                            <td>{{ $item->tahun_masuk }}</td>
+                                            <td>{{ $item->jenis_kelamin }}</td>
+                                            <td>{{ $item->agama }}</td>
+                                            <td>{{ $item->alamat }}</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button type="button"
+                                                        class="btn btn-sm dropdown-toggle hide-arrow py-0"
+                                                        data-bs-toggle="dropdown">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item" href="{{ route('gedmi.edit.guru') }}">
+                                                            <i data-feather="edit-2" class="me-50"></i>
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            <i data-feather="trash" class="me-50"></i>
+                                                            <span>Delete</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="{{ route('gedmi.detail.guru') }}">
+                                                            <i data-feather="info" class="me-50"></i>
+                                                            <span>Detail</span>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Ervin Howell</td>
-                                        <td>shanna@melissa.tv</td>
-                                        <td>@fat</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Clementine Bauch</td>
-                                        <td>nathan@yesenia.net</td>
-                                        <td>@twitter</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                        <td>sincere@april.biz</td>
-                                    </tr>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

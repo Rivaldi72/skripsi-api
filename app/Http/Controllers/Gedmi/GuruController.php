@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Gedmi;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Gedmi\GuruModel;
 
 class GuruController extends Controller
 {
     public function index(){
-        return view('content.pages.gedmi.guru.index');
+        $dataGuru = GuruModel::all();
+        return view('content.pages.gedmi.guru.index', compact('dataGuru'));
     }
 
     public function tambahGuru(){
