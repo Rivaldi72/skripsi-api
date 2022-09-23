@@ -36,6 +36,7 @@
                                     <th>Syarat</th>
                                     <th>Tipe Pekerjaan</th>
                                     <th>Tipe Posisi</th>
+                                    <th>Fasilitas</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -52,9 +53,12 @@
                                         <td>{{ $item->syarat }}</td>
                                         <td>{{ $item->tipe_pekerjaan }}</td>
                                         <td>{{ $item->tipe_posisi }}</td>
+                                        <td>{{ $item->fasilitas }}</td>
                                         <td class="product-action">
                                             <button class="btn"><i id="btn-edit" data-feather="edit"></i></button>
-                                            <button class="btn" id="btn-hapus"><i data-feather=trash></i></button>
+                                            <button class="btn" id=""
+                                                onclick="hapusData({{ $item->id }})"><i
+                                                    data-feather=trash></i></button>
 
                                         </td>
                                     </tr>
@@ -78,7 +82,7 @@
 
 @section('page-script')
     <script>
-        $('#btn-hapus').on('click', function() {
+        function hapusData(id) {
             Swal.fire({
                 title: 'Apakah anda ingin menghapus data?',
                 text: "data tidak dapat dikembalikan",
@@ -102,6 +106,6 @@
                     });
                 }
             });
-        });
+        }
     </script>
 @endsection

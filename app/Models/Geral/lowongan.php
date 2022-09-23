@@ -21,7 +21,8 @@ class Lowongan extends Model
         'pendidikan',
         'syarat',
         'tipe_pekerjaan',
-        'tipe_posisi'
+        'tipe_posisi',
+        'fasilitas'
 
     ];
 }
