@@ -84,21 +84,21 @@
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Nama Gudang Kopi</label>
                                                 <input type="text" name="nama" class="form-control" id="nama"
-                                                    placeholder="Nama Gudang Kopi" value="{{ $dataGudang->nama }}">
+                                                    placeholder="Nama Gudang Kopi" value="{{ $data->nama ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Alamat Gudang Kopi</label>
                                                 <input type="text" name="alamat" class="form-control" id="alamat"
-                                                    placeholder="Alamat Gudang Kopi" value="{{ $dataGudang->alamat }}">
+                                                    placeholder="Alamat Gudang Kopi" value="{{ $data->alamat ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">No.Handphone Gudang</label>
                                                 <input type="text" name="no_hp" class="form-control" id="noHP"
-                                                    placeholder="No.Handphone Gudang" value="{{ $dataGudang->no_hp }}">
+                                                    placeholder="No.Handphone Gudang" value="{{ $data->no_hp ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
@@ -114,7 +114,7 @@
                                                                             <img id="previewGudangImage"
                                                                                 class="img-fluid bg-cover rounded-lg mb-1 mt-1"
                                                                                 style="width: 225px; height: 225px; object-fit: contain"
-                                                                                src="{{ $dataGudang->gambar != '' ? asset('storage/chairiah/gudang-image/' . $dataGudang->gambar) : asset('images/no-image.png') }}"
+                                                                                src="{{ $data->gambar ?? '' != '' ? asset('storage/chairiah/gudang-image/' . $data->gambar) : asset('images/no-image.png') }}"
                                                                                 alt="User Profile Image">
                                                                         </div>
                                                                         <div class="col-12">
@@ -135,7 +135,7 @@
                                                                             id="hargaKopiGelondong"
                                                                             name="harga_kopi_gelondong"
                                                                             placeholder="Harga Kopi / Kg"
-                                                                            value="{{ $dataGudang->harga_kopi_gelondong }}">
+                                                                            value="{{ $data->harga_kopi_gelondong ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-12 mt-2">
@@ -144,7 +144,7 @@
                                                                         <input type="number" class="form-control"
                                                                             id="hargaKopiGabah" name="harga_kopi_gabah"
                                                                             placeholder="Harga Kopi / Kg"
-                                                                            value="{{ $dataGudang->harga_kopi_gabah }}">
+                                                                            value="{{ $data->harga_kopi_gabah ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-12 mt-2">
@@ -154,7 +154,7 @@
                                                                             id="hargaKopiBijiHijau"
                                                                             name="harga_kopi_biji_hijau"
                                                                             placeholder="Harga Kopi / Kg"
-                                                                            value="{{ $dataGudang->harga_kopi_biji_hijau }}">
+                                                                            value="{{ $data->harga_kopi_biji_hijau ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                             </div>

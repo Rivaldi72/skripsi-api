@@ -14,16 +14,14 @@ class GudangController extends Controller
     }
 
     public function profilGudang(){
-        $data = GudangModel::where('id_user', 1)->get();
-        $dataGudang = $data[0];
-        // dd($dataGudang->nama);
-        return view('content.pages.chairiah.profil-gudang', compact('dataGudang'));
+        $data = GudangModel::where('id_user', 1)->get()->first();
+        return view('content.pages.chairiah.profil-gudang', compact('data'));
     }
 
     public function profilGudangPost(Request $request) {
         // dd($request->all());
         $id_user = 1;
-        $dataGudang = GudangModel::where('id_user',$id_user)->get()[0];
+        $dataGudang = GudangModel::where('id_user',$id_user)->get()->first();
         if($request->gudangImage != null) {
             $getFileExt = $request->gudangImage->getClientOriginalExtension();
             $fileName =  'gudang-image' . Str::uuid() . '.' . $getFileExt;
