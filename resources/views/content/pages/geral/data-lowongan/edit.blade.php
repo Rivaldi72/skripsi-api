@@ -16,7 +16,7 @@
                         <h4 class="card-title">Tambah Data Lowongan</h4>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('geral.edit.lowongan.update', ['id' => $dataLowongan->id]) }}" method="PUT"
+                        <form action="{{ route('geral.edit.lowongan.update', ['id' => $dataLowongan->id]) }}" method="POST"
                             id="edit_lowongan" class="needs-validation" novalidate>
                             {{ csrf_field() }}
                             <div class="mb-1">

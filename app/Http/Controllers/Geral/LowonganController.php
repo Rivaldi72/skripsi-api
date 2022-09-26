@@ -30,26 +30,23 @@ class LowonganController extends Controller
    }
    public function update(Request $request, $id){
       // dd($request->all());
-      $dataLowongan = lowongan::where('id',$id)->first;
-      lowongan::update(
+      $dataLowongan = lowongan::where('id',$id)->first();
+      lowongan::where('id', $id)->update(
          [
-            'id' => $id,
-         ],
-         [
-            'posisi_pekerjaan' => $request->posisi_pekerjaan ?? $dataLowongan,
-            'nama_pekerjaan' => $request->nama_pekerjaan ?? $dataLowongan,
-            'alamat' => $request->alamat ?? $dataLowongan,
-            'kota' => $request->kota ?? $dataLowongan,
-            'deskripsi' => $request->deskripsi ?? $dataLowongan,
-            'pendidikan' => $request->pendidikan ?? $dataLowongan,
-            'syarat' => $request->syarat ?? $dataLowongan,
-            'tipe_pekerjaan' => $request->tipe_pekerjaaan ?? $dataLowongan,
-            'tipe_posisi' => $request->tipe_posisi ?? $dataLowongan,
-            'fasilitas' => $request->fasilitas ?? $dataLowongan,
+            'posisi_pekerjaan' => $request->posisi_pekerjaan ?? $dataLowongan->posisi_pekerjaan,
+            'nama_perusahaan' => $request->nama_perusahaan ?? $dataLowongan->nama_perusahaan,
+            'alamat' => $request->alamat ?? $dataLowongan->alamat,
+            'kota' => $request->kota ?? $dataLowongan->kota,
+            'deskripsi' => $request->deskripsi ?? $dataLowongan->deskripsi,
+            'pendidikan' => $request->pendidikan ?? $dataLowongan->pendidikan,
+            'syarat' => $request->syarat ?? $dataLowongan->syarat,
+            'tipe_pekerjaan' => $request->tipe_pekerjaan ?? $dataLowongan->tipe_pekerjaan,
+            'tipe_posisi' => $request->tipe_posisi ?? $dataLowongan->tipe_posisi,
+            'fasilitas' => $request->fasilitas ?? $dataLowongan->fasilitas,
    
          ]
       );
-      return redirect()->route(geral.data-lowongan.index);
+      return redirect()->route('geral.index.lowongan');
       
    }
 }
