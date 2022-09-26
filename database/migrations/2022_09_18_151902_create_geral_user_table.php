@@ -18,11 +18,12 @@ class CreateGeralUserTable extends Migration
             $table->string('username')->unique();
             $table->string('password');
             $table->boolean('isAdmin')->default(false);
-            $table->string('nama_lengkap');
-            $table->string('email');
-            $table->date('tanggal_lahir');
-            $table->string('no_hp');
-            $table->string('keahlian');
+            $table->string('nama_lengkap')->nullable();
+            $table->string('email')->nullable();
+            $table->date('tanggal_lahir')->nullable();
+            $table->string('jenis_kelamin')->nullable();
+            $table->string('no_hp')->nullable();
+            $table->string('keahlian')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
