@@ -55,7 +55,9 @@
                                         <td>{{ $item->tipe_posisi }}</td>
                                         <td>{{ $item->fasilitas }}</td>
                                         <td class="product-action">
-                                            <button class="btn"><i id="btn-edit" data-feather="edit"></i></button>
+                                            <a class="btn"
+                                                href="{{ route('geral.edit.lowongan', ['id' => $item->id]) }}"><i
+                                                    id="btn-edit" data-feather="edit"></i></a>
                                             <button class="btn" id=""
                                                 onclick="hapusData({{ $item->id }})"><i
                                                     data-feather=trash></i></button>

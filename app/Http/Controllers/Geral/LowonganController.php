@@ -18,10 +18,13 @@ class LowonganController extends Controller
      }
      public function tambahPage() {
       return view('content.pages.geral.data-lowongan.tambah');
-   }
+      }
    public function tambahPagePost(Request $request){
       // dd($request->all());
       lowongan::create( $request->all());
       return redirect()->route('geral.index.lowongan');
+   }
+   public function editPage() {
+      return view('content.pages.geral.data-lowongan.edit');
    }
 }

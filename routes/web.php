@@ -77,6 +77,7 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
     Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
     Route::post('/data-lowongan/tambah/post', 'LowonganController@tambahPagePost')->name('tambah.lowongan.post');
+    Route::get('/data-lowongan/edit/{id}', 'LowonganController@editPage')->name('edit.lowongan');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
 });
