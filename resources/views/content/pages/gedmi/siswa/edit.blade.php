@@ -126,7 +126,7 @@
         <div class="content-header-left col-md-9 col-12 mb-2">
             <div class="row breadcrumbs-top">
                 <div class="col-12">
-                    <h2 class="content-header-title float-left mb-0">ISI DATA DIRI ANDA</h2>
+
 
                 </div>
             </div>
@@ -164,6 +164,13 @@
                                     <div class="row justify-content-between">
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
+                                                <label for="basicInput">NIS</label>
+                                                <input type="text" name="nis" class="form-control" id=""
+                                                    placeholder="NIS" value="{{ $biodata->nis ?? '' }}">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <fieldset class="form-group">
                                                 <label for="basicInput">Nama</label>
                                                 <input type="text" name="nama" class="form-control" id=""
                                                     placeholder="Nama" value="{{ $biodata->nama ?? '' }}">
@@ -171,16 +178,10 @@
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
-                                                <label for="basicInput">Email</label>
-                                                <input type="text" name="email" class="form-control" id=""
-                                                    placeholder="Email" value="{{ $biodata->email ?? '' }}">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-12 mt-2">
-                                            <fieldset class="form-group">
-                                                <label for="basicInput">No.Handphone</label>
-                                                <input type="text" name="no_hp" class="form-control" id=""
-                                                    placeholder="No.Handphone" value="{{ $biodata->no_hp ?? '' }}">
+                                                <label for="basicInput">Tempat Lahir</label>
+                                                <input type="text" name="tempat_lahir" class="form-control"
+                                                    id="" placeholder="Place Of Birth"
+                                                    value="{{ $biodata->tempat_lahir ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
@@ -190,16 +191,16 @@
                                                     <input type='text' name="tanggal_lahir"
                                                         class="form-control tanggal_lahir" id=""
                                                         placeholder="Data Of Birth"
-                                                        value="{{ $biodata->tanggl_lahir ?? '' }}">
+                                                        value="{{ $biodata->tanggal_lahir ?? '' }}">
                                                 </form>
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
-                                                <label for="basicInput">Tempat Lahir</label>
-                                                <input type="text" name="tempat_lahir" class="form-control"
-                                                    id="" placeholder="Place Of Birth"
-                                                    value="{{ $biodata->tempat_lahir ?? '' }}">
+                                                <label for="basicInput">Tahun Masuk</label>
+                                                <input type="text" name="tahun_masuk" class="form-control" id=""
+                                                    placeholder="Masukkan Tahun Masuk"
+                                                    value="{{ $biodata->tahun_masuk ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
@@ -214,13 +215,9 @@
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
-                                                <label for="basicInput">Status</label>
-                                                <select class="form-select" name="status" id="customSelect">
-                                                    <option selected>Pilih status</option>
-                                                    <option value="Belum Menikah">Belum Menikah</option>
-                                                    <option value="Menikah">Menikah</option>
-                                                    <option value="Janda / Duda">Janda / Duda</option>
-                                                </select>
+                                                <label for="basicInput">Agama</label>
+                                                <input type="text" name="agama" class="form-control" id=""
+                                                    placeholder="Masukkan Agama" value="">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
@@ -228,22 +225,6 @@
                                                 <label for="basicInput">Alamat</label>
                                                 <input type="text" name="alamat" class="form-control" id=""
                                                     placeholder="Masukkan Alamat" value="">
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-12 mt-2">
-                                            <fieldset class="form-group">
-                                                <label for="basicInput">Pendidikan Terakhir</label>
-                                                <select class="form-select" name="pendidikan_terakhir" id="customSelect">
-                                                    <option selected>Pilih pendidikan terakhir</option>
-                                                    <option value="SD">Sekolah Dasar (Setara)</option>
-                                                    <option value="SMP">Sekolah Menengah Pertama (Setara)</option>
-                                                    <option value="SMA">Sekolah Menengah Atas / Kejuruan (Setara)
-                                                    </option>
-                                                    <option value="D3">Diploma-3 (Setara)</option>
-                                                    <option value="S1">Strata-1 (Setara)</option>
-                                                    <option value="S2">Strata-2 (Setara)</option>
-                                                    <option value="S3">Strata-3 (Setara)</option>
-                                                </select>
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
@@ -285,7 +266,7 @@
                                                             <fieldset class="form-group">
                                                                 <label for="basicInput">Bobot</label>
                                                                 <input type="text" class="form-control" id="bobot"
-                                                                    placeholder="Bobot" disabled>
+                                                                    placeholder="Bobot">
                                                             </fieldset>
                                                         </div>
                                                         <div class="col-3 mt-2">

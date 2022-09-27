@@ -59,7 +59,8 @@
                                                 <i data-feather="more-vertical"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-end">
-                                                <a class="dropdown-item" href="{{ route('gedmi.edit.guru') }}">
+                                                <a class="dropdown-item"
+                                                    href="{{ route('gedmi.edit.guru', ['id' => $item->id]) }}">
                                                     <i data-feather="edit-2" class="me-50"></i>
                                                     <span>Edit</span>
                                                 </a>
