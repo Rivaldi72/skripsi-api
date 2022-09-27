@@ -172,13 +172,8 @@
                     "name": "Tambah Lowongan",
                     "icon": "plus",
                     "slug": "geral/data-lowongan/tambah"
-                },
-                {
-                    "url": "/geral/login",
-                    "name": "Tentang",
-                    "icon": "alert-circle",
-                    "slug": "geral/login"
                 }
+                
             ]
         }
     ],

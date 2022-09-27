@@ -64,7 +64,7 @@
                         @if (Auth::check())
                             {{ Auth::user()->name }}
                         @else
-                            John Doe
+                            Admin
                         @endif
                     </span>
                     <span class="user-status">
