@@ -60,14 +60,19 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     
     Route::get('/index','DashboardController@index')->name('dashboard');
     Route::get('/guru/index','GuruController@index')->name('guru.index');
-    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
+    Route::post('/guru/create/post','GuruController@tambahGuruPost')->name('tambah.guru.post');
+    Route::get('/guru/edit/{id}','GuruController@editGuru')->name('edit.guru');
+    Route::put('/guru/edit/update/{id}','GuruController@updateGuru')->name('edit.guru.update');
+    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
+    
     Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
+
+    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
-    Route::get('/guru/edit','GuruController@editGuru')->name('edit.guru');
-    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
-    Route::get('/siswa/edit','SiswaController@editSiswa')->name('edit.siswa');
+    Route::get('/siswa/edit/{id}','SiswaController@editSiswa')->name('edit.siswa');
+    Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
     Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
 });
 

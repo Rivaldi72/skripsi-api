@@ -21,4 +21,9 @@ class SiswaController extends Controller
     public function editSiswa(){
         return view('content.pages.gedmi.siswa.edit');
     }
+    public function tambahSiswaPost(Request $request){
+        // dd($request->all());
+        SiswaModel::create($request->all());
+        return redirect()->route('gedmi.siswa.index');
+    }
 }
