@@ -76,32 +76,31 @@
 
                         <div class="card-content">
                             <div class="card-body card-dashboard">
-                                <form action="" method="POST" id="dataForm" enctype="multipart/form-data">
+                                <form action="{{ route('chairiah.profil.gudang.post') }}" method="POST" id="dataForm"
+                                    enctype="multipart/form-data">
                                     {{ csrf_field() }}
-                                    <input type="hidden" name="nilai_data" id="nilaiData">
                                     <div class="row justify-content-between">
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Nama Gudang Kopi</label>
                                                 <input type="text" name="nama" class="form-control" id="nama"
-                                                    placeholder="Nama Gudang Kopi" value="">
+                                                    placeholder="Nama Gudang Kopi" value="{{ $data->nama ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Alamat Gudang Kopi</label>
                                                 <input type="text" name="alamat" class="form-control" id="alamat"
-                                                    placeholder="Alamat Gudang Kopi" value="">
+                                                    placeholder="Alamat Gudang Kopi" value="{{ $data->alamat ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">No.Handphone Gudang</label>
                                                 <input type="text" name="no_hp" class="form-control" id="noHP"
-                                                    placeholder="No.Handphone Gudang" value="">
+                                                    placeholder="No.Handphone Gudang" value="{{ $data->no_hp ?? '' }}">
                                             </fieldset>
                                         </div>
-
                                         <div class="col-12 mt-2">
                                             <div class="row">
                                                 <div class="col-12 border-right">
@@ -115,12 +114,12 @@
                                                                             <img id="previewGudangImage"
                                                                                 class="img-fluid bg-cover rounded-lg mb-1 mt-1"
                                                                                 style="width: 225px; height: 225px; object-fit: contain"
-                                                                                src="{{ asset('images/no-image.png') }}"
+                                                                                src="{{ $data->gambar ?? '' != '' ? asset('storage/chairiah/gudang-image/' . $data->gambar) : asset('images/no-image.png') }}"
                                                                                 alt="User Profile Image">
                                                                         </div>
                                                                         <div class="col-12">
                                                                             <input class="form-control" type="file"
-                                                                                id="gudangImage"
+                                                                                id="gudangImage" name="gudangImage"
                                                                                 onchange="readURL(this);" />
                                                                         </div>
                                                                     </div>
@@ -135,7 +134,8 @@
                                                                         <input type="number" class="form-control"
                                                                             id="hargaKopiGelondong"
                                                                             name="harga_kopi_gelondong"
-                                                                            placeholder="Harga Kopi / Kg">
+                                                                            placeholder="Harga Kopi / Kg"
+                                                                            value="{{ $data->harga_kopi_gelondong ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-12 mt-2">
@@ -143,7 +143,8 @@
                                                                         <label for="basicInput">Kopi Gabah</label>
                                                                         <input type="number" class="form-control"
                                                                             id="hargaKopiGabah" name="harga_kopi_gabah"
-                                                                            placeholder="Harga Kopi / Kg">
+                                                                            placeholder="Harga Kopi / Kg"
+                                                                            value="{{ $data->harga_kopi_gabah ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-12 mt-2">
@@ -152,17 +153,22 @@
                                                                         <input type="number" class="form-control"
                                                                             id="hargaKopiBijiHijau"
                                                                             name="harga_kopi_biji_hijau"
-                                                                            placeholder="Harga Kopi / Kg">
+                                                                            placeholder="Harga Kopi / Kg"
+                                                                            value="{{ $data->harga_kopi_biji_hijau ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="d-grid col-lg-12 col-md-12 mb-1 mb-lg-0 mt-2">
-                                                        <button type="button"
-                                                            class="btn btn-relief-success btn-primary">Simpan</button>
+                                                        <button type="submit" class="btn btn-relief-success btn-primary">
+                                                            Simpan
+                                                        </button>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>

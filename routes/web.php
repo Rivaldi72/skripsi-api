@@ -34,6 +34,7 @@ Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Ch
     Route::get('/','GudangController@index');
     Route::get('/index','GudangController@index')->name('index');
     Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
+    Route::post('/profil-gudang/post','GudangController@profilGudangPost')->name('profil.gudang.post');
 });
 
 // Route Dedi
@@ -80,6 +81,9 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::get('/', 'LowonganController@index')->name('index');
     Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
     Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
+    Route::post('/data-lowongan/tambah/post', 'LowonganController@tambahPagePost')->name('tambah.lowongan.post');
+    Route::get('/data-lowongan/edit/{id}', 'LowonganController@editPage')->name('edit.lowongan');
+    Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
 });

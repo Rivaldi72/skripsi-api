@@ -24,6 +24,7 @@ class CreateGeralLowonganTable extends Migration
             $table->string('syarat');
             $table->string('tipe_pekerjaan');
             $table->string('tipe_posisi');
+            $table->string('fasilitas');
             $table->timestamps();
         });
     }

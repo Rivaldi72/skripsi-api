@@ -15,6 +15,7 @@ class CreateChairiahGudangTable extends Migration
     {
         Schema::create('chairiah_gudang', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_user');
             $table->string('nama');
             $table->string('alamat');
             $table->string('no_hp');
