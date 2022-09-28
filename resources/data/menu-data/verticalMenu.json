@@ -3,16 +3,9 @@
         {
             "menu": [
                 {
-                    "url": "/index",
+                    "url": "/chairiah/index",
                     "name": "Home",
                     "slug": "chairiah.index",
-                    "badgeClass": "badge badge-warning badge-pill float-right",
-                    "icon": "home"
-                },
-                {
-                    "url": "/chairiah/products-gudang",
-                    "name": "Products Gudang",
-                    "slug": "chairiah.products.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "home"
                 },
@@ -140,6 +133,13 @@
                     "slug": "gedmi.siswa.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
+                },
+                {
+                    "url": "gedmi/mapel",
+                    "name": "Mata Pelajaran",
+                    "slug": "gedmi.mapel",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "book-open"
                 }
             ]
         }
@@ -171,13 +171,8 @@
                     "name": "Tambah Lowongan",
                     "icon": "plus",
                     "slug": "geral/data-lowongan/tambah"
-                },
-                {
-                    "url": "/geral/login",
-                    "name": "Tentang",
-                    "icon": "alert-circle",
-                    "slug": "geral/login"
                 }
+                
             ]
         }
     ],

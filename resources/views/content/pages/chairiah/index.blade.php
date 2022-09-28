@@ -16,11 +16,7 @@
                         <div class="relative">
                             <div class="cover-container">
                                 <img class="img-fluid bg-cover rounded-0 w-100" src="{{ asset('images/chairiah/cover.jpg') }}"
-                                    alt="User Profile Image">
-                            </div>
-                            <div class="profile-img-container d-flex align-items-center justify-content-between">
-
-
+                                    alt="User Profile Image" style="height: 250px; object-fit:cover;">
                             </div>
                         </div>
                         <div class="d-flex justify-content-end align-items-center profile-header-nav">
@@ -56,7 +52,7 @@
                             <img src="{{ asset('images/chairiah/2.png') }}" alt="avtar img holder" height="45"
                                 width="45">
                         </div>
-                        <div class="user-page-info">
+                        <div class="user-page-info" style="margin-left: 10px">
                             <p class="mb-0">Takengon, Aceh Tengah</p>
                             <span class="font-small-2">12 Dec 2018 at 1:16 AM</span>
                         </div>

@@ -5,11 +5,10 @@ namespace App\Models\Geral;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class Lowongan extends Model
 {
-    use Notifiable;
 
-    protected $table = 'geral_lowongan';
+    protected $table = 'geral_lowongan_';
     
     protected $primaryKey = 'id';
 
@@ -22,7 +21,8 @@ class User extends Authenticatable
         'pendidikan',
         'syarat',
         'tipe_pekerjaan',
-        'tipe_posisi'
+        'tipe_posisi',
+        'fasilitas'
 
     ];
 }

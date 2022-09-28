@@ -20,6 +20,7 @@ class SiswaModel extends Model
         'tanggal_lahir',
         'tahun_masuk',
         'jenis_kelamin',
+        'agama',
         'alamat',
     ];
 }

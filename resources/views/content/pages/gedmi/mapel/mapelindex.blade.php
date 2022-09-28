@@ -1,15 +1,9 @@
 @extends('layouts/gedmi/contentLayoutMaster')
 
-@section('title', 'DATA GURU ')
-
+@section('title', 'Mata Pelajaran ')
 
 {{-- page main content --}}
 @section('content')
-
-
-
-
-    <!-- Bordered table start -->
 
 
     <div class="row" id="basic-table">
@@ -27,31 +21,18 @@
                             <tr>
                                 <th>No.</th>
                                 <th>Nama Guru</th>
-                                <th>Tempat Lahir</th>
-                                <th>Tanggal Lahir</th>
-                                <th>Jabatan</th>
-                                <th>Tamatan</th>
-                                <th>Gelar</th>
                                 <th>Bidang Study</th>
-                                <th>Agama</th>
-                                <th>Alamat</th>
                                 <th>Action</th>
 
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($dataGuru as $item)
+                            @foreach ($mapel as $item)
                                 <tr>
                                     <th scope="row">{{ $loop->index + 1 }}</th>
-                                    <td>{{ $item->nama }}</td>
-                                    <td>{{ $item->tempat_lahir }}</td>
-                                    <td>{{ $item->tanggal_lahir }}</td>
-                                    <td>{{ $item->jabatan }}</td>
-                                    <td>{{ $item->tamatan }}</td>
-                                    <td>{{ $item->gelar }}</td>
+                                    <td>{{ $item->id_guru }}</td>
                                     <td>{{ $item->bidang_studi }}</td>
-                                    <td>{{ $item->agama }}</td>
-                                    <td>{{ $item->alamat }}</td>
+
                                     <td>
                                         <div class="dropdown">
                                             <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
@@ -59,8 +40,7 @@
                                                 <i data-feather="more-vertical"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-end">
-                                                <a class="dropdown-item"
-                                                    href="{{ route('gedmi.edit.guru', ['id' => $item->id]) }}">
+                                                <a class="dropdown-item" href="{{ route('gedmi.mapel.siswa') }}">
                                                     <i data-feather="edit-2" class="me-50"></i>
                                                     <span>Edit</span>
                                                 </a>
@@ -68,10 +48,7 @@
                                                     <i data-feather="trash" class="me-50"></i>
                                                     <span>Delete</span>
                                                 </a>
-                                                <a class="dropdown-item" href="{{ route('gedmi.detail.guru') }}">
-                                                    <i data-feather="info" class="me-50"></i>
-                                                    <span>Detail</span>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </td>
@@ -88,7 +65,4 @@
             class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
 
         </button>
-
-
-        <!-- Bordered table end -->
     @endsection

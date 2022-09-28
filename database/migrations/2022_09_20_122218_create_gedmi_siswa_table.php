@@ -18,9 +18,10 @@ class CreateGedmiSiswaTable extends Migration
             $table->string('nis');
             $table->string('nama');
             $table->string('tempat_lahir');
-            $table->string('tanggal_lahir');
+            $table->date('tanggal_lahir');
             $table->string('tahun_masuk');
             $table->string('jenis_kelamin');
+            $table->string('agama');
             $table->string('alamat');
             $table->timestamps();
         });

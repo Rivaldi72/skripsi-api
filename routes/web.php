@@ -29,11 +29,12 @@ use App\Http\Controllers\ChartsController;
 
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
-    Route::get('/', 'DashboardController@dashboard')->name('dashboard');
+    Route::get('/login','AuthController@login')->name('login');
+    Route::get('/register','AuthController@register')->name('register');
     Route::get('/','GudangController@index');
     Route::get('/index','GudangController@index')->name('index');
-    Route::get('/products-gudang','GudangController@productsGudang')->name('products.gudang');
     Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
+    Route::post('/profil-gudang/post','GudangController@profilGudangPost')->name('profil.gudang.post');
 });
 
 // Route Dedi
@@ -66,15 +67,22 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
 
     Route::get('/index','DashboardController@index')->name('dashboard');
     Route::get('/guru/index','GuruController@index')->name('guru.index');
-    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
+    Route::post('/guru/create/post','GuruController@tambahGuruPost')->name('tambah.guru.post');
+    Route::get('/guru/edit/{id}','GuruController@editGuru')->name('edit.guru');
+    Route::put('/guru/edit/update/{id}','GuruController@updateGuru')->name('edit.guru.update');
+    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
+    
     Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
+
+    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
-    Route::get('/guru/edit','GuruController@editGuru')->name('edit.guru');
-    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
-    Route::get('/siswa/edit','SiswaController@editSiswa')->name('edit.siswa');
+    Route::get('/siswa/edit/','SiswaController@editSiswa')->name('edit.siswa');
+    // Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
     Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
+
+    Route::get('/mapel','MapelController@mapel')->name('mapel.siswa');
 });
 
 // Route Geral
@@ -82,6 +90,9 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::get('/', 'LowonganController@index')->name('index');
     Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
     Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
+    Route::post('/data-lowongan/tambah/post', 'LowonganController@tambahPagePost')->name('tambah.lowongan.post');
+    Route::get('/data-lowongan/edit/{id}', 'LowonganController@editPage')->name('edit.lowongan');
+    Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
 });

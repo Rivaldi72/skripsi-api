@@ -20,6 +20,7 @@ class UserModel extends Authenticatable implements MustVerifyEmail
         'username',
         'password',
         'role',
+        'isJabatan',
     ];
 
     protected $hidden = [
