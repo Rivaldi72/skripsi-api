@@ -36,4 +36,9 @@ class UserController extends Controller
 
         return view('/content/pages/dedi/user/tambah_siswa');
     }
+
+    public function tambahsiswapost(Request $request){
+        UserModel::create($request->all());
+        return redirect()->route('dedi.siswa.daftar');
+    }
 }

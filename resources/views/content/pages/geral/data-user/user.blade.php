@@ -28,7 +28,8 @@
                                     <th>Tanggal Lahir</th>
                                     <th>No. Handphone</th>
                                     <th>Keahlian</th>
-                                    <th>Aksi</th>
+                                    <th>Dibuat</th>
+                                    <th>Diperbarui</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,10 +42,8 @@
                                         <td>{{ $item->tanggal_lahir }}</td>
                                         <td>{{ $item->no_hp }}</td>
                                         <td>{{ $item->keahlian }}</td>
-                                        <td class="product-action">
-                                            <span class="action-edit"><i data-feather=edit></i></span>
-                                            <span class="action-delete"><i data-feather=trash></i></span>
-                                        </td>
+                                        <td>{{ $item->created_at }}</td>
+                                        <td>{{ $item->updated_at }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

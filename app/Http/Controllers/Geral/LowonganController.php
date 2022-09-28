@@ -18,10 +18,35 @@ class LowonganController extends Controller
      }
      public function tambahPage() {
       return view('content.pages.geral.data-lowongan.tambah');
-   }
+      }
    public function tambahPagePost(Request $request){
       // dd($request->all());
       lowongan::create( $request->all());
       return redirect()->route('geral.index.lowongan');
+   }
+   public function editPage($id) {
+      $dataLowongan = lowongan::where('id', $id)->first();
+      return view('content.pages.geral.data-lowongan.edit', compact('dataLowongan'));
+   }
+   public function update(Request $request, $id){
+      // dd($request->all());
+      $dataLowongan = lowongan::where('id',$id)->first();
+      lowongan::where('id', $id)->update(
+         [
+            'posisi_pekerjaan' => $request->posisi_pekerjaan ?? $dataLowongan->posisi_pekerjaan,
+            'nama_perusahaan' => $request->nama_perusahaan ?? $dataLowongan->nama_perusahaan,
+            'alamat' => $request->alamat ?? $dataLowongan->alamat,
+            'kota' => $request->kota ?? $dataLowongan->kota,
+            'deskripsi' => $request->deskripsi ?? $dataLowongan->deskripsi,
+            'pendidikan' => $request->pendidikan ?? $dataLowongan->pendidikan,
+            'syarat' => $request->syarat ?? $dataLowongan->syarat,
+            'tipe_pekerjaan' => $request->tipe_pekerjaan ?? $dataLowongan->tipe_pekerjaan,
+            'tipe_posisi' => $request->tipe_posisi ?? $dataLowongan->tipe_posisi,
+            'fasilitas' => $request->fasilitas ?? $dataLowongan->fasilitas,
+   
+         ]
+      );
+      return redirect()->route('geral.index.lowongan');
+      
    }
 }

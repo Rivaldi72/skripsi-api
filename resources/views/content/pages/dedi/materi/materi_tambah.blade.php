@@ -34,67 +34,83 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <div class="col-xl-12 col-md-12 col-12">
-                            <div class="mb-1">
-                                <div class="text-bold-600 font-medium-2 mb-1">
-                                    Masukkan Mata Pelajaran
-                                </div>
-                                <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Masukkan email" />
-                            </div>
-                        </div>
-                        <div class="col-xl-12 col-md-12 col-12">
-                            <div class="mb-1">
-                                <div class="text-bold-600 font-medium-2 mb-1">
-                                    Masukkan Judul Materi
-                                </div>
-                                <input type="text" class="form-control form-control-lg" id="helpInputTop"
-                                    placeholder="Masukkan Judul Materi" />
-                            </div>
-                        </div>
-                        <div class="text-bold-600 font-medium-2 ml-2 mb-1">
-                            Masukkan Isi Materi
-                        </div>
-                        <section class="full-editor">
-                            <div id="full-wrapper">
-                                <div id="full-container">
-                                    <div class="editor">
+                        <form action="{{ route('dedi.materi.tambah.post') }}" method="POST" id="tambahmateri"
+                            enctype="multipart/form-data">
+                            {{ csrf_field() }}
+                            <div class="col-xl-12 col-md-12 col-12">
+                                <div class="mb-1">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Pilih Mata Pelajaran
+                                    </div>
+                                    <div class="mb-1">
+                                        <select class="form-select form-select-lg" name='mata_pelajaran'
+                                            id="mata_pelajaran">
+                                            <option selected>Pilih Mata Pelajaran</option>
+                                            <option value="1">Bakteriologi</option>
+                                            <option value="2">Hematologi</option>
+                                            <option value="3">Patologi Klinik</option>
+                                            <option value="4">Parasitologi</option>
+                                            <option value="5">Imunologi</option>
+                                            <option value="6">Serologi</option>
+                                            <option value="7">Kimia Makanan</option>
+                                            <option value="8">Kimia Minuman</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="text-bold-600 font-medium-2 ml-2 mb-1">
-                        Masukkan Gambar
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <input class="form-control" type="file" id="formFileMultiple" multiple />
-                    </div>
+                                <div class="col-xl-12 col-md-12 col-12">
+                                    <div class="mb-1">
+                                        <div class="text-bold-600 font-medium-2 mb-1">
+                                            Masukkan Judul Materi
+                                        </div>
+                                        <input type="text" name="judul_materi" class="form-control form-control-lg"
+                                            id="judul_materi" placeholder="Masukkan Judul Materi" />
+                                    </div>
+                                </div>
+                                <div class="text-bold-600 font-medium-2 ml-2 mb-1">
+                                    Masukkan Isi Materi
+                                </div>
+                                <section class="full-editor" name="detail_materi" id="detail_materi">
+                                    <div id="full-wrapper">
+                                        <div id="full-container">
+                                            <div class="editor">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="text-bold-600 font-medium-2 ml-2 mb-1">
+                                    Masukkan Gambar
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <input class="form-control" type="file" name="gambar" id="formFileMultiple"
+                                        multiple />
+                                </div>
 
-                    <button type="button" class="btn btn-success pull-right font-weight-bold" data-toggle="modal"
-                        data-target="#xSmall">
-                        Tambahkan Materi</button>
-                    <!-- Modal -->
-                    <div class="modal fade text-left" id="xSmall" tabindex="-1" role="dialog"
-                        aria-labelledby="myModalLabel20" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xs" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel20">Apakah Anda Yakin Untuk Menambahkan
-                                        Materi ?</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                <button type="button" class="btn btn-success pull-right mb-2 mt-2 ml-5 font-weight-bold"
+                                    data-bs-toggle="modal" data-bs-target="#small">
+                                    Simpan</button>
+                                <!-- Modal -->
+                                <div class="modal fade text-start" id="small" tabindex="-1"
+                                    aria-labelledby="myModalLabel19" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel19">Simpan Perubahan ?</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Periksa Kembali Apakah Data Yang Anda Periksa Sudah Benar.
+                                                Anda Bisa Pilih Tanda X Untuk Mengisi Data Kembali atau
+                                                Pilih Simpan Bila Data Sudah Benar.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-success"
+                                                    data-bs-dismiss="modal">Simpan</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    Anda Bisa Meriksa Kembali Data Yang Telah Anda Isi
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-success"
-                                        data-dismiss="modal">Benar</button>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 </tbody>

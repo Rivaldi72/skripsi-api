@@ -13,8 +13,9 @@ class LatihanModel extends Model
 
     protected $fillable = [
         'id',
+        'id_mapel',
         'soal',
-        'jawaban_benar',
+        'jawaban_beneran',
         'pilihan_jawaban1',
         'pilihan_jawaban2',
         'pilihan_jawaban3',

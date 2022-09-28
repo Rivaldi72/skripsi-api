@@ -43,32 +43,46 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
     Route::get('/dashboard','UserController@dashboard')->name('dashboard');
     Route::get('/daftarsiswa','UserController@daftarsiswa')->name('siswa.daftar');
     Route::get('/siswatambah','UserController@tambahsiswa')->name('siswa.tambah');
+    Route::post('/siswatambah/post','UserController@tambahsiswapost')->name('siswa.tambah.post');
     Route::get('/materiindex','MateriController@materiindex')->name('materi.index');
     Route::get('/materitambah','MateriController@materitambah')->name('materi.tambah');
-    Route::get('/materiedit','MateriController@materiedit')->name('materi.edit');
+    Route::post('/materitambah/post','MateriController@materitambahpost')->name('materi.tambah.post');
+    Route::get('/materiedit/{id}','MateriController@materiedit')->name('materi.edit');
+    Route::get('/materiupdate/{id}','MateriController@materiupdate')->name('materi.update');
     Route::get('/pratikumindex','PratikumController@pratikumindex')->name('pratikum.index');
     Route::get('/pratikumtambah','PratikumController@pratikumtambah')->name('pratikum.tambah');
-    Route::get('/pratikumedit','PratikumController@pratikumedit')->name('pratikum.edit');
+    Route::post('/pratikumtambah/post','PratikumController@pratikumtambahpost')->name('pratikum.tambah.post');
+    Route::get('/pratikumedit/{id}','PratikumController@pratikumedit')->name('pratikum.edit');
+    Route::get('/pratikumupdate/{id}','PratikumController@pratikumupdate')->name('pratikum.update');
     Route::get('/latihanindex','LatihanController@latihanindex')->name('latihan.index');
     Route::get('/latihantambah','LatihanController@latihantambah')->name('latihan.tambah');
-    Route::get('/latihanedit','LatihanController@latihanedit')->name('latihan.edit');
+    Route::post('/latihantambah/post','latihanController@latihantambahpost')->name('latihan.tambah.post');
+    Route::get('/latihanedit/{id}','LatihanController@latihanedit')->name('latihan.edit');
+    Route::get('/latihanupdate/{id}','LatihanController@latihanupdate')->name('latihan.update');
 });
 
 
 // Route Gedmi
 Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')->group(function () {
-    
+
     Route::get('/index','DashboardController@index')->name('dashboard');
     Route::get('/guru/index','GuruController@index')->name('guru.index');
-    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
+    Route::post('/guru/create/post','GuruController@tambahGuruPost')->name('tambah.guru.post');
+    Route::get('/guru/edit/{id}','GuruController@editGuru')->name('edit.guru');
+    Route::put('/guru/edit/update/{id}','GuruController@updateGuru')->name('edit.guru.update');
+    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
+    
     Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
+
+    Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
-    Route::get('/guru/edit','GuruController@editGuru')->name('edit.guru');
-    Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
-    Route::get('/siswa/edit','SiswaController@editSiswa')->name('edit.siswa');
+    Route::get('/siswa/edit/','SiswaController@editSiswa')->name('edit.siswa');
+    // Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
     Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
+
+    Route::get('/mapel','MapelController@mapel')->name('mapel.siswa');
 });
 
 // Route Geral
@@ -77,6 +91,8 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
     Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
     Route::post('/data-lowongan/tambah/post', 'LowonganController@tambahPagePost')->name('tambah.lowongan.post');
+    Route::get('/data-lowongan/edit/{id}', 'LowonganController@editPage')->name('edit.lowongan');
+    Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
 });

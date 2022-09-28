@@ -7,7 +7,7 @@ $configData = Helper::applClassesChairiah();
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item me-auto">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <span class="brand-logo">
+                    {{-- <span class="brand-logo">
                         <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
                             <defs>
@@ -43,8 +43,9 @@ $configData = Helper::applClassesChairiah();
                                 </g>
                             </g>
                         </svg>
-                    </span>
-                    <h2 class="brand-text">Vuexy</h2>
+                    </span> --}}
+                    <img src="{{ asset('images/dedi/logo.png') }}" width="40" height="40">
+                    <h2 class="brand-text" style="font-size: 15px">SMK DHARMA<br>ANALITIKA</h2>
                 </a>
             </li>
             <li class="nav-item nav-toggle">
@@ -97,39 +98,6 @@ $configData = Helper::applClassesChairiah();
                 @endforeach
             @endif
             @if (isset($menuData[0]))
-                @foreach ($menuData[0]->menu as $menu)
-                    @if (isset($menu->navheader))
-                        <li class="navigation-header">
-                            <span>{{ $menu->navheader }}</span>
-                            <i data-feather="more-horizontal"></i>
-                        </li>
-                    @else
-                        {{-- Add Custom Class with nav-item --}}
-                        @php
-                            $custom_classes = '';
-                            if (isset($menu->classlist)) {
-                                $custom_classes = $menu->classlist;
-                            }
-                        @endphp
-                        <li
-                            class="nav-item {{ $custom_classes }} {{ Route::currentRouteName() === $menu->slug ? 'active' : '' }}">
-                            <a href="{{ isset($menu->url) ? url($menu->url) : 'javascript:void(0)' }}"
-                                class="d-flex align-items-center"
-                                target="{{ isset($menu->newTab) ? '_blank' : '_self' }}">
-                                <i data-feather="{{ $menu->icon }}"></i>
-                                <span class="menu-title text-truncate">{{ $menu->name }}</span>
-                                @if (isset($menu->badge))
-                                    <?php $badgeClasses = 'badge rounded-pill badge-light-primary ms-auto me-1'; ?>
-                                    <span
-                                        class="{{ isset($menu->badgeClass) ? $menu->badgeClass : $badgeClasses }}">{{ $menu->badge }}</span>
-                                @endif
-                            </a>
-                            @if (isset($menu->submenu))
-                                @include('panels/submenu', ['menu' => $menu->submenu])
-                            @endif
-                        </li>
-                    @endif
-                @endforeach
             @endif
             {{-- Foreach menu item ends --}}
         </ul>

@@ -31,25 +31,17 @@
                     "icon": "home"
                 },
                 {
-                    "name": "User",
-                    "icon": "user",
+                    "url": "/dedi/daftarsiswa",
+                    "name": "Daftar SIswa",
                     "slug": "",
-                    "submenu": [
-                        {
-                            "url": "/dedi/daftarsiswa",
-                            "name": "Daftar Siswa",
-                            "slug": "dedi/daftarsiswa"
-                        },
-                        {
-                            "url": "/dedi/siswatambah",
-                            "name": "Tambah Siswa",
-                            "slug": "dedi/siswatambah"
-                        }
-                    ]
+                    "badge": "",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "user"
                 },
+
                 {
                     "name": "Materi",
-                    "icon": "file-text",
+                    "icon": "book-open",
                     "slug": "",
                     "submenu": [
                         {
@@ -71,7 +63,7 @@
                 },
                 {
                     "name": "Pratikum",
-                    "icon": "file-text",
+                    "icon": "thermometer",
                     "slug": "",
                     "submenu": [
                         {
@@ -93,7 +85,7 @@
                 },
                 {
                     "name": "Latihan",
-                    "icon": "file-text",
+                    "icon": "edit-3",
                     "slug": "",
                     "submenu": [
                         {
@@ -141,6 +133,13 @@
                     "slug": "gedmi.siswa.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
+                },
+                {
+                    "url": "gedmi/mapel",
+                    "name": "Mata Pelajaran",
+                    "slug": "gedmi.mapel",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "book-open"
                 }
             ]
         }
@@ -172,13 +171,8 @@
                     "name": "Tambah Lowongan",
                     "icon": "plus",
                     "slug": "geral/data-lowongan/tambah"
-                },
-                {
-                    "url": "/geral/login",
-                    "name": "Tentang",
-                    "icon": "alert-circle",
-                    "slug": "geral/login"
                 }
+                
             ]
         }
     ],

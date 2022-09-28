@@ -10,6 +10,7 @@
         <div class="col-3">
             <div class="form-group">
                 <select class="select2 form-control">
+                    <option value="pilih">Pilih</option>
                     <option value="kelas">Kelas VII</option>
                     <option value="rectangle">Kelas VIII</option>
                     <option value="rombo">Kelas IX</option>
@@ -64,7 +65,7 @@
                                                         <i data-feather="more-vertical"></i>
                                                     </button>
                                                     <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item" href="{{ route('gedmi.edit.guru') }}">
+                                                        <a class="dropdown-item" href="{{ route('gedmi.edit.siswa') }}">
                                                             <i data-feather="edit-2" class="me-50"></i>
                                                             <span>Edit</span>
                                                         </a>
@@ -72,7 +73,7 @@
                                                             <i data-feather="trash" class="me-50"></i>
                                                             <span>Delete</span>
                                                         </a>
-                                                        <a class="dropdown-item" href="{{ route('gedmi.detail.guru') }}">
+                                                        <a class="dropdown-item" href="{{ route('gedmi.detail.siswa') }}">
                                                             <i data-feather="info" class="me-50"></i>
                                                             <span>Detail</span>
                                                         </a>
