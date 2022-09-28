@@ -141,6 +141,13 @@
                     "slug": "gedmi.siswa.index",
                     "badgeClass": "badge badge-warning badge-pill float-right",
                     "icon": "user"
+                },
+                {
+                    "url": "gedmi/mapel",
+                    "name": "Mata Pelajaran",
+                    "slug": "gedmi.mapel",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "book-open"
                 }
             ]
         }

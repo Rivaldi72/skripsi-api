@@ -10,6 +10,7 @@
         <div class="col-3">
             <div class="form-group">
                 <select class="select2 form-control">
+                    <option value="pilih">Pilih</option>
                     <option value="kelas">Kelas VII</option>
                     <option value="rectangle">Kelas VIII</option>
                     <option value="rombo">Kelas IX</option>

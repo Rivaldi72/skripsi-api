@@ -71,9 +71,11 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
-    Route::get('/siswa/edit/{id}','SiswaController@editSiswa')->name('edit.siswa');
-    Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
+    Route::get('/siswa/edit/','SiswaController@editSiswa')->name('edit.siswa');
+    // Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
     Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
+
+    Route::get('/mapel','MapelController@mapel')->name('mapel.siswa');
 });
 
 // Route Geral
