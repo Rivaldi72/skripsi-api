@@ -42,7 +42,7 @@
                                         <td>{{ $item->alamat }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>
-                                            <button type="button" class="btn btn-icon btn-icon rounded-circle btn-warning">
+                                            <button type="button" class="btn btn-icon btn-icon rounded-circle btn-success">
                                                 <i data-feather="trash"></i>
                                             </button>
                                         </td>

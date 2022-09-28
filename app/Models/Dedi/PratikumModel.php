@@ -15,6 +15,7 @@ class PratikumModel extends Model
 
     protected $fillable = [
         'id',
+        'id_mapel',
         'judul_pratikum',
         'detail_pratikum',
         'gambar',
