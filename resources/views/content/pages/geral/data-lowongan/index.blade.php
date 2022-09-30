@@ -51,6 +51,11 @@
                             </thead>
                             <tbody>
                                 @foreach ($dataLowongan as $item)
+                                    <form id="hapusLowongan{{ $item->id }}"
+                                        action="{{ route('geral.lowongan.delete', ['id' => $item->id]) }}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                    </form>
                                     <tr>
                                         <th scope="row">{{ $loop->index + 1 }}</th>
                                         <td>{{ $item->posisi_pekerjaan }}</td>
@@ -83,7 +88,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Bordered table end -->
 @endsection
@@ -118,7 +122,7 @@
                     //     }
 
                     // });
-
+                    $(`#hapusLowongan${id}`).submit();
                 }
             });
         }
