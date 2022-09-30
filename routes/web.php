@@ -59,6 +59,7 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
     Route::post('/latihantambah/post','latihanController@latihantambahpost')->name('latihan.tambah.post');
     Route::get('/latihanedit/{id}','LatihanController@latihanedit')->name('latihan.edit');
     Route::get('/latihanupdate/{id}','LatihanController@latihanupdate')->name('latihan.update');
+    Route::delete('/latihandelete/{id}','LatihanController@latihandelete')->name('latihan.delete');
 });
 
 
@@ -72,7 +73,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/guru/edit/{id}','GuruController@editGuru')->name('edit.guru');
     Route::put('/guru/edit/update/{id}','GuruController@updateGuru')->name('edit.guru.update');
     Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
-    
+
     Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
 
     Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');

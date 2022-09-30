@@ -74,7 +74,7 @@
                                         Masukkan Soal Latihan
                                     </div>
                                     <input type="text" class="form-control form-control-lg" name="soal" id="soal"
-                                        placeholder="Masukkan Soal Latihan" />
+                                        placeholder="Masukkan Soal Latihan" value='{{ $latihan->soal }}' />
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12 col-12">
@@ -82,8 +82,9 @@
                                     <div class="text-bold-600 font-medium-2 mb-1">
                                         Pilihan Jawaban Benar
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" name="jawaban_benar"
-                                        id="jawaban_benar" placeholder="Pilihan Jawaban Benar" />
+                                    <input type="text" class="form-control form-control-lg" name="jawaban_benaran"
+                                        id="jawaban_benaran" placeholder="Pilihan Jawaban Benar"
+                                        value='{{ $latihan->jawaban_beneran }}' />
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12 col-12">
@@ -92,7 +93,8 @@
                                         Pilihan Jawaban 1
                                     </div>
                                     <input type="text" class="form-control form-control-lg" name="pilihan_jawaban1"
-                                        id="pilihan_jawaban1" placeholder="Pilihan Jawaban 1" />
+                                        id="pilihan_jawaban1" placeholder="Pilihan Jawaban 1"
+                                        value='{{ $latihan->pilihan_jawaban1 }}' />
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12 col-12">
@@ -101,7 +103,8 @@
                                         Pilihan Jawaban 2
                                     </div>
                                     <input type="text" class="form-control form-control-lg" name="pilihan_jawaban2"
-                                        id="pilihan_jawaban2" placeholder="Pilihan Jawaban 2" />
+                                        id="pilihan_jawaban2" placeholder="Pilihan Jawaban 2"
+                                        value='{{ $latihan->pilihan_jawaban2 }}' />
                                 </div>
                             </div>
                             <div class="col-xl-12 col-md-12 col-12">
@@ -110,7 +113,8 @@
                                         Pilihan Jawaban 3
                                     </div>
                                     <input type="text" class="form-control form-control-lg" name="pilihan_jawaban3"
-                                        id="pilihan_jawaban3" placeholder="Pilihan Jawaban 3" />
+                                        id="pilihan_jawaban3" placeholder="Pilihan Jawaban 3"
+                                        value='{{ $latihan->pilihan_jawaban3 }}' />
                                 </div>
                             </div>
                             <button type="button" class="btn btn-success pull-right mb-2 mt-2 ml-5 font-weight-bold"
