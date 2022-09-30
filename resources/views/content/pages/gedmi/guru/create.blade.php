@@ -37,51 +37,21 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
-                                        Tempat Lahir
-                                    </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="tempat_lahir" class="form-control form-control-lg"
-                                            id="tempat_lahir" placeholder="Masukkan Tempat Lahir" value="">
-
-                                    </fieldset>
-                                </div>
-                                <div class="col-6">
-                                    <div class="text-bold-600 font-medium-2 mb-1">
-                                        Tanggal Lahir
-                                    </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="tanggal_lahir" class="form-control form-control-lg"
-                                            id="tanggal_lahir" placeholder="Masukkan Tanggal Lahir" value="">
-
-                                    </fieldset>
-                                </div>
-                                <div class="col-6">
-                                    <div class="text-bold-600 font-medium-2 mb-1">
-                                        Jabatan
-                                    </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="jabatan" class="form-control form-control-lg"
-                                            id="jabatan" placeholder="Masukkan Jabatan" value="">
-
-                                    </fieldset>
-                                </div>
-                                <div class="col-6">
-                                    <div class="text-bold-600 font-medium-2 mb-1">
-                                        Tamatan
-                                    </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="tamatan" class="form-control form-control-lg"
-                                            id="tamatan" placeholder="Masukkan Tamatan" value="">
-
-                                    </fieldset>
-                                </div>
-                                <div class="col-6">
-                                    <div class="text-bold-600 font-medium-2 mb-1">
                                         Gelar
                                     </div>
                                     <fieldset class="form-label-group">
                                         <input type="text" name="gelar" class="form-control form-control-lg"
                                             id="gelar" placeholder="Masukkan Gelar" value="">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Tempat Lahir
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="tempat_lahir" class="form-control form-control-lg"
+                                            id="tempat_lahir" placeholder="Masukkan Tempat Lahir" value="">
 
                                     </fieldset>
                                 </div>
@@ -97,11 +67,31 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
+                                        Tanggal Lahir
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="tanggal_lahir" class="form-control form-control-lg"
+                                            id="tanggal_lahir" placeholder="Masukkan Tanggal Lahir" value="">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
                                         Agama
                                     </div>
                                     <fieldset class="form-label-group">
                                         <input type="text" name="agama" class="form-control form-control-lg"
                                             id="agama" placeholder="Masukkan Agama" value="">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Jabatan
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="jabatan" class="form-control form-control-lg"
+                                            id="jabatan" placeholder="Masukkan Jabatan" value="">
 
                                     </fieldset>
                                 </div>
@@ -115,6 +105,18 @@
 
                                     </fieldset>
                                 </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Tamatan
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="tamatan" class="form-control form-control-lg"
+                                            id="tamatan" placeholder="Masukkan Tamatan" value="">
+
+                                    </fieldset>
+                                </div>
+
+
                                 </tbody>
                                 </table>
                             </div>

@@ -15,7 +15,9 @@ class CreateGedmiMapelTable extends Migration
     {
         Schema::create('gedmi_mapel', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_guru');
+            $table->string('hari');
+            $table->string('jam');
+            $table->string('nama_guru');
             $table->string('bidang_studi');
             $table->timestamps();
         });

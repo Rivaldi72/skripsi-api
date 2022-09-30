@@ -1,7 +1,7 @@
 @php
-$configData = Helper::applClassesGeral();
+$configData = Helper::applClassesGedmi();
 @endphp
-@extends('layouts/geral/fullLayoutMaster')
+@extends('layouts/gedmi/fullLayoutMaster')
 
 @section('Title', 'Login page')
 
@@ -15,10 +15,10 @@ $configData = Helper::applClassesGeral();
     <div class="auth-wrapper auth-cover">
         <div class="auth-inner row m-0">
             <!-- Brand logo-->
-            <a class="brand-logo" href="#">
-                <img width="30" height="30" src="{{ asset('images/geral/logo.png') }}" alt="">
-                <h2 class="brand-text text-primary ms-1">Internzeep</h2>
-            </a>
+            {{-- <a class="brand-logo" href="#">
+                <img width="30" height="30" src="{{ asset('images/gedmi/logo.png') }}" alt="">
+                <h2 class="brand-text text-primary ms-1">SMP Bina Taruna Medan</h2>
+            </a> --}}
             <!-- /Brand logo-->
 
             <!-- Left Text-->
@@ -36,14 +36,13 @@ $configData = Helper::applClassesGeral();
             <!-- Login-->
             <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
-                    <h2 class="card-title fw-bold mb-1">Selamat Datang di Internzeep👋</h2>
+                    <h2 class="card-title fw-bold mb-1">Selamat Datang di SMK DHARMA ANALITIKA</h2>
                     <p class="card-text mb-2">silahkan login terlebih dahulu</p>
                     <form class="auth-login-form mt-2" action="/" method="GET">
                         <div class="mb-1">
-                            <label class="form-label" for="login-email">Email</label>
+                            <label class="form-label" for="login-email">Username</label>
                             <input class="form-control" id="login-email" type="text" name="login-email"
-                                placeholder="john@example.com" aria-describedby="login-email" autofocus=""
-                                tabindex="1" />
+                                placeholder="username" aria-describedby="login-email" autofocus="" tabindex="1" />
                         </div>
                         <div class="mb-1">
                             <div class="d-flex justify-content-between">
