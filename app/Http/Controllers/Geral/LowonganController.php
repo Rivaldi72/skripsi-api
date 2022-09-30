@@ -28,6 +28,10 @@ class LowonganController extends Controller
       $dataLowongan = lowongan::where('id', $id)->first();
       return view('content.pages.geral.data-lowongan.edit', compact('dataLowongan'));
    }
+   public function delete($id) {
+      $dataLowongan = lowongan::find($id);
+      $dataLowongan->delete();
+  }
    public function update(Request $request, $id){
       // dd($request->all());
       $dataLowongan = lowongan::where('id',$id)->first();

@@ -109,14 +109,16 @@
                 buttonsStyling: false
             }).then(function(result) {
                 if (result.value) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Terhapus',
-                        text: 'Data berhasil di hapus',
-                        customClass: {
-                            confirmButton: 'btn btn-success'
-                        }
-                    });
+                    // Swal.fire({
+                    //     icon: 'success',
+                    //     title: 'Terhapus',
+                    //     text: 'Data berhasil di hapus',
+                    //     customClass: {
+                    //         confirmButton: 'btn btn-success'
+                    //     }
+
+                    // });
+
                 }
             });
         }

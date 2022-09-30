@@ -80,6 +80,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
 Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
     Route::get('/', 'LowonganController@index')->name('index');
     Route::get('/data-lowongan/index', 'LowonganController@indexLowongan')->name('index.lowongan');
+    Route::post('/data-lowongan/index/delete/{id}', 'LowonganController@delete')->name('index.lowongan.delete');
     Route::get('/data-lowongan/tambah', 'LowonganController@tambahPage')->name('tambah.lowongan');
     Route::post('/data-lowongan/tambah/post', 'LowonganController@tambahPagePost')->name('tambah.lowongan.post');
     Route::get('/data-lowongan/edit/{id}', 'LowonganController@editPage')->name('edit.lowongan');
