@@ -64,11 +64,15 @@
                                                     <i data-feather="edit-2" class="me-50"></i>
                                                     <span>Edit</span>
                                                 </a>
-                                                <a class="dropdown-item"
-                                                    href="{{ route('gedmi.delete.guru', ['id' => $item->id]) }}">
-                                                    <i data-feather="trash" class="me-50"></i>
-                                                    <span>Delete</span>
-                                                </a>
+                                                <form action="{{ route('gedmi.delete.guru', ['id' => $item->id]) }}"
+                                                    method="post">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="dropdown-item">
+                                                        <i data-feather="trash" class="me-50"></i>
+                                                        <span>Delete</span>
+                                                    </button>
+                                                </form>
                                                 <a class="dropdown-item"
                                                     href="{{ route('gedmi.detail.guru', ['id' => $item->id]) }}">
                                                     <i data-feather="info" class="me-50"></i>

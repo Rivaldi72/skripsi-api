@@ -72,7 +72,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/guru/edit/{id}','GuruController@editGuru')->name('edit.guru');
     Route::post('/guru/edit/update/{id}','GuruController@updateGuru')->name('edit.guru.update');
     Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
-    Route::post('/guru/hapus','GuruController@deleteGuru')->name('delete.guru');
+    Route::delete('/guru/hapus/{id}','GuruController@deleteGuru')->name('delete.guru');
     Route::post('/guru/detail/{id}','GuruController@detailGuru')->name('detail.guru');
     
     

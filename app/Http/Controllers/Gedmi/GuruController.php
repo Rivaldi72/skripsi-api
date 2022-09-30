@@ -16,13 +16,17 @@ class GuruController extends Controller
     public function tambahGuru(){
         return view('content.pages.gedmi.guru.create');
     }
+
     public function editGuru($id) {
         $dataGuru = GuruModel::where('id', $id)->first();
         return view('content.pages.gedmi.guru.edit', compact('dataGuru'));
     }
+
     public function deleteGuru($id){
         $dataGuru = GuruModel::find($id);
         $dataGuru->delete();
+
+        return redirect()->route('gedmi.guru.index', ['message' => 'success']);
     }
 
     public function updateGuru(Request $request, $id){
