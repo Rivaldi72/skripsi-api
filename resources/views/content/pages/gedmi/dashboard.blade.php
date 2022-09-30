@@ -16,7 +16,7 @@
                     <div class="card-header d-flex flex-column align-items-start pb-0">
                         <div class="avatar bg-rgba-primary p-50 m-0">
                             <div class="avatar-content">
-                                <i class="feather icon-users text-primary font-medium-5"></i>
+                                <i data-feather='users' class="text-primary font-medium-5"></i>
                             </div>
                         </div>
                         <h2 class="text-bold-700 mt-1">GURU</h2>
@@ -32,7 +32,7 @@
                     <div class="card-header d-flex flex-column align-items-start pb-0">
                         <div class="avatar bg-rgba-success p-50 m-0">
                             <div class="avatar-content">
-                                <i class="feather icon-users text-primary font-medium-5"></i>
+                                <i data-feather='users' class="text-primary font-medium-5"></i>
                             </div>
                         </div>
                         <h2 class="text-bold-700 mt-1">SISWA</h2>

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class MapelModel extends Model
 {
     use HasFactory;
-    protected $table = 'gedmi_nilai';
+    protected $table = 'gedmi_mapel';
 
     protected $primaryKey = 'id';
 

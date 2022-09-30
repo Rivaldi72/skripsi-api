@@ -26,7 +26,7 @@
 @section('page-script')
     <!-- Page js files -->
     <script src="{{ asset(mix('js/scripts/forms/pickers/form-pickers.js')) }}"></script>
-    <script>
+    {{-- <script>
         var picker = $('.tanggal_lahir').pickadate({
             onStart: function() {
                 var date = new Date('{{ $biodata->tanggal_lahir ?? \Carbon\Carbon::now() }}');
@@ -36,7 +36,7 @@
             selectYears: 100,
             selectMonths: true
         });
-    </script>
+    </script> --}}
 
 
 
@@ -80,7 +80,7 @@
                         <div class="card-content">
                             <div class="card-body card-dashboard">
                                 <form action="{{ route('gedmi.edit.guru.update', ['id' => $dataGuru->id]) }}"
-                                    method="put" id="editGuru" enctype="multipart/form-data">
+                                    method="POST" id="editGuru" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="nilai_data" id="nilaiData">
                                     <div class="row justify-content-between">
