@@ -26,4 +26,11 @@ class SiswaController extends Controller
         SiswaModel::create($request->all());
         return redirect()->route('gedmi.siswa.index');
     }
+
+    public function deleteSiswa($id){
+        $dataSiswa = SiswaModel::find($id);
+        $dataSiswa->delete();
+
+        return redirect()->route('gedmi.siswa.index', ['message' => 'success']);
+    }
 }

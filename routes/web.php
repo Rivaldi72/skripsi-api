@@ -83,6 +83,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::post('/siswa/create/post','SiswaController@tambahSiswaPost')->name('tambah.siswa.post');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
     Route::get('/siswa/edit/','SiswaController@editSiswa')->name('edit.siswa');
+    Route::delete('/siswa/hapus/{id}','SiswaController@deleteSiswa')->name('delete.siswa');
     // Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
     Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
 
