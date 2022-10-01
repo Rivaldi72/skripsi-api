@@ -38,12 +38,17 @@
                                         <td>{{ $item->matapelajaran->mata_pelajaran }}</< /td>
                                         <td>{{ $item->judul_pratikum }}</td>
                                         <td width="200px">
-                                            {{ $item->detail_materi }}
+                                            {{ $item->detail_pratikum }}
                                         </td>
                                         <td width="60px"> {{ $item->gambar }}</td>
-                                        <td><a href="{{ route('dedi.pratikum.edit') }}"><span class="action-edit"><i
-                                                        class="feather icon-edit"></i></span>
-                                                <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                        <td>
+                                            <a href="{{ route('dedi.pratikum.edit', ['id' => $item->id]) }}" type="button"
+                                                class="btn btn-icon btn-icon rounded-circle btn-success">
+                                                <i data-feather="edit"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-icon btn-icon rounded-circle btn-success">
+                                                <i data-feather="trash"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                 @endforeach
