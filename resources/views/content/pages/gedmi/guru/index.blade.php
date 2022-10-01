@@ -64,11 +64,13 @@
                                                     <i data-feather="edit-2" class="me-50"></i>
                                                     <span>Edit</span>
                                                 </a>
-                                                <a class="dropdown-item" href="#">
+                                                <a class="dropdown-item"
+                                                    href="{{ route('gedmi.delete.guru', ['id' => $item->id]) }}">
                                                     <i data-feather="trash" class="me-50"></i>
                                                     <span>Delete</span>
                                                 </a>
-                                                <a class="dropdown-item" href="{{ route('gedmi.detail.guru') }}">
+                                                <a class="dropdown-item"
+                                                    href="{{ route('gedmi.detail.guru', ['id' => $item->id]) }}">
                                                     <i data-feather="info" class="me-50"></i>
                                                     <span>Detail</span>
                                                 </a>
