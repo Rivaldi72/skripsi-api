@@ -4,24 +4,31 @@
 
 {{-- page main content --}}
 @section('content')
+
     <!-- Bordered table start -->
     <div class="row" id="table-bordered">
         <div class="col-3">
-            <div class="form-group mb-2">
-                <select class="select2 form-control" id="filterKelas">
-                    <option value="pilih" {{ Request::get('filter') == 'pilih' ? 'selected' : '' }}>Pilih</option>
-                    <option value="VII" {{ Request::get('filter') == 'VII' ? 'selected' : '' }}>Kelas VII</option>
-                    <option value="VIII" {{ Request::get('filter') == 'VIII' ? 'selected' : '' }}>Kelas VIII</option>
-                    <option value="IX" {{ Request::get('filter') == 'IX' ? 'selected' : '' }}>Kelas IX</option>
+            <div class="form-group">
+                <select class="select2 form-control">
+                    <option value="pilih">Pilih</option>
+                    <option value="kelas">Kelas VII</option>
+                    <option value="rectangle">Kelas VIII</option>
+                    <option value="rombo">Kelas IX</option>
+
                 </select>
             </div>
         </div>
         <div class="row" id="table-bordered">
+
             <div class="col-12">
+
                 <div class="card">
                     <div class="card-header">
                     </div>
                     <div class="card-content">
+                        <div class="card-body">
+
+                        </div>
                         <div class="table-responsive">
                             <table class="table table-bordered mb-0">
                                 <thead>
@@ -40,7 +47,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @forelse ($dataSiswa as $item)
+                                    @foreach ($dataSiswa as $item)
                                         <tr>
                                             <th scope="row">{{ $loop->index + 1 }}</th>
                                             <td>{{ $item->nis }}</td>
@@ -83,11 +90,7 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                    @empty
-                                        <tr>
-                                            <td colspan="11" class="text-center">Data Kosong</td>
-                                        </tr>
-                                    @endforelse
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -95,21 +98,10 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <a href="{{ route('gedmi.tambah.test') }}" class="btn btn-relief-primary mr-1 mb-1 float-right">
-                    Tambah
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Bordered table end -->
-@endsection
 
-@section('page-script')
-    <script>
-        $("#filterKelas").change(function(e) {
-            window.location.replace(`{{ route('gedmi.siswa.index') }}/?filter=${this.value}`)
-        });
-    </script>
-@endsection
+        <a href="{{ route('gedmi.tambah.test') }}">
+            <button type="button" class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
+
+            </button>
+            <!-- Bordered table end -->
+        @endsection
