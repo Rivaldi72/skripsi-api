@@ -51,6 +51,11 @@
                             </thead>
                             <tbody>
                                 @foreach ($dataLowongan as $item)
+                                    <form id="hapusLowongan{{ $item->id }}"
+                                        action="{{ route('geral.lowongan.delete', ['id' => $item->id]) }}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                    </form>
                                     <tr>
                                         <th scope="row">{{ $loop->index + 1 }}</th>
                                         <td>{{ $item->posisi_pekerjaan }}</td>
@@ -84,7 +89,6 @@
         </div>
     </div>
 
-
     <!-- Bordered table end -->
 @endsection
 
@@ -109,14 +113,16 @@
                 buttonsStyling: false
             }).then(function(result) {
                 if (result.value) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Terhapus',
-                        text: 'Data berhasil di hapus',
-                        customClass: {
-                            confirmButton: 'btn btn-success'
-                        }
-                    });
+                    // Swal.fire({
+                    //     icon: 'success',
+                    //     title: 'Terhapus',
+                    //     text: 'Data berhasil di hapus',
+                    //     customClass: {
+                    //         confirmButton: 'btn btn-success'
+                    //     }
+
+                    // });
+                    $(`#hapusLowongan${id}`).submit();
                 }
             });
         }

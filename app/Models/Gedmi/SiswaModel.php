@@ -16,6 +16,7 @@ class SiswaModel extends Model
         'id',
         'nis',
         'nama',
+        'kelas',
         'tempat_lahir',
         'tanggal_lahir',
         'tahun_masuk',

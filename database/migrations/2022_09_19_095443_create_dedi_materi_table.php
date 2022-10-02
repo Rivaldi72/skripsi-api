@@ -17,7 +17,7 @@ class CreateDediMateriTable extends Migration
             $table->id();
             $table->integer('id_mapel');
             $table->string('judul_materi',);
-            $table->string('detail_materi');
+            $table->text('detail_materi');
             $table->string('gambar', );
             $table->timestamps();
         });

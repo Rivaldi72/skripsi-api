@@ -36,6 +36,7 @@
                                         <th>No.</th>
                                         <th>NIS</th>
                                         <th>Nama</th>
+                                        <th>Kelas</th>
                                         <th>Tempat Lahir</th>
                                         <th>Tanggal Lahir</th>
                                         <th>Tahun Masuk</th>
@@ -51,12 +52,14 @@
                                             <th scope="row">{{ $loop->index + 1 }}</th>
                                             <td>{{ $item->nis }}</td>
                                             <td>{{ $item->nama }}</td>
+                                            <td>{{ $item->kelas }}</td>
                                             <td>{{ $item->tempat_lahir }}</td>
                                             <td>{{ $item->tanggal_lahir }}</td>
                                             <td>{{ $item->tahun_masuk }}</td>
                                             <td>{{ $item->jenis_kelamin }}</td>
                                             <td>{{ $item->agama }}</td>
                                             <td>{{ $item->alamat }}</td>
+
                                             <td>
                                                 <div class="dropdown">
                                                     <button type="button"
@@ -69,10 +72,16 @@
                                                             <i data-feather="edit-2" class="me-50"></i>
                                                             <span>Edit</span>
                                                         </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            <i data-feather="trash" class="me-50"></i>
-                                                            <span>Delete</span>
-                                                        </a>
+                                                        <form
+                                                            action="{{ route('gedmi.delete.siswa', ['id' => $item->id]) }}"
+                                                            method="post">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="dropdown-item">
+                                                                <i data-feather="trash" class="me-50"></i>
+                                                                <span>Delete</span>
+                                                            </button>
+                                                        </form>
                                                         <a class="dropdown-item" href="{{ route('gedmi.detail.siswa') }}">
                                                             <i data-feather="info" class="me-50"></i>
                                                             <span>Detail</span>
@@ -90,8 +99,8 @@
             </div>
         </div>
 
-        <a href="{{ route('gedmi.tambah.test') }}"><button type="button"
-                class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
+        <a href="{{ route('gedmi.tambah.test') }}">
+            <button type="button" class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
 
             </button>
             <!-- Bordered table end -->

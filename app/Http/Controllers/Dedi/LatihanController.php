@@ -34,7 +34,7 @@ class LatihanController extends Controller
         return view('/content/pages/dedi/latihan/latihan_edit',compact('latihan'));
     }
     public function latihanupdate(Request $request,$id){
-        dd($request->all());
+        // dd($request->all());
          $latihan = LatihanModel::where('id',$id)->first();
          LatihanModel::where('id',$id)->update(
 
@@ -49,4 +49,9 @@ class LatihanController extends Controller
         );
         return redirect()->route('dedi.latihan.index');
     }
+            public function latihandelete($id) {
+            $latihan = LatihanModel::find($id);
+            $latihan ->delete();
+        return redirect()->route('dedi.latihan.index', ['message' => 'succes']);
+}
 }

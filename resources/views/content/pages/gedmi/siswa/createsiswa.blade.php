@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
-                                        NIS Siswa
+                                        NIS
                                     </div>
                                     <fieldset class="form-label-group">
                                         <input type="text" name="nis" class="form-control form-control-lg"
@@ -35,6 +35,17 @@
 
                                     </fieldset>
                                 </div>
+
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Jenis Kelamin
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="jenis_kelamin" class="form-control form-control-lg"
+                                            id="jenis_kelamin" placeholder="Masukkan Jenis Kelamin">
+                                    </fieldset>
+                                </div>
+
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
                                         Nama Siswa
@@ -43,25 +54,6 @@
                                         <input type="text" name="nama" class="form-control form-control-lg"
                                             id="nama" placeholder="Masukkan Nama Siswa">
 
-                                    </fieldset>
-                                </div>
-                                <div class="col-6">
-                                    <div class="text-bold-600 font-medium-2 mb-1">
-                                        Tempat Lahir
-                                    </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="tempat_lahir" class="form-control form-control-lg"
-                                            id="tempat_lahir" placeholder="Masukkan Tempat Lahir">
-
-                                    </fieldset>
-                                </div>
-                                <div class="col-6">
-                                    <div class="text-bold-600 font-medium-2 mb-1">
-                                        Tanggal Lahir
-                                    </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="tanggal_lahir" class="form-control form-control-lg"
-                                            id="tanggal_lahir" placeholder="Masukkan Tanggal Lahir">
                                     </fieldset>
                                 </div>
                                 <div class="col-6">
@@ -75,13 +67,18 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
-                                        Jenis Kelamin
+                                        Kelas
                                     </div>
-                                    <fieldset class="form-label-group">
-                                        <input type="text" name="jenis_kelamin" class="form-control form-control-lg"
-                                            id="jenis_kelamin" placeholder="Masukkan Jenis Kelamin">
-                                    </fieldset>
+                                    <div class="mb-1">
+                                        <select class="form-select form-select-lg" name='kelas' id="kelas">
+                                            <option selected>Pilih Kelas</option>
+                                            <option value="VII">VII</option>
+                                            <option value="VIII">VIII</option>
+                                            <option value="IX">IX</option>
+                                        </select>
+                                    </div>
                                 </div>
+
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
                                         Agama
@@ -93,6 +90,17 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
+                                        Tempat Lahir
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="tempat_lahir" class="form-control form-control-lg"
+                                            id="tempat_lahir" placeholder="Masukkan Tempat Lahir">
+
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
                                         Alamat
                                     </div>
                                     <fieldset class="form-label-group">
@@ -100,6 +108,18 @@
                                             id="alamat" placeholder="Masukkan Alamat">
                                     </fieldset>
                                 </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Tanggal Lahir
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="tanggal_lahir" class="form-control form-control-lg"
+                                            id="tanggal_lahir" placeholder="Masukkan Tanggal Lahir">
+                                    </fieldset>
+                                </div>
+
+
+
                                 </tbody>
                                 </table>
                             </div>

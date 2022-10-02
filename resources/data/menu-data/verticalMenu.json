@@ -32,7 +32,7 @@
                 },
                 {
                     "url": "/dedi/daftarsiswa",
-                    "name": "Daftar SIswa",
+                    "name": "Daftar Siswa",
                     "slug": "",
                     "badge": "",
                     "badgeClass": "badge badge-warning badge-pill float-right",
@@ -40,70 +40,28 @@
                 },
 
                 {
+                    "url": "/dedi/materiindex",
                     "name": "Materi",
-                    "icon": "book-open",
                     "slug": "",
-                    "submenu": [
-                        {
-                            "url": "/dedi/materiindex",
-                            "name": "Mata Pelajaran",
-                            "slug": "dedi/materiindex"
-                        },
-                        {
-                            "url": "/dedi/materitambah",
-                            "name": "Tambah Materi",
-                            "slug": "dedi/materitambah"
-                        },
-                        {
-                            "url": "/dedi/materiedit",
-                            "name": "Edit Materi",
-                            "slug": "dedi/materiedit"
-                        }
-                    ]
+                    "badge": "",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "book-open"
                 },
                 {
+                    "url": "/dedi/pratikumindex",
                     "name": "Pratikum",
-                    "icon": "thermometer",
                     "slug": "",
-                    "submenu": [
-                        {
-                            "url": "/dedi/pratikumindex",
-                            "name": "Mata Pelajaran",
-                            "slug": "dedi/indexpratikum"
-                        },
-                        {
-                            "url": "/dedi/pratikumtambah",
-                            "name": "Tambah Pratikum",
-                            "slug": "dedi/pratikumtambah"
-                        },
-                        {
-                            "url": "/dedi/pratikumedit",
-                            "name": "Edit Pratikum",
-                            "slug": "dedi/pratikumedit"
-                        }
-                    ]
+                    "badge": "",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "thermometer"
                 },
                 {
+                    "url": "/dedi/latihanindex",
                     "name": "Latihan",
-                    "icon": "edit-3",
                     "slug": "",
-                    "submenu": [
-                        {
-                            "url": "/dedi/latihanindex",
-                            "name": "Mata Pelajaran",
-                            "slug": "dedi/latihanindex"
-                        },
-                        {
-                            "url": "/dedi/latihantambah",
-                            "name": "Tambah Soal",
-                            "slug": "dedi/latihantambah"
-                        },
-                        {
-                            "url": "/dedi/latihanedit",
-                            "name": "Edit Soal",
-                            "slug": "dedi/latihanedit"
-                        }
-                    ]
+                    "badge": "",
+                    "badgeClass": "badge badge-warning badge-pill float-right",
+                    "icon": "edit-3"
                 }
             ]
         }
@@ -172,7 +130,6 @@
                     "icon": "plus",
                     "slug": "geral/data-lowongan/tambah"
                 }
-                
             ]
         }
     ],

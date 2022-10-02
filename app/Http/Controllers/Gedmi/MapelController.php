@@ -12,4 +12,14 @@ class MapelController extends Controller
         $mapel = MapelModel::all();
         return view('content.pages.gedmi.mapel.mapelindex', compact('mapel'));
     }
+
+    public function tambahMapel(){
+        return view('content.pages.gedmi.mapel.createmapel');
+    }
+
+    public function tambahMapelPost(Request $request){
+        // dd($request->all());
+        MapelModel::create($request->all());
+        return redirect()->route('gedmi.mapel.index');
+    }
 }
