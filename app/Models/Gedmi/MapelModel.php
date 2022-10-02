@@ -14,7 +14,9 @@ class MapelModel extends Model
 
     protected $fillable = [
         'id',
-        'id_guru',
+        'hari',
+        'jam',
+        'nama_guru',
         'bidang_studi',
     ];
 }

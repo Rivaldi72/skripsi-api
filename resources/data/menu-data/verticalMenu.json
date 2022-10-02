@@ -14,7 +14,7 @@
                     "name": "Profil Gudang",
                     "slug": "chairiah.profil.gudang",
                     "badgeClass": "badge badge-warning badge-pill float-right",
-                    "icon": "home"
+                    "icon": "user"
                 }
             ]
         }
