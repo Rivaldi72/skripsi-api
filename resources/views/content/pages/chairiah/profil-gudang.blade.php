@@ -96,6 +96,14 @@
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
+                                                <label for="basicInput">Url Alamat Gudang Kopi</label>
+                                                <input type="text" name="url_alamat" class="form-control" id="url_alamat"
+                                                    placeholder="Url Alamat Gudang Kopi"
+                                                    value="{{ $data->url_alamat ?? '' }}">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <fieldset class="form-group">
                                                 <label for="basicInput">No.Handphone Gudang</label>
                                                 <input type="text" name="no_hp" class="form-control" id="noHP"
                                                     placeholder="No.Handphone Gudang" value="{{ $data->no_hp ?? '' }}">
