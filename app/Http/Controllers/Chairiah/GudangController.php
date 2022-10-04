@@ -13,6 +13,11 @@ class GudangController extends Controller
         return view('content.pages.chairiah.index');
     }
 
+    public function apiIndex(){
+        $data = GudangModel::all();
+        return $data;
+    }
+
     public function profilGudang(){
         $data = GudangModel::where('id_user', 1)->get()->first();
         return view('content.pages.chairiah.profil-gudang', compact('data'));

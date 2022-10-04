@@ -19,6 +19,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
+    Route::get('/index','GudangController@apiIndex')->name('index');
+}); 
+
 Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
     Route::get('/daftarsiswa','UserController@daftarsiswaapi')->name('siswa.daftar');
     Route::get('/materiindex','MateriController@materiindexapi')->name('materi.index');
