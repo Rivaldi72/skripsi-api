@@ -27,7 +27,7 @@ class CreateGedmiSiswaTable extends Migration
             $table->integer('matematika_1')->nulllable();
             $table->integer('bindo_1')->nulllable();
             $table->integer('bing_1')->nulllable();
-            $table->integer('bing_1')->nulllable();
+            // $table->integer('bing_1')->nulllable();
             $table->integer('ipa_1')->nulllable();
             $table->integer('ips_1')->nulllable();
             $table->integer('pkn_1')->nulllable();
