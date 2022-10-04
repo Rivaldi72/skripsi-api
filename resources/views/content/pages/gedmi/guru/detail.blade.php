@@ -78,7 +78,8 @@
 
                         <div class="card-content">
                             <div class="card-body card-dashboard">
-                                <form action="" method="POST" id="dataForm" enctype="multipart/form-data">
+                                <form action="{{ route('gedmi.detail.guru', ['id' => $dataGuru->id]) }}" method="GET"
+                                    id="detailGuru" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="nilai_data" id="nilaiData">
                                     <div class="row justify-content-between">
@@ -162,10 +163,7 @@
 
 
 
-                                            <div class="d-grid col-lg-12 col-md-12 mb-1 mb-lg-0 mt-2">
-                                                <button type="submit"
-                                                    class="btn btn-relief-success btn-primary">Simpan</button>
-                                            </div>
+
                                         </div>
                                 </form>
                             </div>
