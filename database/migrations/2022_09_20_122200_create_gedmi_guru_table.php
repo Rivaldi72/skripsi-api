@@ -15,6 +15,7 @@ class CreateGedmiGuruTable extends Migration
     {
         Schema::create('gedmi_guru', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_user');
             $table->string('nama');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
@@ -280,6 +281,8 @@ class CreateGedmiGuruTable extends Migration
                 'updated_at' => now(),
             ],
             ];
+
+            DB::table('gedmi_guru')->insert($defaultData);
     }
 
     /**
