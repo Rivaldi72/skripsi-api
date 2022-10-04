@@ -58,6 +58,8 @@ class CreateChairiahUserTable extends Migration
                 'password'              =>      bcrypt('gudangjikrigayo123'),
             ],
         ];
+
+        DB:: table('chairiah_user')->insert($defaulData);
     }
 
     /**

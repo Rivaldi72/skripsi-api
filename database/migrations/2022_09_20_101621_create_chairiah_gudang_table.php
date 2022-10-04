@@ -104,9 +104,9 @@ class CreateChairiahGudangTable extends Migration
                 'update_at'             =>      now(),
             ],
 
-
-
         ];
+         
+        DB:: table('chairiah_gudang')->insert($defaulData);
     }
 
     /**
