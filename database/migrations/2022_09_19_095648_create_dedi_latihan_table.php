@@ -635,7 +635,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 62,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -645,7 +645,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 63,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -655,7 +655,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 64,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -665,7 +665,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 65,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -675,7 +675,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 66,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -685,7 +685,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 67,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -695,7 +695,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 68,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -705,7 +705,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 69,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -715,7 +715,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 70,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -725,7 +725,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 71,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -735,7 +735,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 72,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -745,7 +745,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 73,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -755,7 +755,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 74,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -765,7 +765,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 75,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -775,7 +775,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 76,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -785,7 +785,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 77,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -795,7 +795,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 78,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -805,7 +805,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 79,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -815,7 +815,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 80,
-                'id_mapel' => 1,
+                'id_mapel' => 4,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -825,7 +825,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 81,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -835,7 +835,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 82,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -845,7 +845,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 83,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -855,7 +855,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 84,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -865,7 +865,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 85,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -875,7 +875,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 86,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -885,7 +885,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 87,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -895,7 +895,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 88,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -905,7 +905,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 89,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => 1,
                 'jawaban_beneran' => 1,
                 'pilihan_jawaban1' => 1,
@@ -914,7 +914,7 @@ class CreateDediLatihanTable extends Migration
             ],
             [
                 'id' => 90,
-                'id_mapel' => 1,
+                'id_mapel' => 5,
                 'soal' => '',
                 'jawaban_beneran' => '',
                 'pilihan_jawaban1' => '',
