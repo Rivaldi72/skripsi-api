@@ -18,6 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('api')->name('api.')->group(function () {
-    
-});
+
+    Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
+        Route::get('/index','GudangController@apiIndex')->name('index');
+     }); 
+
