@@ -15,6 +15,12 @@ class PratikumController extends Controller
         return view('/content/pages/dedi/pratikum/pratikum_index',compact('pratikum'));
     }
 
+    public function pratikumindexapi(){
+        $pratikum = PratikumModel::with('matapelajaran')->get();
+
+        return $pratikum;
+    }
+
     public function pratikumtambah(){
 
 

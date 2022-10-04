@@ -18,6 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('api')->name('api.')->group(function () {
-    
-});
+
+    Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
+        Route::get('/daftarsiswa','UserController@daftarsiswaapi')->name('siswa.daftar');
+        Route::get('/materiindex','MateriController@materiindexapi')->name('materi.index');
+        Route::get('/pratikumindex','PratikumController@pratikumindexapi')->name('pratikum.index');
+        Route::get('/latihanindex','LatihanController@latihanindexapi')->name('latihan.index');
+    });
+

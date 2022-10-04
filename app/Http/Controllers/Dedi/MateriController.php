@@ -16,6 +16,13 @@ class MateriController extends Controller
         return view('/content/pages/dedi/materi/materi_index',compact('materi'));
     }
 
+    public function materiindexapi(){
+         $materi = MateriModel::with('matapelajaran')->get();
+        //  dd($materi->toArray());
+
+        return $materi;
+    }
+
     public function materitambah(){
 
 
