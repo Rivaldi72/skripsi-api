@@ -40,8 +40,8 @@ class CreateChairiahGudangTable extends Migration
                 'harga_kopi_gelondong'  =>      12000,
                 'harga_kopi_gabah'      =>      34000,
                 'harga_kopi_biji_hijau' =>      75000,
-                'create_at'             =>      now(), 
-                'update_at'             =>      now(),
+                'created_at'            =>      now(), 
+                'updated_at'            =>      now(),
             ],
 
             [ 
@@ -55,8 +55,8 @@ class CreateChairiahGudangTable extends Migration
                 'harga_kopi_gelondong'  =>      0,
                 'harga_kopi_gabah'      =>      35000,
                 'harga_kopi_biji_hijau' =>      75000,
-                'create_at'             =>      now(), 
-                'update_at'             =>      now(),
+                'created_at'            =>      now(), 
+                'updated_at'            =>      now(),
             ],
 
             [ 
@@ -70,8 +70,8 @@ class CreateChairiahGudangTable extends Migration
                 'harga_kopi_gelondong'  =>      0,
                 'harga_kopi_gabah'      =>      0,
                 'harga_kopi_biji_hijau' =>      80000,
-                'create_at'             =>      now(), 
-                'update_at'             =>      now(),
+                'created_at'            =>      now(), 
+                'updated_at'            =>      now(),
             ],
 
             [ 
@@ -85,8 +85,8 @@ class CreateChairiahGudangTable extends Migration
                 'harga_kopi_gelondong'  =>      0,
                 'harga_kopi_gabah'      =>      0,
                 'harga_kopi_biji_hijau' =>      70000,
-                'create_at'             =>      now(), 
-                'update_at'             =>      now(),
+                'created_at'            =>      now(), 
+                'updated_at'            =>      now(),
             ],
 
             [ 
@@ -100,8 +100,8 @@ class CreateChairiahGudangTable extends Migration
                 'harga_kopi_gelondong'  =>      0,
                 'harga_kopi_gabah'      =>      34000,
                 'harga_kopi_biji_hijau' =>      67000,
-                'create_at'             =>      now(), 
-                'update_at'             =>      now(),
+                'created_at'            =>      now(), 
+                'updated_at'            =>      now(),
             ],
 
         ];

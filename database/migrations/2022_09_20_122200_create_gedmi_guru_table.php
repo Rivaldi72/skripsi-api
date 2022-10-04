@@ -15,6 +15,7 @@ class CreateGedmiGuruTable extends Migration
     {
         Schema::create('gedmi_guru', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_user');
             $table->string('nama');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
@@ -30,6 +31,7 @@ class CreateGedmiGuruTable extends Migration
         $defaultData = [
             [
                 'id' => 1,
+                'id_user' => 1,
                 'nama' => 'Agung Sihotang, S.Pd',
                 'tempat_lahir' => 'Huta Raja',
                 'tanggal_lahir' => '1978-03-19',
@@ -44,6 +46,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 2,
+                'id_user' => 2,
                 'nama' => 'Almas Adlina,S.Pd',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1998-02-07',
@@ -59,6 +62,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 3,
+                'id_user' => 3,
                 'nama' => 'Diana Susanti, iregar, S.Pd',
                 'tempat_lahir' => 'Pangurabaan',
                 'tanggal_lahir' => '1981-12-13',
@@ -74,6 +78,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 4,
+                'id_user' => 4,
                 'nama' => 'Dr. Mesran, M.Pdi',
                 'tempat_lahir' => 'P.Siantar',
                 'tanggal_lahir' => '1973-06-05',
@@ -89,6 +94,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 5,
+                'id_user' => 5,
                 'nama' => 'Erlina Simanjuntak, S.T',
                 'tempat_lahir' => 'P.Siantar',
                 'tanggal_lahir' => '1980-03-11',
@@ -104,6 +110,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 6,
+                'id_user' => 6,
                 'nama' => 'Gaya Baiduri, S.Pdi',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1980-03-11',
@@ -119,6 +126,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 7,
+                'id_user' => 7,
                 'nama' => 'Hengki S. Sianturi, S.Pd',
                 'tempat_lahir' => 'Balige',
                 'tanggal_lahir' => '1982-08-19',
@@ -134,6 +142,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 8,
+                'id_user' => 8,
                 'nama' => 'Intan Sari Siregar, S.Pd',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1995-04-04',
@@ -149,6 +158,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 9,
+                'id_user' => 9,
                 'nama' => 'Jessica Yolanda, S.Pd',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1998-04-21',
@@ -164,6 +174,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 10,
+                'id_user' => 10,
                 'nama' => 'Keti Suyati, S.Pd',
                 'tempat_lahir' => 'Nedan',
                 'tanggal_lahir' => '1987-01-07',
@@ -179,6 +190,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 11,
+                'id_user' => 11,
                 'nama' => 'Mhd. Sabdana, S.Pd',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1994-09-01',
@@ -194,6 +206,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 12,
+                'id_user' => 12,
                 'nama' => 'Novenna Nurmalasari, S.Kom',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1982-10-28',
@@ -208,6 +221,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 13,
+                'id_user' => 13,
                 'nama' => 'Salamuddin',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1985-08-14',
@@ -222,6 +236,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 14,
+                'id_user' => 14,
                 'nama' => 'Siti Agustina Julita, S.Pd',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1993-08-19',
@@ -237,6 +252,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 15,
+                'id_user' => 15,
                 'nama' => 'Tatang Angkasa Trg, S.Psi',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1984-06-28',
@@ -252,6 +268,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 16,
+                'id_user' => 16,
                 'nama' => 'Venny C. Tanjung, S.Pd',
                 'tempat_lahir' => 'Medan',
                 'tanggal_lahir' => '1980-12-13',
@@ -267,6 +284,7 @@ class CreateGedmiGuruTable extends Migration
             ],
             [
                 'id' => 17,
+                'id_user' => 17,
                 'nama' => 'ZL. Purba, BA',
                 'tempat_lahir' => 'Percut',
                 'tanggal_lahir' => '1964-12-31',
@@ -280,6 +298,8 @@ class CreateGedmiGuruTable extends Migration
                 'updated_at' => now(),
             ],
             ];
+
+            DB::table('gedmi_guru')->insert($defaultData);
     }
 
     /**

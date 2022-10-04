@@ -15,6 +15,7 @@ class CreateGedmiSiswaTable extends Migration
     {
         Schema::create('gedmi_siswa', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_user');
             $table->string('nis');
             $table->string('nama');
             $table->string('tempat_lahir');
