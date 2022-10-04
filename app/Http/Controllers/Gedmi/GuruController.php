@@ -12,23 +12,24 @@ class GuruController extends Controller
         $dataGuru = GuruModel::all();
         return view('content.pages.gedmi.guru.index', compact('dataGuru'));
     }
+    public function apiIndex(){
+        $dataGuru = GuruModel::all();
+        return $dataGuru;
+    }
 
     public function tambahGuru(){
         return view('content.pages.gedmi.guru.create');
+    }
+    public function tambahGuruPost(Request $request){
+        // dd($request->all());
+        GuruModel::create($request->all());
+        return redirect()->route('gedmi.guru.index');
     }
 
     public function editGuru($id) {
         $dataGuru = GuruModel::where('id', $id)->first();
         return view('content.pages.gedmi.guru.edit', compact('dataGuru'));
     }
-
-    public function deleteGuru($id){
-        $dataGuru = GuruModel::find($id);
-        $dataGuru->delete();
-
-        return redirect()->route('gedmi.guru.index', ['message' => 'success']);
-    }
-
     public function updateGuru(Request $request, $id){
         $dataGuru = GuruModel::where('id', $id)->first();
         GuruModel:: where('id', $id)->update(
@@ -47,29 +48,25 @@ class GuruController extends Controller
             );
         return redirect()->route('gedmi.guru.index');
     }
-    public function detailGuru(Request $request, $id){
+
+    public function deleteGuru($id){
+        $dataGuru = GuruModel::find($id);
+        $dataGuru->delete();
+
+        return redirect()->route('gedmi.guru.index', ['message' => 'success']);
+    }
+
+    
+    public function detailGuru($id) {
         $dataGuru = GuruModel::where('id', $id)->first();
-        GuruModel:: where('id', $id)->detail(
-            
-            [
-                "nama" => $request->nama ?? $dataGuru->nama,
-                "tempat_lahir" => $request->tempat_lahir ?? $dataGuru->tempat_lahir,
-                "tanggal_lahir" => $request->tanggal_lahir ?? $dataGuru->tanggal_lahir,
-                "jabatan" => $request->jabatan ?? $dataGuru->jabatan,
-                "tamatan" => $request->tamatan ?? $dataGuru->tamatan,
-                "gelar" => $request->gelar ?? $dataGuru->gelar,
-                "bidang_studi" => $request->bidang_studi ?? $dataGuru->bidang_studi,
-                "agama" => $request->agama ?? $dataGuru->agama,
-                "alamat" => $request->alamat ?? $dataGuru->alamat,
-            ]
-            );
-        return redirect()->route('gedmi.guru.index');
+        return view('content.pages.gedmi.guru.detail', compact('dataGuru'));
     }
-    public function tambahGuruPost(Request $request){
-        // dd($request->all());
-        GuruModel::create($request->all());
-        return redirect()->route('gedmi.guru.index');
+    public function apiDetailGuru(){
+        $dataGuru = GuruModel::all();
+        return $dataGuru;
     }
+   
+    
    
    
     

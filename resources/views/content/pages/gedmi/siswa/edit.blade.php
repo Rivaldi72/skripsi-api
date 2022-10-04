@@ -29,7 +29,7 @@
     {{-- <script>
         var picker = $('.tanggal_lahir').pickadate({
             onStart: function() {
-                var date = new Date('{{ $biodata->tanggal_lahir ?? \Carbon\Carbon::now() }}');
+                var date = new Date('{{ $dataSiswa->tanggal_lahir ?? \Carbon\Carbon::now() }}');
                 console.log(this)
                 this.set('select', date);
             },
@@ -158,30 +158,31 @@
 
                         <div class="card-content">
                             <div class="card-body card-dashboard">
-                                <form action="" method="POST" id="dataForm" enctype="multipart/form-data">
+                                <form action="{{ route('gedmi.edit.siswa.update', ['id' => $dataSiswa->id]) }}"
+                                    method="POST" id="editSiswa" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <input type="hidden" name="nilai_data" id="nilaiData">
                                     <div class="row justify-content-between">
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">NIS</label>
-                                                <input type="text" name="nis" class="form-control" id=""
-                                                    placeholder="NIS" value="{{ $biodata->nis ?? '' }}">
+                                                <input type="text" name="nis" class="form-control" id="nis"
+                                                    placeholder="NIS" value="{{ $dataSiswa->nis ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Nama</label>
-                                                <input type="text" name="nama" class="form-control" id=""
-                                                    placeholder="Nama" value="{{ $biodata->nama ?? '' }}">
+                                                <input type="text" name="nama" class="form-control" id="nama"
+                                                    placeholder="Nama" value="{{ $dataSiswa->nama ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Tempat Lahir</label>
                                                 <input type="text" name="tempat_lahir" class="form-control"
-                                                    id="" placeholder="Place Of Birth"
-                                                    value="{{ $biodata->tempat_lahir ?? '' }}">
+                                                    id="tempat_lahir" placeholder="Place Of Birth"
+                                                    value="{{ $dataSiswa->tempat_lahir ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
@@ -189,42 +190,40 @@
                                                 <label for="basicInput">Tanggal Lahir</label>
                                                 <form action="">
                                                     <input type='text' name="tanggal_lahir"
-                                                        class="form-control tanggal_lahir" id=""
+                                                        class="form-control tanggal_lahir" id="tanggal_lahir"
                                                         placeholder="Data Of Birth"
-                                                        value="{{ $biodata->tanggal_lahir ?? '' }}">
+                                                        value="{{ $dataSiswa->tanggal_lahir ?? '' }}">
                                                 </form>
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Tahun Masuk</label>
-                                                <input type="text" name="tahun_masuk" class="form-control" id=""
-                                                    placeholder="Masukkan Tahun Masuk"
-                                                    value="{{ $biodata->tahun_masuk ?? '' }}">
+                                                <input type="text" name="tahun_masuk" class="form-control"
+                                                    id="tahun_masuk" placeholder="Masukkan Tahun Masuk"
+                                                    value="{{ $dataSiswa->tahun_masuk ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Jenis Kelamin</label>
-                                                <select class="form-select" name="jenis_kelamin" id="customSelect">
-                                                    <option selected value="">Pilih jenis kelamin</option>
-                                                    <option value="L">Laki-laki</option>
-                                                    <option value="P">Perempuan</option>
-                                                </select>
+                                                <input type="text" name="jenis_kelamin" class="form-control"
+                                                    id="jenis_kelamin" placeholder="Masukkan Jenis Kelamin"
+                                                    value="{{ $dataSiswa->jenis_kelamin ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Agama</label>
-                                                <input type="text" name="agama" class="form-control" id=""
-                                                    placeholder="Masukkan Agama" value="">
+                                                <input type="text" name="agama" class="form-control" id="agama"
+                                                    placeholder="Masukkan Agama" value="{{ $dataSiswa->agama ?? '' }}">
                                             </fieldset>
                                         </div>
                                         <div class="col-12 mt-2">
                                             <fieldset class="form-group">
                                                 <label for="basicInput">Alamat</label>
-                                                <input type="text" name="alamat" class="form-control" id=""
-                                                    placeholder="Masukkan Alamat" value="">
+                                                <input type="text" name="alamat" class="form-control" id="alamat"
+                                                    placeholder="Masukkan Alamat" value="{{ $dataSiswa->alamat ?? '' }}">
                                             </fieldset>
                                         </div>
 
@@ -234,91 +233,482 @@
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">Matematika</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Matematika"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="matematika_1" class="form-control"
+                                                        id="matematika_1" placeholder="Nilai Matematika"
+                                                        value="{{ $dataSiswa->matematika_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">Bahasa Indonesia</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Bahasa Indonesia"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="bindo_1" class="form-control"
+                                                        id="bindo_1" placeholder="Nilai Bahasa Indonesia"
+                                                        value="{{ $dataSiswa->bindo_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">Bahasa Inggris</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Bahasa Indonesia"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="bing_1" class="form-control"
+                                                        id="bing_1" placeholder="Nilai Bahasa Indonesia"
+                                                        value="{{ $dataSiswa->bing_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">IPA</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai IPA"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="ipa_1" class="form-control"
+                                                        id="ipa_1" placeholder="Nilai IPA"
+                                                        value="{{ $dataSiswa->ipa_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">IPS</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai IPS"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="ips_1" class="form-control"
+                                                        id="ips_1" placeholder="Nilai IPS"
+                                                        value="{{ $dataSiswa->ips_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">PKn</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Pendidikan Kewarganegaraan"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="pkn_1" class="form-control"
+                                                        id="pkn_1" placeholder="Nilai Pendidikan Kewarganegaraan"
+                                                        value="{{ $dataSiswa->pkn_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">Pendidikan Agama Islam</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai PAI"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="agama_1" class="form-control"
+                                                        id="agama_1" placeholder="Nilai PAI"
+                                                        value="{{ $dataSiswa->agama_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">Penjas</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Penjas"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="penjas_1" class="form-control"
+                                                        id="penjas_1" placeholder="Nilai Penjas"
+                                                        value="{{ $dataSiswa->penjas_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">Seni Budaya</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Seni Budaya"
-                                                        value="{{ $biodata->nama ?? '' }}">
+                                                    <input type="number" name="senbud_1" class="form-control"
+                                                        id="senbud_1" placeholder="Nilai Seni Budaya"
+                                                        value="{{ $dataSiswa->senbud_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
-                                            <div class="col-3 mt-2">
-                                                <fieldset class="form-group">
-                                                    <label for="basicInput">Penjas</label>
-                                                    <input type="number" name="nama" class="form-control"
-                                                        id="" placeholder="Nilai Penjas"
-                                                        value="{{ $biodata->nama ?? '' }}">
-                                                </fieldset>
-                                            </div>
+                                            <p class="mt-2 mb-0 text-center">Nilai Semester 2</p>
+                                            <div class="row justify-content-between">
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">Matematika</label>
+                                                        <input type="number" name="matematika_2" class="form-control"
+                                                            id="matematika_2" placeholder="Nilai Matematika"
+                                                            value="{{ $dataSiswa->matematika_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">Bahasa Indonesia</label>
+                                                        <input type="number" name="bindo_2" class="form-control"
+                                                            id="bindo_2" placeholder="Nilai Bahasa Indonesia"
+                                                            value="{{ $dataSiswa->bindo_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">Bahasa Inggris</label>
+                                                        <input type="number" name="bing_2" class="form-control"
+                                                            id="bing_2" placeholder="Nilai Bahasa Indonesia"
+                                                            value="{{ $dataSiswa->bing_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">IPA</label>
+                                                        <input type="number" name="ipa_2" class="form-control"
+                                                            id="ipa_2" placeholder="Nilai IPA"
+                                                            value="{{ $dataSiswa->ipa_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">IPS</label>
+                                                        <input type="number" name="ips_2" class="form-control"
+                                                            id="ips_2" placeholder="Nilai IPS"
+                                                            value="{{ $dataSiswa->ips_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">PKn</label>
+                                                        <input type="number" name="pkn_2" class="form-control"
+                                                            id="pkn_2" placeholder="Nilai Pendidikan Kewarganegaraan"
+                                                            value="{{ $dataSiswa->pkn_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">Pendidikan Agama Islam</label>
+                                                        <input type="number" name="agama_2" class="form-control"
+                                                            id="agama_2" placeholder="Nilai PAI"
+                                                            value="{{ $dataSiswa->agama_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">Penjas</label>
+                                                        <input type="number" name="penjas_2" class="form-control"
+                                                            id="penjas_2" placeholder="Nilai Penjas"
+                                                            value="{{ $dataSiswa->penjas_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-3 mt-2">
+                                                    <fieldset class="form-group">
+                                                        <label for="basicInput">Seni Budaya</label>
+                                                        <input type="number" name="senbud_2" class="form-control"
+                                                            id="senbud_2" placeholder="Nilai Seni Budaya"
+                                                            value="{{ $dataSiswa->senbud_2 ?? '' }}">
+                                                    </fieldset>
+                                                </div>
 
-                                            <div class="d-grid col-lg-12 col-md-12 mb-1 mb-lg-0 mt-2">
-                                                <button type="button"
-                                                    class="btn btn-relief-success btn-primary">Simpan</button>
-                                            </div>
-                                        </div>
+                                                <p class="mt-2 mb-0 text-center">Nilai Semester 3</p>
+                                                <div class="row justify-content-between">
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">Matematika</label>
+                                                            <input type="number" name="matematika_3"
+                                                                class="form-control" id="matematika_3"
+                                                                placeholder="Nilai Matematika"
+                                                                value="{{ $dataSiswa->matematika_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">Bahasa Indonesia</label>
+                                                            <input type="number" name="bindo_3" class="form-control"
+                                                                id="bindo_3" placeholder="Nilai Bahasa Indonesia"
+                                                                value="{{ $dataSiswa->bindo_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">Bahasa Inggris</label>
+                                                            <input type="number" name="bing_3" class="form-control"
+                                                                id="bing_3" placeholder="Nilai Bahasa Indonesia"
+                                                                value="{{ $dataSiswa->bing_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">IPA</label>
+                                                            <input type="number" name="ipa_3" class="form-control"
+                                                                id="ipa_3" placeholder="Nilai IPA"
+                                                                value="{{ $dataSiswa->ipa_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">IPS</label>
+                                                            <input type="number" name="ips_3" class="form-control"
+                                                                id="ips_3" placeholder="Nilai IPS"
+                                                                value="{{ $dataSiswa->ips_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">PKn</label>
+                                                            <input type="number" name="pkn_3" class="form-control"
+                                                                id="pkn_3"
+                                                                placeholder="Nilai Pendidikan Kewarganegaraan"
+                                                                value="{{ $dataSiswa->pkn_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">Pendidikan Agama Islam</label>
+                                                            <input type="number" name="agama_3" class="form-control"
+                                                                id="agama_3" placeholder="Nilai PAI"
+                                                                value="{{ $dataSiswa->agama_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">Penjas</label>
+                                                            <input type="number" name="penjas_3" class="form-control"
+                                                                id="penjas_3" placeholder="Nilai Penjas"
+                                                                value="{{ $dataSiswa->penjas_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-3 mt-2">
+                                                        <fieldset class="form-group">
+                                                            <label for="basicInput">Seni Budaya</label>
+                                                            <input type="number" name="senbud_3" class="form-control"
+                                                                id="senbud_3" placeholder="Nilai Seni Budaya"
+                                                                value="{{ $dataSiswa->senbud_3 ?? '' }}">
+                                                        </fieldset>
+                                                    </div>
 
-                                    </div>
+                                                    <p class="mt-2 mb-0 text-center">Nilai Semester 4</p>
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">Matematika</label>
+                                                                <input type="number" name="matematika_4"
+                                                                    class="form-control" id="matematika_4"
+                                                                    placeholder="Nilai Matematika"
+                                                                    value="{{ $dataSiswa->matematika_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">Bahasa Indonesia</label>
+                                                                <input type="number" name="bindo_4" class="form-control"
+                                                                    id="bindo_4" placeholder="Nilai Bahasa Indonesia"
+                                                                    value="{{ $dataSiswa->bindo_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">Bahasa Inggris</label>
+                                                                <input type="number" name="bing_4" class="form-control"
+                                                                    id="bing_4" placeholder="Nilai Bahasa Indonesia"
+                                                                    value="{{ $dataSiswa->bing_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">IPA</label>
+                                                                <input type="number" name="ipa_4" class="form-control"
+                                                                    id="ipa_4" placeholder="Nilai IPA"
+                                                                    value="{{ $dataSiswa->ipa_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">IPS</label>
+                                                                <input type="number" name="ips_4" class="form-control"
+                                                                    id="ips_4" placeholder="Nilai IPS"
+                                                                    value="{{ $dataSiswa->ips_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">PKn</label>
+                                                                <input type="number" name="pkn_4" class="form-control"
+                                                                    id="pkn_4"
+                                                                    placeholder="Nilai Pendidikan Kewarganegaraan"
+                                                                    value="{{ $dataSiswa->pkn_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">Pendidikan Agama Islam</label>
+                                                                <input type="number" name="agama_4" class="form-control"
+                                                                    id="agama_4" placeholder="Nilai PAI"
+                                                                    value="{{ $dataSiswa->agama_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">Penjas</label>
+                                                                <input type="number" name="penjas_4"
+                                                                    class="form-control" id="penjas_4"
+                                                                    placeholder="Nilai Penjas"
+                                                                    value="{{ $dataSiswa->penjas_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-3 mt-2">
+                                                            <fieldset class="form-group">
+                                                                <label for="basicInput">Seni Budaya</label>
+                                                                <input type="number" name="senbud_4"
+                                                                    class="form-control" id="senbud_4"
+                                                                    placeholder="Nilai Seni Budaya"
+                                                                    value="{{ $dataSiswa->senbud_4 ?? '' }}">
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <p class="mt-2 mb-0 text-center">Nilai Semester 5</p>
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">Matematika</label>
+                                                                    <input type="number" name="matematika_5"
+                                                                        class="form-control" id="matematika_5"
+                                                                        placeholder="Nilai Matematika"
+                                                                        value="{{ $dataSiswa->matematika_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">Bahasa Indonesia</label>
+                                                                    <input type="number" name="bindo_5"
+                                                                        class="form-control" id="bindo_5"
+                                                                        placeholder="Nilai Bahasa Indonesia"
+                                                                        value="{{ $dataSiswa->bindo_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">Bahasa Inggris</label>
+                                                                    <input type="number" name="bing_5"
+                                                                        class="form-control" id="bing_5"
+                                                                        placeholder="Nilai Bahasa Indonesia"
+                                                                        value="{{ $dataSiswa->bing_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">IPA</label>
+                                                                    <input type="number" name="ipa_5"
+                                                                        class="form-control" id="ipa_5"
+                                                                        placeholder="Nilai IPA"
+                                                                        value="{{ $dataSiswa->ipa_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">IPS</label>
+                                                                    <input type="number" name="ips_5"
+                                                                        class="form-control" id="ips_5"
+                                                                        placeholder="Nilai IPS"
+                                                                        value="{{ $dataSiswa->ips_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">PKn</label>
+                                                                    <input type="number" name="pkn_5"
+                                                                        class="form-control" id="pkn_5"
+                                                                        placeholder="Nilai Pendidikan Kewarganegaraan"
+                                                                        value="{{ $dataSiswa->pkn_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">Pendidikan Agama Islam</label>
+                                                                    <input type="number" name="agama_5"
+                                                                        class="form-control" id="agama_5"
+                                                                        placeholder="Nilai PAI"
+                                                                        value="{{ $dataSiswa->agama_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">Penjas</label>
+                                                                    <input type="number" name="penjas_5"
+                                                                        class="form-control" id="penjas_5"
+                                                                        placeholder="Nilai Penjas"
+                                                                        value="{{ $dataSiswa->penjas_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+                                                            <div class="col-3 mt-2">
+                                                                <fieldset class="form-group">
+                                                                    <label for="basicInput">Seni Budaya</label>
+                                                                    <input type="number" name="senbud_5"
+                                                                        class="form-control" id="senbud_5"
+                                                                        placeholder="Nilai Seni Budaya"
+                                                                        value="{{ $dataSiswa->senbud_5 ?? '' }}">
+                                                                </fieldset>
+                                                            </div>
+
+                                                            <p class="mt-2 mb-0 text-center">Nilai Semester 6</p>
+                                                            <div class="row justify-content-between">
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">Matematika</label>
+                                                                        <input type="number" name="matematika_6"
+                                                                            class="form-control" id="matematika_6"
+                                                                            placeholder="Nilai Matematika"
+                                                                            value="{{ $dataSiswa->matematika_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">Bahasa Indonesia</label>
+                                                                        <input type="number" name="bindo_6"
+                                                                            class="form-control" id="bindo_6"
+                                                                            placeholder="Nilai Bahasa Indonesia"
+                                                                            value="{{ $dataSiswa->bindo_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">Bahasa Inggris</label>
+                                                                        <input type="number" name="bing_6"
+                                                                            class="form-control" id="bing_6"
+                                                                            placeholder="Nilai Bahasa Indonesia"
+                                                                            value="{{ $dataSiswa->bing_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">IPA</label>
+                                                                        <input type="number" name="ipa_6"
+                                                                            class="form-control" id="ipa_6"
+                                                                            placeholder="Nilai IPA"
+                                                                            value="{{ $dataSiswa->ipa_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">IPS</label>
+                                                                        <input type="number" name="ips_6"
+                                                                            class="form-control" id="ips_6"
+                                                                            placeholder="Nilai IPS"
+                                                                            value="{{ $dataSiswa->ips_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">PKn</label>
+                                                                        <input type="number" name="pkn_6"
+                                                                            class="form-control" id="pkn_6"
+                                                                            placeholder="Nilai Pendidikan Kewarganegaraan"
+                                                                            value="{{ $dataSiswa->pkn_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">Pendidikan Agama
+                                                                            Islam</label>
+                                                                        <input type="number" name="agama_6"
+                                                                            class="form-control" id="agama_6"
+                                                                            placeholder="Nilai PAI"
+                                                                            value="{{ $dataSiswa->agama_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">Penjas</label>
+                                                                        <input type="number" name="penjas_6"
+                                                                            class="form-control" id="penjas_6"
+                                                                            placeholder="Nilai Penjas"
+                                                                            value="{{ $dataSiswa->penjas_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+                                                                <div class="col-3 mt-2">
+                                                                    <fieldset class="form-group">
+                                                                        <label for="basicInput">Seni Budaya</label>
+                                                                        <input type="number" name="senbud_6"
+                                                                            class="form-control" id="senbud_6"
+                                                                            placeholder="Nilai Seni Budaya"
+                                                                            value="{{ $dataSiswa->senbud_6 ?? '' }}">
+                                                                    </fieldset>
+                                                                </div>
+
+                                                                <div class="d-grid col-lg-12 col-md-12 mb-1 mb-lg-0 mt-2">
+                                                                    <button type="submit"
+                                                                        class="btn btn-relief-success btn-primary">Simpan</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
                                 </form>
                             </div>
                         </div>

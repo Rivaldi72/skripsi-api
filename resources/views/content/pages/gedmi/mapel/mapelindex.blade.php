@@ -7,13 +7,12 @@
 
     <div class="row" id="table-bordered">
         <div class="col-3">
-            <div class="form-group">
-                <select class="select2 form-control">
-                    <option value="pilih">Pilih</option>
-                    <option value="kelas">Kelas VII</option>
-                    <option value="rectangle">Kelas VIII</option>
-                    <option value="rombo">Kelas IX</option>
-
+            <div class="form-group mb-2">
+                <select class="select2 form-control" id="filterKelas">
+                    <option value="pilih" {{ Request::get('filter') == 'pilih' ? 'selected' : '' }}>Pilih</option>
+                    <option value="VII" {{ Request::get('filter') == 'VII' ? 'selected' : '' }}>Kelas VII</option>
+                    <option value="VIII" {{ Request::get('filter') == 'VIII' ? 'selected' : '' }}>Kelas VIII</option>
+                    <option value="IX" {{ Request::get('filter') == 'IX' ? 'selected' : '' }}>Kelas IX</option>
                 </select>
             </div>
         </div>
@@ -35,6 +34,7 @@
                                     <th>Jam</th>
                                     <th>Nama Guru</th>
                                     <th>B. Studi</th>
+                                    <th>Kelas</th>
                                     <th>Action</th>
 
                                 </tr>
@@ -47,7 +47,7 @@
                                         <td>{{ $item->jam }}</td>
                                         <td>{{ $item->nama_guru }}</td>
                                         <td>{{ $item->bidang_studi }}</td>
-
+                                        <td>{{ $item->kelas }}</td>
                                         <td>
                                             <div class="dropdown">
                                                 <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
@@ -55,14 +55,20 @@
                                                     <i data-feather="more-vertical"></i>
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item" href="{{ route('gedmi.edit.mapel') }}">
-                                                        <i data-feather="info" class="me-50"></i>
+                                                    <a class="dropdown-item"
+                                                        href="{{ route('gedmi.edit.mapel', ['id' => $item->id]) }}">
+                                                        <i data-feather="edit-2" class="me-50"></i>
                                                         <span>Edit</span>
                                                     </a>
-                                                    <a class="dropdown-item" href="">
-                                                        <i data-feather="info" class="me-50"></i>
-                                                        <span>Hapus</span>
-                                                    </a>
+                                                    <form action="{{ route('gedmi.delete.mapel', ['id' => $item->id]) }}"
+                                                        method="post">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="dropdown-item">
+                                                            <i data-feather="trash" class="me-50"></i>
+                                                            <span>Delete</span>
+                                                        </button>
+                                                    </form>
 
                                                 </div>
                                             </div>
@@ -83,4 +89,11 @@
 
 
         <!-- Bordered table end -->
+    @endsection
+    @section('page-script')
+        <script>
+            $("#filterKelas").change(function(e) {
+                window.location.replace(`{{ route('gedmi.mapel.index') }}/?filter=${this.value}`)
+            });
+        </script>
     @endsection
