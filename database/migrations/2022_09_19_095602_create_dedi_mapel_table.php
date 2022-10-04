@@ -53,7 +53,7 @@ class CreateDediMapelTable extends Migration
             ],
 
         ];
-        DB::table('dedi_materi')->insert($defaulData);
+        DB::table('dedi_mapel')->insert($defaulData);
 
     }
 
