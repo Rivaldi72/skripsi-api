@@ -64,6 +64,16 @@
 
                                     </fieldset>
                                 </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Kelas
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="kelas" class="form-control form-control-lg"
+                                            id="kelas" placeholder="Masukkan Kelas" value="">
+
+                                    </fieldset>
+                                </div>
 
 
 

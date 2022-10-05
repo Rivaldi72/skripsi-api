@@ -67,6 +67,7 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
 Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')->group(function () {
 
     Route::get('/index','DashboardController@index')->name('dashboard');
+
     Route::get('/guru/index','GuruController@index')->name('guru.index');
     Route::get('/guru/create','GuruController@tambahGuru')->name('index.test');
     Route::post('/guru/create/post','GuruController@tambahGuruPost')->name('tambah.guru.post');
@@ -74,24 +75,26 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::post('/guru/edit/update/{id}','GuruController@updateGuru')->name('edit.guru.update');
     Route::get('/guru/detail','GuruController@detailGuru')->name('detail.guru');
     Route::delete('/guru/hapus/{id}','GuruController@deleteGuru')->name('delete.guru');
-    Route::post('/guru/detail/{id}','GuruController@detailGuru')->name('detail.guru');
+    Route::get('/guru/detail/{id}','GuruController@detailGuru')->name('detail.guru');
 
 
-    Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
+    // Route::get('/nilai/nilaisiswa','NilaiController@nilaiSiswa1')->name('nilai.siswa');
 
     Route::get('/siswa/indexsiswa','SiswaController@siswa1')->name('siswa.index');
     Route::get('/siswa/createsiswa','SiswaController@tambahSiswa')->name('tambah.test');
     Route::post('/siswa/create/post','SiswaController@tambahSiswaPost')->name('tambah.siswa.post');
     Route::get('/siswa/detailsiswa','SiswaController@detailSiswa')->name('siswa.test');
-    Route::get('/siswa/edit/','SiswaController@editSiswa')->name('edit.siswa');
     Route::delete('/siswa/hapus/{id}','SiswaController@deleteSiswa')->name('delete.siswa');
-    // Route::put('/siswa/edit/update/{id}','SiswaController@editSiswa')->name('edit.siswa.update');
-    Route::get('/siswa/detail','SiswaController@detailSiswa')->name('detail.siswa');
+    Route::get('/siswa/edit/{id}','SiswaController@editSiswa')->name('edit.siswa');
+    Route::post('/siswa/edit/update/{id}','SiswaController@updateSiswa')->name('edit.siswa.update');
+    Route::get('/siswa/detail/{id}','SiswaController@detailSiswa')->name('detail.siswa');
 
     Route::get('/mapel','MapelController@mapel')->name('mapel.index');
     Route::get('/mapel/create', 'MapelController@tambahMapel')->name('tambah.mapel');
     Route::post('/mapel/create/post','MapelController@tambahMapelPost')->name('tambah.mapel.post');
-    Route::get('/mapel/edit', 'MapelController@editMapel')->name('edit.mapel');
+    Route::get('/mapel/edit{id}', 'MapelController@editMapel')->name('edit.mapel');
+    Route::post('/mapel/edit/update/{id}','MapelController@updateMapel')->name('edit.mapel.update');
+    Route::delete('/mapel/hapus/{id}','MapelController@deleteMapel')->name('delete.mapel');
 
     Route::get('/login', 'UserController@login')->name('page.login');
 });
