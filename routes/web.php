@@ -49,11 +49,16 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
     Route::post('/materitambah/post','MateriController@materitambahpost')->name('materi.tambah.post');
     Route::get('/materiedit/{id}','MateriController@materiedit')->name('materi.edit');
     Route::get('/materiupdate/{id}','MateriController@materiupdate')->name('materi.update');
+    Route::delete('/materidelete/{id}','MateriController@materidelete')->name('materi.delete');
+
     Route::get('/pratikumindex','PratikumController@pratikumindex')->name('pratikum.index');
     Route::get('/pratikumtambah','PratikumController@pratikumtambah')->name('pratikum.tambah');
     Route::post('/pratikumtambah/post','PratikumController@pratikumtambahpost')->name('pratikum.tambah.post');
     Route::get('/pratikumedit/{id}','PratikumController@pratikumedit')->name('pratikum.edit');
     Route::get('/pratikumupdate/{id}','PratikumController@pratikumupdate')->name('pratikum.update');
+    Route::delete('/pratikumdelete/{id}','PratikumController@pratikumdelete')->name('pratikum.delete');
+
+
     Route::get('/latihanindex','LatihanController@latihanindex')->name('latihan.index');
     Route::get('/latihantambah','LatihanController@latihantambah')->name('latihan.tambah');
     Route::post('/latihantambah/post','latihanController@latihantambahpost')->name('latihan.tambah.post');

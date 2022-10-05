@@ -59,5 +59,10 @@ class PratikumController extends Controller
         );
         return redirect()->route('dedi.pratikum.index');
     }
+    public function pratikumdelete($id) {
+            $pratikum = PratikumModel::find($id);
+            $pratikum ->delete();
+        return redirect()->route('dedi.pratikum.index', ['message' => 'succes']);
+}
 
 }

@@ -46,9 +46,15 @@
                                                 class="btn btn-icon btn-icon rounded-circle btn-success">
                                                 <i data-feather="edit"></i>
                                             </a>
-                                            <button type="button" class="btn btn-icon btn-icon rounded-circle btn-success">
-                                                <i data-feather="trash"></i>
-                                            </button>
+                                            <form action="{{ route('dedi.pratikum.delete', ['id' => $item->id]) }}"
+                                                method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit"
+                                                    class="btn btn-icon btn-icon rounded-circle btn-success">
+                                                    <i data-feather="trash"></i>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach

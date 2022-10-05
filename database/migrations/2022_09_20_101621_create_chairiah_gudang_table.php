@@ -18,6 +18,7 @@ class CreateChairiahGudangTable extends Migration
             $table->integer('id_user');
             $table->string('nama');
             $table->string('alamat');
+            $table->string('url_alamat');
             $table->string('no_hp');
             $table->string('gambar');
             $table->integer('harga_kopi_gelondong');
