@@ -16,7 +16,7 @@ class CreateDediLatihanTable extends Migration
        Schema::create('dedi_latihan', function (Blueprint $table) {
             $table->id();
             $table->integer('id_mapel');
-            $table->string('soal');
+            $table->text('soal');
             $table->string('jawaban_beneran', );
             $table->string('pilihan_jawaban1', );
             $table->string('pilihan_jawaban2', );
