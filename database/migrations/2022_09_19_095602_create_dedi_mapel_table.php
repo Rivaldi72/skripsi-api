@@ -23,31 +23,31 @@ class CreateDediMapelTable extends Migration
                 'id' => 1,
                 'mata_pelajaran' => 'Bakteriologi',
             ],
-                        [
+            [
                 'id' => 2,
                 'mata_pelajaran' => 'Hematologi',
             ],
-                        [
+            [
                 'id' => 3,
                 'mata_pelajaran' => 'Patologi Klinik',
             ],
-                        [
+            [
                 'id' => 4,
                 'mata_pelajaran' => 'Parasitologi',
             ],
-                        [
+            [
                 'id' => 5,
                 'mata_pelajaran' => 'Imunologi',
             ],
-                        [
+            [
                 'id' => 6,
                 'mata_pelajaran' => 'Serologi',
             ],
-                        [
+            [
                 'id' => 7,
                 'mata_pelajaran' => 'Kimia Makanan',
             ],
-                        [
+            [
                 'id' => 8,
                 'mata_pelajaran' => 'Kimia Minuman',
             ],
