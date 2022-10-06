@@ -59,8 +59,8 @@
 
                     </div>
                     <p class="text-justify">Provinsi Aceh merupakan provinsi yang terletak pada bagian barat Indonesia.
-                        Mayoritas mata
-                        pencaharian masyarakat provinsi Aceh khususnya Kabupaten Aceh Tengah dan Gayo Lues salah satunya
+                        Mayoritas mata pencaharian masyarakat provinsi Aceh khususnya Kabupaten Aceh Tengah dan Gayo Lues
+                        salah satunya
                         adalah petani kopi.
                         Kopi merupakan salah satu komoditi perkebunan yang memiliki nilai ekonomis yang cukup tinggi di
                         antara tanaman perkebunan lainnya dan berperan penting sebagai sumber devisa negara. Kopi juga
@@ -68,16 +68,13 @@
                         . Lebih lanjut Rahardjo (2012) menyatakan keberhasilan agribisnis kopi membutuhkan
                         dukungan semua pihak yang terkait dalam proses produksi kopi baik saat pengolahan maupun pada saat
                         pemasaran.
+                    </p>
+                    <p class="text-justify">
                         Provinsi Aceh merupakan salah satu Provinsi penghasil kopi arabika di Indonesia. Daerah penghasil
                         kopi terbesar di Provinsi Aceh adalah kabupaten Aceh Tengah dan Bener Meriah. Luas areal perkebunan
                         kopi di kedua Kabupaten ini mencapai 80% (96 ribu hektar) dari total luas lahan kopi di Provinsi
                         Aceh (121 ribu hektar). Perkebunan kopi yang ada seluruhnya merupakan perkebunan rakyat dengan
-                        jumlah petani mencapai 77 ribu Kepala Keluarga (KK) (Dinas Perkebunan Provinsi Aceh, 2014). Luas nya
-                        areal pertanian membuat para petani memiliki keriteria tersendiri dalam memilih gudang kopi/tempat
-                        untuk menjual hasil panen mereka pada saat musim panen, dan lagi bagi para petani di daerah pelosok
-                        untuk mendapatkan informasi mengenai gudang kopi/tempat penjualan buah kopi dan juga harga jual
-                        kopi, para petani membutuhkan waktu dan juga biaya transportasi ke kota untuk mensurvei gudang kopi
-                        dan juga harga kopi di setiap gudangnya. </p>
+                        jumlah petani mencapai 77 ribu Kepala Keluarga (KK) (Dinas Perkebunan Provinsi Aceh, 2014). </p>
 
                 </div>
                 </section>

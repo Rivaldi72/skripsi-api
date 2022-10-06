@@ -18,5 +18,6 @@ class MapelModel extends Model
         'jam',
         'nama_guru',
         'bidang_studi',
+        'kelas',
     ];
 }

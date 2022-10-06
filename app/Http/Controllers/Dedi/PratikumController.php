@@ -15,6 +15,12 @@ class PratikumController extends Controller
         return view('/content/pages/dedi/pratikum/pratikum_index',compact('pratikum'));
     }
 
+    public function pratikumindexapi(){
+        $pratikum = PratikumModel::with('matapelajaran')->get();
+
+        return $pratikum;
+    }
+
     public function pratikumtambah(){
 
 
@@ -59,5 +65,10 @@ class PratikumController extends Controller
         );
         return redirect()->route('dedi.pratikum.index');
     }
+    public function pratikumdelete($id) {
+            $pratikum = PratikumModel::find($id);
+            $pratikum ->delete();
+        return redirect()->route('dedi.pratikum.index', ['message' => 'succes']);
+}
 
 }
