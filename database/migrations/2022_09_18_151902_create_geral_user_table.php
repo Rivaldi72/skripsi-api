@@ -22,11 +22,44 @@ class CreateGeralUserTable extends Migration
             $table->string('email')->nullable();
             $table->date('tanggal_lahir')->nullable();
             $table->string('jenis_kelamin')->nullable();
-            $table->string('no_hp')->nullable();
+            $table->integer('no_hp')->nullable();
             $table->string('keahlian')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
+
+        $defaultData = [
+
+                [
+                    'id'                        =>      1,
+                    'username'                  =>      'geraladitya',
+                    'password'                  =>      bcrypt('geraladitya'),
+                    'isAdmin'                   =>      false,
+                    'nama_lengkap'              =>      'Geral Aditya Hanif',
+                    'email'                     =>      'geral141100@gmail.com',
+                    'tanggal_lahir'             =>      '2000-14-11',
+                    'jenis_kelamin'             =>      'Laki-laki',
+                    'no_hp'                     =>      6285156806436,
+                    'keahlian'                  =>      'Programmer',
+                    'created_at'                =>      now(),
+                    'updated_at'                =>      now(),
+                ],
+                [
+                    'id'                        =>      2,
+                    'username'                  =>      'admin',
+                    'password'                  =>      bcrypt('admin'),
+                    'isAdmin'                   =>      true,
+                    'nama_lengkap'              =>      '',
+                    'email'                     =>      '',
+                    'tanggal_lahir'             =>      '',
+                    'jenis_kelamin'             =>      '',
+                    'no_hp'                     =>      9879789,
+                    'keahlian'                  =>      '',
+                    'created_at'                =>      now(),
+                    'updated_at'                =>      now(),
+                ]
+        ];
+        DB:: table('geral_user')->insert($defaultData);
     }
 
     /**
