@@ -31,7 +31,7 @@ class GudangController extends Controller
             $getFileExt = $request->gudangImage->getClientOriginalExtension();
             $fileName =  'gudang-image' . Str::uuid() . '.' . $getFileExt;
             $request->file('gudangImage')->storeAs(
-                'public/chairiah/gudang-image', $fileName
+                'public/chairiah/gudang-image/', $fileName
             );
         }
         // dd($fileName);
