@@ -37,7 +37,7 @@ class CreateGeralUserTable extends Migration
                     'isAdmin'                   =>      false,
                     'nama_lengkap'              =>      'Geral Aditya Hanif',
                     'email'                     =>      'geral141100@gmail.com',
-                    'tanggal_lahir'             =>      '2000-14-11',
+                    'tanggal_lahir'             =>      '2000-11-14',
                     'jenis_kelamin'             =>      'Laki-laki',
                     'no_hp'                     =>      '08512812383',
                     'keahlian'                  =>      'Programmer',
