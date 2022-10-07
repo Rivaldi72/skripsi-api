@@ -53,7 +53,7 @@ class CreateGeralUserTable extends Migration
                     'email'                     =>      '',
                     'tanggal_lahir'             =>      '',
                     'jenis_kelamin'             =>      '',
-                    'no_hp'                     =>      0,
+                    'no_hp'                     =>      '0290188',
                     'keahlian'                  =>      '',
                     'created_at'                =>      now(),
                     'updated_at'                =>      now(),
