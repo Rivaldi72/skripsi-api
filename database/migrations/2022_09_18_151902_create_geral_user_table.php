@@ -49,12 +49,7 @@ class CreateGeralUserTable extends Migration
                     'username'                  =>      'admin',
                     'password'                  =>      bcrypt('admin'),
                     'isAdmin'                   =>      true,
-                    'nama_lengkap'              =>      '',
-                    'email'                     =>      '',
-                    'tanggal_lahir'             =>      '',
-                    'jenis_kelamin'             =>      '',
-                    'no_hp'                     =>      '0290188',
-                    'keahlian'                  =>      '',
+                    'nama_lengkap'              =>      'Geral Aditya Hanif',
                     'created_at'                =>      now(),
                     'updated_at'                =>      now(),
                 ]
