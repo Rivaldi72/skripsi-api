@@ -27,26 +27,26 @@ class CreateDediPratikumTable extends Migration
                 'id_mapel' => 1,
                 'judul_pratikum' => 'Pewarnaan Sederhana' ,
                 'detail_pratikum' => 'Kompetensi Dasar : Mampu Melakukan Prosedur Pewarnaan
-                Indikator : Mampu memahami bentuk-bentuk bakteri, mampu melakukan prosedur pewarnaan
-                Tujuan : Untuk melihat bentuk bentuk bakteri
-                Bahan : Biakan dalam bouillon
-                Regensia : Fuchsin 0,5%
-                Komposisi regensia : Fuchsin 0,5 gr
-                -	Aquadest 100ml
-                Alat : - ose cincin
-                -	Rak tabung
-                -	Objek glass
-                -	Mikroskop
-                -	Lampu bunsen
-                Cara kerja : - Hidupkan lampu Bunsen
-                -	Bakar ose cincin hingga merah membara, kemudian dinginkan
-                -	Ambil bahan biakan dalam bouillon 3-5 ose cincin
-                -	Kemudian letakkan di atas objek glass,kemudian di ratakan
-                -	Difiksasi sediaan sampai kering, lalu dinginkan
-                -	Tetesin dengan regensia, lalu tunggu selama 5 menit
-                -	Kemudian buang cairan regensia yang ada di objek glass lalu di alirkan dengan air mengalir sampai tidak ada regensia lagi
-                -	Tetesin minyak imersi oil di atas sediaan
-                -	Kemudian lihat dibawah mikroskop lensa 100x
+Indikator : Mampu memahami bentuk-bentuk bakteri, mampu melakukan prosedur pewarnaan
+Tujuan : Untuk melihat bentuk bentuk bakteri
+Bahan : Biakan dalam bouillon
+Regensia : Fuchsin 0,5%
+Komposisi regensia : Fuchsin 0,5 gr
+-	Aquadest 100ml
+Alat : - ose cincin
+-	Rak tabung
+-	Objek glass
+-	Mikroskop
+-	Lampu bunsen
+Cara kerja : - Hidupkan lampu Bunsen
+-	Bakar ose cincin hingga merah membara, kemudian dinginkan
+-	Ambil bahan biakan dalam bouillon 3-5 ose cincin
+-	Kemudian letakkan di atas objek glass,kemudian di ratakan
+-	Difiksasi sediaan sampai kering, lalu dinginkan
+-	Tetesin dengan regensia, lalu tunggu selama 5 menit
+-	Kemudian buang cairan regensia yang ada di objek glass lalu di alirkan dengan air mengalir sampai tidak ada regensia lagi
+-	Tetesin minyak imersi oil di atas sediaan
+-	Kemudian lihat dibawah mikroskop lensa 100x
 
                 Hasil gambar di temukan :',
                 'gambar' => '',
@@ -56,34 +56,34 @@ class CreateDediPratikumTable extends Migration
                 'id_mapel' => 1,
                 'judul_pratikum' => 'Pewarnaan Gram' ,
                 'detail_pratikum' => 'Indikator : Mampu menjelaskan tentang pewarnaan gram
-                                    -	Mampu menjelaskan prosedur pewarnaan gram
-                                    Tujuan : Untuk membedakaan dua kelompok bakteri dimana bakteri yang bewarna ungu bersifat gram positif dan bakteri bewarna merah bersifat gram negatif
-                                    Bahan : biakan dalam bouilon
-                                    Regensia : - Carbol Gentian Violet 0,5%
-                                    -	Lugol
-                                    -	Alkohol 96%
-                                    -	Fuchsin 0,5%
-                                    Alat : - Rak Tabung
-                                    -	 Lampu Bunsen
-                                    -	Ose Cincin
-                                    -	Objek Glass
-                                    -	Mikroskop
-                                    Cara kerja :
-                                    Bakar ose cincin hingga merah membara, lalu dinginkan
-                                    Ambil biakan dalam boilon 3-5 ose cincin, letakkan di atas objek glass, ratakan di atas objek glass
-                                    Ratakan di atas objek glass
-                                    Lalu fiksasi sediaan di atas di atas lampu bunsen sampai kering
-                                    Kemudian di tetesin dengan regensia carbol gentian violet, lalu tunggu 5 menit
-                                    Lalu buang cairan regensia, lalu alirkan air di air
-                                    Kemudian tetesin dengan lugol, lalu tnggu 1menit
-                                    Alirkan/ tetesin alkohol sampai tidak ada zat warna lagi di objek glass
-                                    Lalu tetsin regensia fuchsin 0,5% tunggu selama 5menit
-                                    Lalu buang regensia di air mengalir
-                                    Lalu keringkan dengan tisu
-                                    Kemudia tetesin dengan minyak imersi oil 1 tetes
-                                    Kemudian lihat di mikroskop dengan lensa objektif 100x
+-	Mampu menjelaskan prosedur pewarnaan gram
+Tujuan : Untuk membedakaan dua kelompok bakteri dimana bakteri yang bewarna ungu bersifat gram positif dan bakteri bewarna merah bersifat gram negatif
+Bahan : biakan dalam bouilon
+Regensia : - Carbol Gentian Violet 0,5%
+            -Lugol
+            -Alkohol 96%
+            -Fuchsin 0,5%
+Alat : - Rak Tabung
+        -	 Lampu Bunsen
+        -	Ose Cincin
+        -	Objek Glass
+        -	Mikroskop
+Cara kerja :
+Bakar ose cincin hingga merah membara, lalu dinginkan
+Ambil biakan dalam boilon 3-5 ose cincin, letakkan di atas objek glass, ratakan di atas objek glass
+Ratakan di atas objek glass
+Lalu fiksasi sediaan di atas di atas lampu bunsen sampai kering
+Kemudian di tetesin dengan regensia carbol gentian violet, lalu tunggu 5 menit
+Lalu buang cairan regensia, lalu alirkan air di air
+Kemudian tetesin dengan lugol, lalu tnggu 1menit
+Alirkan/ tetesin alkohol sampai tidak ada zat warna lagi di objek glass
+Lalu tetsin regensia fuchsin 0,5% tunggu selama 5menit
+Lalu buang regensia di air mengalir
+Lalu keringkan dengan tisu
+Kemudia tetesin dengan minyak imersi oil 1 tetes
+Kemudian lihat di mikroskop dengan lensa objektif 100x
 
-                                    Hasil gambar',
+Hasil gambar',
                 'gambar' => '',
             ],
             [
@@ -91,28 +91,28 @@ class CreateDediPratikumTable extends Migration
                 'id_mapel' => 1,
                 'judul_pratikum' => 'Pewarnaan Ziehl Neelsen' ,
                 'detail_pratikum' => 'Indikator : Mampu menjelaskan pembagian pewarnaan
-                                      Mampu melakukan pewarnaan ziehl neelsen
-                                    Tujuan : Untuk melihat bakteri tahan asam dalam bahan pemeriksaan
-                                    Bahan : Sputum (dahak)
-                                    Regensia : Carbol fuchsin 1%
-                                               Hcl alkohol 3%
-                                               Metylen blue 1%
-                                    Alat : - objek glass
-                                                Lidi
-                                                Mikroskop
-                                                Lampu bunsen
-                                    Cara kerja :
-                                    ambil sputum seujung lidi
-                                    Lalu letakkan di atas objek glass,lalu ratakan
-                                    Fiksasi di atas lampu bunsen sampai kering lalu dinginkan
-                                    Lalu tetesin carbol fuchsin 1% sampai menutupi semua bagian sampel
-                                    uapkan di atas lampu bunsen , lalu dinginkan dan tunggu selama  5 menit
-                                    setelah itu lunturkan dengan hcl alkohol 3% sampai warna nya luntur
-                                    lalu tetesin metylen blue 1% lalu tunggu 1 menit
-                                    setelah itu buang metylen blue dengan air mengalir hingga zat warna nya luntur
-                                    lalu keringkan dengan tissu
-                                    lalu tetesin dengan minyak imercy oil 1 tetes
-                                    lalu periksa di bawah mikroskop dengan lensa pembesaran lensa objektif 100 kali',
+Mampu melakukan pewarnaan ziehl neelsen
+Tujuan : Untuk melihat bakteri tahan asam dalam bahan pemeriksaan
+Bahan : Sputum (dahak)
+Regensia : Carbol fuchsin 1%
+Hcl alkohol 3%
+Metylen blue 1%
+Alat : - objek glass
+Lidi
+Mikroskop
+Lampu bunsen
+Cara kerja :
+ambil sputum seujung lidi
+Lalu letakkan di atas objek glass,lalu ratakan
+Fiksasi di atas lampu bunsen sampai kering lalu dinginkan
+Lalu tetesin carbol fuchsin 1% sampai menutupi semua bagian sampel
+uapkan di atas lampu bunsen , lalu dinginkan dan tunggu selama  5 menit
+setelah itu lunturkan dengan hcl alkohol 3% sampai warna nya luntur
+lalu tetesin metylen blue 1% lalu tunggu 1 menit
+setelah itu buang metylen blue dengan air mengalir hingga zat warna nya luntur
+lalu keringkan dengan tissu
+lalu tetesin dengan minyak imercy oil 1 tetes
+lalu periksa di bawah mikroskop dengan lensa pembesaran lensa objektif 100 kali',
                 'gambar' => '',
             ],
             [
