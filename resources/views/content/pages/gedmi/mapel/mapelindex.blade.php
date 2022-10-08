@@ -16,84 +16,90 @@
                 </select>
             </div>
         </div>
-        <div class="row" id="basic-table">
+        <div class="row" id="table-bordered">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-
                     </div>
-                    <div class="card-body">
-
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Hari</th>
-                                    <th>Jam</th>
-                                    <th>Nama Guru</th>
-                                    <th>B. Studi</th>
-                                    <th>Kelas</th>
-                                    <th>Action</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($mapel as $item)
+                    <div class="card-content">
+                        <div class="table-responsive">
+                            <table class="table table-bordered mb-0">
+                                <thead>
                                     <tr>
-                                        <th scope="row">{{ $loop->index + 1 }}</th>
-                                        <td>{{ $item->hari }}</td>
-                                        <td>{{ $item->jam }}</td>
-                                        <td>{{ $item->nama_guru }}</td>
-                                        <td>{{ $item->bidang_studi }}</td>
-                                        <td>{{ $item->kelas }}</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
-                                                    data-bs-toggle="dropdown">
-                                                    <i data-feather="more-vertical"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-end">
-                                                    <a class="dropdown-item"
-                                                        href="{{ route('gedmi.edit.mapel', ['id' => $item->id]) }}">
-                                                        <i data-feather="edit-2" class="me-50"></i>
-                                                        <span>Edit</span>
-                                                    </a>
-                                                    <form action="{{ route('gedmi.delete.mapel', ['id' => $item->id]) }}"
-                                                        method="post">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="dropdown-item">
-                                                            <i data-feather="trash" class="me-50"></i>
-                                                            <span>Delete</span>
-                                                        </button>
-                                                    </form>
+                                        <th>No.</th>
+                                        <th>Hari</th>
+                                        <th>Jam</th>
+                                        <th>Nama Guru</th>
+                                        <th>B. Studi</th>
+                                        <th>Kelas</th>
+                                        <th>Action</th>
 
-                                                </div>
-                                            </div>
-                                        </td>
                                     </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @forelse ($mapel as $item)
+                                        <tr>
+                                            <th scope="row">{{ $loop->index + 1 }}</th>
+                                            <td>{{ $item->hari }}</td>
+                                            <td>{{ $item->jam }}</td>
+                                            <td>{{ $item->nama_guru }}</td>
+                                            <td>{{ $item->bidang_studi }}</td>
+                                            <td>{{ $item->kelas }}</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button type="button"
+                                                        class="btn btn-sm dropdown-toggle hide-arrow py-0"
+                                                        data-bs-toggle="dropdown">
+                                                        <i data-feather="more-vertical"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item"
+                                                            href="{{ route('gedmi.edit.mapel', ['id' => $item->id]) }}">
+                                                            <i data-feather="edit-2" class="me-50"></i>
+                                                            <span>Edit</span>
+                                                        </a>
+                                                        <form
+                                                            action="{{ route('gedmi.delete.mapel', ['id' => $item->id]) }}"
+                                                            method="post">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="dropdown-item">
+                                                                <i data-feather="trash" class="me-50"></i>
+                                                                <span>Delete</span>
+                                                            </button>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @empty
+                                        <tr>
+                                            <td colspan="11" class="text-center">Data Kosong</td>
+                                        </tr>
+                                    @endforelse
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-3">
+                <a href="{{ route('gedmi.tambah.mapel') }}" class="btn btn-relief-primary mr-1 mb-1 float-right">
+                    Tambah
+                </a>
+            </div>
+        </div>
     </div>
-    <a href="{{ route('gedmi.tambah.mapel') }}"><button type="button"
-            class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
+    <!-- Bordered table end -->
+@endsection
 
-        </button>
-
-
-        <!-- Bordered table end -->
-    @endsection
-    @section('page-script')
-        <script>
-            $("#filterKelas").change(function(e) {
-                window.location.replace(`{{ route('gedmi.mapel.index') }}/?filter=${this.value}`)
-            });
-        </script>
-    @endsection
+@section('page-script')
+    <script>
+        $("#filterKelas").change(function(e) {
+            window.location.replace(`{{ route('gedmi.mapel.index') }}/?filter=${this.value}`)
+        });
+    </script>
+@endsection
