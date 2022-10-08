@@ -24,16 +24,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
         Route::get('/data-lowongan/index', 'LowonganController@indexLowonganApi')->name('index.lowongan');
         Route::get('/data-user/user', 'UserController@userPageApi')->name('index.user');
     });
-    
+
 
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/index','GudangController@apiIndex')->name('index');
-}); 
+});
 
 Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
     Route::get('/daftarsiswa','UserController@daftarsiswaapi')->name('siswa.daftar');
-    Route::get('/materiindex','MateriController@materiindexapi')->name('materi.index');
-    Route::get('/pratikumindex','PratikumController@pratikumindexapi')->name('pratikum.index');
+    Route::get('/materiindex/{id_mapel}','MateriController@materiindexapi')->name('materi.index');
+    Route::get('/pratikumindex/{id_mapel}','PratikumController@pratikumindexapi')->name('pratikum.index');
     Route::get('/latihanindex','LatihanController@latihanindexapi')->name('latihan.index');
 });
 
