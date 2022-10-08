@@ -122,7 +122,7 @@
                                                                             <img id="previewGudangImage"
                                                                                 class="img-fluid bg-cover rounded-lg mb-1 mt-1"
                                                                                 style="width: 225px; height: 225px; object-fit: contain"
-                                                                                src="{{ $data->gambar ?? '' != '' ? url('storage/chairiah/gudang-image/' . $data->gambar) : url('images/no-image.png') }}"
+                                                                                src="{{ $data->gambar ?? '' != '' ? asset('storage/chairiah/gudang-image/' . $data->gambar) : asset('images/no-image.png') }}"
                                                                                 alt="User Profile Image">
                                                                         </div>
                                                                         <div class="col-12">
