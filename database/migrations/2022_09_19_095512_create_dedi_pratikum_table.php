@@ -59,15 +59,15 @@ Cara kerja : - Hidupkan lampu Bunsen
 -	Mampu menjelaskan prosedur pewarnaan gram
 Tujuan : Untuk membedakaan dua kelompok bakteri dimana bakteri yang bewarna ungu bersifat gram positif dan bakteri bewarna merah bersifat gram negatif
 Bahan : biakan dalam bouilon
-Regensia : - Carbol Gentian Violet 0,5%
-            -Lugol
-            -Alkohol 96%
-            -Fuchsin 0,5%
-Alat : - Rak Tabung
-        -	 Lampu Bunsen
-        -	Ose Cincin
-        -	Objek Glass
-        -	Mikroskop
+Regensia :  - Carbol Gentian Violet 0,5%
+            - Lugol
+            - Alkohol 96%
+            - Fuchsin 0,5%
+Alat     :  - Rak Tabung
+            - Lampu Bunsen
+            - Ose Cincin
+            - Objek Glass
+            - Mikroskop
 Cara kerja :
 Bakar ose cincin hingga merah membara, lalu dinginkan
 Ambil biakan dalam boilon 3-5 ose cincin, letakkan di atas objek glass, ratakan di atas objek glass
