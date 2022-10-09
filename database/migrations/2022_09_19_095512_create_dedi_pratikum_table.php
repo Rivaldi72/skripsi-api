@@ -1152,13 +1152,13 @@ Cara Kerja :
 - Sumur mikrotitrasi disiapkan dan diberi label no. 1 sampai 8
 - Pengenceran sampel dibuat pada sumur yang berbeda dengan sumur mikrotitrasi dengan mencampur 190 µl diluents dan 10 µl sampel
 - Sumur mikrotitrasi no. 1 dikosongkan
-- Sumur mikrotitrasi no. 2 – 8 ditambahkan 25µl diluent
+- Sumur mikrotitrasi no. 28 ditambahkan 25µl diluent
 - Pada sumur mikrotitrasi no. 1 dan 2 ditambahkan 25 µl sampel yang telah diencerkan.
 - Campuran pada sumur 2 dipipet 25 µl dan ditambahkan pada sumur 3, lalu dihomogenkan. Begitu seterusnya sampai sumur 8
 - Campuran pada sumur 8 dipipet 25 µl dan dibuang
 - Control sel sebanyak 75 µl ditambahkan pada sumur mikrotitrasi no. 1 lalu dihomogenkan
 - Tes sel sebanyak 75 µl ditambahkan pada sumur mikrotitrasi no. 2-8 lalu dihomogenkan
-- Sumur diinkubasi pada suhu ruang selama 45 – 60 menit
+- Sumur diinkubasi pada suhu ruang selama 45-60 menit
 - Aglutinasi yang terjadi dibaca, dan ditentukan titernya',
                 'gambar' => '',
             ],
@@ -1305,7 +1305,7 @@ CONTROL :
 - Rotator selama 2 menit dengan kecepatan 100 RPM
 - Amati hasil
 
-SAMPEL
+SAMPEL :
 - Siapkan alat dan bahan yang akan di gunakan
 - Pipet 20 µ serum pada Slide Test
 - Tambahkan 20 µ Reagent
@@ -1313,7 +1313,7 @@ SAMPEL
 - Rotator selama 2 menit dengan kecepatan 100 RPM
 - Amati hasil
 
-Interpresi Hasil
+Interpresi Hasil :
 - Poitif : Terbentuk Aglutinasi
 - Negatif : Tidak Terbentuk Aglutinasi',
                 'gambar' => '',
