@@ -16,7 +16,7 @@ class CreateDediMateriTable extends Migration
         Schema::create('dedi_materi', function (Blueprint $table) {
             $table->id();
             $table->integer('id_mapel');
-            $table->string('judul_materi',);
+            $table->string('judul_materi');
             $table->text('detail_materi');
             $table->string('gambar')->nullable();
             $table->timestamps();
@@ -2676,7 +2676,7 @@ Ada 5 kondisi alkaliniti yang mungkin terjadi :
 	Hidroksida dan normal karbonat (P> ½T)
 	Hanya normal karbonat (P=½ T atau P=M)
 	Normal karbonat dan bikarbonat (P<½T)
-	Hanya bikarbonat saja (P – O)
+	Hanya bikarbonat saja (P  O)
 P adalah alkalinitas yang ditunjukkan dari hasil titrasi dengan indikator penolftalein.
 T adalah alkalinitas yang ditunjukkan dari hasil titrasi dengan indikator metil orange (total alkaliniti)
 M = T-P adalah alkalinitas yang ditunjukkan dari selisih hasil titrasi dengan indikator metil orange dan fenolftalein.
@@ -2875,7 +2875,7 @@ Perhitungan :
                 'gambar' => '',
             ],
             [
-                'id' => 65,
+                'id' => 66,
                 'id_mapel' => 8,
                 'judul_materi' => 'Magnesium',
                 'detail_materi' => 'Terdapat dalam air alain, mempengaruhi kesadahan air. Banyaknya Mg dalam air juga diukur dengan mg/1. daiam jumlah kecil Mg diperlukan untuk pertumbuhan tulang akan tetapi dalam jumlah lebih dari 125 mg/l dapat menimbulkan daya pencaliar dan diuretika dan kadar diatas 150 mgl dapat menimbulkan rasa mual. Kadar Mg dalam air berkisar antara 0 sampai beberapa ratus mg/l tergantung asalnya dan pengolahannya. Ada beberapa cara penetapan Mg, diantaranya adalah :
@@ -2914,7 +2914,7 @@ lebih dari 50 : 1 akan terjadi warna coklat dari senyawa Fe-kompleks yang menutu
                 'gambar' => '',
             ],
             [
-                'id' => 66,
+                'id' => 67,
                 'id_mapel' => 8,
                 'judul_materi' => 'Timbal (Pb)',
                 'detail_materi' => 'Timbal merupakan racun tubuh yang bersifat kumulatif. Air alami jarang mengandung Pb lebih dari 20 mg/1. sumber pencemaran Pb dapat berasal dari alam atau dari aktifitas manusia Ceas manusia, yang akhirnya dapat mempengaruhi kadarnya di dalam air, udara h Emisi yang berasal dari aktifitas manusia terutama berasal dari pembakaran bar timbal, Pb (CH3)4 yang digunakan sintetik anti knocking Pb juga dapat el dari batuan galena (PbS) dan kerusakan pipa-pipa air yang sudah aus, terutama ma bersifat lunak dan sedikit asam. Keracunan Pb akan menyebabkan kerusakan bahan bakar timbal, Pb sustem reproduksi, hati, otak dan sistem syaraf.
@@ -2929,7 +2929,7 @@ Sebelum melakukan analisa terhadap contoh air perlu dilakukan ekstraksi untuk me
                 'gambar' => '',
             ],
             [
-                'id' => 67,
+                'id' => 68,
                 'id_mapel' => 8,
                 'judul_materi' => 'Amonia (NH3)',
                 'detail_materi' => 'Dalam air badan air dan air limbah, seballagian besar nitrogen terdapat sebagai rat nitrit ammonia dan nitrogen organic. Secara analitik, nitrogen organik dan amidonia dapat ditetapkan bersama dan disebut nitrogen jumlah atau lebih tepatnya nitrogen kjeldahl karena penetapannya dilakukan dengan metode kjeldahl. Bentuk-bentuk senyawa di atas, seperti halnya gas N2 merupakan komponen dari siklus nitrogen. Banyaknya ammonja dalam air diukur dengan mg/l bahan ini sangat berbau sehingga tidak boleh sama sekali di dalam air.
@@ -2965,7 +2965,7 @@ NH. (mg/l)-ml standar x konsentrasi standar (mg/l) x 1000/ml contoh
                 'gambar' => '',
             ],
             [
-                'id' => 68,
+                'id' => 69,
                 'id_mapel' => 8,
                 'judul_materi' => 'Nitrat (No3)',
                 'detail_materi' => 'Nitrat merupakan hasil akhir dalam siklus nitrogen alam. Umumnya hanya terdapat dalam jumlah runut dalam air permukaan tetapi pada beberapa air tanah kadarnya lebih tinggi. Satuannya mg/l dengan batas maksimum 20 mg/l. jumlah nitrat yang besar dalam usus cenderung untuk berubah menjadi nitrit yang dapat bereaksi langsung dengan Hb membentuk methaemoglobin yang dapat menghalangi perjalanan oksigen di dalam tubuh. Bila kadarnya dalam air cukup besar dapat membahayakan kesehatan pada anak kecil mengakibatkan infant methaemoglobinemia.
@@ -2989,7 +2989,7 @@ Catatan : Brusin sangat toksik, hindari memipet dengan mulut
                 'gambar' => '',
             ],
             [
-                'id' => 69,
+                'id' => 70,
                 'id_mapel' => 8,
                 'judul_materi' => 'Penentuan Kadar Nitrat',
                 'detail_materi' => 'Prinsip : Senyawa nitrat dengan asam phenoldisulfonat dalam suasana basa akan Prinsip : Senyawa nitrat bentuk senyawa yang berwarna kuning.
@@ -2997,7 +2997,7 @@ Reaksi :
 CH(OH) (SO3H2)2 + 3 HNO, - C6H (OH) (NO2)3 + 2H2SO4 + H20
 Bahan :
 1. asam phenol disulfonat
-2. pembuatan : tambahkan 75 ml 85 % asanı sulfat dan 37,5 ml asam sulfat berasap kedalam 12 ml phenol
+2. pembuatan : tambahkan 75 ml 85 % asam sulfat dan 37,5 ml asam sulfat berasap kedalam 12 ml phenol
 3. larutan 12 N KOH
 4. pembuatan : larutkan 67,2 g KOH hingga volume 100 ml
 5. larutan standar nitrat 100 mg/l pembuatan : timbang 0,72189 g KNO3 yang telah dikeringkan 105°C selama 24 jam. Larutkan hingga 1 L di dalam labu ukur. Tambahkan 2 ml CHCI, untuk pengawetan.
@@ -3017,7 +3017,7 @@ NO3 (mg/l) = ml titrasi x konsentrasi larutan standar (mg/l) x 1000/ml contoh.
                 'gambar' => '',
             ],
             [
-                'id' => 70,
+                'id' => 71,
                 'id_mapel' => 8,
                 'judul_materi' => 'Nitrit (No2)',
                 'detail_materi' => 'Nitrit dalam air merupakan peruraian biologik dari zat organik. Bila dihubungkan dengan bentuk-bentuk nitrogen yang lain, adanya tapak nitrit merupakan petunjuk adanya pencemaran organic. Dalam air minum jarang terdapat nitrit lebih dari 0,1 mg/1. nitrit dapat menyebabkan penyakit blue babies. Nitrit ditentukan dengan mereaksikan larutan contoh asam sulfanilat dan naphtylamin HCI. Warna merah azobenzol-naphtylamin asam sulfanilat yang timbul dibandingkan dengan warna dari larutan standar yang telah diperlakukan sama dengan larutan contoh.
@@ -3048,7 +3048,7 @@ Dengan tabung Nessler : NO2 (mg/l) = ml titrasi x konsentrasi larutan standar (m
                 'gambar' => '',
             ],
             [
-                'id' => 71,
+                'id' => 72,
                 'id_mapel' => 8,
                 'judul_materi' => 'Flourida',
                 'detail_materi' => 'Satuan yang digunakan untu ng diizinkan adalah 1,0 - 2.0 sebagai pencegah karies gigi melebihi 1,0 mg/l dapat noda coklat yang susah hilang) Fluorida dalam air minum karies gigi. Fluorida dapat secara minum. Bila kadarnya melebihi ha h hilang) kadar 1-2 mg/l tersebut untuk daerah tropis perlu direvisi.
@@ -3060,7 +3060,7 @@ Ion fluorida bereaksi dengan zat warna zikronil-alizarin senyawa kompleks yang t
                 'gambar' => '',
             ],
             [
-                'id' => 72,
+                'id' => 73,
                 'id_mapel' => 8,
                 'judul_materi' => 'Klorida (CI)',
                 'detail_materi' => 'Klorida adalah salah satu anion yang terbanyak terkandung dalam air. Rasa asin yang ditimbulkan oleh klorida berbeda-beda tergantung dari susunan kimia air tersebut. Air yang mengandung klorida 250 mg/l terasa asin bila mengandung pula ion natrium. Ada pula air yang rasa asinnya berbeda meskipun mengandung klorida 100 mg/l bila mengandung banyak ion Ca dan Mg. Klorida yang kadarnya tinggi akan merusak pipapipa logam dan tanaman.
@@ -3088,7 +3088,7 @@ Cl (mg/l) =	Ml contoh
                 'gambar' => '',
             ],
             [
-                'id' => 73,
+                'id' => 74,
                 'id_mapel' => 8,
                 'judul_materi' => 'BOD = Biochemical Oxygen Demand (Kebutuhan Biologik Akan Oksigen)',
                 'detail_materi' => 'BOD adalah banyaknya oksigen yang diperlukan utnuk menguraikan zat organik BOD adalah banyaknya oksi dalam air secara biologik, sampai menjadi senyawa yang stabil. Dalam air limbah, bahan pencemar organik akan diuraikansecara alami oleh bakteri yang ada. Bakteri dalam air dapat digolongkan menjadi beberapa golongan. Golongan aerob adalah mereka memerlukan oksigen bebas untuk kehidupannya dan golongan anaerob adalah yang tidak memerlukan oksigen bebas pemecahan senyawa lain. Ada golongan ketiga yang dinamakan golongan falkultatif yang dapat berlaku sebagai aerob maupun anaerob tergantung keadaan lingkungannya. Kebanyakan Bakteri dalam air kotor adalah sapropit, hidup dari zat organik yang telah banyakan bakteri dalam air kotor adalah san mati.
@@ -3110,7 +3110,7 @@ HOD sample = faktor pengenceran x (c-y), dinginkan antara 20 - 80 % dari Z Pada 
                 'gambar' => '',
             ],
             [
-                'id' => 74,
+                'id' => 75,
                 'id_mapel' => 8,
                 'judul_materi' => 'Penentuan BOD = Biochemical Oxygen Demand',
                 'detail_materi' => 'Prinsip: Oksigen di dalam contoh air limbah akan mengoksidasi Mnso, yang ke dalam contoh dalam keadaan alkalis, sehingga terjadi endapan MnO ambahan dan KI, akan dibebaskan 12 yang jumlahnya ekivalen dengan jumlah erlarut. Iodium yang dibebaskan dititrasi dengan larutan standar tiosulfat dengan ditambahkan ke dalam cont dengan penambahan dan oksigen terlarut. Iodium indikator amilum.
@@ -3146,7 +3146,7 @@ V bl= volume blanko
                 'gambar' => '',
             ],
             [
-                'id' => 75,
+                'id' => 76,
                 'id_mapel' => 8,
                 'judul_materi' => 'COD = Chemical Oxygen Demand (Kerutuhan Kimiawi Akan Oksigen',
                 'detail_materi' => 'Penetapan COD gunanya untuk mengukur banyaknya oksigen setara dengan bahan organik dalam sample air, yang mudah dioksidasi oleh senyawa kimia oksidator Penetapan ini sangat penting untuk dapat diuraikan secara biologik. Maka dapat an COD adalah banyaknya oksidator kuat yang diperlukan untuk mengoksidasi panik dalam air, dihitung sebagai mgf. 02. beberapa zat organik yang tidak terurai secara biologik antara lain asam asetat, asam sitrat, selulosa dan lignin (zat kaya).

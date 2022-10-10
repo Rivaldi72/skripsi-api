@@ -10,6 +10,7 @@ use Str;
 class PratikumController extends Controller
 {
     public function pratikumindex(){
+        //  dd($request->toArray());
         $pratikum = PratikumModel::with('matapelajaran')->get();
 
         return view('/content/pages/dedi/pratikum/pratikum_index',compact('pratikum'));

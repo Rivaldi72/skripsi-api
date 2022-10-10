@@ -16,7 +16,7 @@ class CreateDediPratikumTable extends Migration
        Schema::create('dedi_pratikum', function (Blueprint $table) {
             $table->id();
             $table->integer('id_mapel');
-            $table->string('judul_pratikum', );
+            $table->string('judul_pratikum');
             $table->text('detail_pratikum');
             $table->string('gambar')->nullable();
             $table->timestamps();
@@ -462,7 +462,7 @@ Normal : 1 - 5 menit',
                 'gambar' => '',
             ],
             [
-                'id' => 23,
+                'id' => 16,
                 'id_mapel' => 3,
                 'judul_pratikum' => 'Pemeriksaan Protein Urine' ,
                 'detail_pratikum' => 'Prinsip : protein yang ada di dalam urine akan membentuk presipitasi/kekeruhan /endapan dalam suasana panas
@@ -649,7 +649,7 @@ Hasil :
                 'gambar' => '',
             ],
             [
-                'id' => 24,
+                'id' => 23,
                 'id_mapel' => 3,
                 'judul_pratikum' => 'Pemeriksaan Sediment Urine' ,
                 'detail_pratikum' => 'Metode : Mikroskip
@@ -674,7 +674,7 @@ Hasil : Sedia sediment',
                 'gambar' => '',
             ],
             [
-                'id' => 16,
+                'id' => 24,
                 'id_mapel' => 3,
                 'judul_pratikum' => 'Pemeriksaan Fisik Urine' ,
                 'detail_pratikum' => 'Tujuan : Untuk Mengetahui Warna,kejernihan, bau dan bui urine
@@ -1061,7 +1061,7 @@ Alat :
 - Pin Tip
 Cara kerja :
 - Siapkan alat dan bahan yang akan di gunakan
-- Lakukan pengambilan swab nasofaring’
+- Lakukan pengambilan swab nasofaring
 - Masukkan swab nasofaring  kedalam tabung reaksi yg berisi 3 tetes Buffer Antigen Covid 19 pada tabung reaksi
 - Tunggu selama 15 menit
 
@@ -1348,13 +1348,13 @@ Alat :
 Cara Kerja :
 KONTROL :
 - Pada 8 circle slide (plat widal) pemeriksaan widal teteskan 80 ul serum Control Positif dan Control Negatif.
-- Pada masing – masing circlre ditambah 80ul antigen H, AH, BH, CH,O, AO, BO, CO.
-- Serum masing – masing antigen dihomogenkan, Rotator dengan kecepatan 100 RPM selama 1 menit dan diamati terjadinya aglutinasi pada setiap circle.
+- Pada masing  masing circlre ditambah 80ul antigen H, AH, BH, CH,O, AO, BO, CO.
+- Serum masing  masing antigen dihomogenkan, Rotator dengan kecepatan 100 RPM selama 1 menit dan diamati terjadinya aglutinasi pada setiap circle.
 
 SAMPEL :
 - Pada 8 circle slide (plat widal) pemeriksaan widal teteskan 80 ul serum pasien.
-- Pada masing – masing circlre ditambah 80ul antigen H, AH, BH, CH,O, AO, BO, CO.
-- Serum masing – masing antigen dihomogenkan, Rotator dengan kecepatan 100 RPM selama 1 menit dan diamati terjadinya aglutinasi pada setiap circle.
+- Pada masing  masing circlre ditambah 80ul antigen H, AH, BH, CH,O, AO, BO, CO.
+- Serum masing  masing antigen dihomogenkan, Rotator dengan kecepatan 100 RPM selama 1 menit dan diamati terjadinya aglutinasi pada setiap circle.
 
 Interpesi Hasil :
 - Poitif : Terbentuk Aglutinasi
@@ -1385,8 +1385,8 @@ Alat :
 - Pin Tip
 Cara kerja :
 - Masukkan serum kedalam cicle diisi sebanyak 80ul,40ul,20ul,10ul,5ul
-- Pada masing – masing circle ditambah 80ul antigen H, AH, BH,CH, O, AO, BO dan CO yang telah dihomogenkan.
-- Serum masing – masing antigen dihomogenkan, Rotator dengan kecepatan 100 RPM selama 1 menit dan diamati terjadinya aglutinasi pada setiap circle.
+- Pada masing  masing circle ditambah 80ul antigen H, AH, BH,CH, O, AO, BO dan CO yang telah dihomogenkan.
+- Serum masing  masing antigen dihomogenkan, Rotator dengan kecepatan 100 RPM selama 1 menit dan diamati terjadinya aglutinasi pada setiap circle.
  -Amati hasil
 
 Interpresi Hasil :
@@ -1654,7 +1654,7 @@ Regensia :
 Cara Kerja :
 - Ditimbang 0,6300 gram natrium oksalat, kemudian dilarutkan dengan aquadest hingga 100 ml menggunakan labu ukur.
 - Di pipet 10 ml larutan tersebut
-- Tambahkan 40ml aquadest dan 6ml asam sulfat pekat. Panaskan pada suhu 60 – 70 derejeat celcius
+- Tambahkan 40ml aquadest dan 6ml asam sulfat pekat. Panaskan pada suhu 60 sampai 70 derejeat celcius
 - Titrasi dengan kalium permanganate hingga warna merah muda.
 - Catat volume larutan EDTA yang terpakai sebagai data standarisasi.
 - Kedalam labu erlenmeyer pipet 100ml bahan air
@@ -1728,7 +1728,7 @@ Cara Kerja :
 - Tambahkan pelan-pelan melalui dinding tabung 1ml asam sulfat pekat.
 - Setelah beberapa saat pada batas kedua cairan terbentuk cincin yang bewarna violet pada batas kedua cairan menunjukkan adanya karbohidrat dalam sampel.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 63,
@@ -1755,7 +1755,7 @@ Cara Kerja :
 - Kedalam tabung reaksi masukkan 5ml regensia benedict dan 5 tetes bahan, kocok lalu panaskan dengan waterbath sampai mendidih.
 - Setelah dipanaskan terjadi perubahan warna menjadi, hijau atau kuning atau terbentuk endapan merah bata menunjukkan gula pereduksi dalam bahan.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 64,
@@ -1783,7 +1783,7 @@ Cara Kerja :
 - Kemudian panaskan di atas nyala api sampai mendidih.
 - Setelah mendidih warna larutan berubah menjadi hijau atau kuning atau terbentuk merah bata endapan menunjukan adanya gula preduksi dalam bahan.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 65,
@@ -1810,7 +1810,7 @@ Cara Kerja :
 - Kedalam tabung reaksi masukkan 3ml regensia barfoed, 1 ml bahan lalu panaskan kembali di dalam waterbath selama 15 menit
 - Setelah di panaskan endapan merah bata menunjukkan adanya monosakarida dalam bahan
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 66,
@@ -1840,7 +1840,7 @@ Cara Kerja :
 - Jika terbentuk warna biru menunjukkan adanya amilum pada bahan
 - Jika terbentuk warna merah menunjukkan adanya dekstrin pada bahan.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 67,
@@ -1866,7 +1866,7 @@ Cara Kerja :
 - Setelah mendidih angkat lalu dinginkan
 - Jika larutan berubah menjadi warna chery maka adanya fruktosa.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 68,
@@ -1933,7 +1933,7 @@ Lakukan Penetapan Blanko Sesuai Petunjuk Kerja Berikut :
 -	Volume tio terpakai dicatat sebagai data titrasi kedua.
 -	Data titrasi penetapan kadar glukosa adalah data titrasi pertama ditambah data titrasi kedua.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 69,
@@ -1967,7 +1967,7 @@ Lakukan penetapan kadar klorida sesuai petunjuk kerja berikut :
 - Titrasi dengan larutan perak nitrat 0,01 N hingga terbentuk endapan kuning merah.
 - Catat volume perak nitrat yang terpakai sebagai data titrasi kadar klorida.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
             [
                 'id' => 70,
@@ -2007,22 +2007,9 @@ Lakukan penetapan kadar bilangan asam sesuai petunjuk kerja berikut :
 - Titrasi dengan larutan natrium hidroksida 0,1 N hingga larutan berwarna merah muda yang tidak hilang selama 30 detik.
 - Calat volume larutan natrium hidroksida sebagai data litrasi kadar klorida.
 ',
-                'gambar' => 'bb',
+                'gambar' => '',
             ],
-            [
-                'id' => 71,
-                'id_mapel' => 7,
-                'judul_pratikum' => 'bb',
-                'detail_pratikum' => 'bb',
-                'gambar' => 'bb',
-            ],
-            [
-                'id' => 72,
-                'id_mapel' => 7,
-                'judul_pratikum' => 'bb',
-                'detail_pratikum' => 'bb',
-                'gambar' => 'bb',
-            ],
+
 
 
 
