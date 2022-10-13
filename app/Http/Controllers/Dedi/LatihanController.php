@@ -14,8 +14,8 @@ class LatihanController extends Controller
         return view('/content/pages/dedi/latihan/latihan_index',compact('latihan'));
     }
 
-    public function latihanindexapi(){
-        $latihan = LatihanModel::with('matapelajaran')->get();
+    public function latihanindexapi($id_mapel){
+        $latihan = LatihanModel::where('id_mapel', $id_mapel)->with('matapelajaran')->get();
 
         return $latihan;
     }

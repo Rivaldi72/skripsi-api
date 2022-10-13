@@ -10,14 +10,15 @@ use Str;
 class MateriController extends Controller
 {
     public function materiindex(){
+
          $materi = MateriModel::with('matapelajaran')->get();
         //  dd($materi->toArray());
 
         return view('/content/pages/dedi/materi/materi_index',compact('materi'));
     }
 
-    public function materiindexapi(){
-         $materi = MateriModel::with('matapelajaran')->get();
+    public function materiindexapi($id_mapel){
+         $materi = MateriModel::where('id_mapel', $id_mapel)->with('matapelajaran')->get();
         //  dd($materi->toArray());
 
         return $materi;

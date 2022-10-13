@@ -19,6 +19,10 @@ class LowonganController extends Controller
 
      public function indexLowonganApi() {
       $dataLowongan= lowongan::all();
+
+      foreach ($dataLowongan as $key => $lowongan) {
+         $dataLowongan[$key]['date_formatted'] = $dataLowongan[$key]->created_at->format('d M y | H:i');
+      }
      return $dataLowongan;
   }
 
