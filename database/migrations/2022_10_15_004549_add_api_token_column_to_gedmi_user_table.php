@@ -14,13 +14,10 @@ class AddApiTokenColumnToGedmiUserTable extends Migration
     public function up()
     {
         Schema::table('gedmi_user', function (Blueprint $table) {
-            Schema::table('users', function($table){
-                $table->string('api_token',80)->after('password')
-                ->unique()
-                ->nullable()
-                ->default(null);
-            });
-            //
+            $table->string('api_token', 80)->after('password')
+            ->unique()
+            ->nullable()
+            ->default(null);
         });
     }
 
@@ -32,7 +29,7 @@ class AddApiTokenColumnToGedmiUserTable extends Migration
     public function down()
     {
         Schema::table('gedmi_user', function (Blueprint $table) {
-            //
+            $table->dropColumn('api_token');
         });
     }
 }

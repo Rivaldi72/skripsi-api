@@ -30,7 +30,7 @@ class AddApiTokenColumnToChairiahUserTable extends Migration
     public function down()
     {
         Schema::table('chairiah_user', function (Blueprint $table) {
-            //
+            $table->dropColumn('api_token');
         });
     }
 }
