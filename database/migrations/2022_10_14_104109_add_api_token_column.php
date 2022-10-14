@@ -13,7 +13,7 @@ class AddApiTokenColumn extends Migration
      */
     public function up()
     {
-        Schema::table('dedi_users', function ($table) {
+        Schema::table('dedi_user', function ($table) {
             $table->string('api_token', 80)->after('password')
                 ->unique()
                 ->nullable()
