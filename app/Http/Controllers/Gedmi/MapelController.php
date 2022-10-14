@@ -20,6 +20,7 @@ class MapelController extends Controller
         }
         return view('content.pages.gedmi.mapel.mapelindex', compact('mapel'));
     }
+    
     public function apiMapel(){
         $mapel = MapelModel::all();
         return $mapel;

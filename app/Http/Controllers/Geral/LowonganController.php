@@ -16,14 +16,26 @@ class LowonganController extends Controller
          $dataLowongan= lowongan::all();
         return view('content.pages.geral.data-lowongan.index', compact('dataLowongan'));
      }
+
+     public function indexLowonganApi() {
+      $dataLowongan= lowongan::all();
+
+      foreach ($dataLowongan as $key => $lowongan) {
+         $dataLowongan[$key]['date_formatted'] = $dataLowongan[$key]->created_at->format('d M y | H:i');
+      }
+     return $dataLowongan;
+  }
+
      public function tambahPage() {
       return view('content.pages.geral.data-lowongan.tambah');
       }
-   public function tambahPagePost(Request $request){
-      // dd($request->all());
-      lowongan::create( $request->all());
-      return redirect()->route('geral.index.lowongan');
-   }
+
+      public function tambahPagePost(Request $request){
+         // dd($request->all());
+         lowongan::create( $request->all());
+         return redirect()->route('geral.index.lowongan');
+      }
+      
    public function editPage($id) {
       $dataLowongan = lowongan::where('id', $id)->first();
       return view('content.pages.geral.data-lowongan.edit', compact('dataLowongan'));

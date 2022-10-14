@@ -52,7 +52,7 @@ class CreateChairiahUserTable extends Migration
             ],
 
             [ 
-                'id'                    =>      1,
+                'id'                    =>      5,
                 'username'              =>      'gudangjikrigayo',
                 'email'                 =>      'gudangjikrigayo@gmail.com',
                 'password'              =>      bcrypt('gudangjikrigayo123'),
