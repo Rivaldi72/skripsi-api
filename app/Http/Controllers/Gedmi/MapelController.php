@@ -22,7 +22,7 @@ class MapelController extends Controller
     }
     
     public function apiMapel($kelas){
-        $mapel = MapelModel::where('kelas', "$kelas")->get();
+        $mapel = MapelModel::where('kelas', $kelas)->get()->groupBy('hari');
         return $mapel;
     }
 
