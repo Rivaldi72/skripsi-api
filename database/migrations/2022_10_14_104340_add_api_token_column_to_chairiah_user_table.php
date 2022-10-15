@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddApiTokenColumnToGedmiUserTable extends Migration
+class AddApiTokenColumnToChairiahUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class AddApiTokenColumnToGedmiUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('gedmi_user', function (Blueprint $table) {
+        Schema::table('chairiah_user', function (Blueprint $table) {
             $table->string('api_token', 80)->after('password')
-            ->unique()
-            ->nullable()
-            ->default(null);
+                                ->unique()
+                                ->nullable()
+                                ->default(null);
+            //
         });
     }
 
@@ -28,7 +29,7 @@ class AddApiTokenColumnToGedmiUserTable extends Migration
      */
     public function down()
     {
-        Schema::table('gedmi_user', function (Blueprint $table) {
+        Schema::table('chairiah_user', function (Blueprint $table) {
             $table->dropColumn('api_token');
         });
     }
