@@ -41,7 +41,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
 
     Route::get('/guru/index','GuruController@apiIndex')->name('guru.index');
     Route::get('/siswa/indexsiswa/{kelas}','SiswaController@apiSiswa1')->name('siswa.index');
-    Route::get('/mapel','MapelController@apiMapel')->name('mapel.index');
+    Route::get('/mapel/{id}','MapelController@apiMapel')->name('mapel.index');
     Route::get('/guru/detail/{id}','GuruController@apiDetailGuru')->name('detail.guru');
     Route::get('/siswa/detail/{id}','SiswaController@apiDetailSiswa')->name('detail.siswa');
 
