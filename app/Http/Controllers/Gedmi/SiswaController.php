@@ -21,8 +21,8 @@ class SiswaController extends Controller
         }
         return view('content.pages.gedmi.siswa.indexsiswa', compact('dataSiswa'));
     }
-    public function apiSiswa1(){
-        $dataSiswa = SiswaModel::all();
+    public function apiSiswa1($kelas){
+        $dataSiswa = SiswaModel::where('kelas', "$kelas")->get();;
         return $dataSiswa;
     }
     public function tambahSiswa(){
