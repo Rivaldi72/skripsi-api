@@ -29,7 +29,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 1,
                 'username' => 'admin123',
-                'password' => 'admin123',
+                'password' => bcrypt('admin123'),
                 'role' => 'admin',
                 'api_token' => 'K@92gnVE}nuVbc!:7}gD7F:SByQ.:k',
                 'created_at' => now(),
@@ -38,7 +38,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 2,
                 'username' => 'kepalasekolah',
-                'password' => 'kepsek111',
+                'password' => bcrypt('kepsek111'),
                 'role' => 'kepalasekolah',
                 'api_token' => '$c$Tat)7(-qrtjwD&h?q/qnZE*%;-4',
                 'created_at' => now(),
@@ -47,7 +47,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 3,
                 'username' => 'agung',
-                'password' => 'agung123',
+                'password' => bcrypt('agung123'),
                 'role' => 'guru',
                 'api_token' => 'fmwEpJHx9fgjDN4[XEFb2Uv,RxCtmF',
                 'created_at' => now(),
@@ -56,7 +56,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 4,
                 'username' => 'almas',
-                'password' => 'almas123',
+                'password' => bcrypt('almas123'),
                 'role' => 'guru',
                 'api_token' => '-7F#QQWT-Umm+U*WG/Y}=DK7%kNkxY',
                 'created_at' => now(),
@@ -65,7 +65,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 5,
                 'username' => 'diana',
-                'password' => 'diana123',
+                'password' => bcrypt('diana123'),
                 'role' => 'guru',
                 'api_token' => 'i#5T$cgCT6%EmuM:Z+@4gbHkDc,S;c',
                 'created_at' => now(),
@@ -74,7 +74,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 6,
                 'username' => 'erlina',
-                'password' => 'erlina123',
+                'password' => bcrypt('erlina123'),
                 'role' => 'guru',
                 'api_token' => '[)xz)y?]Z;ADKKy,&ADU%$/TR=NCn#',                
                 'created_at' => now(),
@@ -83,7 +83,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 7,
                 'username' => 'gaya',
-                'password' => 'gaya123',
+                'password' => bcrypt('gaya123'),
                 'role' => 'guru',
                 'api_token' => 'NrBHjpZcTjp/*SwSVar,fwQ.Za]x-J',                
                 'created_at' => now(),
@@ -92,7 +92,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 8,
                 'username' => 'hengki',
-                'password' => 'hengki123',
+                'password' => bcrypt('hengki123'),
                 'role' => 'guru',
                 'api_token' => ']zqGXqhiKTZM6;bD4Zz2:]#)WY#$!:',                
                 'created_at' => now(),
@@ -101,7 +101,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 9,
                 'username' => 'intan',
-                'password' => 'intan123',
+                'password' => bcrypt('intan123'),
                 'role' => 'guru',
                 'api_token' => '/,XY:vk,QY33U=-GZB:C2u-P9$t8ci',                'created_at' => now(),
                 'updated_at' => now(),
@@ -109,7 +109,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 10,
                 'username' => 'jessica',
-                'password' => 'jessica123',
+                'password' => bcrypt('jessica123'),
                 'role' => 'guru',
                 'api_token' => 'HW7NnL5&5bJDyW7e/{N_DjY8T,9P#A',                
                 'created_at' => now(),
@@ -118,7 +118,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 11,
                 'username' => 'keti',
-                'password' => 'keti123',
+                'password' => bcrypt('keti123'),
                 'role' => 'guru',
                 'api_token' => 'Qt6W8G6{2gDH)X)UUc.)a5ycrc96d;',                
                 'created_at' => now(),
@@ -127,7 +127,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 12,
                 'username' => 'sabdana',
-                'password' => 'sabdana123',
+                'password' => bcrypt('sabdana123'),
                 'role' => 'guru',
                 'api_token' => 'c/z9EPrQ6ixCmS6#-7whWA-h@79;GA',                
                 'created_at' => now(),
@@ -137,7 +137,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 13,
                 'username' => 'salamauddin',
-                'password' => 'salamuddin123',
+                'password' => bcrypt('salamuddin123'),
                 'role' => 'guru',
                 'api_token' => '!CAdmrz*d6u{EAN5H5,;8%UXGpLmUw',                
                 'created_at' => now(),
@@ -146,7 +146,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 14,
                 'username' => 'siti',
-                'password' => 'siti123',
+                'password' => bcrypt('siti123'),
                 'role' => 'guru',
                 'api_token' => 'ir]$tatPpSHQw9VQgr+t+&yh*i8t9S',                
                 'created_at' => now(),
@@ -155,7 +155,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 15,
                 'username' => 'tatang',
-                'password' => 'tatang123',
+                'password' => bcrypt('tatang123'),
                 'role' => 'guru',
                 'api_token' => 'eD/}4%?uu.8+}PjiDUu3D;;hQu@*},',                
                 'created_at' => now(),
@@ -164,7 +164,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 16,
                 'username' => 'venny',
-                'password' => 'venny123',
+                'password' => bcrypt('venny123'),
                 'role' => 'guru',
                 'api_token' => '8/*:$=t$ZSPiFAwUiZKh-Xg=S@Gykz',                
                 'created_at' => now(),
@@ -173,7 +173,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 17,
                 'username' => 'purba',
-                'password' => 'purba123',
+                'password' => bcrypt('purba123'),
                 'role' => 'guru',
                 'api_token' => ':p&v:f#h{efVtBcF{%Yu)9:z%+p/wE',                
                 'created_at' => now(),
@@ -183,7 +183,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 18,
                 'username' => '22288170',
-                'password' => '22288170',
+                'password' => bcrypt('22288170'),
                 'role' => 'siswa',
                 'api_token' => '?..xU3Fm?WYpU8iNL%MPf{c/$Jjrq}',
                 'created_at' => now(),
@@ -192,7 +192,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 19,
                 'username' => '22288171',
-                'password' => '22288171',
+                'password' => bcrypt('22288171'),
                 'role' => 'siswa',
                 'api_token' => 'Lf8U+j6_Bh9@H]w]8]2)m,Fq3x-BVF',
                 'created_at' => now(),
@@ -201,7 +201,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 20,
                 'username' => '22288172',
-                'password' => '22288172',
+                'password' => bcrypt('22288172'),
                 'role' => 'siswa',
                 'api_token' => 'CBff]!U83T#z+6dH-gY]a8[T$tk%LH',
                 'created_at' => now(),
@@ -210,7 +210,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 21,
                 'username' => '22288173',
-                'password' => '22288173',
+                'password' => bcrypt('22288173'),
                 'role' => 'siswa',
                 'api_token' => 'fWAPm?EVA!av.RuA*//uf$e%zN]k7k',
                 'created_at' => now(),
@@ -219,7 +219,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 22,
                 'username' => '22288174',
-                'password' => '22288174',
+                'password' => bcrypt('22288174'),
                 'role' => 'siswa',
                 'api_token' => 'j?+bW*NE]M[zS?A,59q*U-Y-M#A42a',
                 'created_at' => now(),
@@ -228,7 +228,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 23,
                 'username' => '22288175',
-                'password' => '22288175',
+                'password' => bcrypt('22288175'),
                 'role' => 'siswa',
                 'api_token' => 'ZG2UP8=h{BP}v9_UvANT@$Px@]fEPb',
                 'created_at' => now(),
@@ -237,7 +237,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 24,
                 'username' => '22288176',
-                'password' => '22288176',
+                'password' => bcrypt('22288176'),
                 'role' => 'siswa',
                 'api_token' => 'Lz8$}X64R9G:ye.6ZjEmWk)da)}9x=',
                 'created_at' => now(),
@@ -246,7 +246,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 25,
                 'username' => '22288177',
-                'password' => '22288177',
+                'password' => bcrypt('22288177'),
                 'role' => 'siswa',
                 'api_token' => 'Rp%r*Kw:UQZ6Mk=/u:n%RkQh2(p!8H',
                 'created_at' => now(),
@@ -255,7 +255,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 26,
                 'username' => '22288178',
-                'password' => '22288178',
+                'password' => bcrypt('22288178'),
                 'role' => 'siswa',
                 'api_token' => 'gSK/+7c@:gR7]XiuGJqXQ=ktf3:6z)',
                 'created_at' => now(),
@@ -264,7 +264,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 27,
                 'username' => '22288179',
-                'password' => '22288179',
+                'password' => bcrypt('22288179'),
                 'role' => 'siswa',
                 'api_token' => 'UmE!Lm9h=n&*m]K+F?QS3zAv+C#)Yd',
                 'created_at' => now(),
@@ -273,7 +273,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 28,
                 'username' => '22288180',
-                'password' => '22288180',
+                'password' => bcrypt('22288180'),
                 'role' => 'siswa',
                 'api_token' => '$![.p%Z{8GZj}Mcc;vLf@Ze+r{&(U*',
                 'created_at' => now(),
@@ -282,7 +282,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 29,
                 'username' => '22288181',
-                'password' => '22288181',
+                'password' => bcrypt('22288181'),
                 'role' => 'siswa',
                 'api_token' => '3i$TJ#[Uw@,a@rKJjBagF{{(ZS{Xj-',
                 'created_at' => now(),
@@ -291,7 +291,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 30,
                 'username' => '22288182',
-                'password' => '22288182',
+                'password' => bcrypt('22288182'),
                 'role' => 'siswa',
                 'api_token' => 'mJb(!NDYQ9fVGmiymZ:*jdr.+%SnL*',
                 'created_at' => now(),
@@ -300,7 +300,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 31,
                 'username' => '22288183',
-                'password' => '22288183',
+                'password' => bcrypt('22288183'),
                 'role' => 'siswa',
                 'api_token' => 'w/;t57(g2;NYAVndvQE;U%+J:b9%V)',
                 'created_at' => now(),
@@ -309,7 +309,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 32,
                 'username' => '22288184',
-                'password' => '22288184',
+                'password' => bcrypt('22288184'),
                 'role' => 'siswa',
                 'api_token' => '{/EwT?dw,P63_tYpQw2W{ceYuKpBj@',
                 'created_at' => now(),
@@ -318,7 +318,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 33,
                 'username' => '22288185',
-                'password' => '22288185',
+                'password' => bcrypt('22288185'),
                 'role' => 'siswa',
                 'api_token' => '72?734D:@!8x?xp*Uvr_HYpE$$TN/f',
                 'created_at' => now(),
@@ -327,7 +327,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 34,
                 'username' => '22288186',
-                'password' => '22288186',
+                'password' => bcrypt('22288186'),
                 'role' => 'siswa',
                 'api_token' => '!Lk2QFvJW(LL%@VL}3{PrxygHDMZ.D',
                 'created_at' => now(),
@@ -336,7 +336,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 35,
                 'username' => '22288187',
-                'password' => '22288187',
+                'password' => bcrypt('22288187'),
                 'role' => 'siswa',
                 'api_token' => 'uiKi7[Lzx![EQ6Rw?y2KSd,!uQt.;B',
                 'created_at' => now(),
@@ -345,7 +345,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 36,
                 'username' => '22288188',
-                'password' => '22288188',
+                'password' => bcrypt('22288188'),
                 'role' => 'siswa',
                 'api_token' => 'pbYayjjSVpaf=_M7rpB/bU*hMP,(L,',
                 'created_at' => now(),
@@ -354,7 +354,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 37,
                 'username' => '22288189',
-                'password' => '22288189',
+                'password' => bcrypt('22288189'),
                 'role' => 'siswa',
                 'api_token' => 'iV[xMrYd_HVV(MD+mz!MrE.=aEey-t',
                 'created_at' => now(),
@@ -363,7 +363,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 38,
                 'username' => '22288190',
-                'password' => '22288190',
+                'password' => bcrypt('22288190'),
                 'role' => 'siswa',
                 'api_token' => 'LS6Mm]SZMX8k&}ip:;_fD5G}RRCiEB',
                 'created_at' => now(),
@@ -373,7 +373,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 39,
                 'username' => '22288191',
-                'password' => '22288191',
+                'password' => bcrypt('22288191'),
                 'role' => 'siswa',
                 'api_token' => 'khp}nQ]C5#X.itmQ;ZY%J%g4uHL&D8',
                 'created_at' => now(),
@@ -382,7 +382,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 40,
                 'username' => '22288192',
-                'password' => '22288192',
+                'password' => bcrypt('22288192'),
                 'role' => 'siswa',
                 'api_token' => '/D:JTp&7=DYaUv_,Vzz6uLr?v$jL85',
                 'created_at' => now(),
@@ -391,7 +391,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 41,
                 'username' => '22288193',
-                'password' => '22288193',
+                'password' => bcrypt('22288193'),
                 'role' => 'siswa',
                 'api_token' => 'WytdZApftPt[,NYypY:*9tknEWqCeA',
                 'created_at' => now(),
@@ -400,7 +400,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 42,
                 'username' => '22288194',
-                'password' => '22288194',
+                'password' => bcrypt('22288194'),
                 'role' => 'siswa',
                 'api_token' => '4h[Q.:H2j]?%[u9PP7:54e:NT!AXM7',
                 'created_at' => now(),
@@ -409,7 +409,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 43,
                 'username' => '22288195',
-                'password' => '22288195',
+                'password' => bcrypt('22288195'),
                 'role' => 'siswa',
                 'api_token' => '=GKbB[b3dt;DrMz)?}%i:%aHbNja*J',
                 'created_at' => now(),
@@ -418,7 +418,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 44,
                 'username' => '22288196',
-                'password' => '22288196',
+                'password' => bcrypt('22288196'),
                 'role' => 'siswa',
                 'api_token' => 'u]-CkFwNK:XT=K_:y[@mK[}ppkv*?X',
                 'created_at' => now(),
@@ -427,7 +427,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 45,
                 'username' => '22288197',
-                'password' => '22288197',
+                'password' => bcrypt('22288197'),
                 'role' => 'siswa',
                 'api_token' => 'QNq4)ta?%P+4)Q&:nx&N6Vh?2piX]f',
                 'created_at' => now(),
@@ -436,7 +436,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 46,
                 'username' => '22288198',
-                'password' => '22288198',
+                'password' => bcrypt('22288198'),
                 'role' => 'siswa',
                 'api_token' => 'H}f{qSg]PZt;+4HrGe_VHYD=VU,#.5',
                 'created_at' => now(),
@@ -445,7 +445,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 47,
                 'username' => '22288199',
-                'password' => '22288199',
+                'password' => bcrypt('22288199'),
                 'role' => 'siswa',
                 'api_token' => 'z@Qg/P=)W%:!ZxCpUfEk*piH?k:#*(',
                 'created_at' => now(),
@@ -456,7 +456,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 48,
                 'username' => '21288090',
-                'password' => '21288090',
+                'password' => bcrypt('21288090'),
                 'role' => 'siswa',
                 'api_token' => 'XNfY/9=-L2-v:qqi365%9L&t=-N(#K',
                 'created_at' => now(),
@@ -465,7 +465,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 49,
                 'username' => '21288091',
-                'password' => '21288091',
+                'password' => bcrypt('21288091'),
                 'role' => 'siswa',
                 'api_token' => '*8FRgm?yS=kECBY-6M*iD4Vy;,N6Me',
                 'created_at' => now(),
@@ -474,7 +474,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 50,
                 'username' => '21288092',
-                'password' => '21288092',
+                'password' => bcrypt('21288092'),
                 'role' => 'siswa',
                 'api_token' => '%r-.DR?rNFSn4KbB+AVe7]=)tRcZB*',
                 'created_at' => now(),
@@ -483,7 +483,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 51,
                 'username' => '21288093',
-                'password' => '21288093',
+                'password' => bcrypt('21288093'),
                 'role' => 'siswa',
                 'api_token' => 'S64.VZ9#U@VvFkS$]8dy_?uNK7Wnni',
                 'created_at' => now(),
@@ -492,7 +492,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 52,
                 'username' => '21288094',
-                'password' => '21288094',
+                'password' => bcrypt('21288094'),
                 'role' => 'siswa',
                 'api_token' => 'HZw2!hw)%m%F32f=m.6Na:MTc{:45Q',
                 'created_at' => now(),
@@ -502,7 +502,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 53,
                 'username' => '21288095',
-                'password' => '21288095',
+                'password' => bcrypt('21288095'),
                 'role' => 'siswa',
                 'api_token' => 'R@{E2vatxAj+kCD%.(YU97grZ]bm8/',
                 'created_at' => now(),
@@ -511,7 +511,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 54,
                 'username' => '21288096',
-                'password' => '21288096',
+                'password' => bcrypt('21288096'),
                 'role' => 'siswa',
                 'api_token' => 'ixFnpTmK6,zD*}p{%t/$6YrM:{Z+Zu',
                 'created_at' => now(),
@@ -520,7 +520,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 55,
                 'username' => '21288097',
-                'password' => '21288097',
+                'password' => bcrypt('21288097'),
                 'role' => 'siswa',
                 'api_token' => 'Q22e#)gy.UE@K4nPBV8$nrNDZpphQW',
                 'created_at' => now(),
@@ -529,7 +529,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 56,
                 'username' => '21288098',
-                'password' => '21288098',
+                'password' => bcrypt('21288098'),
                 'role' => 'siswa',
                 'api_token' => 'W{DAm+cBpLq7c/%X$G+CeZ*eFD[qTj',
                 'created_at' => now(),
@@ -538,7 +538,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 57,
                 'username' => '21288099',
-                'password' => '21288099',
+                'password' => bcrypt('21288099'),
                 'role' => 'siswa',
                 'api_token' => 'yLN+E8GG4Yq_YerS2*AFAKi{C+G&P.',
                 'created_at' => now(),
@@ -548,7 +548,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 58,
                 'username' => '21288100',
-                'password' => '21288100',
+                'password' => bcrypt('21288100'),
                 'role' => 'siswa',
                 'api_token' => 'U,c-#5.UGkChF@8XtXW,%De7#_:}tz',
                 'created_at' => now(),
@@ -557,7 +557,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 59,
                 'username' => '21288101',
-                'password' => '21288101',
+                'password' => bcrypt('21288101'),
                 'role' => 'siswa',
                 'api_token' => 'PEE49e:Kx]?a:2m/e=#UKnUQ*Rifvw',
                 'created_at' => now(),
@@ -566,7 +566,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 60,
                 'username' => '21288102',
-                'password' => '21288102',
+                'password' => bcrypt('21288102'),
                 'role' => 'siswa',
                 'api_token' => '&yT8$4+{xYRH$P?$t4Nxk+/c_}fWCc',
                 'created_at' => now(),
@@ -575,7 +575,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 61,
                 'username' => '21288103',
-                'password' => '21288103',
+                'password' => bcrypt('21288103'),
                 'role' => 'siswa',
                 'api_token' => 'yKWJ$RDbBJS]HCmuMu-FqVb)2$JXhC',
                 'created_at' => now(),
@@ -584,7 +584,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 62,
                 'username' => '21288104',
-                'password' => '21288104',
+                'password' => bcrypt('21288104'),
                 'role' => 'siswa',
                 'api_token' => '{[;5;V-]Eay9v9APqqeHM;WW7P%Q@2',
                 'created_at' => now(),
@@ -593,7 +593,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 63,
                 'username' => '21288105',
-                'password' => '21288105',
+                'password' => bcrypt('21288105'),
                 'role' => 'siswa',
                 'api_token' => 'aw[B$.P=5iAHEaT&}W#gW[+G9;3J$3',
                 'created_at' => now(),
@@ -602,7 +602,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 64,
                 'username' => '21288106',
-                'password' => '21288106',
+                'password' => bcrypt('21288106'),
                 'role' => 'siswa',
                 'api_token' => 'fRJQj+Pf@Sz2U$YE]a2n}[DXmVpG5n',
                 'created_at' => now(),
@@ -611,7 +611,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 65,
                 'username' => '21288107',
-                'password' => '21288107',
+                'password' => bcrypt('21288107'),
                 'role' => 'siswa',
                 'api_token' => '#!(?k94V,N2b.uj59iHrr}P@@W[]k_',
                 'created_at' => now(),
@@ -620,7 +620,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 66,
                 'username' => '21288108',
-                'password' => '21288108',
+                'password' => bcrypt('21288108'),
                 'role' => 'siswa',
                 'api_token' => '*uktBN4ViSLmXajbS;)Q{:L@_%%gxV',
                 'created_at' => now(),
@@ -629,7 +629,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 67,
                 'username' => '21288109',
-                'password' => '21288109',
+                'password' => bcrypt('21288109'),
                 'role' => 'siswa',
                 'api_token' => 'b8Vc-.aAD2fVzrD:H5#KVE#fB4c?.]',
                 'created_at' => now(),
@@ -638,7 +638,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 68,
                 'username' => '21288110',
-                'password' => '21288110',
+                'password' => bcrypt('21288110'),
                 'role' => 'siswa',
                 'api_token' => 'tM%DB-Kh(Xe:eB6/Hn(U49)!Di@kxy',
                 'created_at' => now(),
@@ -647,7 +647,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 69,
                 'username' => '21288111',
-                'password' => '21288111',
+                'password' => bcrypt('21288111'),
                 'role' => 'siswa',
                 'api_token' => 'g:VB$A]]eZdMScguf,)p@P#HyEwCaJ',
                 'created_at' => now(),
@@ -656,7 +656,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 70,
                 'username' => '21288112',
-                'password' => '21288112',
+                'password' => bcrypt('21288112'),
                 'role' => 'siswa',
                 'api_token' => 'kL7*9_2+mU@2[5a-7C#kPW*cmyefJ+',
                 'created_at' => now(),
@@ -665,7 +665,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 71,
                 'username' => '21288113',
-                'password' => '21288113',
+                'password' => bcrypt('21288113'),
                 'role' => 'siswa',
                 'api_token' => 'PY{KG([EHVK2)bn6FMmq??YVq3u}wP',
                 'created_at' => now(),
@@ -674,7 +674,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 72,
                 'username' => '21288114',
-                'password' => '21288114',
+                'password' => bcrypt('21288114'),
                 'role' => 'siswa',
                 'api_token' => 'SWT5c(_RziMpVe7;Q#McGt3f#;n*uY',
                 'created_at' => now(),
@@ -683,7 +683,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 73,
                 'username' => '21288115',
-                'password' => '21288115',
+                'password' => bcrypt('21288115'),
                 'role' => 'siswa',
                 'api_token' => 'twP8E_d3QmEfyM%&t{nzKAt!pCRH,B',
                 'created_at' => now(),
@@ -692,7 +692,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 74,
                 'username' => '21288116',
-                'password' => '21288116',
+                'password' => bcrypt('21288116'),
                 'role' => 'siswa',
                 'api_token' => 'X(SeVW4%MY6uc2pL4hwUr[rN3,+FLc',
                 'created_at' => now(),
@@ -701,7 +701,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 75,
                 'username' => '21288117',
-                'password' => '21288117',
+                'password' => bcrypt('21288117'),
                 'role' => 'siswa',
                 'api_token' => 'fYZuRGN;xN:];9/5;LVy2ftbmUy7/W',
                 'created_at' => now(),
@@ -710,7 +710,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 76,
                 'username' => '21288118',
-                'password' => '21288118',
+                'password' => bcrypt('21288118'),
                 'role' => 'siswa',
                 'api_token' => ',ait)A.P7p_{gK2xamX5{xZcY@-*ep',
                 'created_at' => now(),
@@ -719,7 +719,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 77,
                 'username' => '21288119',
-                'password' => '21288119',
+                'password' => bcrypt('21288119'),
                 'role' => 'siswa',
                 'api_token' => 'w}-hW7M[[u5z+9n_DKwqmCvrM%!}eW',
                 'created_at' => now(),
@@ -730,7 +730,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 78,
                 'username' => '20218005',
-                'password' => '20218005',
+                'password' => bcrypt('20218005'),
                 'role' => 'siswa',
                 'api_token' => 'wW/Ren.m8Lm@B!7t(WaCp(vagE@dZc',
                 'created_at' => now(),
@@ -739,7 +739,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 79,
                 'username' => '20218006',
-                'password' => '20218006',
+                'password' => bcrypt('20218006'),
                 'role' => 'siswa',
                 'api_token' => 'e.P_D+7x4:#}/jdu&NM*fV3pVCg3Tz',
                 'created_at' => now(),
@@ -748,7 +748,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 80,
                 'username' => '20218009',
-                'password' => '20218009',
+                'password' => bcrypt('20218009'),
                 'role' => 'siswa',
                 'api_token' => 'HmE2?-{V[wC5#EG},tmS=!?qb;!RQK',
                 'created_at' => now(),
@@ -757,7 +757,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 81,
                 'username' => '20218010',
-                'password' => '20218010',
+                'password' => bcrypt('20218010'),
                 'role' => 'siswa',
                 'api_token' => 'ewr8W6KUu9+p@k[8]cu4quG?y,w6ik',
                 'created_at' => now(),
@@ -766,7 +766,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 82,
                 'username' => '20218011',
-                'password' => '20218011',
+                'password' => bcrypt('20218011'),
                 'role' => 'siswa',
                 'api_token' => ']7.3P7Mc4Ck-8yZ:SfCkup{JUY!M*e',
                 'created_at' => now(),
@@ -775,7 +775,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 83,
                 'username' => '20218013',
-                'password' => '20218013',
+                'password' => bcrypt('20218013'),
                 'role' => 'siswa',
                 'api_token' => 'he}+d!XD6]5Yg-MQ-zHN.5B-uf}XKz',
                 'created_at' => now(),
@@ -784,7 +784,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 84,
                 'username' => '20218014',
-                'password' => '20218014',
+                'password' => bcrypt('20218014'),
                 'role' => 'siswa',
                 'api_token' => '(TD)2-c#_N-y/$de2?6MT]&GGd$d=x',
                 'created_at' => now(),
@@ -793,7 +793,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 85,
                 'username' => '20218016',
-                'password' => '20218016',
+                'password' => bcrypt('20218016'),
                 'role' => 'siswa',
                 'api_token' => 'wvu*)Mc{bKnvWjbGg8Wyw[8NfTu[e%',
                 'created_at' => now(),
@@ -802,7 +802,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 86,
                 'username' => '20218017',
-                'password' => '20218017',
+                'password' => bcrypt('20218017'),
                 'role' => 'siswa',
                 'api_token' => 'BN&wP6{KdCg?g7Ea6;qp4_({M/mCrL',
                 'created_at' => now(),
@@ -811,7 +811,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 87,
                 'username' => '20218018',
-                'password' => '20218018',
+                'password' => bcrypt('20218018'),
                 'role' => 'siswa',
                 'api_token' => '/wGHvzC.j?5Y8P-wA-c:Px9SDuW7_r',
                 'created_at' => now(),
@@ -820,7 +820,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 88,
                 'username' => '20218019',
-                'password' => '20218019',
+                'password' => bcrypt('20218019'),
                 'role' => 'siswa',
                 'api_token' => 'SX6XRAKM$Fd!Y5JcgCFp,Wf6G_dpTZ',
                 'created_at' => now(),
@@ -829,7 +829,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 89,
                 'username' => '20218020',
-                'password' => '20218020',
+                'password' => bcrypt('20218020'),
                 'role' => 'siswa',
                 'api_token' => 'r+)!&D?_-e%guuS5!PPmF&XhbS;VA;',
                 'created_at' => now(),
@@ -838,7 +838,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 90,
                 'username' => '20218021',
-                'password' => '20218021',
+                'password' => bcrypt('20218021'),
                 'role' => 'siswa',
                 'api_token' => 'jfmRxTqL/5/,b_]bptwB8Fa7$DU&WE',
                 'created_at' => now(),
@@ -847,7 +847,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 91,
                 'username' => '20218022',
-                'password' => '20218022',
+                'password' => bcrypt('20218022'),
                 'role' => 'siswa',
                 'api_token' => 'QtzAGM/-&%.),S$Di5u(HPEq_(c+rR',
                 'created_at' => now(),
@@ -856,7 +856,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 92,
                 'username' => '20218023',
-                'password' => '20218023',
+                'password' => bcrypt('20218023'),
                 'role' => 'siswa',
                 'api_token' => 'mf}C!*-(St_*LK!tZ+P[Le!S)ahE.H',
                 'created_at' => now(),
@@ -865,7 +865,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 93,
                 'username' => '20218024',
-                'password' => '20218024',
+                'password' => bcrypt('20218024'),
                 'role' => 'siswa',
                 'api_token' => ')a?{Bg&h?tFWcm9f.89S$Bcy:J$qNw',
                 'created_at' => now(),
@@ -874,7 +874,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 94,
                 'username' => '20218025',
-                'password' => '20218025',
+                'password' => bcrypt('20218025'),
                 'role' => 'siswa',
                 'api_token' => 'vF[Qn=PzymBPCYiwrEzP3$eM*r@ku]',
                 'created_at' => now(),
@@ -883,7 +883,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 95,
                 'username' => '20218026',
-                'password' => '20218026',
+                'password' => bcrypt('20218026'),
                 'role' => 'siswa',
                 'api_token' => '*3Xn3.xXqrM53[_yN3iXDiVgi-&_pe',
                 'created_at' => now(),
@@ -892,7 +892,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 96,
                 'username' => '20218027',
-                'password' => '20218027',
+                'password' => bcrypt('20218027'),
                 'role' => 'siswa',
                 'api_token' => 'G84Nc&;qt[iM6Dp@mDhV*48K;n4Zj;',
                 'created_at' => now(),
@@ -901,7 +901,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 97,
                 'username' => '20218028',
-                'password' => '20218028',
+                'password' => bcrypt('20218028'),
                 'role' => 'siswa',
                 'api_token' => 'R2Q+[ZFH&-EBR{+nik%U!]Nr/Ri+;@',
                 'created_at' => now(),
@@ -910,7 +910,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 98,
                 'username' => '20218029',
-                'password' => '20218029',
+                'password' => bcrypt('20218029'),
                 'role' => 'siswa',
                 'api_token' => ',BUXm#.,-E@h73;a]KMdj;ABWjbptd',
                 'created_at' => now(),
@@ -919,7 +919,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 99,
                 'username' => '20218030',
-                'password' => '20218030',
+                'password' => bcrypt('20218030'),
                 'role' => 'siswa',
                 'api_token' => 'Yi5a**BkyDB{akgf&.wg]r7NFM3HP,',
                 'created_at' => now(),
@@ -928,7 +928,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 100,
                 'username' => '20218031',
-                'password' => '20218031',
+                'password' => bcrypt('20218031'),
                 'role' => 'siswa',
                 'api_token' => '5J:8S)eLKwezd&5@k56K#h+LQD=R,N',
                 'created_at' => now(),
@@ -937,7 +937,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 101,
                 'username' => '20218032',
-                'password' => '20218032',
+                'password' => bcrypt('20218032'),
                 'role' => 'siswa',
                 'api_token' => 'y{M4qeP,@(.Dd[pR24XDK.v(HwSzic',
                 'created_at' => now(),
@@ -946,7 +946,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 102,
                 'username' => '20218033',
-                'password' => '20218033',
+                'password' => bcrypt('20218033'),
                 'role' => 'siswa',
                 'api_token' => '9[g67gSVZ._.!f*[RdUR:uYt!c%ZpL',
                 'created_at' => now(),
@@ -955,7 +955,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 103,
                 'username' => '20218034',
-                'password' => '20218034',
+                'password' => bcrypt('20218034'),
                 'role' => 'siswa',
                 'api_token' => 'KP-!(dVkN:[4Hy$X3f)apXfL%Z3KEM',
                 'created_at' => now(),
@@ -964,7 +964,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 104,
                 'username' => '20218035',
-                'password' => '20218035',
+                'password' => bcrypt('20218035'),
                 'role' => 'siswa',
                 'api_token' => '=zicrv666d$z]Z.Lj2J,?n=viV&y=D',
                 'created_at' => now(),
