@@ -23,6 +23,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
         Route::get('/', 'LowonganController@indexApi')->name('index');
         Route::get('/data-lowongan/index', 'LowonganController@indexLowonganApi')->name('index.lowongan');
         Route::get('/data-user/user', 'UserController@userPageApi')->name('index.user');
+        Route::get('/login', 'AuthController@apiLogin')->name('api.login');
     });
 
 
