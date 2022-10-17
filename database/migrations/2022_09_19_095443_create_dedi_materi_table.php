@@ -16,7 +16,7 @@ class CreateDediMateriTable extends Migration
         Schema::create('dedi_materi', function (Blueprint $table) {
             $table->id();
             $table->integer('id_mapel');
-            $table->string('judul_materi',);
+            $table->string('judul_materi');
             $table->text('detail_materi');
             $table->string('gambar')->nullable();
             $table->timestamps();
@@ -1040,6 +1040,2140 @@ lipopolisakarida.Namun, antibodi pasien menghambat pengikatan antara partikel in
 ',
                 'gambar' => '',
             ],
+            [
+                'id' => 31,
+                'id_mapel' => 1,
+                'judul_materi' => 'Pendahuluan Tentang Mikroorganisme',
+                'detail_materi' => 'Dunia Mikroba
+Mikroorganisme (disingkat mikroba, jasad renik, protista) adalah makhluk kecil yang hanya dapat dilihat dengan bantuan mikroskop. Ilmu yang mempelajari tentang perikehidupan mikroba ini disebut MIKROBIOLOGI (bahasa Yunani : mikro = kecil, bios =] hidup, logos = ilmu. Mikrobiologi mempunyai beberapa cabang, yakni mencakup pengetahuan tentang protozoologi (hewan bersel satu atau protozoa), bakteriologi (ilmu tentang bakteri), virology (ilmu tentang virus) dan mikologi (ilmu tentang jamur, terutama jamur yang bertingkat rendah).
+Mikroorganisme adalah makhluk kecil yang tidak dapat dilihat dengan mata. Besarnya dinyatakan dengan satuan micron (symbol u), 1 mikron - 0,001 mm. Virus adalah paling kecil dari mikroorganisme, besarnya dinyatakan dengan satuan millimikron (mu), 1 millimikron = 0,001 mu. Besar mikroorganisme yang dinyatakan dengan micron, dapat dilihat dengan mikroskop biasa. Sedangkan virus yang besarnya dinyatakan dengan millikron, hanya dapat dilihat dengan mikroskop electron.
+
+ Tempat hidup
+Mikroorganisme terdapat dimana-mana. Mereka dijumpai pada lapisan tanah sebelah atas, dalam air, diudara, sampah-sampah, debu-debu, pada makanan dan minuman, tumbuh-tumbuhan dan juga pada tubuh manusia dan hewan. Jenis mikroorganisme yang kita jumpai bergantung kepada tempatnya. Keanekaragaman dan tata hidup mikroorganisme ini sangat menarik dan mengesankan. Mereka mudah berkembangbiak dan berpindah-pindah dari satu tempat ketempat yang lain, misalnya melalui debu-debu, udara, makanan dan minuman dan sebagainya.
+Manusia dalam kandungan bebas dari mikroba, dengan kata lain steril (bebas hama). Akan tetapi sejak saat dilahirkan, hubungan manusia dengan mikroba tetap ada sampai akhir hayatnya. Jumlah dan jenis mikroba ini pada tubuh manusia selalu mengalami perubahan. Hal ini tergantung pada tubuh manusia, situasi dan lingkungan itu sendiri. Dan sejak saat itu pulalah, mikroba menjadi masalah dalam hidup manusia terutama terhadap mikroorganisme yang merugikan atau yang dapat menyebabkan penyakit, merusak makanan dan sebagainya.
+Asal mikroba
+Dari manakah asalnya makhluk-makhluk kecil atau kehidupan ini telah menjadi perdebatan sejak berabad-abad, jauh sebelum jaman Masehi. Aristoteles (384-322 SM) seorang filosofi dan ilmuan yang terkenal dari Yunani berpendapat, bahwa makhluk-makhluk mikroskopis (mikroba) itu dapat terjadi dengan sendirinya.
+
+Perintis mikrobiologi
+Sebelum abad ke 17 dunia mikroba masih gelap, artinya makhluk kecil yang tidak dapat dilihat dengan mata belum dikenal. Sebagai perintis dalam penemuan didunia mikroorganisme ialah Leeuwenhoek, kemudian dikembangkan oleh Pasteur dan Robenrt Koch. Dibawah ini kita uraikan secara singkat bagaimana penemuan-penemuan mereka
+
+Antonio van Leeuwenhock (1632-1723)
+Leeuwenhock seorang bangsa Belanda, adalah orang yang pertama menemukan mikroorganisme dengan mikroskop ciptaannya sendiri. Dengan mikroskopnya yang sederhana, beliau memeriksa setitik air kotor (air sungai, danau, hujan, air buangan), beliau melihat benda-benda aneh yang kecil. Makhluk kecil dinamakannya : animacula" (influsoria) dan mikroskop yang digunakannya disebut "magic eye" (mata ajaib). Apa yang dilihat oleh Leeuwenhock didalam setetes air tidak lain adalah protozoa yang kita kenal sekarang (1676). Leeuwenhock dapat dipandang sebagai peletak batu pertamanya dalam penemuan mikroorganisme dan sebagai perintis mikrobiologi.
+
+Louis Pasteur (1822-1895)
+Pasteur berasal dari Perancis, seorang apoteker dan ahli kimia, akan tetapi banyak melakukan penyelidikan dibidang mikroorganisme. Penemuan mikroskop dan mikroorgansme oleh Leeuwenhock sangat menarik perhatiannyda dan menjadi landasan dalam penyelidikan-penyelidikan Pasteur. Setelah melakukan percobaan-percobaan ternyata bahwa paham generatio spontanea itu tidak benar (Pasteur, Lazzaro Spallanzani, Francesco Redi). Kemudian timbullah pendapat baru tentang kehidupan sebagai berikut :
+-	Omne vivum ex vivo : artinya bahwa adanya kehidupan hanya dapat terjadi karena ada kehidupan sebelumnya.
+-	Omne vivum ex evo : artinya bahwa segala sesuatu yang hidup berasal dari telur
+
+Dari keterangan diatas dapat ditarik kesimpulan, bahwa benda mati tetap sebagai benda mati dan makhluk hidup berasal dari makhluk yang sama jenisnya. Pasteur dianggap sebagai Bapak bakteriologi dan pencipta mikrobiologi (ilmu kuman). Beliau banyak melakukan penyelidikan tentang hubungan mikroorganisme dengan manusia, baik yang merugikan maupun yang menguntungkan. Perkembangan mikrobiologi sangat pesat pada jaman beliau. Penemuan-penemuan Pasteur antara lain dapat disebutkan :
+-	Pendapatnya tentang teori kuman penyakit (penularannya)
+-	Pengembangan teknik pencegahan penyakit (vaksinasi)
+-	Dasar-dasar sterilisasi (menghapus hamakan)
+-	Pembuatan vaksin kolera ayam, vaksin rabies (gila anjing)
+-	Pemeliharaan Pemeliharaan kuman dilaboratorium (biakan murni)
+-	Penemuan peragian pada anggur, bir dan sebagainya.
+terkenal dengan sebutan " generatio spontanea" (generasi spontan) atau teori abiogenesis. Bedanya teori generasi spontan abiogenesis, ialah pada generasi spontan, makhluk hidup terjadi begitu juga tanpa asal. Sebaliknya pada teori abiogenesis, makhluk hidup itu terjadi dari benda-benda mati (a= tidak, bios=hidup, genesis=kejadian). Pendapat ini dianut oleh Needam (seorang pendeta bangsa Irlandia), helmont, Pouchet, Joly, Mussef dll.
+Timbulnya teori atau hipotese generasi spontan ini, berdasarkan atas kenyataan adanya perubahan-perubahan yang terjadi, misalnya :
+-	Daging yang telah direbus, kemudian disimpan dalam botol yang tertutup, setelah beberapa hari, didalamnya sudah terdapat makhluk-makhluk kecil
+-	Air hujan yang kelihatannya jernih, setelah beberapa hari ditampung, didalamnya sudah terdapat makhluk-makhluk kecil.
+-	Begitu juga, susu menjadi asam, air gulai menjadi basi setelah beberapa hari dan sebagainya.
+Teori generasi spontan ini lama mempengaruhi para ahli, etrbukti bahwa baru 22 abad kemudian atau pada abad ke-19 dapat dibuktikan bahwa teori generatio spontanea dan teori abiogenesis tidak benar.
+
+Robert Koch ( 1843-1910)
+
+Robert Koch adalah seorang dokter bangsa Jerman, murid Pasteur. Beliau yang pertama-tama memperkenalkan cara-cara pemeriksaan bakteri dilaboratorium, mengisolasi (mengasingkan) kuman penyakit dari bahan sakit yang berasal dari penderita. Perbenihan yang digunakan adalah perbenihan padat, mula-mula dipalai gelatin, kemudian atas anjuran Dr. Hess pembantunya, diganti dengan agar-agar.
+Dengan pengembangan cara-cara modern ini, kuman-kuman penyakit dapat dibuat biakan murni. Biakan murni artinya hanya terdiri dari satu jenis kuman saja. Dengan adanya biakan murni, penyelidikan-penyelidikan terhadap satu jenis kuman mengenai virulensinya, patogenitasnya, sifat-sifat biokimianya dapat dilakukan.
+Robert Koch menemukan basil TBC tahun 1882 dan vibrio kolera pada tahun 1883 di Mesir. Bakteriologi kedokteran maju dengan pesatnya karena hasil penelitian Robert Koch, terutama tentang piaraan murni dari kuman. Berdasarkan penemuan beliau, ia mengemukakan 4 dalil yang terkenal dengan Postulate Koch (1883). Bagaimana isi dari 4 dalil itu :
+1.	Tiap penyakit infeksi harus disebabkan oleh mikroorganisme
+2.	Mikroorganisme atau kuman penyebab harus dapat diasingkan dilaboratorium dengan pembiakan (biakan murni).
+3.	Jika kuman piaraan tadi disuntikkan kepada binatang sehat, pada binatang itu harus menimbulkan penyakit yang sama pada manusia.
+4.	Kemudian dari binatang tadi, setelah dibedah harus dapat diasingkan lagi dengan cara pembiakan dan dibuat biakan murni.
+Meskipun dalil Koch ini masih mempunyai kelemahan-kelemahan akan tetapi dalil ini tetap merupakan prosedur rutin dalam bakteriologi modern.
+
+Golongan Mikroorganisme
+Pada umumnya kita mengambil ketentuan, bahwa semua makhluk yang berukuran beberapa micron atau lebih kecil kita sebutkan mikroorganisme. Alam mikroorganisme meliputi : Protozoa (binatang yang terdiri dari 1 sel), jamur (cendawan) tingkat rendah, ganggang (alga), bakteri dan virus (disebut juga makhluk ultra-mikroskopik).
+
+Komensal
+Adalah bakteri-bakteri yang hidup dalam usus kita, misalnya bakteri koli. Mereka turut menguraikan sisa-sisa zat makanan dan membantu penyerapan zat-zat makanan. Selain itu bakteri koli ini juga membentuk sintetik viamin K dalam usus.
+
+Menguntungkan
+1.	Bakteri dalam pertanian
+Bakteri ini turut menyuburkan tanah, dengan cara memecahkan zat-zat organic menjadi zat anorganik (denitrifikasi) yang diperlukan oleh tumbuh-tumbuhan. Bakteri pengikat Nitrogen dari udara bebas yang diperlukan oleh tanaman untuk membentuk.
+Contoh : Clostridium Pasteurianum, Azetobacter Chroococum
+2.	Bakteri pembusuk (safrofit)
+Bakteri pembusuk menghancurkan tumbuh-tumbuhan dan hewan yang telah mati, sampah-sampah. Selain menyuburkan tanah, safrofit turut juga mengurangi kemungkinannya penularan penyakit.
+3.	Bakteri dan mikrobiologi industri
+Mikrobiologi industri ialah ilmu pengetahuan yang meneliti kemungkinannya digunakan mikroba untuk industri. Banyak mikroorganisme dapat digunakan untuk membuat hasil industri, antara lain dapat disebutkan : asam cuka (Azobacteriaceti), alcohol, anggur, sake dan bir (Sacharomyces sp), tape, kecap (Aspergillus sp) dan sebagainya
+4.	Pembuatan antibiotika
+Banyak antibiotika yang dapat dihasilkan oleh mikroorganisme terutama golongan jamur dan bakteri.
+Jamur : Penicillin (Penicillin notatum), Streptomycin (Streptomyces griseus), Terramycin (Strep. Ramous), Kloromycetin (Strep. Venezula), viomycin (Strop.punicous), dll
+Bakteri : Bacitracin (Bacillus substillis), polymixin (B.polymyra), Tyrothrisin (B. brevis dubos), dll.
+Mereka ada yang dapat digolongkan sebagai hewan, ada yang dapat digolongkan sebagai tumbuh-tumbuhan dan ada pula yang tidak dapat digolongkan sebagai hewan maupun tumbuhan. Sementara itu ada diantaranya mempunyai “bentuk jembatan” antara dua mikroorganisme, dengan kata lain sifatnya treletak antara 2 jenis mikroorganisme.
+Misalnya :
+-	Spirokheta, merupakan bentuk jembatan antara lain dengan jamur dan protozoa
+-	Actinomycetes, adalah bentuk jembatan antara bakteri dengan jamur (cendawan)
+-	Virus, merupakan bentuk peralihan antara bakteri atau makhluk hidup dengan benda mati. Karena ia dapat berbentuk kristal (benda mati) tetapi juga adanya molekul protein yang menyusun tubuh virus. Adanya molekul protein ini merupakan ciri bahwa virus bentuk hidup.
+
+Perbedaan benda mati dengan benda hidup
+Makhluk hidup adalah merupakan rangkaian dari aktivitas yang terjadi pada suatu organisme dengan cara dan susunan tertentu. Perbedaan benda hidup dengan tak hidup adalah : Makhluk hidup :
+1.	Melakukan pertumbuhan
+2.	Melakukan gerak aktif
+3.	Melakukan proses metabolisme
+4.	Melakukan perkembangan biakan
+5.	Melakukan respon terhadap rangsangan.
+Benda mati : - tidak dapat melakukan kegiatan-kegiatan seperti diatas
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 32,
+                'id_mapel' => 1,
+                'judul_materi' => 'Mikroorganisme Dalam Kehidupan Manusia',
+                'detail_materi' => 'Peranan mikroorganisme dalam kehidupan manusia ada yang merugikan, komensal (tidak merugikan) dan ada yang menguntungkan.
+
+Mikroorganisme yang merugikan adalah bakteri-bakteri patogen yang dapat menimbulkan penyakit (infeksi).
+Misalnya :
+-	Gonococcus : kencing nanah
+-	Shigella : disentri
+-	S. typhi : tipus
+-	M. Tbc : tuberculose
+-	V. kolera : kolera
+-	T. pallidum : syphilis
+
+MORFOLOGI BAKTERI
+Morfologi : Ilmu mengenai bentuk dan struktur
+Berdasarkan bentuknya bakteri dibagi 3 kelompok utama :
+1.	Coccus => bulat
+2.	Bacil => batang / silinder
+3.	Spiral => batang melengkung atau melingkar
+
+UKURAN SEL BAKTERI
+-	Sel bakteri bentuk bulat 0,7-1,3µ
+-	Sel bakteri bentuk batang : lebar : 0,2-2 µ, panjang : 0,7-3,7 µ
+Bakteri yang kecil sekali contohnya Dialester pneumosintes berukuran 0,5-0,3µ
+Bakteri yang besar sekali contohnya Sprillum volutan berukuran 1,5 x 13 – 15 µ
+Ukuran sel bakteri dipengaruhi oleh :
+-	Umur bakteri
+-	Perubahan lingkungan
+-	Pewarnaan sel bakteri
+Anatomi sel bakteri
+1.	Dinding sel
+2.	Protoplasma (membran sel, mesosom, ribosome, nukeoid, endospora)
+3.	Bagian yang terletak diluar dinding sel
+-	kapsul
+-	flagella
+-	pilli ( fibriae )
+Dinding sel
+Bagian sel yang berfungsi terutama memberi bentuk dan perlindungan terhadap sel, mengatur pertukaran zat-zat dari dan kedalam sel dan terletak antara kapsul dan membran sel. Tebal dinding sel : 0,01 -0,023 µ
+Beratnya : +20% berat kering sel bakteri
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 33,
+                'id_mapel' => 1,
+                'judul_materi' => 'Klasifikasi Bakteri',
+                'detail_materi' => 'Menyusun suatu sistematik didalam dunia mikroorganisme, bukanlah suatu pekerjaan yang mudah. Kesulitan pertama yang kita hadapi ialah menentukan apakah bakteri itu termasuk golongan hewan atau golongan tumbuh-tumbuhan. Pertama kali sarjana-sarjana zoology seperti Muller (Denemarkon, 1773) dan EHRENBERG (Jerman, 1838) memasukkan bakteri kedalam protozoa (golongan hewan). Baru pada tahun 1872 timbul pendapat lain. COHN seorang sarjana petani dari Jerman, memasukkan bakteri kedalam tumbuh-tumbuhan, berdasarkan ciri-ciri yang terdapat pada bakteri.
+Klasifikasi mengenai bakteri yang agak lengkap disusun oleh Cohn pada tahun 1875, sejak itu selalu mendapat perubahan dan penyempurnaan secara berangsur angsur.
+
+Klasifikasi
+Yang diartikan dengan klasifikasi adalah penggolongan atau penyusunan secara sistematis untuk tumbuh-tumbuhan dan hewan, mulai dari kelompok besar hingga kelompok yang sekecil-kecilnya.
+
+Tujuan :
+-	Untuk mendapatkan keseragaman dalam memberikan nama bakteri
+-	Untuk memudahkan penyelidikan-penyelidikan baru.
+Seandainya tidak ada keseragaman dan cara yang tertentu untuk memberikan nama yang dianut oleh semua para ahli, hingga masing-masing para ahli memberikan nama sendiri-sendiri, maka dapatlah kita bayangkan bahwa keadaan yang demikian sangat membingungkan.
+
+Nomenklatur
+Cara yang tertentu untuk memberikan nama bakteri disebut nomenklatur (tatanama). Untuk menyebutkan nama suatu bakteri kita gunakan system “dua nama” atau binomenklatur. Yakni nama genus diikuti oleh spesies. Huruf pertama dari genus ditulis dengan huruf besar, sedangkan nama keterangan spesiesnya ditulis dengan huruf kecil biasa. Misalnya : Mycobacterium tuberculose, Salmonella typhi.
+
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 34,
+                'id_mapel' => 1,
+                'judul_materi' => 'Mikroskop',
+                'detail_materi' => 'Mikroskop mempunyai hubungan erat dengan mikrobiologi. Karena ukuran mikroba sangat kecil dan baru dapat dilihat dengan mikroskop. Untuk mendapatkan pembesaran yang cukup dari suatu benda atau obyek yang sangat kecil (diameternya kurang dari 0,1 mm) diperlukan mikroskop.
+Sebelum perang dunia II, para ahli mikrobiologi pada umumnya menggunakan mikroskop medan terang (Bright field microscope) didalam pekerjaan-pekerjaan mereka. Sejak itu kemajuan teknologi dibidang mikroskop, boleh dikatakan telah berkembang pesat, hal ini karena ditemukannya alat-alat optik yang lebih baik disertai dengan perbaikan-perbaikan mekanik.
+
+A.	MACAM-MACAM MIKROSKOP
+Dewasa ini ada beberapa macam mikroskop:
+1.	Mikroskop medan terang
+Sebuah mikroskop yang baik dengan perlengkapan optik medan terang, merupakan alat paling dasar bagi seorang ahli mikrobiologi. Seperti tercermin dari namanya. mikroskop medan terang adalah suatu bentuk mikroskop dengan medan yang mengelilingi spesimen kelihatan terang (berwarna cerah), sedangkan spesimennya sendiri memperlihatkan warna lebih gelap. Hal ini disebabkan karena cahayanya dari sumbernya lewat melalui system-sistem lensa keatas tanpa mengalami. perubahan, sehingga terbentuklah medan yang terang. Berbeda dengan mikroskop lens tunggal yang sederhana dari jaman Leeuwenhoek, mikroskop yang umum dipakai pada masa kini menggunakan system lensa terpisah, yaitu lensa obyektif dan lensa okuler untuk menambah perbesaran, karena itu seringkali disebut juga sebagai mikroskop majemuk.
+Pada prinsipnya mikroskop ini terdiri dari dua bagian, yaitu bagian mekanik dan bagian optik.
+a.	Bagian mekanik berupa : statif, tubus, revoler, meja benda, sekrup pengatur tubus (kasar dan halus), sekrup pengatur kondensor dan sekrup-sekrup penggerak meja benda
+b.	Bagian optik : lensa okuler, lensa obyektif, kondensor dan cermin pengatur cahaya
+
+2.	Lensa Obyektif Lensa
+Obyektif didalam tubus mikroskop membentuk bayngan nyata dari preparat (benda). Bayangan nyata ini selanjutnya diperbesar oleh lensa okuler. Untuk memperoleh obyektif yang baik perlu diperhatikan perbesaran dan daya pisahnya.
+a.	Perbesaran.
+Makin pendek jarak focus suatu lensa, makin kuat perbesarannya. Misalnya obyektif yang mempunyai perbesaran minimal (satu kali) mempunyai jarak focus 55 mm, sedang obyektif yang mempunyai perbesaran maksimal (120x)
+b.	Daya pisah
+Daya pisah adalah kemampuan suatu obyektif untuk memisahkan 2 buah titik yang sangat berdekatan didalam struktur pada suatu obyek. Jadi makin besar kemampuan suatu obyek, makin kecil jarak dua buah titik yang berdekatan yang dapat dilihat secara terpisah dengan mikroskop itu.
+3.	Lensa okuler
+Lensa okuler merupakan lensa yang berfungsi untuk membuat bayangan semu terakhir, sehingga bayangan semu tersebut dapat dilihat langsung oleh mata.
+4.	Kondensor
+Fungsi kondensor yaitu untuk mengatur intensitas cahaya yang masuk kedalam mikroskop. Kondensor terdiri atas dua bagian, yaitu :
+a.	Susunan lensa-lensa untuk mengumpulkan sinar-sinar sebelum masuk kedalam mikroskop.
+b.	Diafragma, untuk mengatur sinar-sinar tepi yang masuk kedalam mikroskop. Dengan adanya diafragma ini kesalahan-kesalahan aberasi sferik dan aberasi astigmatisma akan berkurang.
+
+B.	MACAM-MACAM MIKROSKOP
+1.	Mikroskop ultraviolet
+Mikroskop ini menggunakan sinar ultra violet dan dilengkapi dengan alat pemotret sebagai alat pengamatannya. Oleh karena cahaya yang digunakan sinar ultra violet (UV) mempunyai panjang gelombang yang lebih pendek dari pada sinar biasa, maka mikroskop ini mempunyai daya pisah yang kuat.
+2.	Mikroskop fase kontras.
+Mikroskop fase kontras berbeda dengan mikroskop biasa. Mikroskop ini dilengkapi dengan diafragma khusus, yaitu diafragma dengan celah berbentuk cincin dan lensa obyektifnya dilengkapi dengan lempeng defraksi. Pada mikroskop biasa perbedaan indeks bias yang sangat kecil pada obyek tidak dapat terlihat, tetapi dengan adanya lempeng defraksi pada susunan lensa onyektif ini. maka perbedaan indeks bias yang kecil pada obyek itu dapat terlihat dengan jelas. Hal ini memungkinkan untuk dapat membedakan perbedaan-perbedaan struknu dengan jelas.
+3.	Mikroskop Elektron
+Daya pisah mikroskop biasa kira-kira hanya 0,2 mikron, apabila daya pisah yang digunakan adalah maksimum. Pada mikroskop electron digunakan sinar electron yang mempunyai panjang gelombang sangat pendek, tergantung pada voltase yang digunakan. Untuk mendapat sinar electron yang mempunyai panjang gelombang 0,005 diperlukan voltase (tegangan) 50.000 volt. Dengan mikroskop biasa perbesaran yang dapat dicapai kurang lebih 2000 kali, dengan mikroskop ultra violet, perbesaran yang dapat dipakai kurang lebih 3000 kali. Dengan mikroskop electron perbesaran yang dapat dipakai untuk sedikitnya 10.000 -30.000 kali atau lebih, sehingga dapat dipakai untuk melihat molekul-molekul protein, virus, baktriofage, struktur dalam bakteri dan lain-lain.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 35,
+                'id_mapel' => 1,
+                'judul_materi' => 'Cara - Cara Pewarnaan Bakteri',
+                'detail_materi' => 'Banyak istilah yang dipakai untuk menyatakan “pewarnaan”, misalnya pengubaran, pemulasan dan pengecatan. Pewarnaan ini sangat penting dalam suatu pemeriksaan suatu bakteri dan sekaligu dapat diketahui bentuk (morfologi) bakteri. Dengan pewarnaan, bakteri mudah dilihat dibawah mikroskop.
+Tiap bakteri mempunyai reaksi atau sifat yang khas terhadap zat warna. Sifat ini terletak dalam sitoplasmanya. Ada bakteri yang mudah diwarnai (menangkap zat warna), ada yang sukar diwarnai. Beberapa jenis bakteri memerlukan penguburan khusus atau istimewa.
+Dalam sejarah kesehatan, para sarjana yang mula-mula menemukan pengubaran ialah Hoffman (1869), Weigert (1871), Erlich (1882, Ziehl Neelsen (1882) dan Gram (1884). Zat warna yang digunakan adalah zat warna aniline yakni fuchsin, Victoria blue, gentian violet, methyl biolet dan sebagainya.
+Menurut fungsi dan tujuannya, pengubaran bakteri dapat dibagi :
+1.	Pewarnaan negatip
+2.	Pewarnaan sederhana
+3.	Pewarnaan Gram
+4.	Pewarnaan tahan asam ( Khusus )
+
+Tujuan pewarasan :
+1.	Mengamati dengan lebih baik morfologi
+2.	Mengidentifikasi bagian-bagian dan struktur sel mikroorganisme
+3.	Membantu identifikasi
+4.	Membedakan organisme yang serupa
+
+Pewarnaan Negatip
+Pewarnaan negatip adalah pewarnaan secara tidak langsung. Kita hanya mewarnai latar belakang bakteri saja, sedangkan bakteri itu sendiri tidak menangkap zat warna. Pada pewarnaan ini tidak dilakukan fiksasi (pemanasan), dengan demikian tubuh bakteri praktis tidak mengalami perubahan. Oleh karena itu, pewarnaan cara ini berguna untuk :
+a.	Melihat bentuk asli bakteri
+b.	Untuk pengukuran besar bakteri
+Pewarnaan cara negatif dapat dilakukan dengan tinta cina (Buri), dimana latar belakang hitam, sedangkan bakteri tidak berwarna atau berkilat putih. Penggunaan praktis, untuk pemeriksaan :
+-	Treponema fuchsin :
+-	Leptospira dan kapsul bakteri
+
+Pewarnaan sederhana
+Cara ini hanya memakai satu macam zat warna saja, misalnya methylen biru dan fuchsin. Warna bakteri bergantung kepada zat warna yang dipakai, dengan methyle biru berwarna biru dan dengan fuchsin berwarna merah jambu. Dalam rutin lebih banyak digunakan methylen biru.
+Jika hanya dikehendaki ada atau tidak jasad renik (kuman) saja padan bahan yang diperiksa, cara ini lebih cepat, memerlukan waktu sangat singkat. Paling banyak digunakan ialah methylen biru menurut Loffler, yakni dengan menambahkan basa (KOH 1%) kedalam larutan methylen biru biasa.
+Cara kerja :
+1.	Buat sediaan dari bahan yang diperiksa, keringkan pada suhu kamar atau bantuan nyala api spiritus, fiksasi 3 x diatas api.
+2.	Tuangi dengan larutan pulas methylen biru loffler, biarkan selama 20-30 detik, dengan methylen biru biasa biarkan 3 menit.
+3.	Cuci dengan air kran, keringkan pada suhu kamar (kertas saring).
+4.	Lihat dengan mikroskop memakai lensa rendam minyak
+Hasil : bakteri berwarna biru
+Latar belakang biru muda.
+Susunan larutan methylen biru
+Biasa : - kristal methylen biru 0,3 gram
+- alcohol 95% 30 ml
+- air suling 100 ml
+Loffler : tambahkan 1 ml KOH 1 % kepada methylen biru biasa.
+
+Pewarnaan Gram
+Pewarnaan ini pertama kali dikembangkan oleh Hans Christian Gram seorang histology bangsa swedia. Pewarnaan cara gram ini hampir dilakukan setiap hari dilaboratorium bakteriologi dan mikrobiologi. Sangat penting membantu diagnosis spesies dari bakteri penyebab penyakit. Pada umumnya hampir semua bakteri dapat diwarnai dengan Gram bakteri dibagi atas 2 golongan : Gram positif dan Negatif dan reagensia
+
+Prinsip pewarnaan :
+1.	Pewarnaan dengan karbol gentian violet (berwarna ungu)
+2.	Direkatkan dengan larutan mordan, yaitu larutan lugol.
+3.	Tuangi dengan zat peluntur (decolorisasi) yaitu alcohol 95%
+4.	Bubuhi dengan zat warna penutup (countur staining) fuchsin.
+
+Susunan zat warna
+1.	Larutan gentian violet 5%
+-	bubuk (kristal) gentian violet : 5 gram
+-	alcohol 95 % : 95 ml
+2.	Larutan penol (karbol) 5 %
+-	phenol cair : 5 ml
+-	air suling : 95 ml.
+3.	Larutea fuchsin 5 %
+-	bubuk ( kristal) fuchsin : 5 gram
+-	alcohol 95 % : 95%
+-	alcohol 95 % : 95 ml
+Larutan pakai : 10 ml larutan fuchsin 5 % +90 ml air suling
+4.	Larutan lugol
+jodium 1 gram + kalium jodida 2 gram + 300 ml air suling
+Selain fuchsin, safranin dapat dipakai sebagai counter staining (zat wama penutup). Susunannya adalah sebagai berikut : safranin 1 gram + 4 ml alcohol 95 % + air suling 360 ml.
+
+Cara kerja:
+1.	Buat sediaan bakteri pada kaca benda, keringkan dan fiksasi 3 kali diatas nyala api Bunsen / spiritus.
+2.	Tuangi dengan larutan karbol gentian violet, biarkan 3-5 menit
+3.	Cuci dengan air, bubuhi lugol, biarkan selama 2-3 menit
+4.	Tuangi dengan alcohol hingga zat warna violet tidak luntur
+5.	Cuci dengan air, tuangi dengan larutan fuchsin selama 1-2 menit
+6.	Cuci lagi dengan air hingga bersih, keringkan pada suhu kamar atau dengan kertas saring rangkap dua.
+7.	Lihat dengan mikroskop memakai lensa rendam minyak.
+Hasil : bakteri gram positif berwarna ungu (violet)
+bakteri gram negatif berwarna merah jambu (rose)
+
+Kesalahan yang mungkin terjadi pada pengubaran
+1.	Terlalu lama diwamai dengan gentian violet.
+2.	Terlalu lama dicuci dengan alcohol (decolorinast)
+3.	Menggunakana larutan zat-zat Warna yang telah lama, sudah mengkristal, larutan zat warna sebelum dipakai hendaknya disaring lebih dahulu.
+
+PEWARNAAN GRAM
+
+Gram Positif :
+Batang : Bacillus ,Clostridium, Mycobacterium, Corynebacterium
+Kokkus : Stapilokokus, Streptococcus, Pneumokokus, Gaffkya
+
+Gram Negatif :
+Batang : Salmonella, Shigella, Vibrio, Hemophilus
+Kokkus : Gonococus, Meningikokus
+
+Pewarnaan tahan asam
+Ada beberapa mikroorganisme tidak dapat diwarnai dengan cara sederhana ataupun Gram, karena dindingnya tebal hingga sukar ditembus oleh zat warna. Bakteri seperti ini memerlukan pengubaran istimewa atau khusus, yaitu memerlukan larutan zat warna yang keras misalnya didalam phenol. Kadang-kadang diperlukan pemanasan agar supaya zat warna mudah meresap kedalam tubuh bakteri. Bakteri tahan asam, adalah mikroorganisme yang menangkap zat warna sukar dilunturkan atau tahan terhadap pencucian dengan asam-asam mineral (HCL dan H2SO4) dan alcohol
+Contoh bakteri tahan asam : M. tbc, M. lepra, Safrofit.
+Basil TBC misalnya mempunyai dinding yang kuat, dua lapis dan mengandung lipoid dan asam mycolat.
+Pewarnaan bakteri tahan asam dapat dilakukan dengan Ziehl Neelsen (cara panas) dan Kinyoun-Gabbet (cara dingin)
+Prinsip kerjanya sama dengan pengubaran Gram yaitu : Karbol fuchsin sebagai zat warna, dibubuhi dengan zat warna penutup (HCL, H2SO4 dan alcohol), kemudian diwarnai dengan zat pewarna penutup (methylen biru, malachite green)
+
+CARA ZEHL NEELSEN CARA ZIEHL NEELSEN
+1.	Buat sediaan dahak (sputum) merata pada kaca benda, keringkan pada suhu kamar, kemudian fiksasi 3 kali diatas nyala api.
+2.	Bubuhi karbol fuchsin hingga menutupi seluruh permukaan kaca benda, panasi hingga keluar uap, biarkan selama 5 menit.
+3.	Bilasi dengan air, kemudian bubuhi dengan 3 % HCL-alkohol hingga warna fuchsin tidak luntur lagi dari sediaan.
+4.	Bilasi dengan air, tuangi dengan 0,5 % methylen biru 30 detik
+5.	Cuci dengan air, keringkan diudara atau dengan kertas saring
+Hasil : Basil tahan asam (BTA) : merah tua
+Tidak tahan asam : biru
+
+REAGENSIA
+1.	Fuchsin jenuh dalam alcohol	: basic fuchsin 3 gram + alcohol 95%: 100 ml
+2.	Larutan phenol 5% 		: phenol cair 5 ml + air suling 100 ml
+3.	Karbol fuchsin pakai		: fuchsin jenuh 10 ml +5% phenol 90 ml
+4.	3 % HCL-alkohol		: HCL 3 ml + alcohol 95 % 97 ml
+5.	Larutan methylen biru 0,1 %	: M.biru 0,1 g + air suling 100 ml
+
+CARA KINYOUN – GABBET
+1.	Sediaan yang telah dikeringkan, fiksasi 3 kali diatas nyala api, kemudian tuangi dengan larutan Kinyoun dan biarkan selama 3-5 menit (minimum 3 menit)
+Larutan Kinyoun : Basic fuchsin 4 gram, phenol 8 gram, alcohol 95-96 % 20 ml dan air suling 100 ml : 120 ml
+2.	Cuci dengan air kran selama kurang 1/2, kemudian dibubuhi dengan larutan Gabbet, biarkan selama 1 menit.
+Larutan Gabbet : methylen biru 1 gram, H2S04 96 % 20 ml, alcohol 95-96 % 30 ml dan air suling 50 ml.
+3.	Cuci dengan air kran, selanjutnya keringkan pada temperatur kamar (kertas saring), lihat dengan mikroskop.
+Hasil : Basil tahan asam (BTA)	: merah muda
+Tidak tahan asam 		: biru muda
+Pembesaran mikroskop sebaiknya digunakan pembesaran 10 x 100
+
+Pewarnaan Spora menurut cara Klein
+1.	Buatlah suspensi tebal dari kuman yang akan diperiksa hingga menyerupai air susu.
+2.	Tambahkan karbol fuchsin Ziehl Neelsen sama banyaknya, kemudian campuran panaskan dengan api kecil selama 6 menit atau didalam penangas air 80°C selama 10 menit
+3.	Buat sediaan dari suspensi tadi, keringkan dan rekatkan kemudian celupkan kedalam larutan H2S04 1% selama 2-3 detik.
+4.	Cuci dengan air, tuangi dengan larutan methylen biru 2-4 menit.
+5.	Cuci lagi dengan air, keringkan diudara dan dilihat dengan mikroskop memakai lensa rendam minyak.
+Hasil : badan bakteri berwarna biru
+Spora bakteri berwarna merah.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 36,
+                'id_mapel' => 1,
+                'judul_materi' => 'Fungsi Fiksasi',
+                'detail_materi' => '1.	Mencegah mengkerutnya globula-globula protein sel
+2.	Mempertinggi sifat reaktif gugusan-gugusan (gugusan karboksil, amino primer)
+3.	Merubah afinitas (daya lekat) cat
+4.	Dapat terjadinya otolisis sel
+5.	Dapat membunuh kuman secara cepat dengan tidak menyebabkan perubahan-perubahan bentuk atau strukturnya
+6.	Melekatkan kuman diatas gelas kaca
+7.	Membuat sel-sel lebih kuat
+
+Pewarnaan difteri menurut Albert
+
+Pewarnaan ini digunakan untuk melihat granula basil difteri, selain cara Albert dapat juga dilakukan dengan cara Neisser.
+1.	Buat sediaan kuman seperti biasa, rekatkan diatas nyala api kemudian bubuhi larutan Albert, biarkan selama 3-5 menit
+Larutan Albert: Toluidin biru 0,15 g, Malachiet hijau 0,20 g, asam asetat pekat 1 ml, alcohol 95 % 2 ml dan air suling sebanyak 100 ml.
+2.	Cuci dengan air kran mengalir pelan-pelan, bubuhi dengan larutan lugol, biarkan selama 1 menit.
+Larutan Lugol : jodium 1 gram + Kj 2 gram dan air suling 300 ml
+3.	Lugol dibuang kemudian keringkan dengan kertas saring, periksa dengan mikroskop memakai lensa rendam minyak.
+Hasil : badan bakteri berwarna hijau
+Butir granula berwarna hitam kebiru-biruan.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 37,
+                'id_mapel' => 1,
+                'judul_materi' => 'Sediaan',
+                'detail_materi' => 'Untuk mengamati mikrob dengan mikroskop cahaya, dapat disiapkan tiga macam sediaan yaitu :
+1.	Sediaan basah (sediaan hidup yang tidak diwarnai)
+2.	Sediaan hidup yang diwarnai
+3.	Sediaan yang dimatikan dan diwarnai
+
+A.	SEDIAAN HIDUP YANG TIDAK DIWARNAI
+Sediaan semacam ini digunakan dalam bidang mikrobiologi, terutama karena mungkinkan dilakukannya pengamatan bentuk dan ukuran organisme secara individu. Pengelompokan sel-sel bakteri, serta mengetahui apakah suatu organisme itu dapat bergerak atau tidak dalam keadaan alamiah yang tidak terganggu.
+Dalam mengadakan pengamatan terhadap gerak bakteri bakteri harus bisa dibedakan dengan gerak Brown. gerak sejati biasanya berupa gerakan progresif dan terarah (sering kali amat cepat), gerakan ini disebabkan karena mikroba tersebut mempunyai flagel. Sedangkan gerak Brown merupakan suatu gerakan yang dapat menggetarkan partikel-partikel secara acak atau terarah, karena terus menerus kena pukulan molekul-molekul kecil tak terlihat yang ada dalam cairan.
+Seringkali dalam pengamatan, terjadi kekeliruan antara gerakan sejati dengan gerakan semu yang bergerak karena disebabkan adanya arus cairan. Bila preparat yang bersifat basah mengandung udara atau tidak bersegel dengan baik, maka arus udara dapat menyebabkan timbulnya arus cair, sehingga mikroba yang kita amati akan terlihat berduyun-duyun mengalir mengikuti arus cairan tersebut.
+Sediaan hidup dibagi dapat dibedakan menjadi 2 :
+a.	Sediaan tetes tegak
+b.	Sediaan tetes bergantung
+
+B.	MACAM-MACAM SEDIAAN
+1.	Sediaan tetes tegak
+Sediaan tetes tegak ada dua macam :
+-	tetes tegak tanpa kaca penutup
+-	tetes tegak dengan kaca penutup
+Untuk membuat sediaan tetes tegak, diperlukan kaca gelas dan kaca penutup. Suspensi bakteri yang akan diamati diletakkan ditengah kaca gelas, kemudian diamati dengan mikroskop (untuk sediaan tetes tegak tanpa kaca penutup) sedangkan untuk sediaan tetes tegak dengan kaca penutup. Sebelum diamati, suspensi bakteri ditutup dahulu dengan kaca penutup, yang sebelumnya pada bagian pinggirnya diolesi dengan vaselin.
+1.	Tetes bergantung
+Untuk membuat preparat ini, diperlukan gelas kaca yang cekung, gelas penutup dan vaselin.
+Cara pembuatan sediaan tetes bergantung :
+-	Diambil gelas penutup yang bersih dan bebas lemak
+-	Pindahkan satu tetes suspensi kuman pada gelas penutup tersebut
+-	Ambillah gelas kaca cekung, bagian keliling cekung diolesi dengan vaselin
+-	Letakkanlah gelas kaca cekung tersebut diatas gelas penutup sedemikian rupa sehingga bagian yang cekung terletak persis diatas tetesan kuman.
+-	Baliklah dengan cepat gelas kaca cekung tersebut. Sehingga gelas penutup posisinya terdapat diatas, sehingga tetesan kuman posisinya menggantung.
+Untuk melihat gerak kuman dengan cara tetes tegak atau tetes bergantung, dapat digunakan mikroskop dengan obyektif 45 kali.
+Catatan :
+-	Preparat hidup yang ditutup dengan gelas penutup, umumnya lebih baik bila dibandingkan dengan yang tanpa diberi gelas penutup, hal ini karena bahan yang diperiksa tidak lekas kering, tidak begitu dipengaruhi oleh aliran udara luar, mempunyai ketebalan yang sama dan menekan terjadinya infeksi.
+-	Sediaan tetes bergantung merupakan cara yang terbaik untuk melihat gerak bakteri, tetapi tidak dipakai sebari-hari karena kurang praktis.
+2.	Sediaan hidup yang diwarnai
+Biasanya digunakan untuk pemeriksaan Protozoa (Amoeba, flagellata dan ciliata) sediaan ini biasa disebut juga dengan pengecatan vital.
+Cat-cat yang dipakai antara lain :
+-	larutan biru metilen 1 %
+-	larutan eosin 2%
+-	Lugol dengan formula : kristal jodium	: 1 gram
+       kristal Kj		: 2 gram
+       aquadest		: 300 cc
+Ketiga cat ini tidak boleh mengandung alcohol, karena alcohol dapat membunuh protozoa
+3.	Sediaan yang dimatikan dan diwarnai
+Sediaan ini berfungsi untuk :
+a.	Melihat bentuk bakteri
+b.	Melihat ukuran bakteri
+c.	Spora bakteri
+d.	Kapsul bakteri
+e.	Sifat bakteri ( gram positif / gram negatif)
+Dalam pembuatan sediaan ini, kuman dimatikan terlebih dahulu dengan cara khusus dan dicat dengan cat yang khusus pula sesuai dengan tujuan pemeriksaanannya.
+Untuk pembuatan sediaan mati yang dicat ini, akan dibahas dalam bab tersendiri tentang pengecatan.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 38,
+                'id_mapel' => 1,
+                'judul_materi' => 'Perbenihan Media',
+                'detail_materi' => 'Fungsi media
+Media adalah substansi yang berisi zat-zat makanan yang diperlukan untuk tumbuhnya bakteri, fungsi media ini dilaboratorium bakteriolog adalah :
+1.	Untuk pembiakan dan mengisolasi bakteri
+2.	Pengujian sifat-sifat fisiologi danreaksi biokimia
+Zat-zat makanan yang diperlukan bakteri sangat bervariasi. Ada senyawa-senyawa organic dan anorganik yang sederhana maupun majemuk. Unsur-unsur anorganik dapat disebutkan : Na, K, Ca, Mg, Fe, CI, S dan P. unsur-unsur C, H, O dan P diperlukan untuk penyusunan sitoplasma bakteri.
+Banyak bakteri memerlukan zat-zat tambahan seperti vitamin B kompleks, asam-asam amino, serum dan darah. Sedangkan bakteri patogen misalnya tumbuhnya sangat baik dalam media yang berisi ekstrak daging.
+Syarat-syarat media
+1.	Cukup berisi zat-zat makanan yang diperlukan
+2.	Tidak mengandung zat-zat penghambat pertumbuhan bakteri
+3.	Steril dan pH yang sesuai dengan pertumbuhan bakteri
+Susunan umum media
+Untuk mendapatkan unsur-unsur yang diperlukan dalam pertumbuhan bakteri, maka susunan umum media adalah sebagai berikut :
+1.	Ekstrak daging
+Ekstrak daging kaya dengan protein yang sangat diperlukan dalam pertumbuhan bakteri. Di laboratorium media yang mengandung ekstrak daging ini disebut kaldu atau buillon.
+2.	Pepton
+Pepton diperoleh dari prptein, rasanya pahit, jenis pepton yang banyak digunakan di laboratorium ialah bacto pepton, pepton witte, pepton ini gunanya sebagai sumber Nitrogen dan sumber energi.
+3.	Gula-gula
+Jenis gula-gula banyak digunakan ialah : dextrose (glukosa), sakarosa, mannit, laktosa, maltosa dan sebagainya. Gula ini diperlukan bakteri sebagai sumber hydrat arang (energi)
+4.	Agar-agar
+Agar-agar adalah semacam hydrat arang diperlukan dari ganggang, mencair pada temperatur 95°C dan membeku pada temperatur dibawah 40°C. guna agar-agar hanya untuk mengeraskan pernihan. Gelatin dapat juga dipakai sebagai bahan pengental media yang digunakan didaerah beriklim dingan (eropa), mencair pada suhu 23°C dan membeku pada suhu dibawah 15°C, gelatin diperoleh dari rebusan tulang-tulang, jadi gelatin itu serupa perekat.
+5.	Garam-garam
+Pada umumnya dipaki garam-garam dari NaCl, phospat dan karbonat. Guna NaCL untuk mengatur tekanan osmotis, sedangkan garam-garam phospat dan karbonat sebagai sumber buffer (mengatur pH media)
+6.	Zat-zat warna
+Zat-zat warna yang ditambahkan kemedia untuk mencegah tumbuhnya suatu bakteri, sedangkan bakteri lain tumbuh dengan subur. Kedalam perbenihan TBC misalnya ditambahkan zat warna malachite green untuk menghambat tumbuhnya lain sedangkan basil TBC tumbuh dengan subur
+7.	Serum atau darah
+Kebanyakan bakteri dapat tumbuh baik dengan dasar makanan yang telah disebutkan diatas, akan tetapi beberapa bakteri patogen, misalnya basil TBC, Brucella abortus, Pneumococcus, Gonococcus memerlukan zat makanan tambahan berupa serum atau darah yang tidak lagi mengandung fibrinogen.
+Dan sebagainya
+
+MEDIUM POKOK ( INDUK)
+Banyak kita kenal jenis media yang dipakai dilaboratorium. Pada umumnya sebagian besar dari media ini adalah variasi dari medium pokok ini, medium pokok dan banyak digunakan dalam pekerjaan rutin ialah kaldu cair (bouiilon ), kaldu agar dan air
+
+Air pepton.
+Adalah medium yang paling sederhana, susunannya terdiri dari :
+Pepton 10 gram, NaCL 5 gram dan air 1 liter, pH 7,1 - 7,3
+Kaldu ( bouillon)
+Larutan bouillon dapat dibuat dengan komposisi sebagai brikut :
+a.	air kran	: 1 liter
+pepton	: 10 gram
+NaCL	: 5 gram
+Ekstrak	: 3 gram
+b.	air daging	: 1 liter
+pepton		: 10 gram
+NaCL		: 5 gram
+Setelah dimasak diatas api hingga bahan-bahan larut semuanya, saring. Sterilkan dengan autoklaf pada suhu 120°C selama 20 menit. Tetapkan pH berkisar 7
+Jika diperlukan perbenihan padat, tambahkan agar-agar 30 gram perliter, maka kita mendapatkan agar kaldu. Jika diperlukan agar darah maka kepada agar kaldu kita tambahkan eritrosit domba 10%
+
+Menyediakan air daging
+Jika kita tidak mempunyai ekstrak daging, bouillon dapat kita buat dengan menyediakan air daging, caranya sebagai berikut :
+Timbang 500 gram daging yang tidak berlemak, rendam dalam 1000 ml air suling, biarkan 24 jam dalam lemari es. Keesokan harinya dimasak hingga mendidih, biarkan 1 jam di saring dengan kain mori atau kasa yang halus. Genapkan volumenya menjadi 1000ml kembali.
+Tambahkan 10 gram pepton, 5 gram NaCl, lalu panasi suspensi 100°C selarna 20menit. Genapkan lagi isisnya hingga 100ml, sterilkan dalam autoklaf 120°C selama 20 menit, tetapkan pH berkisar 7. Larutan inilah dinamakan bouillon (kaldu)
+Perbenihan padat
+Untuk mengisolasi bakteri agar supaya didapatkan kultur murni digunakan berbaagai macam perbenihan padat. Mengisolasi bakteri ini kerapkali kita pilih salah satu cara yang dibawah ini.
+1.	Perbenihan selektif (selektif differensial)
+Pada perbenihan selektif ini kita dapat membedakan tumbuhnya koloni-koloni satu bakteri dengan koloni-koloni bakteri lain. Dengan demikian kita mudah mengisolasi atau mengasingkan bakteri-baktei penyakit dari suatu bahan pemeriksaan, misalnya tinja.
+Contoh perbenihan ini : bakteri tipus dan paratipus koloninya tidak berwarna, sedangkan bakteri usus (koli ) merah jambu.
+2.	Perbenihan ekslusif
+Pada perbenihan ini suatu spesies bakteri tumbuh dengan baik sedangkan bakteri dihambat atau dicegah pertumbuhannya. Perbenihan ini dilaboratorium sering disebutkan perbenihan khusus.
+Contoh :
+-	Perbenihan Lowenstein untuk basil TBC
+-	Perbenihan Telluriat untuk kuman dipteri
+-	Perbenihan TCBS untuk kuman vibrio
+-	Perbenihan Wilson blair untuk kuman tipus
+-
+Perbenihan cair
+1.	Perbenihan persemian ( enrichment)
+Media ini bertujuan untuk mempebanyak kuman terlebih dahulu sebelum ditanam keperbenihan padat
+Contoh : - Alkalis pepton persemaian untuk kuman vibrio
+  - Empedu pepton persemaian untuk kuman tipus
+2.	Perbenihan pengangkutan (transformasi medium)
+Media ini biasanya digunakan untuk membawa bahan (spesimen) pemeriksaan dari tempat yang jauh ke laboratorium. Jika bahan tidak ditanam kemedia pengangkutan mungkin banyak kuman yang mati. Dalam media ini jumlah bakteri tetap, tidak berkembang biak dan tidak mati. Contoh media pengangkutan adalah Carry Blair.
+Carry blair dapat digunakan untuk pengangkutan tinja, guna pemeriksaan : vibrio kolera, Salmonella, Shigella dan coli pathogen
+
+Tumbuhnya bakteri pada media padat
+	Pada media padat tumbuhnya bakteri dalam bentuk koloni. Tiap spesies bakteri menunjukkan koloni yang khas. Ada yang smooth (licin), rough (kasar) dan mucoid (berlendir). Ada juga tumbuhnya merayap tidak bentuk koloni, misalnya kuman proteus jika diperhatikan pinggir koloni, ada beberapa kemungkinan :
+1.	Pinggir rata		: bakteri tipus dan pertaipus
+2.	Pinggimya bergerigi	: Streptococcus
+3.	Pinggirnya berombak	: Bacillus anthrax
+4.	Pinggirnya bercabang	: Bakteri mycoides (bakteri tanah)
+dan sebagainya
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 39,
+                'id_mapel' => 1,
+                'judul_materi' => 'Inokulasi',
+                'detail_materi' => 'Inokulasi merupakan usaha penanaman mikroba kedalam suatu media, menurut wujudnya dikenal 3 macam media yaitu :
+1.	Media cair
+2.	Media padat
+3.	Media setengah padat
+
+A.	INOKULASI PADA MEDIA CAIR
+Tujuannya adalah untuk memperbanyak dan mengidentifikasi bakteri, misalnya penanaman pada nutrien broth, media gula.
+Sifat-sifat koloni pada media cair
+Media cair pada dasarnya diperoleh dengan tidak mencampurkan agar-agar atau gelatin. Didalam media cair, bakteri dapat diketahui sifatnya terhadap udara. Demikian pula sifat-sifat koloninya akan tampak berbeda-beda. Permukaan medium dapat memperlihatkan bentuk serabut, cincin, langit-langit atau selaput.
+
+Pembacaan hasil inokulasi pada media cair :
+Untuk melihat adanya pertumbuhan bakteri, cukup dilihat apakah media menjadi keruh atau tidak. Jika jernih atau tetap berarti tidak tumbuh, tetapi jika untuk memperbanyak dan untuk identifikasi, disamping dilihat keruh dan tidaknya perlu pula lihat ada tidaknya perubahan warna pada media.
+
+B.	INOKULASI MEDIA PADAT DALAM TABUNG
+Tujuan :
+1.	Untuk memperbanyak bakteri dalam rangka untuk identifikasi
+2.	Untuk identifikasi saja
+3.	Untuk memperbanyak koloni sekaligus untuk identifikasi.
+
+Sifat koloni pada media agar miring dalam tabung.
+Sifat koloni dapat dilihat dari bentuk dan tepinya
+Sifat-sifat koloni dapat dinyatakan dengan :
+-	Serupa pedang
+-	Serupa duri
+-	Serupa tasbih
+-	Serupa titik-titik
+-	Serupa batang
+-	Serupa akar
+
+Sifat koloni hasil penanaman pada media agar tegak dalam tabung dan sifat-sifat koloni
+
+tusukan dalam gelatin.
+Adapun bakteri yang dapat mengencerkan gelatin, ada pula bakteri yang tidak mampu mengencerkan gelatin, sehingga bentuk koloninya juga berbeda-beda. Bentuk koloni yang tidak mengencerkan gelatin berbeda satu sama lain. Demikian pula bentuk koloni yang mengencerkan gelatin.
+
+Bila dilihat dari samping, maka bentuk koloni yang tidak mengencerkan gelatin, dapat serupa pedang, serupa tasbih, bertonjol-tonjol, berjonjot, serupa batang. Jika bakteri mampu mengercerkan gelatin, maka bentuk koloninya dapat serupa kawah, serupa mangkuk, serupa corong, serupa pundi, berlapis.
+
+Pembacaan hasil penanaman :
+Tergantung dari media yang ditanami. Apabila untuk memperbanyak koloni, hanya dilihat ada pertumbuhan atau tidak. Tetapi bila juga untuk identifikasi, dilihat ada tidaknya perubahan warna disamping ada tidaknya koloni bakteri yang tumbuh dan bentuk-bentuk pertumbuhan koloninya.
+
+C.	INOKULASI PADA MEDIA PADAT
+Tujuan untuk menyebarkan koloni bakteri dari spesimen, merata pada permukaan medium, sehingga mudah dipisahkan atau diisolasi bakteri yang satu dengan yang lainnya.
+Flora mikroba di lingkungan mana saja, pada umumnya terdapat dalam populasi campuran. Boleh dikatakan amat jarang mikroba dijumpai sebagai satu spesies tunggal di alam. Untuk mencirikan dan mengidentifikasi suatu spesies mikroorganisme tertentu, pertama-tama spesies tersebut harus dapat dipisahkan dari organisme lain yang umun dijumpai dalam habitatnya, lalu ditumbuhkan menjadi biakan murni. Biakan Murni ialah biakan yang sel-selnya berasal dari pembelahan satu sel tunggal.
+Semua metoda mikrobiologik yang digunakan untuk menelaah dan mengidentifikasi mikroorganisme, termasuk penelaah ciri-ciri cultural, morfologik, fisiologik, maupun serologic, memerlukan suatu populasi yang terdiri dari satu macam mikroorganisme saja.
+
+Metode cawan tuang
+Cara lain untuk memperoleh koloni murni dari populasi campuran mikroba adalah dengan mengencerkan spesimen dalam medium agar yang telah dicairkan dan didinginkan (50°C) yang kemudian dituangkan kedalam cawan. Karena konsentrasi sel mikroba didalam spesimen pada umumnya tidak diketahui sebelumnya, maka pengenceran perlu dilakukan beberapa tahap, sehingga sekurang-kurangnya satu diantara cawan-cawan tersebut mengandung koloni-koloni terpisah diatas permukaan ataupun didalam agar.
+Metode ini memboroskan bahan waktu, namun tidak memerlukan keterampilan yang terlampau tinggi.
+Sifat-sifat yang perlu diperhatikan pada medium plate adalah :
+a.	Besar kecilnya koloni
+Ada koloni yang hanya serupa titik, ada pula yang melebar sampai menutup permukaan medium.
+b.	Bentuk
+Ada koloni yang bulat, ada yang memanjang, ada yang tepinya rata ada yang tepinya tidak rata.
+c.	Kenaikan permukaan
+Ada koloni yang rata saja dengan permukaan medium, ada pula yang timbul yaitu menjulang tebal diatas permukaan medium.
+d.	Halus kasarnya permukaan
+Ada koloni yang permukaannya halus saja, ada yang permukaannya kasar, tidak rata
+e.	Wajah permukaan
+Ada koloni yang permukaannya mengkilat, ada yang permukaannya suram
+f.	Warna
+Kebanyakan koloni bakteri berwarna keputihan atau kekuning-kuningan. Akan tetapi ada juga yang kemerah-merahan, coklat jingga, biru, hijau, ungu.
+g.	Kepekatan (konsisten)
+Ada koloni yang lunak seperti lendir, ada yang lunak seperti mentega, ada yang keras dan kering
+
+Untuk mengisolasi bakteri dari suatu carapuran, ada dua macam teknik yaitu :
+1.	Teknik cawan gores
+2.	Teknik cawan tuang
+
+2. Teknik cawan gores
+Metode ini mempunyai dia keberuntungan, yaitu menghemat bahan dan waktu. Namun untuk memperoleh hasil yang baik diperlukan keteRampilan yang biasanya diperoleh dari suatu pengalaman. Metode cawan gores yang dilaksanakan dengan baik, kebanyakan akan menyebabkan terisolasinya seperti yang diinginkan.
+Sukar untuk dibayangkan betapa kecil ukuran sel bakteri, satu ukuran bakteri berukuran kurang lebih 1/10.000 cm. Jadi jika kita menggoreskan satu lup inokulasi yang mengandung bakteri pada permukaan agar nutrien di dalam cawan petri, pada hakekatnya telah menaruh puluhan ribu sel pada medium tersebut. Bila menggunakan teknik menggores yang baik, maka pada suatu area tertentu pada permukaan medium yang digores, sel-sel bakteri akan terpisahkan satu dari lainnya. Sel tunggal yang dipisahkan seperti ini disebut sel induk. Pada waktu inkubasi setiap sel induk membelah diri dengan cara biner dalam 20 - 30 menit menjadi dua sel anak, lalu pada 20 - 30 menit berikutnya setiap sel anak membelah diri lagi sehingga terdapat 4 sel anak. Sel-sel baru itu terus membelah diri dalam jumlah eksponensial menjadi bermilyar-milyar sel anak yang saling bertumpukan diatas dan disampingnya membentuk suatu koloni. Bila setelah waktu inkubasi koloni-koloni itu saling terpisahkan cukup jauh sehingga tidak bersentuhan, maka diperoleh koloni murni
+Bagi kebanyakan bakteri, setelah masa inkubasi setelah 4 jam satu koloni murni dapat terdiri dari 50 - 72 generasi sel yang timbul dari satu sel induk tunggal, dengan perkataan lain satu koloni murni terdiri dari bermilyar-milyar sel anak.
+
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 40,
+                'id_mapel' => 1,
+                'judul_materi' => 'Struktur Halus Bakteri (Sitologi Bakteri)',
+                'detail_materi' => 'Untuk mengetahui sifat-sifat bakteri, sebaiknya kita mengetahui lebih dahulu mengenai struktur bakteri (sitologi bakteri). Yang dibicarakan dalam struktur bakteri ini, antara lain dapat disebutkan adalah :
+1.	Susunan tubuh
+Zat-zat terdapat dalam badan bakteri ialah : air, protein (albumin, globulin), hydrat arang (polisakarida), lemak, lipid. Banyaknya protein yang terdapat dalam tubuh bakteri, tergantung kepada perbenihan dimana bakteri itu tumbuh.
+Garam-garam yang terdapat pada bakteri adalah : Natrium (Na), Kalium (K), Kalsium (Ca), Phospor (P), Shulpur (S), Chlor (CI), dan sebagainya.
+2.	Bangun sel
+Bakteri terdiri dari satu sel, lazimnya orang berpendapat bahwa sel bakteri itu mempunyai dinding luar, dan protoplasma ( sitoplasma ) sebagai inti sel. Dinding luar terdiri dari 3 lapis, berturut-turut dari luar kedalam yaitu lapisan lendir, dinding sel dan membran sitoplasma.
+Dinding sel ini sangat tipis, namun dinding inilah yang memberikan bentuk kepala sel bakteri. Bentuk sel bakteri itu tetap, zat-zat yang menyusun dinding sel pada umumnya terdiri dari bahan-bahan organic seperti : Selulosa, hemiselulosa dan khitin (karbohydrat yang mengandung unsurN). Adanya zat-zat itulah yang menyebabkan kebanyakan sarjana menggolongkan bakteri kedalam dunia tumbuh-tumbuhan
+
+Fungsi dinding sel
+1.	Memberi bentuk kepada sel
+2.	Mengatur sel dari luar
+3.	Mengatur keluar masuknya zat-zat kimia (semipermeable)
+4.	Memegang peranan penting dalam pembelahan sel.
+Protoplasma adalah bagian utama dari sel, bersifat koloid dengan zat-zat yang terdapat didalamnya seperti : Karbohydrat, protein, enzim-enzim, kalsium karbonat, belerang, volutin dan sebagainya. Protoplasma dikelilingi oleh suatu membran tipis, elastis, dinamakan membran protoplasma (sitoplasma), nama lain plasmodium atau hialin. Palsmolema juga memegang peranan dalam pembelahan sel. Setelah luar membran protoplasma ini terdapat dinding sel yang sebenarnya.
+3.	Lapisan lendir, kapsel
+Pada umumnya bakteri mempunyai lapisan lendir yang menyelubungi sel seluruhnya. Jika lapisan lendir ini cukup tebal dinamakan kapsel (simpay ). Kapsel bukanlah suatu integrasi dari sel, akan tetapi sebagai hasil sekresi dari bakteri. Lapisan lendir ini tidak mudah menangkap zat warna dan tebalnya tidak sama pada semua bakteri
+Kapsel pada umumnya terdiri dari karbohydrat (Pneumokokus ), akan tetapi ada juga terdiri dari protein ( Bacillus antrax)
+Guna kapsel : untuk memberikan perlindungan terhadap kekeringan, seakan-akan merupakan suatu benteng pertahanan.
+Pada beberapa spesies kuman, selubung ini bertalian dengan virulensinya. Pneumococcus misalnya, yang berkapsel adalah virulen (ganas) sedangkan yang tidak berkapsel tidak virulen lagi (misalnya ditumbuhkan dalam media di laboratorium ). Contoh bakteri yang berkapsel dapat disebutkan : Pneumococcus, Klebsiella, Bacillus anthrax
+
+4.	Flagell (bulu cambuk)
+Flagel adalah benang protoplasma yang kuat, tebalnya kira-kira 0,1 mikron. Flagel diangkat dari kata Greek flagellum" artinya kipas kecil.
+Flagel digunakan oleh bakteri untuk bergerak (gerak aktip). Golongan basil dan spiril dapat bergerak, sedangkan golongan kokus tidak dapat bergerak karena tidak mempunyai flagel. Pada bakteri ada yang mempunyai kedua jenis rambut berikut, yaitu :
+a. flagel (bulu cambuk) sebagai alat untuk bergerak
+b. fimbria sebagai alat untuk melekat.
+
+Flagel berasal dari sitoplasma, sedangkan fimbria berasal dari dinding sel. Tempat darimana asal flagel atau pangkalnya dinamakan rizoblast (dibawah membran sel). Berdasarkan tempat kedudukan flagel pada bakteri dapat diklasifikasikan sebagai berikut :
+a.	Flagel monotrik, jika satu flagel terdapat pada satu ujung.
+b.	Flagel lofotrik, jika terdapat seberkas flagel ( lebih dari satu flagel ) pada satu ujung atau kedua ujung bakteri
+c.	Flagel anfitrik, jika terdapat satu flagel pada masing-masing uiune halten
+d.	Flagel peritrik, jika flagel terdapat banyak mengelilingi tubuh bakteri.
+e.	Atrik, adalah bakteri yang tidak mempunyai flagel
+
+Ada juga pendapat mengadakan klasifikasi saja mengenai kedudukan flagel, yaitu flagel terminal yang terdapat pada ujung saja seperti kuman Vibrio, Sprillium dan Pseudomonas dan flagel lateral yang meliputi tubuh bakteri, seperti halnya pada Escherichia coli, Proteus vulgaris serta pada beberapa Bacillus dan Clostridium yang dapat bergerak.
+
+Granula
+Granula terdapat dalam sitoplasma terjadi karena pemisahan benda-benda mati. Hanya dijumpai pada stadium tertentu dalam pertumbuhan suatu bakteri. Granula ini bukanlah sebagai inti, akan tetapi sebagai tempat (tabungan) bahan makanan untuk bakteri, yang berisi asam nuclein dan disebut titik-titik volutin. Yang mula-mula menemukan granula ialah Babes dan Emst pada kuman difteri, makanya disebut granula Babes Ernst. Berdasarkan zat-zat yang terdapat dalam granula, maka granula dapat dibedakan atas :
+1.	Granula metakhromatik yang terdiri atas volutin yang dinamakan granula Babes dan Ernst, terdapat pada kuman difteri. Dengan pewarisan Neisser, granula berwarna biru -hitam, sedangkan badan bakteri berwarna kuning.
+2.	Granula lemak, adalah granula yang mengandung lemak dan berwarna kuning bila diwarnni dengan sudan III
+3.	Granula glycogen, adalah granula yang mengandung glycogen dan berwarna coklat bila dibubuhi jodium.
+5.	Inti (nucleus)
+Menurut teori tiap sel mempunyai inti. Inti penting dalam proses-proses hidup, misalnya reproduksi, metabolisme dan sebagainya. Sejak lama menjadi pertanyaan para sarjana, apakah bakteri itu mempunyai inti. Mengenai inti bakteri banyak pendapat yang dikemukakan, antara lain dapat disebutkan adalah :
+a.	Bakteri tidak mempunyai atau apapun yang menyerupai inti.
+b.	Isi sel seluruhnya itulah inti, sedangkan protoplasmanya hanya sedikit benar, merupakan lapisan tipis membungkus inti.
+c.	Kemungkinan tersebar bercampur homogen dalam sitoplasma, karena terdapat bahan-bahan inti (kromatin) yang tidak mempunyai membran atau dinding inti. Inti yang tidak mempunyai membran disebut "prokaryon". Sedangkan inti yang membran disebut "eukaryon", terdapat pada inti sel tumbuhan tingkat tinggi.
+Anggapan bahwa zat inti tersebar diseluruh sel pertama kali diselidiki oleh fuelgen. Dengan pengecatan fuelgen maka zat ini warnanya merah muda atau merah jambu dan terdapat diseluruh sel bakteri.
+6.	Pembentukan spora (endospora)
+Spora pada bakteri dinamakan endospora, karena ia terbentuk didalam bakteri. Biasanya istilah spora itu dipakai untuk menyebutkan alat-pembiak yang terdapat pada jamur, ganggang, lumut dan paku-pakuan.
+Istilah spora pada bakteri mempunyai arti yang lain. Pembentukan spora pada bakteri adalah usaha untuk mengamankan diri terhadap pengaruh buruk dari luar, misalnya karena : kekeringan, kekurangan air, kurang makanan, suhu, pengaruh zat-zat kimia dan sebagainya. Bila keadaan luar tidak membahayakan lagi, maka pecahlah bungkus spora (sporulasi) dan tumbuhlah bakteri (bentuk vegetatip) sebagai mana biasanya.
+
+Bagaimana pembentukan spora (endospora)
+Bila keadaan sekitar bakteri buruk, mula-mula terjadi penggumpalan protoplasma. Gumpalan ini bentuknya bermacam-macam, ada yang bulat, ada yang lonjong, bergantung kepada spesies bakteri. Bentuk spora ini sangat membantu dalam identifikasi spesies bakteri.
+ Kemudian gumpalan protoplasma ini dibungkus oleh suatu membran yang kuat dan tebal, hingga kuat dan tahan terhadap gangguan-gangguan luar atau resisten. Spora mengandung air kira-kira 60-70 % sedangkan bentuk vegetatif atau bakteri kurang lebih 3-21 %.
+Sepanjang pengetahuan sampai sekarang hanyalah golongan hasil yang dapat membentuk spora. Beberapa spesies dari Bacillus yang aerob dan Clostridium yang anaerob, dapat membentuk spora.
+
+Letak spora dan bakteri.
+Berdasarkan letaknya spora pada sel bakteri, dapat dibedakan :
+1.	Spora terminal : spora terdapat diujung basil, bentuknya ada yang oval dan bulat
+contoh : - oval pada Cl. Fallex
+ - bulat pada Cl. tetani
+2.	Spora sentral (aquatorial) : spora terdapat ditengah-tengah basil, bentuknya ada bulat atau lebih besar dari sel bakteri.
+contoh : membesar pada Cl. Multifermentans
+ oval pada Cl. Botulinum
+3.	Spora subterminal : spora terdapat diantara terminal dan sentral
+      bentuk spora umuinnya oval memanjang.
+Contoh : -CI. Sporongenes
+  - Cl. welchii
+  -Cl. oedematicus
+Ada spor yang garis tengahnya lebih besar dari garis tengah bakteri, hingga menyebabkan pembengkakan bakteri.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 41,
+                'id_mapel' => 3,
+                'judul_materi' => 'Pengenalan Kimia Klinik (Patologi Klinik)',
+                'detail_materi' => 'Kimia Klinik adalah merupakan urine terapan yang digunakan untuk menganilisa cairan tubu dan jaringan untuk membantu klinukus dalam mendiagnosa dan mengobati seseorang. Sebagai ilmu terapan Kimia Klinik menggunakan Ilmu Fisiologi dan Biokimia untuk menerangkan suatu keadaan.
+Perkembangan Kimia Klinik mengikti perkembangan Ilmu kedokteran, Biokimia dan Teknik Kimia Analisa.
+RIWAYAT PERKEMBANGAN
+Pelajaran patologi Kimia Klinik tahun 1847 oleh Bence Jones telah diketahui mengenai analisa kwantitatif urine, bola, asam urat dan urea dalam darah, hanya saja metode pemeriksaannya yang agak sulit diterapka.
+ Pada tahun 1913 tes kimia darah telah menggunakan alat spektroskopi walaupun tes tersebut belum memuaskan, tahun 1910 sampai dengan 1920 metodologi pemeriksaan maju pesat, kolorimeter visual tersedia secara luas dan umumnya dipakai metode Analisa yang hanya memerlukan 1 ml darah tahun 1940 perkembangan metodologi utama berikutnya adalah fotometer nyala ap! (flame photo) dan potasiun, kolorimeter foto elektrik yang memberikan kecepatan dan ketepatan yang lebih besar dari kolorimeter visual dan teknik mikro bagi conton 0,1ml, sehingga memungkinkan pemakaian darah kapiler, karena kemajuan metode in lebih banyak penerapan pengetahuan biokimia klinikus yang lebih bersifat ilmiah dan lebih banyak kebutuhan kontrol biokimia bagi terapi yang manjur (baik) untuk analissa secara biokimia pada pasien.
+Pertengahan abad sembilan belas, dckter dapat megukur konsentrasi asam Honda di dalam getah tambung dan menganalisa gula urine dengan test febling, protein urine melalui pendidikan dengan pengasaman dari empedu urine dengan asam nitrat
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 42,
+                'id_mapel' => 3,
+                'judul_materi' => 'Ginjal',
+                'detail_materi' => 'A.	SISTEM URINARIA
+Sistim urinaria terdiri atas :
+- Ginjal : yang mengeluarkan sekret ginjal
+- Ureter : yang menyalurkan urine dari ginjal ke kandung kemih kencing
+- Kandung kencing : sebagai penampung urine
+- Uretra : yang mengeluarkan urine dari kandung
+Setiap duktus papilans bellini masuk kedalam suatu perluasan ujung pelvis inial berbentuk cawan yang disebut kaliks minor. Beberapa kaliks minor bersatu membentuk kaliks mayor yang selanjutnya bersatu membentuk pelvis ginjal, pelvis ginjal dengan adanya ureter akan bergabung dengan kandung kemih.
+
+
+B.	PEMBULUH DARAH GINJAL
+Artera Interlobaris Arteria renalis Artena arkuata Artain Interlobularis Aforon Eleren Arten renalis masuk ke dalam hilus bercabang menjadi arteri interlobaris selanjutnya membentuk arteri arkuta, arteri arkuta kemudian membentuk arteriola arteriola interlobularis yang tersusun dalam korteks, arteriola interlobularis selanjutnya membentuk arteriola aferen.
+Arteriola aferen akan berakhir pada rumbai-rumbai kapiler yang disebut glomerulus dan glomerulus bersatu membentuk arteriola eferen yang kemudian bercabang-cabag mengelilingi tubulus disebut kapiler-kapiler pentubular.
+Darah yang mengalir melalu kapiler peritubular dialirkan kedalam interlobulans, vena arkuta, vena interlobularis , vena renalis interlobularis , vena renalis dan akhirnya ke vena cava inferior.
+
+C.	PROSES PEMBENTUKAN URINE/KEMIH
+Fungsi ginjal adalah mengatur komposisi plasma darah dan cairan tubuh. Proses-proses yang terjadi dalam ginjal adalah :
+a. Filtrasi : Penyaluran/penyaringan bahan-bahan dengan berat molekul kecil dari plasma ke filtrat glomerulus
+b. Reabsorbsi : Penyerapan kembali molekul-molekul dan ion-ion dari filtrat untuk dikembalikan ke plasma darah
+c. Sekresi : Penyaluran molekul-molekul dan ion-ion dari plasma ke urine.
+Ginjal memiliki unit fungsional disebut nephron, setiap ginjal memiliki 1-1,5 juta nephron, terdiri atas : -Glomerulus
+           -Tubulus
+Pembentukan kemih dimulai dengan proses filtrasi plasma pada glomerulus. Filtrael H20. elektrolit, non elektrolit Aliran darah ginjal (RBF = Renal Blood Flow) melalui arteri afferent $ 1200 Sokresi ml/menit mengalir menuju glomerulus dari 1200 ml darah yang mengalir 600 Ostosa Acam amino PAH Kroatinin ml adalah plasma (RPF = Renal Plasma No Flow), dari 600 ml plasma yang Ponisilin Ko Cow Mg HCOS HPC mengalir hanya 1/5 yang dapat tersaring TUBULUS PROKSIMAL melalui kapiler-kapiler glomerulus serta ditampung di kapsula Bouwman, keadaan ini diistilahkan sebagai LAJU FILTRASI GLOMERULUS (GFR), NOCI LENGKUNG HENLE harga normalnya adalah :
+Pria : 120 ml/menit
+Wanita : 110 ml/menit
+Komposisi filtrat yang dihasilkan setelah  filtrasi sama dengan plasma sebelum NH filtrasi kecuali protein dan sel-sel darah Pombuluh darah porttubular tidak di jumpai di dalam filtrat, selanjutnya filtrat yang ditampung di kapsula Bouwman dialirkan kedalam hibulus didalam perjalanannya filtrat ini akan mengalami teabsorbsi melalui pori on van terdapat dalam tubulus sehingga zat-zat tersebut kembali lagi ke dalam kapiler pertubular yang mengelilingi tubulus, disamping itu juga beberapa zat disekresi dan pembuluh darah peritubular ke dalam tubulus sehingga yang keluar sebagai unnet 1 ml/menit.
+Bahan-bahan yang terlarut dalam urine terdiri atas 95% air, 2% urea dan 3% terdin atas bahan-bahan organik dan anorganik antara lain:
+Organik Anorganik - amoniak urea - asam urat - klorida - kreatinin dll - sulfat, fosfat dll
+Bahan-bahan yang terlarut dalam urine dapat meningkat pada keadaan patologis misalnya adanya protein, glukosa, badan-badan keton, bilirubin, porphomilinogen, urobilinogen, hemoglobin dll.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 43,
+                'id_mapel' => 3,
+                'judul_materi' => 'Urinalis',
+                'detail_materi' => 'Hasil pemeriksaan laboraturium yang baik tidak hanya memerlukan cara-cara pemeriksaan yang baik, pemeriksaan yang berpengalaman, tapi perlu jutaan cara pengambilan dan pengiriman dan contoh urine keA diperhankan cara-cara penrambilan Ishratonum, hal-hal yang perlu diperhatikan adalah sebagai berikut:
+CARA CARA MEMPERSIAPKAN URINE UNTUK PEMERIKSAAAN LABORATORIUM
+A.	PENAMPUNG
+Penampung untuk urine dapat digunakan tempat bermacam-macam, tapi yang harus diperhatikan adalah tempat penampung tersebut harus kering dan bersih, karena adanya air dan kotoran dalam penampung dapat menyebabkan berkembang biaknya kuman-kuman dalam urine serta mengubah susunannya. Wadah yang baik adalah tempat yang terbuat dari kaca, plastik yang tidak fembus cahaya atau "paper costed" dengan mulut yang lebar dan mempunyai tutup untuk mencegah bertambahnya kuman atau kontaminasi zat-zat lain dan rada penampung jangan lupa menuliskan identitas penderita, nama, ruangan, tanggal, macam pemeriksaan yang dimintakan.
+B.	CARA PENGAMBILAN CONTOH URINE
+Untuk pemeriksaan unine dianjurkan memakai urine segar. Penderita mengeluarkan unne langsung dalam penampung seperti tersebut disuruh untuk mengeluarkan urine lan listas kemudian ditutup dan segera dikirimkan ke laboratorium. Pada penderita sedang haid atau leukorrohoe, untuk mencegah kontaminasi dianjurkan pengambilan contoh urine dengan cara "Clean voided speciman" seperti pengambilan urine untuk pemeriksaan bakteriologi.
+Cara "Clean voided specimen" dapat dilakukan dengan beberapa macam :
+1.	Kateterisasi
+2.	Punksi suprapubik dan
+3.	Pengambilan urine "midstream" dimana urine yang pertama keluar tidak di tampung, tetapi urine yang keluar kemudian ditampung dan yang terakhir tidak turut ditampung (Clean voided midstream).
+Pengambilan urine untuk pemeriksaan bakteriologi memerlukan tindakan undakan aseptis, penampung dan alat-alat yang steril. Urine yang ditampung dalam hal ini adalah urine "midstream" yang ditutup dengan penutup stent si segera dikirim ke laboratorium
+C. MACAM-MACAM CONTOH URINE
+1.Urine Sewaktu
+Untuk bermacam-macam pemeriksaan dapat digunakan urine sewaktu ialah urine yang dikeluarkan pada satu waktu yang tidak ditentukan dengan khusus. Urine sewaktu ini biasanya cukup baik untuk pemeriksaan rutin seperti protein, reduksi, sediment
+2. Urine pagi
+Yang dimaksud dengan urine pagi adalah urine yang pertama-tama (dikeluarkan pada pagi hari. Unine ini lebih pekat dari urine yang dikeluarkan siang hari jadi baik untuk pemeriksaan terhadap sediment, berat jenis, protein, test kehamilan. Pada urine yang encer mungkin unsur unsur sediment seperti eritrosit, silinder protein tidak ditemukan.
+3. Urine Post Prandial
+Urine yang pertama kali dikeluarkan 2 jam sehabis makan, contoh urne ini baik untuk pemeriksaan adanya glukosa (reduksi), urine pagi tidak baik untuk pemeriksaan penyaringan terhadap adanya glukosuria.
+4. Urine 24 jam
+Urine yang dikumpulkan selama 24 jam, cara mengumpulkan uri sebagai berikut: jam 8 pagi penderita mengumpulkan u penderita mengumpulkan urinenya : urine ini dibuang Semua urine yang dikelu ocmua urine yang dikeluarkan kemudian termasuk juga urine harus ditampung dalam botol urine yang tersedia dan jam 8 esok harinya harus ditampung dalam botol urine v kemudian diukur volumenya dengan tepat. Unne 24 jam ini dicampur, kemudian diukur volume diperlukan untuk penetapan kwantitatif sesuatu zat dalam urine, seperti penetapan ekskresi kalsium, phospat, protein, kadar hormon 17 hidroksiketosteroid dan lain-lain
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 44,
+                'id_mapel' => 3,
+                'judul_materi' => 'Pengawet Urine',
+                'detail_materi' => 'Kecuali elektrolit semua ikatan-ikatan (komponen-komponen) dalam urine diuraikan oleh bakteri dan jamur. Apabila urine tidak dapat segera diperiksa perlu ditambahkan bahan pengawet untuk mencegah kejadian-kejadian seperti tersebut diatas. Untuk mengawetkan unine dapat dilakukan cara-cara sebagai berikut:
+A.	FISIK
+1.	Disimpan dalam lemari es (+ 4°C) Terutama ditujukan terhadap urine yang tidak segera diperiksa atau untuk pemeriksaan bakteriologis.
+2.	Disimpan dibawah titik beku (dibawah 20°C) Terutama ditujukan untuk pemeriksaan badan kimia
+ B. KIMIAWI
+1. Toluena :
+Sangat baik dipakai untuk mengawetkan glukosa . aceton dan cam ascto setat penggunaannya sebanyak 2 - 5 ml tolucna untuk mengawetkan urine 24 jam
+2. Thrmol:
+- Sebutir thymol mempunyai daya seperti toluena
+- Dalam bentuk hablur + 100 mg untuk 100 ml urine
+- 10% thymol dalam propanol (5 ml sudah cukup untuk urine 24 jam)
+Penggunaan thymol dalam jumlah berlebihan dapat mengganggu pemenksaan proteinuria, dapat menyebabkan positif palsu
+3.	Formaldehida
+Khusus dipakai untuk mengawetkan sediment penggunaanya sebanyak 1-2 ml larutan formaldehida 40% untuk mengawetkan urine 24 jam, dapat mengganggu pemeriksaan reduksi urine.
+4.	Asam Sulfar Pekat
+Asam ini dipakai untuk mengawetkan urine guna penetapan kuantitatif catsium nitrogen dan kebanyakan zat anorganik lain. Jumlah yang harus diberikan adalah sebanyak itu hingga ph urine tetap lebih rendah dari 4,5. Reaksi asam mencegah terlepasaya N dalam bentuk amonial dan mencegah juga terjadinya endapan calsium fosfat
+5.	Natrium Carbonat
+Khusus untuk mengawetkan urobilinogen jika hendak menentukan Khusus dipakai untuk mengawetkan Masukkan kira-kira 5 gram natrium karbonat dalam stanesinya per 24 jam. Masukkan kira-kira 5 gram natrium botol penampung bersama dengan beberapa ml toluena.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 45,
+                'id_mapel' => 3,
+                'judul_materi' => 'Urine Rutin',
+                'detail_materi' => 'Pemeriksaan urine merupakan pemeriksan yang sering diminta dalam antu menegakkan berbagai macam penyakit karena pemeriksaan urine tidak hava dapat memberikan fakta-fakta tentang kelainan ginjal dan salurannya tetapi juga mengenai saal beberapa organ seperti hati, saluran empedu, pankreas dll
+Pemerksaan urine rutin terdiri atas :
+1. Fisik
+a. wama
+b. kekeruhan
+c. bau
+d. bui
+e. Ph
+f berat jenis
+2. Kimiawi
+a. protein
+b. glukosa
+c. aceton
+d. bilirubin
+e. urobilinogen
+f. urobilin
+3. Sediment/mikroskopis
+a. lekosit
+b. critrosit
+c. silinder/torak-cast
+d. hablur-hablur
+e. bakteri
+
+L.PEMERIKSAAN FISIK
+A Warna :
+Pada pemeriksaan urine perubahan warna urine harus diperhatikan benar-benar sebab perubahan wama urine bisa disebabkan oleh 2 penyebab :
+1. Keadaan non patologis disebabkan oleh obat-obatan atau makanan
+2. Keadaan patologis disebabkan oleh penyakit yang diderita Warna urine yang normal disebabkan oleh urochrom yang berwarna kuning muda sampai kuning tua tergantung dari kadar urochromnya.
+B. KEKERUHAN/KEJERNIHAN
+urine yang harus dikeluarkan normalnya tampak jernih, kekenihan dalam urine biasanya disebabkan oleh:
+1. fospat amorf dan CO3 dalam jumlah besar
+2. bakteri
+3. unsur-unsur sediment dalam jumlah besar
+- eritrosit
+- leikosit
+-sel-sel epithel
+4. chylus dan lemak
+5. koloid
+Sebab-sebab urine menjadi keruh setelah dibiarkan:
+1. nebecula
+2. urat amorf
+3. fosfat amorf dan CO3
+4. bakteri
+
+C. BAU
+Umumnya bau urine erat hubungannya dengan kerusakan urine itu sendin. Urine normal dan baru berbau tidak keras. Urine yang sudah lama berbau amoniak karena pemecahan ureum. Bila urine baru tetapi berbau amoniak/busuk mungkin Keadaan ini disebabkan oleh perombakan zat-zat protein umpamanya pada dan saluran kencing/cystitis 19
+
+D. BUIR
+Urine tidak berbuih, bilirubin menyebabkan buih berwama kuning Unine biasanya tidck berbuih, bilirubin protein urine menimbulkan buh berwarna putih. meningkatnya kadar protein urine menimbulkan buih berwarna putih
+
+E. PA
+Pada orang yang sehat PH urine berkisar antara 4,5 sampai 8,5 tetapi rata-rata sedimen urine Phnya sekitar 6,0. Pengukuran Ph harus dilakukan terhadap urine yang masih baru dan dilakukan dengan kertas Ph Mis:
+1.	Penetapan reaksi dengan kertas lakmus:
+Basahilah sepotong kertas lakmus biru merah dengan urine yang diperiksa: tunggu satu menit dan perhatikanlah warna yang terjadi :
+-	urine asam mengubah warna kertas lakmus biru menjadi merah
+-	urine lindi(basa) mengubah kertas lakmus merah menjadi biru
+-	urine netral tida mengubah kertas lakmus
+2.	Penetapan PH dengan kertas nitrazin Basahilah sepotong kertas nitrazin dengan urine yang diperiksa, tunggu satu menit dan bandingkanlah warna kertas itu dengan skala wama standard.
+3.	Penetapan PH dengan campuran indikator Penetapan PH dengan cara ini lebih cepat dan lebih tepat, pada segons kertas terdapat campuran 2 macam indikator yaitu:
+Metil red dan brom thymol blue, perubahan warna kedua indikator ini Metil red dan brom thymnol blue ne enyebabkan warna pada kertas tersebut akan berubah dari jingga-hau sampai menjadi biru sesuai dengan reaksi asam suasana urine tersebut
+4.	Carik celup (disptick)
+Cank celup berupa secarik plastik kaku yang pada sisinya dilekari dengan satu sampai sembilan kertas isap atau bahan penyerap lain yang masing masing mengandung reagens spesifik terhadap salah satu zat yang mungkin ada di dalam urine, adanya dan banyaknya zat yang dicari ditandai oleh perubahan warna tertentu pada bagian yag mengandung reagens spesifik, skala wana yang menyertai carik oclup memungkinkan penilaian semi kwantitatif.
+Cara kerjanya sebagai berikut:
+1. urine harus dijadikan serba sama sebelum diperiksa; campurlah baik baik sampai juga sediment terbagi merata
+2. Celupkan carik celup ke dalam urine, angkat
+3. Hilangkan kelebihan urine yang melekat pada carik celup dengan umpamanya = menyentuhkan pinggir carik celup pada pinggir wadah urine
+4.Jangan pegang bagian dari carik celup yang mengandung reagens dengan jari
+5. Cocokkan dengan standar
+Catatan :
+Pada pemeriksaan PH urine dengan menggunakan kertas nitrazin, test diptsick dll Pada pemeriksaan PH urine perlu diperhatikan bal-hal sebagai berikut:
+1.	hanya kemih yang segar saja yang boleh dipakai
+2.	test yang mempergunakan kertas celup, kertas harus segera diangkat setelah dicelupkan ke dalam urine agar reagens dalam kertas tersebut tidak tercuci
+3.	Perbandingan warna terhadap warna standar harus langsung dilakukan dibawa cahaya yang baik 1. BJ 001
+Penentuan berat jenis merupakan barometer untuk mengukur jumlah z padat yang terlarut dalam urine dan di gunakan juga untuk menentukan konsentrasi urine serta daya dilusi ginjal. Pengukuran Bj ini dipengaruhi oleh adanya zat-zat bermolekul besar yang terlarut dalam urine, zat-zat tersebut dapat berasal dari dalam tubuh mis : glukosa atau protein atau yang sengaja dimasukkan dari luar yang nantinya akan keluar bersama urine mis: kontras & Pay atau dextran
+Batas-batas nomal Bi adalah nyai berat jenis 1.025 atau lebih tinggi sedangkan reduksi urine une pagi mempunyai berat je dok ada protein hal ini menunjukkan kepada faal pemekatan ginjal yang negatif dan tidak ada vang lebih 1.030 memberikan isyarat akan kemungkinan glukosuria. baik, berat jenis yang lebih 1.030 rium kimia klinik BJ urine diukur dengan kapasitas pengapungan
+ Dilaboratorium kimia klinik B Hidrometer urinometer dalam suatu silinder yang berisi urine Tindakan atau cara tepat unuk mengukur berat jenis urine sebagai berikut:
+1.	Periksa ketepatan urinometer terhadap air suling apakah niai yang terbaca 1000 pada suhu teranya.
+2.	Isi silinder penuh dengan kemih yang telah tercampur dengan baik
+3.	Putar urinometer perlahan-lahan sambil dimasukkan ke dalam kemih agar jangan sampai terjadi kesalahan pada tegangan permukaan yang terbentuk pada batang urinometer tersebut dan jangan sampai menempel pada sisi silinder
+4.	Baca dan atas ke bawah, urinometer ditera dalam unit 0,001 mulai dan 1.000 disebelah atas dan terus ke bawah sampai 1.060, cara membaca yang baik ialah pada permukaan dasar miniskus yang harus dibaca pada ketinggian mata
+5.	Perbaiki hasil bacaan berat jenis tersebut kalau suhu contoh yag diperiksa vengan suhu tera unimometer berbeda gunakan termometer un mementukan suhu kemih yang sebenarnya nin yang sebenarnya, tambahkan 0.001 pada hasil yang  untuk setiap 3°C diatas suhu tera dan kurangi 0,001 untuk setiap 39 dibawah suhu tera
+Contoh:
+Kalau urinometer yang ditera pada 16°C ditempatkan pada suhu contoh kemih segar dengan suhu 31°C memperlihatkan hasil bacaan sebesar 0,015 maka hasil bacaan itu perlu ditambah 0,005
+ (31-16°C) - 15 x 0.001/3°C = 0,005
+BJ sebenarnya sesudah dikoreksi suhunya 1, 020
+
+II. PEMERIKSAAN KIMTAWI
+A.	Protein Dalam
+Urine Protein dalam urine (proteinuria) dapat terjadi karena:
+1.	GFR yang meningkat
+2.	Kelainan basal membrane glomerulus
+3.	Kelainan tubulus
+4.	Perubahan molekul protein sehingga mudah difiltrasi (mis: multiple myeloma)
+Macam-nacam proteinuria
+1.	Functional proteinuria, penyebabnya antara lain:
+-	demam
+-	karena expose dengan udara yang sangat dingin
+-	otot-otot yang kerja keras
+-	pada kehamilan
+2.	Organic proteinuria
+a.	Pre rental proteinuria
+-	pada asci tes
+-	karena keracurtan obat-obatan (Hg, Pb dll) mattede gerdk.
+b.	Renal proteinuria
+-	pada peradangan (nephritis)
+-	nephrosis
+-	kanker ginjal, infark ginjal, TBC ginjal all
+c.	False proteinuria
+-	cyctitis
+-	pyelitis
+-	urethritis
+-	sekret dari vagina
+Pemeriksaan terhadap protein termasuk pemeriksaan rutin. Kebanyakan cara rutin untuk menyatakan adanya protein dalam urine berdasarkan kepada timbulnya kekeruhan kepadatannya atau kasarnya kekeruhan menjadi suatu ukuran jumlah protein yang ada, maka menggunakan urine yang jemih betul-betul menjadi syarat penting pada test terhadap protein
+Proteinuria dapat ditentukan dengan beberapa metode yaitu :
+A.	SECARA KWALITATIF:
+1.	Didih bang
+2.	Pemanasan asam acetat 6%
+3.	Asam sulfosalicyl
+4.	Reaksi heiler
+5.	Carik celup
+
+DIDIH BANG PEMANASAN ASAM ACETAT 6%
+
+Dasar reaksi dari keadaan presipitasi bila dipanaskan, percobaan kedua cara ini dapat akan membentuk menentukan kadar sebanyak 0,604 % protein
+Sumber reaksi (+) palsu (kekeruhan yang tidak disebabkan oleh albumin atau globulin) mungkin
+a.	nucleo protein, kekeruhan terjadi pada pemberian asam asetat sebelum pemanasan
+b.	mucin, kekeruhan yang disebabkan oleh mucin juga terjadi pada saat pemberian asan asetat sebelum pemanasan
+c.	protease (albumose), presipiat oleh zat ini terjadi setelah campuran reaksi mendingin, kalau dipanasi menghilang lagi
+d.	asam resin, kekeruhan oleh zat-zat ini larut dalam alkohol
+e.	protein bence jones
+
+ASAM SULFO SALICYL
+Caranya :
+a.	Dua tabung reaksi di isi masing-masing dengan 2 ml urine jernih
+b.	Kepada yang satu ditambah 8 tetes larutan asam sulfo salicyl 20% kocok
+-	Bandingkan isi tabung pertama daripada yang kedua kalau tetap sama jernihnya test terhadap protein (-)
+-	Jika tabung pertama lebih keruh daripada yang kedua panasilah tabung pertama itu diatas nyala api sampai mendiddih dan kemudian diinginkan kembali dengan air mengalir.
+a.	Jika kekeruhan tetap ada pada waktu pemanasan dan tetap ada juga setelah dingin kembali, test terhadap protein adalah (+)
+b.	Jika kekeruhan itu hilang pada waktu pemanasan dan tetap ada juga setelah dingin, mungkin sebabnya protein bence jines dan perlu diselidiki lebh lanjut
+Test dengan asam sulfpsilicyly tidak bersifat spesidik, meskin sangat peka, adanya protein dalam konsetrasi 0,002% dapat dinyatakan, kalau hasil test itu (-), tidak perlu lagi memikirkan kemungkinan adanya proteinuria.
+CARIK CELUP
+Carik celup yang dpakai untuk menentukan proteinuria biasanya menggunakan indikator tetrabrom phonelblue yang berwarna kuning Ph3 dan berubah warna menjadi hijau sampai hijau biru sesuai dengan banyaknya protein dalam urine.
+PROTEIN BENCE JONES
+Protein Bence Jones adalah protein yang mengalami perubahan striktur molekul-molrkulnya, protein patalogi ini mrmpunyai sifat sebagai berikut :
+-	Mengendap pada suhu 40-60°C (optimum 36°C) dan larut pada suhu 100°C
+-	Di jumpai pada MULTIPLE MYELOMA
+-	Kadang-kadang dijumpai juga pada
+o	Tumor tulang
+o	Leukemia
+o	Nephritis khroni
+Pemeliharaan protein bence jones dapat dilakukan dengan cara :
+1.	Osgood
+2.	Asam solfoslicly
+CARA OSGOOD
+1.	Masukkanlah kira-kira 5 ml urine dan sebatang thermometer, kedalam tabung reaksi dan masukkanlah tabung itu ke dalam gelas kimia berisi air
+2.	Panasilah berhati-hati air dalam gelas kimia itu dan perhatikanlah suhu yang ditunjukkan oleh thermometer
+3.	Catatlah suhu timbulnya kekeruhan pertama-tama dan juga suhu kekeruhan itu menjadi maksimal
+4.	Angkatlah tabung itu dari air dan panasilah diatas nyala api sampai isinya mendidihselama satu menit.
+•	Jika presipitat lenyap, biarkan urine itu mendingin lagi, catatlah suhu presipitat muncul lagi
+•	Jika persipitat tidak mau menghilang waktu dipanasi, berilah 1 ml asam asetat 50% tetes demi tetes dengan terus memanasi urine itu hingga mendidih, jika kekeruhan menetap, maka persipitat itu setidaknya mengadung albunin dan fitrat ditinjau, jika kekekruhan timbul dalam fitrasi itu pada waktu cairan mendingin dan hilang lagi kalau dipanasi maka adanya protein bence jones terbukti.
+Jika pada langkah 3 dan langkah 4a terlihat adanya kekeruhan yang timbul pada suhu antara 50°C – 65°C yang menghilang pada 100°C, adanya protein bonce Jones terbukti juga.
+B.	SECARA KWANTITATIF
+-	Esbach
+Cara ini dapat dibaca bila kadar proteinnya lebih besar atau sama dengan 0,5 gr/l. sehingga bila dalam urine kadarnya kurang dari 0,5 gr/l tidak dapat dibaca dengan tepat.
+-	Reaksi biuret
+Protein urine di presipitasikan dengan asam trichlorasetat kemudian dipusing. Cairan diatasnya di buang dan endapan yang terbentuk dilarutkan dengan reagensia biuret
+Warna yang terbentuk kemudian dibaca dengan spektrofotometer.
+GLUKOSA DALAM URINE
+Semua zat yang terdapat dalam plasma (kecuali protein) di glomerulus akan difitrasi : demikian juga dengan glukosa sehingga setelah difitrasi maka glukosa akan terdapat dalam fitrat glomerulus.
+Dalam keadaan normal semua glukosa yang terdapat di filtrate glomerulus akan mengalami reabsorbsi dalam tuulud proximalis. Sehingga dalam urine tidak terdapat glukosa lagi, tetapi perlu diketahui baham tubulus ginjal mempunyai batas kemampuan untuk mereabsorbsi secara maximal. Kemampuan untuk mereabsorbsi ini disebut ambang gula dari ginjal atau Tm (Transport maxsimal) suatu zat. Nilai amabng gula dari ginjal normalnya 160-180% apabila jumlah glukosa dalam filtrat glomerulus melewati Tm ini, maka tidak semua glukosa yang terdapat dalam fitrat akan di reabsorbsi dan ini menyebabkan dijumpainya glukosa dalam urine yang disebut glukosuria.
+Glukosaria dapat disebabkan karen adua hal :
+1.	Bila kadar glukosa dalam plasma melampai batas kemampuan dya reabsorbsdi ginjal. Keadaan ini dapat dijumpai pada keadaan : emosi, penggunaan anastesi eter, tekanan intra cranial dan sidrom cushing.
+2.	Bila kemampuan daya rabsorbsi ginjal menurun. Keadaan ini dijumpai pada : renal glukosuria, alementary glukosuria, kehamilan, tubular demage.
+Untuk mengetahui adanya glukosa dalam urine (glukosuria) dapat ditentukan dengan cara :
+1.	Test reduksi :
+– benedict
+– fehting
+– nylander
+2.	 Test enzimatis/carik celup atau stjck (berdasarkan reaksi glukosa oksidase)
+TEST REDUKSI
+Cara yang lazim digunakan untuk menentukan glukosa dalam urine berdasarkan pada sifatnya sebagai reduktor tetapi karena terdapat banyak bahan-bahan yang bersifat reduktor dalam urine maka cara ini tentukanya tidak spesifik untuk glukosa dalam urine. Dari ketiga cara ini reaksi benedict lebih baik dari pad acara fehling maupun nylander.
+CARA REAKSI BENEDICT/FEHLING
+Perediksi benedict ataupun fehling adalah larutan lembaga sulfat (Cu++) dalam suasana alkali. Bila urine yang mengadung glukosa dereaksikan sengan peraksi tersebut dlam suasana panas, tembga (Cu++) yang berwarna kuning samapi merah bata tergantung pada jumlah glukosa yang terdapat .
+C.	KETONURIS
+C KETONURIA
+Pada penderita kencing manis tubuh kekurangan insulin sehingga proses pengangkutan glukosa ke dalam sel terhambat yang mengakibatkan glukosa tidak dapat dipakai sebagai sumber energi.
+Untuk mengatasinya tubuh mengkatabolisme lemak yang terdapat dalam hati secara berlebihan yang menghasilkan asam aseto asetat yang seterusnya terurai menjadi aceton dan beta hydrexvbutiric acid Asam aseto asctat, aceton dan beta butiric acid dikenal sebagai badan-badan keton dan dijumpai didalam darah (ketonemia). selanjutnya diekskresikan ke dalam urine (ketonuria), keadaan ini didapat pada
+ - diabetes melitus yang terlarut
+- kelaparan
+-kerja jasmani berat pada waktu puasa
+- makan banyak lemak
+- diare berat yang disertai muntah-muntah
+Pada pemeriksaan ketonuria hanya asam aseto asetat dan aceton saja yang lazim ditentukan pada analisa rutin. Diketemukanya badan-badan keton dalam urine menunjukkan bahwa kadamnya dalam darah meningkat, apabila seorang pendenta DM mengalami peninggian kadar badan-badan keton di dalam darahnya maka pendenta ini sudah mendekati keadaan yang berbahaya yang mungkin dapat mengalami koma dan seterusnya meninggal.
+Metode Pemeriksaanya
+Metode yang lazim digunakan untuk menunjukkan adanya asam aseto asetat dan Metode yang lazim digunakan aceton adalah:
+-	rothera
+-	- lange
+-	- Gerhard (Reaksi Feri chlorida)
+-	- carik celup/stick (Nitro prusid)
+ROTHERA/LANGE:
+Aceton adalah zat yang bersifat mudah menguap maka urine yang diperiksa harus dalam bentuk segar untuk menghindarkan hilangnya aceton dalam urine
+Pemeriksaan aceton dalam urine berdasarkan reaksi antara nitroprusid dengan asam aseto asetat dan aceton akan terbentuk zat berwarna ungu, reaksi ini sangat peka sekali sampai 1:400.000 terhadap asam aseto asetat, 1:20.000 terhadap aceton Sedangkan asam beta hydroxy butiric tidak dapat dinyatakan dalam reaksi ini.
+GERHARD :
+zal ini berdasarkan kepada reaksi antara asam aseto asetat dan ferri chlorida Sastikan zat berwama seperti anggur port (merah coklat), Kepekaan sampai pengenceran 1:1000 (jauh kurang peka dari reaksi rothera), sedangkan aceton. dan asam beta-hydroxybutiric tidak beraksi.
+Cara kerjanya:
+-	5 ml urine dimasukkan ke dalam tabung reaksi kemudian diteteskan larutan ferri chlorida 10%, ke dalam tabung itu sambil mengocoknya
+-	jika terbentuk presipitat putih, saring cairan tersebut
+-	Kepada filtrat diberikan beberapa tetes larutan feri chlorida lagi, perhatikanlah adanya warna merah coklat yang menandakan test ini (+)
+Postif palsu dapat dijumpai blinemiria tersebut mengandung:
+- fenol
+- salicylat
+- antipyrin dan Na2HCO3
+Warna hijau terjadi disebabkan adanya fenil alanine
+Test rothera lebih peka daripada test gerhard terhadap asam aseto asetat oleh karena itu bila test gerhard positif selalu harus disertai test rothera yang positif juga, seandainya gerhard positif, sedangkan rothera negatif maka test gerhard dinyatakan positif palsu.
+ Untuk membedakan hasil test positif palsu dengan positif sejati adalah memanamı sifat asam aceto asetat yang mudah menghilang.
+Cara sebagai berikut:
+1. 5 ml urine diasamkan dengan asam diasamkan dengan asam acetat kemudian ditambah 5 ml aquadest
+2. Masaklah campuran itu sampai volume 5 ml lagi
+3. Dinginkanlah dan jika perlu saringlah
+4. Lakukan test gerhard dengan cil dengan urine yang tidak, dimasak (+) dan test dengan urine yang
+5. Jika hasil dengan urine yang ti mocak menjadi () maka test itu (+) sejati. Sebaliknya jika baik dengan urine yang tidak dipanasi dan dengan urine yang dipanasi hasilnya (+), maka test itu sebenarnya berhasil (+) palsu
+CARIK CELUP/STICK
+Dasar reaksi sama seperti pada test rothera yang memakai Na- Nitro prusid menghasilkan warna ungu, penilaian ini kwantitatif diadakan berdasarkan hanya wama ungu yang terjadi pada carik celup
+D. BILIRUBIN DALAM URINE
+Dalam keadaan normal urine tidak mengandung bilirubin. Dalam plasma darah terdapat dua macam bilirubin:
+ - Bilirubin bebas (unconjugated bilirubin/bilirubin indirect)
+- Bilirubin terikat (conjugated biliubin/BD)
+blirubin bebas (unconjugated bilirubine/BI) terikat pada albunin sehingga bersifat pat larut dalam air akibatnya tidak tersaring melalui glomunulus dan tidak dijumpai didalam urine.
+ Bilirubisne terikat (conjugated tenkat (conjugated bilirubine/BD) adalah senyawa bilirubine glucoronida yang bersilat yang bersifat mudah larut dalam air dan mudah tersaring melalui glomurulus sehingga dijumpai didalam urine.
+Pemeriksaan biliburin dalam urine dilakukan untuk membantu diagnosa dari penyakit hepatitis infectioca dan infectin sekaligus juga untuk mengetahui perjalan penyakit hepatitis tai lintuk mengetahui kerusakan-kerusakan hepar yang disebabkan oleh penyakitnya atau untuk bahan kimia yang bersifat racun terhadap hati.
+ Urie yang mengandung biliburin dalam konsentrasi tinggi berwarna tidak pekat dan bila dicocok akan terlihat buih berwama kuning Pemeriksaan biliburin dalam urine yang lazim dilakukan adalah sebagai berikut: - - test busa
+- metode cincin yodium.
+- metode fouchet/percobaan horision
+- carik celup/stick
+PERCOBAAN BUSAI
+- kocoklah 5 ml urine segar dalam tabung dengan kuat-kuat
+- jika terjadi busa kuning, itu tanda bawah biliburin sangat mungkin ada
+Busa urineyang tidak mengandung biliburin adalah putih, test busa mungkin menjadi su pada konsentrasi urobobilin yang tinggi dan juga oleh obat-obatan seperti akriflavine dan pyridium
+CINCIN YODIUM
+Dasar reaksi  adalah bilirubin dalam urine akan dioksidasi dengan joulun menghasilkan biliverdin dan tampak cincin hijau dibatasi kedua cairan tersebut
+METODE FOUCHET/PERCOBAAN HORISON
+Dasar reaksinya adalah bilirubin yang ada dalam unine di.pekatkan dengan Ba Cl, membentuk presipitat fosfat. pilipitin yang melihat pada presipitat fosfat dioxidasi menjadi biliverdin yang hijau dengan reagens fouchet
+CARK CELUP/STICK
+Dasar reaksinya adalah reaksi diazotisasi antara bilirubin dalam unire dengan senyawa diazo pada carik celup. Warna yang terjadi pada reaksi ini ditentukan oleh jenis senyawa yang dipakai, sedangkan intensitasnya dapat menunjukkan banyaknya bilirubin
+E. UROBILINOGEN
+Urobilinogen dalam urine akan beraksi dalam reagans Ehrlich membentuk zat warna merah, karena urobilinogen dioksidasi oleh udara teristimewa kalau terkena sinar matahari menjadi urod kan menjadi urobilin yang tidak dapat bereaksi dengan reagans Ehrlich, maka urine yang diguna ne yang digunakan adalah urine segar atau memakai pengawet.
+ Jika ingin memak ingin memakai urine sewaktu lebih baik memiliki unne yang dikeluarkan pada sore hari, karena ekskresi urobilinogen tinggi pada sore han, pada pemeriksaan ini juga me "ini juga menggunakan cara carik celup/stick
+F. UROBILIN
+Pada unine segar praktis tidak ada urobilin, sehingga untuk pemeriksaan ini ditambahkan larutan LUGOL guna mengoksidasi urobilinogen menjadi urobilin. Cara yang dipakai yaitu cara schlesinger dengan reagens schlesinger vang terdiri dan Zn asetat atau Zn klorida jenuh, dalam alkohol 95%, test ini dinyatakan positif jika ada flouresensi hijau
+Positif palsu dapat timbul pada urine yang mengandung
+-	Riboflavin dari tablet vitamin B kompleks, dapat dikenal dengan test Naumann
+-	Flouresensi yang dipakai untuk keperluan diagnostik
+-	 Eosin dan mercurochrome.
+III PEMERIKSAAN MIKROSKOPIS/SEDIMENT
+A. SYARAT : URINE YANG AKAN DIPERGUNAKAN UNTUK PEMERIKSAAN
+1.	Urine pagi, karena masih dalam keadaan pekat, benda-benda yang berbentuk belum rusak/lysis.
+2.	Urine mid-stream dapat ditampung di laboratorium
+3.	Urine harus segera dibawa ke laboratorium, berumur tidak lebih dari 2 jam.
+4.	Bila tidak dapat segera diperiksa awetkan dengan penambahan 8 tetes formaldelyde 10% untuk tiap 300 ml urine. jangan disimpan dalam lemari es
+5.	Penting untuk diperhatikan wadah harus benar-benar bersih dan kering
+6.	Urine dipusing dengan kecepatan sedang selama 5 menit, bila terlalu cepat dan lama benda-benda berbentuk dapat rusak
+B. CARA MELIHAT DI MIKROSKOP:
+1.	Pertama gunakan obyective 10 x, kemudian 40°C
+Jangan menggunakan filter
+2.	Condensor diturunkan secukupnya agar benda-benda yang transparan tampak jelas
+C. CARA MELAPOR HASIL
+1.	Benda-benda yang tampak dimikroskop dihitung dan dilaporkan
+2.	Perlapangan pandang besar (pib)
+3.	Per lapangan pandang kecil (plk)
+4.	Sediment dibagi dalam dua bagian:
+o	Sedimen organik
+o	Sedimen anorganik
+D. SEDIMEN ORGANIK ANTARA LAIN :
+1. Sel-sel darah merah
+2. Sel-sel darah putih
+3. Sel-sel epitel
+4. Torak = Silinder = casts
+5. Sel-sel ragi
+6. Trichomonas
+7. Spermatozoa
+8. Bakteri-bakteri
+1. Sel-sel darah merak = Erythrocyte
+Pada keadaan abnormal, erythrocyte dalam urine dapat berasal dari seluruh tractus urogenitalis.
+Normal : 2-3 /plb (beberapa)
+Dalam urine dapat berbentuk bulat, granation atau mengkerut.
+Jumlah sedang : 10-30/plb
+Jumlah banyak : lebih dari 30/plb
+2.	Sel-sel darah putih=uecocyte;
+ Normal: 4-5/plb .
+Dalam keadaan patologis leucocyte terdapat dalam jumlah:
+Sedang : 10 - 20 /plb
+Banyak : 20-30/plb
+Disebut Pyuria
+Leucocyte dalam urine dapat berasal dari:
+Infeksi = misalnya Pyelonephritis
+Non Infeksi = Infiametory disease dari ginjal
+Misalnya : Lupus Nephritis
+Loucocyte bergerombol kemungkinan besar menunjukkan adanya infeksi.
+Untuk memastikan lakukan urine culture
+Sebaliknya leucocyte tidak selalu ada pada infeksi tractus urinarius
+Kadang-kadang terdapat bacteriuria yang persistent tetapi leacocyte normal.
+3.	Sed Epitel
+• Dapat berasal dari lapisan dalam tractus urogenitalis, pelvis renalis, urethra, vagina atau buli-buli
+-	Squamous epithelial cells
+Besar dan biasa disebut epitel bertatah .
+Berasal dari urethra atau vagina
+-	Sel-sel kandung seni
+ Berbentuk besar seringkali berbentuk diamond dengan nukleus jel
+-	Sel-sel dari pelvis
+Berbentuk sedang ( 3x lekosit), gramular dengan ekor pendek.
+-	Sel-sel dari ureter dan pelvis
+Bentuk sedang, oval dengan nukleus yang jelas
+Bila terdapat banyak bersama dengan lekosit dan benang-benang (sediments), berasal dari ureter
+Bila terdapat hanya sedikit tanpa lekosit, berasal dari pelvis
+-	Sel-sel ginjal .
+Berbentuk kecil (+ 1-2 x lekosit)
+Berbintik-bintik banyak (mengandung barryak granular) .
+Biasanya diketemukan bersama-sama dengan protein.
+4.	Torak = Cast = Slinder
+ Murni berasal dari ginjal, proses pembentukannya belum diketahui dengan jelas, tetapi diperkirakan terbentuk karena adanya precipitasi protein atau conglutinasi (penggerombolan) bahan-bahan dalam lumen.
+Faktor-faktor yang mempengaruhi pembentukan torak ini adalah:
+1. Kadar protein
+2. pH filtrat
+3. Kadar garam
+1. Torak dibagi dalam beberapa bagian sebagai berikut:
+-Torak Hyaline
+-Torak Epitel
+-Torak Granular
+-Torak Darah
+a Torak Hyaline
+Terbentuk karena adanya precipitasi protein dalam lumen Tak berwarna, homogen, semi transparant, berbentuk silinder dengan kedua sisi pararel dan bulat pada ujungnya. Biasanya berwarna kuning bila urine banyak mengandung bilirubin
+b.Torak Epitel
+Torak penuh dengan sel-sel epitel, agar sel-sel tampak lebih jelas tambahi. 1 (satu) tetes asam acetat 10% pada sediment
+c. Torak Granular
+Torak Granular kasar penuh dengan bintik-bintik besar, berwarna kuning pucat dengan kedua ujung tumpul. Torak Granular harus berisi bintik-bintik halus dan tidak mengisi seluruh torak, jangan sampai salah dengan torak Hyaline yang mengandung hablur-hablur fosfat amorf. Dikatakan torak Granular ini adalah torak Epitel yang mengalami perubahan (degenarated cells).
+d. Torak darak
+Terdiri atas :
+Torak sel-sel darah putih dan torak sel-sel darah merah.
+Torak bakteri dan torak lernak (Fatty casts, jarang, hanya tampak pada penyakit ginjal yang sudah parah).
+E. SEDIMENT AN ORGANIK
+Terdiri dari hablur-habluir kimia yang terbagi atas:
+1.	Hablur-hablur yang berasal dari urine asam antara lain:
+Hablur-hablur asam urat
+ Hablur-=hablur urate amorph
+Calsium oxalate .
+ Hablur-hablur cystino
+2.	Hablur-hablur berasal dari Urine alkali anatara lain:
+Hablur-hablur Triple Phosphate
+Hablur-hablur Calsium Carbonate
+Hablur-hablur Amorph Phospate
+Hablur-hablur Ammonia Biurate
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 46,
+                'id_mapel' => 3,
+                'judul_materi' => 'Fungsi Ginjal',
+                'detail_materi' => 'A.	TUJUAN PEMERIKSAAN
+Untuk mengetahui :
+1.	kemungkinan adanya kerusakan ginjal
+2.	Derajat Gangguan fungsi ginjal
+B.	FUNGSI GINJAL:
+1. Mengeluarkan kelebihan cairan tubuh
+2. Mengeluarkan Waste products misalnya urea, creating dan lain-lain
+3. Mengeluarkan bahan-bahan asing misalnya obat-obatan
+4. Menahan bahan-bahan yang dibutuhkan untuk fungsi tubuh dalam keadaan normal misalnya glucosa, asam-asam amino, protein
+5. Mengatur keseimbangan elektrolit dan tekanan osmotik cairan tubuh Tes fungsi ginjal dapat digolongkan:
+1. Mengukur fungsi glomeruli
+2. Mengukur fungsi tubult
+3. Mengukur Renal blood flow
+C. MENGUKUR FUNGSI GLOMERULI
+Untuk mengetahui fungsi glomeruli dapat ditempuh 2 jalan:
+Mengukur G.F.R
+Memeriksa Urine GFR
+dapat diukur dengan beberapa cara antara lain:
+1. Clearance INULIN
+2. Clearance CREATININE
+3. Clearance Urea
+Renal Plasma Clearance dari suatu bahan yaitu volume plasma yang dibersihkan dari bahan tersebut oleh ginjal dalam suatu waktu (1 menit).
+1. Clearance INULIN
+ - Merupakan yang paling baik diantara Clearance yang lain
+- Merupakan Clearance exogen karena bahan ini tidak ada dalam tubuh
+- INULIN hanya di filtrasi oleh glomurulus dan tidak direabsorpsi oleh tubuh, sehingga Clearance inulin=G.F.R
+- Karena sukar pelaksanaannya mak tidak dikerjakan dalam klinik, hanya untuk penelitian saja.
+2. Clearance CREATININE
+a. Rumus untuk menghitung clearance adalah sebagai berikut: U V
+Clearance bahan yang Clerancenya akan ditentukan Kadar bahan per ml urine (atau per dl urine) ml urine yang diekskresi per menit V = Kadar bahn per ml plasma (atau per dl plasma) Creatinine merupakan hasil akhir dari metabolisme Phospho Creatine sehingga dengan cepat diekskresikan melalui ginjal. endogen karena Clearance creatine merupakan clearance creatinine terdapat dalam tubuh dan merupakan cara yang sederhana, baik dan cukup tepat untuk mengukur G.FR Creatinine difiltrasi oleh glomurulus dan sedikit disekresi oleh tubulus.
+ b. Cara pemeriksaan:
+Kumpulkan urine 24 jam
+Ambil darah vena
+Volume urine diukur dan tentukan juga kadar creatininenya
+Tentukan kadar creatinine serum/plasma
+Hitunglah Creatinine clearancenya seperti rumus diatas. Angka normal
+Laki-laki : 72 - 141 ml/menit
+Wanita :74 - 130 ml/menit
+Kadar creatinine plasma/serum dapat ditentukan setiap saat, karena creatinine darah kurang lebih konstan.
+3.	Urea Clearance :
+Ureum merupakan hasil katabolisme asam amino dihati
+Difiltasi oleh ,Glomurulus dan sebagian direabsorbsi oleh tubuh besarnya reabsorbsi urea bertambah bila aliran urine berkurang
+Fraksi reabsorbsi minimal bila diproduksi
+Urine = 2 ml/menit disebut AUGMERTATION LIMIT Pada orang normal :
+Bila urine flow lebih besar atau sama dengan 2 ml/menit, maka clearance urea = 3/5 dari G.E.N = 75 ml/menit, disebut Clearance MAXIMAL
+Bila urine flow lebih kecil dari 2 ml/menit, maka clearance rata-rata = 54 ml/menit, disebut Clearance STANDARD a. Rumus: UV Clearance MAXMAL = UVV Clearance STANDARD = SP (V2)
+Oleh karena kadar urea berfluktuasi dari waktu ke waktu dan clearance urea sangat dipengaruhi oleh urine flow, maka sebaiknya dikerjakan dalam waktu yang singkat. b. Cara mengumpulkan bahan dan cara pemeriksaan - Penderita yang akan diperiksa harus dalam keadaan puasa Jam 09.00 penderita diberi minum 2 gelas air Jam 09.00 penderita disuruh kencing dan urinenya dibuang Jam 10.30 penderita disuruh kencing, dikumpulkan dan diberi tanda sample - 1 jam (I) Jam 10.35 darah vena penderita diambil Jam 11.30 Pednerita disuruh kencing, dikumpulkan dan diberi tanda sample - 2 jam (II) - Volume sample I dan II dihitung. Contoh : Misalnya volume sample urine 1 = 120 ml dan dikumpulkan tepat 1 jam (= 60 menit) maka ml urine per menit = 120/60 = 2 Kadar ureum darah dan urine I dan II ditentukan -52
+Tirea clearance sample I dan Il dihitung sendiri-sendin dan hasilnya tidak boleh berbeda lebih dari 15% (contoh penghitungan lihat di Penuntun Praktikum Kimia Klinik) Angka normal Abnormal 40 - 70 % : Kerusakan ringan 20-40% : Kerusakan sedang < 20% : Kerusakan berat 10% Kerusakan ginjal dan uremia Interpretasi Clearance Test - Gangguan dapat disebabkan oleh: Rusaknya filtrasi misalnya pada Chronic Glomerulo Nephritis Blodd Flow di glomerulus menurun misalnya pada Nephro Selerosis Tekanan dalam tubulus yang tinggi misalnya pada obtruksi seluruh kencing D. MENGUKUR FUNGSI TUBULUS Kemamy umpulan ginjal untuk mereabsorbsi air, merupakan salah satu mekanisme homeostatik tubuh, dilak A tubuh, dilakukan dengan mengukur berat jenis urine.
+dishsorbsi dari filtrat glomerulus, bahan-bahan yang lain yang Pada saat air diabsorbsi dari tertinggal dalam urine menjadi pekat Pada saat urine menjadi pekat berat jenisnya meningkat Uni Kepekaan Urine (Urine Concentration test) Skre hari setelah makan penderita diberi minum 200 ml air, kemudian pukul 2000 sampai pukul 10.00 keesokan harinya penderita tidak boleh minum sama sekali. Kencing penderita pada malam hari tidak perlu dikumpulkan (dibuan) Pelaksanaannya dilakukan sebagai berikut: 1. Pada pukul 06.00 penderita disuruh kencing dan ditampung 2. Demikian juga pada pukul 08.00 dan 10.00 3. Tentukan B.J dari masing-masing urine di atas. Angka Normal: BJ dari salah satu lebih dari ketiga urine tersebut harus sebesar 1,025 atau lebih Nilai yang lebih rendah menandakan penurunan daya konsentrasi ginjal
+
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 47,
+                'id_mapel' => 7,
+                'judul_materi' => 'Pengenalan Kimia Makanan',
+                'detail_materi' => 'Dasar ilmu kimia adalah Ilmu Kimia Anorganik, Organik, Analitik dan Fisika, sehingga hal-hal yang penting untuk pengetahuan diatas, penting pula dalam Ilmu Kimia makanan, termasuk dalam hal ketepatan dan ketelitian Tujuan analisa makanan adalah untuk mengetahui susunan kimia dari makanan dan dengan pengetahuan dalan hal gizi dan kimia hayat, dapatlah diketahui makananmakanan yang boleh dimakan maupun yang tidak.
+Pada zaman dahulu analisa makanan hanya dilakukan secara organoleptis, yaitu hanya menggunakan indera meliputi bau, rasa, bentuk dan rabaab. Dengan bertambah majunya ilmu pengetahuan, oleh Person ( Inggris 1795 ) didapatkan analisa makanan secara kuantitatif yaitu perkiraan perbandingan antara kader air, tepung, serabut-serabut, bahan-bahan tersari dan sisa kering dalam kentang. Diketemukan pula adanya lemak, asam-asam dan gula. Peneliti-peneliti berikutnya menekankan pada perbandingan antara zat karbon dan Nitrogen dalam berbagai makanan. Kemudian Liebig dkk. ( Perancis 1840 - 1865 ) membuat pertama kali sistematika analisa makanan dengan metoda - metoda yang sedikit banyak seperti yang dilakukan pada masa kini.
+Perkembangan analisa makanan sebagai ilmu pengetahuan berdasarkan atas beberapa faktor pokok :
+1. Keinginan untuk memperoleh pengetahuan dalam hal gizi dan kimia hayat, yang perlu untuk mencapai keadaan makhluk hidup yang sehat melalui makanan.
+ 2. Standarisasi dalam produksi makanan untuk perkembangan perdagangannya.
+3. Kontrol kualitas dalam memproduksi makanan
+4. Pengawasan makanan untuk perlindungan terhadap konsumen, termasuk kebutuhan untuk menyusun peraturan pemerintah tentang makanan yang merugikan kesehatan dan pemalsuan makanan.
+5. Kebutuhan untuk menyusun peraturan tentang pajak makanan dan minuman. Analisa makanan adalah suatu cabang dari ilmu kimia analitik. Diperlukan analisa Lualitatif dan kuantitatif, jadi daya tariknya tidak hanya pada komponen apa tetapi juga berapa banyak yang terkandung dalam makanan. Ketelitian yang diminta pada analisa makanan tergantung dari kegunaan dari hasil analisa tersebut. Misalnya : untuk keperluan gizi dan kimia hanya memerlukan lebih banyak ketelitian dari pada untuk keperluan pengawasan apakah suatu produk makanan masuk dalam batas-batas yang diminta atau tidak
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 48,
+                'id_mapel' => 7,
+                'judul_materi' => 'Pengambilan Sampling (sampel)',
+                'detail_materi' => 'Banyak kemungkinan diperoleh hasil analisa yang tidak benar disebabkan oleh kombinasi kesalahan-kesalahan pada pengambilan sampel, pengukuran-pengukuran, pemilihan metoda, cara kerja, penghitungan hasil dan sebagainya. Untuk mendapatkan sampel yang betul-betul mewakili suatu bacth atau yang disebut sampel yang representatif kadang-kadang sangat sukar. Apabila jumlah produk dalam satu bacth cukup banyak, harus diambil beberapa buah sampel. Pada sampel harus dicantumkan label yang memuat keterangan-keterangan lengkap mengenai : jumlah seluruh bahan yang diambil sampelnya, jumlah sampel itu sendiri, nomor, tanggal, pemilik, tempat pengambilan sampel dan petugas pengambil sampel. Selama dan setelah pengambilan sampel sampai saat analisa dilakukan, sampel harus dijaga supaya tidak mengalami :
+1. Kerusakan oleh jasad renik
+ 2. Kerusakan karena aksi otolitik oleh enzim-enzim atau menjadi tengik pengaruh sinar matahari atau panas
+3. Pencemaran Untuk itu sampel harus dimasukkan wadah-wadah yang dapat ditutup rapat. Untuk menghindari pertumbuhan jasad renik, sebaiknya sampel dalam lemari es. Pemakaian es kering ( CO2 padat ) sebaiknya dihindari karena akan menyebabkan sampel membeku sehingga menimbulkan kerusakan jaringan-jaringannya. PERSIAPAN TERHADAP SAMPEL Untuk mendapatkan hasil akhir yang benar dari suatu analisa sebelumnya harus dilakukan persiapan terhadap sampel. Sampel harus dibuat serba sama ( homogen ) dahulu sehingga tiap porsi yang diambil untuk analisa dapat mewakili seluruh bahan yang diperiksa. Sebagai pedoman dapat dilakukan cara berikut :
+1. Serbuk atau butiran : dengan teknik perempat ( quartening) yaitu dengan meratakannnya pada selembar kertas atau aluminium foil dan dicampur. Ambil tiap kali / bagian yang berlawanan, dicampur dan diratakan lagi, sampai mendapat sampel kira-kira 250 gr. Pindah kebotol sampel dan ditutup rapat.
+2. daging atau ikan dan hasil olahnya : pindahkan dari tulang-tulangnya, kulit atau kulit yang keras. Pada ikan hanya diambil bagian yang dapat dimakan. Giling dengan penggiling daging.
+3. bahan setengah padat (semi solid) seperti keju atau coklat : diparut kemudian kerjakan dengan teknik perempat.
+4. pasta dan cairan yang mengandung padatan : dicampur dalam blender dengan kecepatan tinggi, masukkan kebotol sampel.
+5. sayuran mentah : dipotong-potong halus dan kerjakan teknik perempat. Sampel yang mudah kehilangan air harus disimpan dalam wadah yang tertutup rapat. Sampel yang mudah rusak harus disimpan dalam lemari es. Harus diingat bahwa didalarn lemari es sampel dapat menjadi kering apabila tidak dimsukkan wadah yang tertutup rapat.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 49,
+                'id_mapel' => 7,
+                'judul_materi' => 'Kemasan',
+                'detail_materi' => 'A. Wadah Wadah atau suatu pembungkus makanan/minuman diperlukan dalam pemasaran. Fungsinya selain untuk melindungi makanan/minuman dari kerusakan, adalah untuk menambah daya tarik pembeli / konsumen. Syarat-syarat wadah / pembungkus, meliputi :
+1. dapat melindungi dan mempertahankan mutu dan isi terhadap pengaruh dari luar
+ 2. tidak terpengaruh oleh isi
+3. dibuat dari bahan yang tidak melepaskan bagian unsure yang dapat mengganngu kesehatan atau mempengaruhi mutu manakanan.
+4. menjamin keutuhan dan keaslian isinya.
+5. tahan terhadap perlakuan selama pengolahan, pengangkutan dan peredaran
+6. tidak boleh merugikan atau membahayakan konsumen. B. Label Yang dimaksud dengan label menurut Permenkes RI nomor 329/Menkes/Per/X11/76 adalah tanda berupa tulisan, gambar atau bentuk persyaratan lain yang disertakan pada wadah atau pembungkus sebagai keterangan atau penjelasan. Pada label atau etiket harus dicantumkan :
+1. Nama makanan dan atau merk dagang
+2. komposisi, kecuali untuk makanan yang cukup diketahui komposisinya secara umum
+3. isi / berat netto
+4. nama dan alamat perusahaan yang memproduksi atau mengedarkan
+5. kode produksi/ nomor bacth untuk jenis makanan tertentu yang ditetapkan oleh Menteri Kesehatan, pada label / etiket harus dicantumkan juga tanggal kadaluarsa, nilai gizi, petunjuk penggunaan dan cara penyimpanan. C. Isi netto Isi netto adalah bilangan dalam satuan metrik yang menunjukkan jumlah bahan makanan/minuman yang terdapat dalam wadah tersebut. Hal ini perlu dicantumkan untuk memenuhi ketentuan yang ditetapkan oleh Direktorat Jenderal Pengawasan obat dan makanan Departemen Kesehatan RI.
+D. Nomor Registrasi Nomor registrasi adalah nomor yang menunjukkan terdaftarnya produk bahan makanan/minuman di Direktorat Jenderal Pengawasan Obat dan Makanan sebagai tanda bahwa kualitas produk tersebut telah sesuai atau memenuhi syarat sebagaimana yang dicantumkan dalam label. E. Nomor Bacth Nomor bacth adalah nomor yang menunjukkan kode produksi dari suatu produk makanan/minuman yang dikeluarkan oleh perusahaan yang memproduksi bahan makanan/minuman tersebut. F. Batas daluarsa makanan/minuman Batas daluarsa adalah waktu yang menunjukkan batas terakhir suatu produk masih memenuhi syarat baku. Daluarsa dinyatakan dalam bulan dan tahun serta dicantumkan didalam label/etiket. Bahan makanan/minuman yang telah lewat masa edarnya, harus ditarik dari peredaran untuk menjaga hal-hl yang tidak diinginkan. Contoh batas daluarsa beberapa makanan/minuman : 1. susu segar, selama satu minggu
+2. susu persuasi, selama satu bulan
+3. Susu steril, selama dua belas bulan
+4. Susu fermentasi, selama satu bulan
+5. Susu bubuk, selama dua belas bulan
+6. Makanan bayi dan anak-anak, selama enam bulan
+ 7. Minuman serbuk yang mengandung susu, selama tiga bulan & Minuman ringan yang mengandung spisy, selama tiga bulan .
+makanan kaleng :  makanan kaleng yang disteril komersial, selama dua belas buļan, makan kaleng yang diisi secara aseptic, selama dua belas bulan
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 50,
+                'id_mapel' => 7,
+                'judul_materi' => 'Uji Organoleptis',
+                'detail_materi' => 'Uji Organoleptis didasarkan pada kegiatan penguji rasa ( panelis ) yang pekerjaannya mengamati, menguji dan menilai secara organoleptis, Sensoris berasal dari Kata sense yang berarti timbulnya rasa dan selulu dihubungkan dengan panca indera, leptis berarti menangkap dan menerima schingga perkataan tersebut mempunyai pengertian dasar melakukan suatu kejadian yang melibatkan pengumpulan data (keterangan ) atau catatan mekanis dengan tubuh jasmani sebagai penerima. Sebagai contoh, rasa enak adalah hasil sejumlah faktor pengamatan yang masing-masing mempunyai sifat tersendiri, misal:
+1. Tekstur (konsistensi ) adalah hasil pengamatan yang didapat berupa sifat-sifat, Junak, keras, liat. Kenyal, gurih dan sebagainya.
+2. rasa (laste) dengan empat sifat dasar rasa yaitu manis, asam, asin dan pahit
+3. bau ( odor) dengan berbagai sifat seperti harum, amis, apek dan sebagainya
+4. warna Uji organoleptis adalah pengujian secara subyektif yaitu suatu pengujian penerimaan selera makanan (reseptance ) yang didasarkan pada uji kegemaran ( ferference ) dan analisis perbedaan (difference analysis ), sehingga dapat digolongkan menjadi :
+1. Psikofisik: uji perbedaan
+2. Fisikometrik : a. Uji kegemaran b. Uji penilaian dengan angka c. Uji ahli penguji rasa
+3. Uji fenomena : Uji profil rasa untuk menilai atau menguji secara organoleptis diperlukan : a, lingkungan suasana terang dan beralih b. peralatan yang bebas bau e. bahan dasar yang tepat d. baku pembanding e, para panelis yang terlatih Faktor-faktor yang mempengaruhi uji organoleptis :  1. Penguji (panelis) Faktor panelis sangatlah penting peranannya, sebab pengujian tersebut tidak dapat dilakukan oleh satu orang, melainkan harus diuji dengan sejumlah panelis yang banyaknya tergantung kepada tujuan pengujian.
+Para panelis harus tetap yaitu selalu sama selama awal pengujian bahan contoh dan akhir pengujian. Panelis diutamakan yang telah berpengalaman dan mempunyai kepekaan yang cukup, integritas yang tinggi, kemampuan pemusatan ingatan pikiran yang baik perasaan, intelektualitas, kesediaan dan kemauan untuk menggunakan waktu dalam menilai. Berapa macam tipe panelis atau penguji yang dipilih untuk setiap macam tujuan pengujian yaitu : a. Panelis konsumen b. Panelis analitik c. Panelis penentuan mutu d. Panelis yang terpilih 2. Penyajian contoh makanan/minuman pengolahan atau jenis pengujiannya, jumlah makanan, minuman harus cukup dan yang diuji harus secukupnya, sehingga merata dan mencapai semua daerah kepekaan dalam indera tanpa menyebabkan gangguan atau kelelahan. Pemberian kode dapat dilakukan dengan pemberian angka, huruf atau tanda khusus. 3. Pengalaman makan dan minum Pengalaman makan dan minum yang melibatkan rasa ( taste ) atau kesadaran akan nilai-nilai rasa ( flavor ) berbeda dari waktu ke waktu menurut faktor penerimaan. Panelis, yaitu : a. golongan individu, umur, kelamin, pendidikan b. lingkungan, tempat, suasana, keadaan sosial masyarakat c. faktor waktu ( periodic) Sifat kejiwaan yang mempunyai variable, seperti ingatan rasa, pengalaman, persangkaan, kelelahan adalah faktor-faktor yang mempengaruhi respon dari alat-alat indera manusia, seperti indera penglihatah dan pendengaran, maka panelis harus berada dalam kondisi yang sehat. Teknik pengujian Teknik pengujian organoleptis melalui indera pencium dan perasa. Pada teknik ini pertama harus dilakukan penciuman dengan hati-hati menggunakan hidung, kemudian dilakukan pengujian rasa. Dalam melakukan pengujian rasa harus memakai waktu yang lama dan waktu tergantung pada contoh. Setelah pengujian terhadap contoh yang pertama maka rasa yang tertinggal dimulut harya dihilangkan lebih dahulu dengan air minum biasa, dan air hangat sebelum melakukan nestöillan rasa untuk yang berikutnya."
+Metoda pengujian organoleptis Beberapa macam pengujian organoleptis adalah meliputi : a. uji oleh ahli penguji rasa dengan cara penggolongan b. uji dengan angka ( Acceptability ) yaitu derajat perbedaan dengan cara penggolongan c. uji perbandingan d. uji berurutan e uji propil rasa ( descript) Dari metoda-metoda tersebut diatas untuk membedakan rasa tidak ada metoda yang memberikan kepuasan sepenuhnya.
+KADAR AIR
+Air selalu terkandung didalam makanan. Hanya ada beberapa jenis yang tidak mengandung air, misalnya minyak. Beberapa bahan yang berbentuk kristal yang relatif murni, misalnya gula dan garam, masih mengandung air yang diadsorpsi pada permukaan kristal. Pada sayuran segar kadar airnya 90 % atau lebih dan pada daging yang sudah dimasak masih mengandung air 50 - 65%, Air dalam makanan terdapt dalam bentuk : 1. Cairan bebas, didalamnya terlarut atau terbagi rata bahan makan 2. sebagai air hidrat 3. sebagai air yang mengisi ruangan-ruangan sel 4. sebagai air yang diadsorpsi pada permukaaan bahan padat Penetapan kadar air dalam bahan makanan termasuk kepada analisis umum yang biasa dilakukan terhadap bahan makanan. Penetapan kadar air dalam bahan makanan ini penting artinya untuk mengetahui kadar zat kering dalam makanan yang terkandung dalam bahan makanan itu. Hal tersebut dapat dilihat dari hasil analisis terhadap at makanan yang terdapat dalam beberapa bahan makanan dibawah ini : % Bahan Air Lemak Protein makanan Karbohidrat Beras Daging % Mineral 0,69 0,54 0,23 0,2 Vitamin AB AB A,B,C A,B,C Ubi 1,33 Susu Daging ayam Telur 72,2 75 21.3 12 0,3 Penetapan kadar air tergantung pada sifat bahan yang dianalisis dan penetapannya dapat dilakukan secara langsung maupun tidak langsung Penetapan secara langsung adalah pengukuran banyaknya air yang terdapat dalam contoh bahan makanan baik dengan menentukan volumenya maupun dengan menimbang beratnya.
+A. Penetapan secara langsung dapat dilakukan dengan :
+1. Metoda destilasi Prinsip : Kedalam bahan makanan dimasukkan pelarutan yang menyebabkan terjadinya campuran aziotrop dengan air. Dalam pemanasan keluar uap dari campuran aziotrop yang mengembun kembali dengan pendinginan. Destilat ditampung dalam tabung berskala. Aimya memisah karena Bj air lebih besar dari Bj pelarut organic sehingga air terdapat dalam lapisan sebelah bawah yang dapat dilihat banyaknya. Penentuan kadar air secara destilasi, kalau kadar airnya tinggi dan mengandung senyawa-senyawa yang mudah menguap seperti : toluene, xilol dan heptana yang berat jenisnya lebih rendah dari pada air.
+2. Disamping cara-cara fisik, ada pula cara-cara kimia untuk menentukan kadar air, Me Neil mengukur kadar air berdasarkan volume gas asetilen yang dihasilkan dari reaksi kalsium karbida dengan bahan yang akan diperiksa. Cara ini dipergunakan untuk bahan seperti sabun, tepung, kulit, mentega dan sari buah. Mereaksikan bahan makanan dengan CaCz ( Kalsium karbid ) Prinsip : . Sejumlah bahan makanan dicampurkan dengan sejumlah kalsium karbid. Air yang ctrdapat dalam bahan makanan tersebut bereaksi dengan kalsium karbid sebagai berikut : CaC2 + 2H:0 - Ca(OH)2 + C2H2 Karena campuran bahan makanan dan CaCz dibiarkan ditempat yang kering, maka air yang bereaksi hanya air dari bahan makanan.pengurangan berat campuran sebelum dan sesudah dibiarkan, maka kehilangan berat menunjukkan jumlah C2H2 yang dihasilkan. Secara teoritis 1 gram C H2 sesuai dengan 1,385 gram H2O, secara praktis 1 gram C2H2 sesuai dengan 1,443 gram H2O. dengan demikian kadar air dari bahan makanan dapat dihitung. B. Penetapan secara tidak langsung Penetapan kadar air secara tidak langsung dapat dilakukan terhadap :
+1. Bahan yang tahan terhadap pemanasan 100 - 105°C Sampai ditimbang, kemudian dipanaskan didalam oven sampai didapat berat konstan. Selisih beratnya adalah banyaknya air yang menguap. Biasanya sampel ditimbang dalam cawan aluminium atau cawan lain yang tidak bereaksi dengan makanan atau mudah menyerap air. Oven yang dipakai dipasang suhunya 100° - 105°C, dan dikontrol dengan termostat. Untuk mempercepat pengeringan, seringkali pada dasar cawan diberi pasir, serbuk batu apung atau asbes. Tentu saja penggunaan bahan-bahan tersebut harus ditata terlebih dahulu, berat konstannya pada suhu pemanasan yang sama.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 51,
+                'id_mapel' => 7,
+                'judul_materi' => 'Abu dan NaCl',
+                'detail_materi' => 'Abu adalah hasil oksidasi yang sempurna dari zat-zat yang ada dalam bahan makanan / minuman pada suhu + 600°C dan sebagai oksidatornya udara. Pada proses pengabuan ada kemungkinan sebagian zat-zat mineral yang menguap, umpamanya fosfor, belerang, NaCl dan senyawa-senyawa As, Pb, Zn. Bila pemanasan terlalu tinggi, karbonat-karbonat terurai menjadi oksidasi, hal ini tidak boleh terjadi. Maksud mengetahui kadar abu terutama dalah untuk mengetahui kandungan mineral yang etrdapat dalam makanan/minuman. Uji kadar abu biasa dilakukan sebagai :
+kadar abu jumlah, kadar abu yang terlarut dan yang tak larut dalam air, kadar abu yang tak larut dalam asam terdapat abu yang larut dan yang tak larut dalam air, bisa dilakukan uji alkalinitasnya. Hal ini dilakukan sebab ada beberapa bahan makanan mengandung asam-asam organic yang selama pemanasan sebagian besar terurai menjadi CO2 yang terikat oleh garam-garam alkali menjadi karbonat. Uji kadar abu yang tak larut dalam asam maksudnya untuk mengetahui adanya pengotoran terhadap makanan / minuman yang disebabkan oleh pasir tlk dan lain-lain.
+Uji kadar abu dari contoh yang banyak mengandung air, sebelum diabukan terlebih dahulu harus diuapkan diatas pemanas air sampai kering. Apabila makanan / minuman banyak mengandung NaCl, uji kadar abunya dilakukan sebagai kadar abu sulfat. Hal ini dilakukan untuk mengurangi kesalahan karena pada proses pengabyan terhadap makanan yang banyak mengandung NaCl biasa timbul letupan / percikan keluarnya air hidrat dari molekul NaCl. Untuk memperoleh kadar abu, berat abu sulfat harus dikalikan 8 / 9 ( faktor yang didapat dari hasil eksperimen) NaCl (Natrium Chlorida ) Garam Natrium Chlorida termasuk gaam mineral yang dibutuhkan oleh tubuh. Garam tersebut berfungsi sebagai zat pembangun dan zat pengatur. Dalam makanan NaCl berfungsi sebagai bahan pengawet dan sebagai penyedap rasa makanan. Uji kadar NaCl dalam makanan/minuman biasa dilakukan dengan metoda Argentometri (titrimetri ) melalui proses pengabuan dengan penambahan Natrium karbonat, sehingga semua chlorida terikat sebagai garam natrium. Abu setelah diasamkan direaksikan dengan sejumlah larutan baku AgNO3 0,1 N. kelebihan larutan baku AgNO3 0,1 N dititrasi kembali oleh larutan baku KCNS 0,1 N dengan indicator ion Fe*/Volhard
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 52,
+                'id_mapel' => 7,
+                'judul_materi' => 'Karbohidrat',
+                'detail_materi' => 'Karbohidrat merupakan penyusun utama diet penduduk di seluruh dunia dan lebih dari 30 % jumlah zat gizi yang dikonsumsi diperoleh dari karbohidrat. Walaupun bahan makanan sumber karbohidrat di tiap-tiap Negara berbeda-beda tetapi kandungan karbohidrat dalam diet dan sumbangan energinya hampir sama. Bahan makanan sumber karbohidrat yang banyak dikonsumsi adalah beras, gandum, jagung, kentang, ketela pohon, ubi-ubian, pisang, sagu, cantle. Bahan makanan tersebut setiap harinya memberikan energi yang besar dan diantara sumber karbohidrat tersebut diatas yang paling banyak memberikan energi tiap hari adalah ketela pohon. Bahan makanan sumber karbohidrat berasal dari tanaman yang dibudidayakan berasa sangat enak, murah dan dapat disimpan dalam waktu yang lama tanpa perlakuan yang rumit. Karbohidrat dibentuk didalam tanaman melalui proses fotosintesa yang meliputi serangkaian reaksi kimia. Didalam tanaman terdapat klorofil atau zat warna hijau pada daun dan dengan bantuan energi sinar matahari, CO2 dan H20 akan dibentuk glukosa Gambar
+ 2 ). Glukosa mengalami polimerisasi membentuk pati dan selulosa. Pati dikonsumsi oleh manusia, menghasilkan energi, Co2 dan H20. selulosa dimakan hewan, kemudian daging dan susunya dikonsumsi manusia. CO2 dan H20 yang dikeluarkan manusia digunakan lagi oleh tanaman untuk mensintesa karbohidrat. Dengan demikian dapat dipahami bahwa karbohidrat disusun oleh unsure C, H dan 0. unsure-unsur tersebut membentuk sakarida. Sakarida yang disusun oleh satu molekul saja disebut monosakarida, disusun oleh 2 mol sakarida disebut disakarida dan banyak mol sajarida disebut polisakarida Sunlight Energi CO2 + H20 Energy Oxigen Glukosa Starch Gambar 2. Pembentukan glukosa
+Monosakarida Monosakarida mempunyai arti penting sebagai zat gizi adalah glukosa, fruktosa dan galaktosa. Glukosa sering juga disebut dekstrosa atau gula anggur terdapat pada buah-buahan dan sayuran, Glukosa merupakan senyawa pati dan glikogen yang rumus kimianya.
+3. Struktur glukosa Glukosa larut dalam air dan berasa manis. Glukosa merupakan karbohidrat yang terdapat akrasi darah manusia dan hewan dimana dia akan berfungsi sebagal energi. Kadar glukosa darah normal untuk manusia adalah 80 mg setiap 100 ml darah, Fruktosa dan galaktosa mempunyai jumlah atom CH dan O yang sama dengan glukosa tetapi sedikit berbeda susunan atom dalam molekulnya. Gambar 4. Struktur fruktosa Fruktosa atau levulosa mempunyai rasa paling manis. Fruktosa terdapat dalam madu, buah-buahan dan sayuran. Fruktosa yang masuk dalam tubuh dengan cepat akan diubah menjadi lemak didalam darah. Pada penderita diabetes, fruktosa ini kurang berbahaya, tetapi apabila fruktosa terlalu banyak dimakan dapat mengakibatkan asidosis dan naiknya asam urat dalam darah. Galaktosa tidak seperti halnya dengan glukosa ataupun fruktosa dialam, tidak berada dalam bentuk bebas. Galaktosa merupakan hasil pemecahan laktosa, apabila kekurangan enzim yang mengubah galaktosa menjadi glukosa mengakibatkan terjadinya galaktosamia. Laktosa intokrans banyak disebabkan tidak adanya enzim galaktosa didalam usus.
+Disakarida Disakarida yang banyak dijumpai dalam makanan yaitu sukrosa, laktosa dan maltosa. Sukrosa merupakan gula yang banyak terdapat dalam dict. Gula tebu ataupun gula bit merupakan sukrosa murni. Sukrosa terdiri atas dua molekul monosakarida, oleh kegiatan enzim pencernaan sukrosa dipecah menjadi glukosa dan fruktosa.
+4. Struktur sukrosa Sukrosa yang dimakan bila terlalu lama berada dalam mulut, mengakibatkan bakteri menjadi aktif dan merusak gigi. Laktosa dan maltosa adalah dua jenis disakarida yang hanya sedikit terdapat dalam diet, disebut juga gula susu. Dalam susu sapi terdapat laktosa sebanyak 5 % dan dalam air susu ibu terdapat 6,8 %. Didalam usus halus, laktosa dipecah oleh enzim laktosa menjadi glukosa dan galaktosa. Maltosa terdapat dalam ekstra malk, memberi rasa manis dan viskositas tinggi, juga banyak terdapat dalam sirup jagung. Maltosa juga dapat merupakan hasil pemecahan pati oleh enzim amilase. Oleh enzim matosa dipecah menjadi dua molekul glukosa.
+Polisakarida Polisakarida merupakan karbohidrat kompleks yang disusun oleh beberapa ribu unit karbohidrat sederhana yang saling ikatan membentuk molekul dengan rantai lurus maupun rantai yang pembentukan dan pemecahan glikogen dalam tubuh merupakan serangkaian reaksi kimia yang kompleks dan sangat erat kaitannya dengan faktor fisiologis. Pembentukn glikogen terjadi bila kadar gula darah naik diatas normal dan lebih banyak glukosa berada dalam aliran darah. Sebaliknya pemecahan glikogen terjadi apabila karbohidrat tidak diabsorpsi oleh saluran pencernaan dan untuk kebutuhan energi, glikogen hati dengan cepat diubah menjadi glukosn dan dialirkan kedalam darah. Selulosa, Merupakan polisakarida yang hanya terdapat dalam tanaman. Selulosa merupakan komponen penyusun dinding sel dan dalam diet manusia disebut serat. Selulosa pada golongan mamalia bukan merupakan makanan, karena didalam tubuh mempunyai enzim yang diperlukan untuk menghidrolisanya menjadi glukosa. Pada golongan herbivar atau ruminansia yang mempunyai bakteri dalam lambungnya, bakteri tersebut mengaktifkan pemecahan selulosa menjadi senyawa karbohidrat lain yang dapat digunakn oleh tubuhnya. Serat dalam diet manusia membantu gerak peristaltic usus dan pembuangan bhan sisa dari saluran pencernaan. Kebutuhan serat tiap hari sebanyak 4 - 7 mg dan hal ini mudah diperoleh apabila dalam diet berisi sayuran, nasi dan buah-buahan. Komposisi kimiawi selulosa, pati dan glikogen sedikit berbeda yaitu : (a) starch ( amylose) (b) cellulose Gambar 7. Struktur pati dan selulosa
+Fungsi karbohidrat Fungsi utama karbohidrat adalah menyediakan energi untuk proses-proses yang terjadi didalam tubuh. Walaupun energi yang dihasilkan lemak 2 kali energi yang dihasilkan karbohidrat, tetapi dalam diet lebih banyak mengandung karbohidrat sehingga sumbangan energi terbesar berasal dari karbohidrat. Karbohidrat juga membantu penggunaan lemak oleh tubuh. Hal ini dapat terjadi sebab pada oksidasi lemak untuk menghasilkan CO2 dan air, tergantung pada asam piruvat yang terbentuk selama oksidasi karbohidrat. Apabila jumlah karbohidrat tidak mencukupi maka akan diperoleh lebih banyak bahan-bahan keton dan akumulasi / penimbunan bahan-bahan keton tersebut akan menaikkan keasaman darah dan menurunkan kebebasan darah, keadaan tersebut disebut ketosis. Ketosis dapat terjadi pada penderita diabetes dimana sel-sel tidak dapat menggunakan karbohidrat dan juga terjadi pada penderita kelaparan dimana sel-sel menggunakan simpanan lemak untuk keperluan energi. Akibat dari ketosis yaitu penderita mengalami koma dan bila berlanjut dapat mati. Karbohidrat juga membantu fungsi system usus mamalia. Karbohidrat tersebut berperanan sebagai sumber energi untuk mikroba yang mensintesa beberapa vitamin B kompleks dalam saluran usus. Sellulosa juga membantu proses pencernaan sehingga kerja usus menjadi baik. Analis kualitatif J. Uji Molish. Reagen umum terhadap karbohidrat kedalam 2 mi larutan contoh dalam tabung reaksi ditambah 2 tetes pereaksi alfa naftol 10 % ( buat baru ) dan dikocok. Secara berhati-hati 2 ml H2SO4 pekat ditambahkan kedalam tabung reaksi tadi sehingga timbul dua lapisan cairan dalam tabung reaksi dimana larutan contoh akan berada dilapisan atas. Cincin berwarna karbohidrat dalam contoh. 2. Uji Antron sebanyak 0,2 ml larutan contoh didalam tabung reaksi ditambahkan kedalam larutan antron (0,2 % dalam H2SO4 pekat ). Timbulnya warna hijau atau hijau kebiruan menandakan adanya karbohidrat larutan contoh. Uji ini sangat sensitive sehingga juga dapat memberikan hasil positif. Jika dilakukan pada kertas saring yang mengandung selulosa. 3. Uji barfoet pereaksi terdiri dari kupri asetat dan asam asetat. Kedalam 5 ml pereaksi dalam tabung reaksi ditambah 1 ml larutan contoh, kemudian tabung ditempatkan dalam air mendidih selama 1 menit. Endapan warna merah orange menunjukkan adanya monosakarida dalam contoh. 17
+4. Uji benedict pereaksi terdiri dari kupri sulfat, natrium sitrat dan natrium karbonat. Kedalam 5 ml pereaksi dalam tabung reaksi ditambahkan 8 tetes larutan contoh, kemudian tabung reaksi ditempatkan dalam air mendidih selama 5 menit. Timbulnya endapan warna hijau, kuning atau merah orange menunjukkan adanya gula pereduksi dalam contoh. 5. Uji iodin Larutan contoh diasamkan dengan HCL. Sementara itu dibuat larutan Iodin dalam larutan KI, larutan contoh sebanyak 1 tetes ditambah larutan iodine. Timbulnya warna biru menunjukkan adanya pati dalam contoh, sedangkan warna merah menunjukkan adanya glikogen atau eritrodekstrin. 6. Uji seliwanof Pereaksi dibuat secara segera sebelum uji dimulai. Pereaksi ini dibuat dengan mencampurkan 3,5 ml resorsinal 0,5 % dengan 12 ml HCL pekat, kemudian diencerkan menjadi 35 ml dengan air suling. Uji dilakukan dengan penambahan 1 ml larutan contoh kedalam 5 ml larutan pereaksi, kemudian ditempatkan dalam air mendidih selama 10 menit. Warna merah menunjukkan adanya fruktosa dalam contoh. 7. Uji Tauber sebanyak 2 tetes larutan contoh ditambah kedalam 1 ml larutan benzidina, didihkan dan didinginkan cepat-cepat. Timbulnya warna ungu menunjukkan adanya fruktosa dalam contoh. 8. Pembentukan hidrazin beberapa monosakarida dan disakarida dapat bereaksi dengan fenihidrazin membentuk suatu senyawa yang disebut osamon. Glukosa akan menjadi glukosazon dan laktosa akan menjadi laktusazon. Ini merupakan kristal kuning yang dapat dibedakan bentuknya secara mikroskopis dan titik leburnya. Uji kuantitatif karbohidrat Uji kuantitatif terhadap karbohidrat dapat dilakukan dengan beberapa cara : a. Polarimetri untuk senyawa gula yang bersifat aktif optik dan merupakan senyawa tunggal dapat ditentukan dengan menggunakan alat polarimeter. Rotasi spesifik dari suatu persenyawaan dalam larutan adalah : spesifik rotasi pada 20°C = { } 20 = 100 @ D 1.c
+@ = Rotasi yang diukur ( dalam°) c = konsentrasi gula (%) 1 = Panjang tabung polarimeter ( dm) D = menunjukkan penggunaan sinar natrium. Berdasarkan rumus diatas dapat dihitung konsentrasi gula yang terdapat didalam suatu larutan apabila rotasi spesifiknya telah diketahui. b. Volumetri Uji kuantitatif terhadap gula secara volumetric dapat ditentukan dengan dua metoda yaitu metode Luff Schoorl, dengan mengukur daya mereduksi karbohidrat terhadap larutan tembaga alkalis. Garam tembaga oleh gula direduksi menjadi endapan tembaga oksida Prinsip pengujian metoda Luff Schoorl adalah sebagai berikut : gugus aldehid dalam glukosa dioksida dengan CuO yang berada dalam bentuk kompleks menjadi gugus karbonil. R = C = 0 + CuO - Cu2O + RCOOH H Kompleks CHO direaksikan secara berlebih dan kelebihannya ditetapkan secara jcdometri. CuO kompleks + H2SO4 - CuSO4 + CO2 + H2O CuSO4 + KI -- Cul2 + K2CO4 2 Cul2 - Cuzl2 + 12 12 + Na2S2O3 - 2 Na I + Na2S06 Perlu dilakukan penetapan blanko dengan menggunakan larutan tembaga dengan volume yang sama . banyaknya ml larutan Thio untuk penetapan blanko dikurangi banyaknya ml thio untuk penetapan sampel adalah banyaknya ml thio yang setara dengan jumlah gula dalam sample. Dengan menggunakan daftar table gula invert, maka kadar gula dalam sampel dapat dihitung. Metoda kedua untuk uji kuantitatif karbohidrat dapat dilakukan secara jodimetri. Prinsipnya bahwa larutan gula akan mereduksi larutan baku jodium dalam keadaan alkalis. Kelebihan jodium dititrasi dengan larutan baku Nathio sulfat menggunakan indicator kanji. Perlu dilakukan penetapan blanko dengan menggunakan air suling sebagai pengganti larutan gula. Selisih kedua titrasi tersebut menunjukkan banyaknya jodium yang bereaksi dengan sampel.
+C. Gravimetri Banyaknya tembaga oksida yang dibentuk pada reduksi gula terhadap garam tembaga, dapat dihitung secara gravimetric dengan dipijarkan, ditimbang sebagai Cu20, kemudian dapat dilihat pada table banyaknya karbohidrat yang setara dengan berat Cu2o. d. Kolorimetri Tembaga oksida yang etrjadi dapat mereduksi asam molibdat menjadi oksida molibdat yang berwarba biru Zat penjemih ( Clearing agent) Untuk mendapatkan hasil yang lebih tepat dalam penetepan karbohidrat dapat ditambahkab larutan atau zat penjernih. Selain menjernihkan sampel, juga dapat mengendapkan protein dan sedikit menyerap warna. a. Allumina cream (bubur Al(OH)3 ) Larutan tawas dalam air (1 : 20 ) dimasukkan kedalam ammonia 10 % (1.1.1). Endapan yang diperoleh dibiarkan mengendap, cairan diatasnya dituang. Endapan dicuci berulang kali dengan air sampai tidak bereaksi basa. Endapan disimpan sebagai pasta b. Timbal asetat setengah basis Tiga bagian timbal asetat dan satu bagian timbal oksida yang telah dipijarkan, dicairkan diatas penangas air dan diaduk sampai timbal oksidasinya larut. c. Larutan seng besi sianida Larutan seng asetat dibuat dengan melarutkan 21,9 gram kristal seng asetat, 3 ml asam asetat glacial kedalam air dan diencerkan sampai 100 ml. larutan kalium ferosianida 10 % dalam air, dan pemakaiannya masing-masing sebanyak 4 ml untuk 250 ml larutan. d. Larutan seng sulfat 15 % dan larutan Natrium hidroksida, pemakaiannya masing masing 5 ml untuk 250 ml larutan E. Norit
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 53,
+                'id_mapel' => 7,
+                'judul_materi' => 'Lemak dan Minyak',
+                'detail_materi' => 'Lemak dan minyak merupakan zat makanan yang penting untuk menjaga kesehatan tubuh manusia. Selain itu lemak dan minyak juga merupakan sumber energi yang lebih efektif disbanding dengan karbohidrat dan protein. Satu gram minyak / lemak dapat menghasilkan 2 kkal sedangkan karbohidrat dan protein hanya menghasilkan 4 kkal 1 gram. Minyak atau lemak, khususnya minyak nabati mengandung asam-asam lemak esensial seperti asam lenoleat, lenoleat dan arakidonat yang dapat mencegah penyempitan pembuluh darah akibat penumpukan cholesterol. Minyak dan lemak juga berfungsi sebagai sumber dan pelarut bagi vitaminb-vitamin A, D, E, dan K. Lemak hewani mengandung banyak sterol yang disebut cholesterol sedangkan lemak nabati mengandung fitosterol dan lebih banyak mengandung fitosterol dan lebih banyak mengandung asam lemak tak jenuh sehingga umumnya berbentuk cair. Lemak dan minyak termasuk dalam kelompok senyawa yang disebut lipida yang umumnya mempunyai sifat sama yaitu tidak larut dalam air. Dalam penanganan dan pengolahan bahan pangan, perhatian lebih banyak ditujukan pada suatu bagian dari lipida, vaitu trigliserida. Pada umumnya untuk pengertian sehari-hari lemak merupakan bahan padat pada suhu kamar, sedangkan minyak dalam bentuk cair pada suhu kamar, tetapi keduanya terdiri dari molekul-molekul trigliserida. Lemak merupakan bahan padat pada suhu kamar, antara lain disebabkan kandungan yang tinggi akan asam lemak jenuh dan secara kimia tidak mengandung ikatan rangkap, sehingga mempunyai titik lebur yang lebih tinggi. Contoh asam lemak jenuh yang banyak terdapat di alam adalah asam palmitat dan asam stearat. Minyak merupakan bahan cair, antara lain disebabkan rendahnya kandungan asam lemak jenuh, tingginya kandungan asam lemak yang tidak jenuh, sehingga mempunyai titik lebur yang rendah. LEMAK DAN MINYAK Lemak atau minyak adalah ester dari karbon trihidroksida alcohol atau gliserol dengan asam lemak dan disebut trigliserida atau triasigliserol. Pada hidrolisa trigliserida akan terbentuk asam lemak dan gliserol. Gliserida dalam hewan adalah lemak sedangkan gliserida dalam tumbuh-tumbuhkan adalah minyak. Lemak dan minyak sering diberi nama sebagai senyawa dari asam-asam lemak tersebut. misalnya ester tristearat dari gliserol disebut triastearin, sedangkan tripalmitat dari gliserol disebut tripalmitin.
+biasanya lemak dan minyak alamiah merupakan trigliserida campuran yaitu tiga bagian asam lemak tidak semua sama. H2C-OH CH(CH2) 14 COOH HįC-O-C-(CH2)14 COOH H-C-OH HC-O-C-(OH2)16 COOH + 3H20 asam palmitat + H,C-OH Gliserol 2CH,(CH2)16 COOH asam stearat H,C-O-C-(CH2)16 COOH Trigliserida Palmitodistearin Sifat lemak Sifat lemak dan minyak pada umumnya merupakan sifat gliserida dan dipengaruhi oleh komponen asam lemak. Lemak mempunyai bobot jenis lebih rendah dari air dan hampir tidak larut dalam lemak. Dalam pelarut bukan air, kelarutan lemak dipengaruhi oleh panjang rantai komponen asam dan derajat kejenuhan. Makin panjang rantai dan jenuh kelarutan makin kecil dan akan anik dengan makin banyaknya jumlah ikatan rangkap. Kelarutan dipengaruhi oleh suhu, pada pendinginan larutan lemak dalam aseton akan mengkristal trigliserida yang lebih jenuh. Perbedaan asam dipengaruhi suhu lebur dari trigliserida yang bersangkutan. Karena itu trigliserida dengan 3 molekul asam tidak jenuh berupa cair dan dengan 3 molekul asam lemak jenuh berupa padat, Bila dibiarkan diudara, lemak akan menyerap oksigen tergantung dari derajat kejenuhan. Hal ini dipengaruhi oleh suhu dan cahaya. Peroksida akan pecah menjadi aldehida dan keton dan menyebabkan lemak dan minyak menjadi tengik. Sifat lemak lain adalah sebagai berikut :
+1. Pada pemanasan lama-kelamaan menjadi cair, jadi tidak mempunyai suhu lebur tertentu.
+ 2. Bila dipanaskan lebih lanjut mula berasap kemudian menyala dan terbakar. Suhu ini disebut titik asap ( smoke point), titik nyala ( flash point ) dan titik api ( fire point ). Hal ini penting dalam proses penggorengan.
+3. Lemak menjadi tengik bila teroksidasi atau bila asam lemak dibebaskan oleh enzima.
+4. Lemak membentuk emulsi dengan air dan udara. Gelembung lemak tersuspensi dalam air seperti dalam susu atau krim atau tetesan air tersuspensi dalam tiap lemak seperti dalam mentega. Udara dapat seperti suatu emulsi dalam lemak seperti lapisan krem mentega atau dalam whipped butter.
+5. Lemak dapat berupa lubrikan dalam makanan, yaitu mentega mempermudah roti ditelan. 6. Lemak mempunyai daya shortening, yaitu terjalin antara protein dan amilum. Sebab-sebab kerusakan lemak
+1. Penyerapan bau Minyak bersifat mudah menyerap bau. Apabila bahan pembungkus dapat menyerap lemak, maka lemak yang tertutup ini akan teroksidasi oleh udara sehingga rusak dan berbau. Bau dari bagian lemak yang rusak akan diserap oleh lemak yang ada dalam bungkusan sehingga seluruh lemak akan rusak.
+2. Hidrolisa Dengan adanya air, lemak dapat terhidrolisa menjadi gliserol dan asam lemak. Reaksi ini dapat dipercepat oleh basa, asam dan enzim-enzim. Hidrolisa sangat mudah terjadi pada asam lemak rendah ( lebih kecil dari C) seperti pada mentega, minyak kelapa sawit dan minyak kelapa. Hidrolisa sangat menurunkan mutu minyak goring. Selama penyimpanan dan pengolahan minyak atau lemak menyebabkan bertambahnya asam lemak bebas. Asam lemak bebas dihilangkan dengan proses pemurnian, sekaligus menghilangkan bau untuk menghasilkan minyak yang lebih baik mutunya.
+3. Reaksi oksidasi Kerusakan lemak yang utama adalah timbulnya bau dan rasa tengik, yang disebut proses ketengikan. Hal ini disebabkan oleh otooksidasi radikal asam lemak tidak jenuh dalam lemak. Otooksidasi dimulai dengan pembentukan radikal-radikal bebas yang disebabkan oleh faktor-faktor yang dapat mempercepat reaksi seperti cahaya, panas, peroksida lemak atau hidroperoksida, logam-logam berat ( Cu, Fe, Co, Mn ), logam forfirin (hematin, hemoglobin, mioglobin, klorofil), enzim-enzim lipaksidase. Molekul-molekul leinak yang mengandung radikal asam lemak tidak jenuh mengalami oksidasi dan menjadi tengik. Bau tengik yang tidak sedap tersebut disebabkan oleh pembentukan senyawa-senyawa hasil pemecahan hidroperoksida. Menurut teori yang sampai kini masih dianut orang, sebuah atom hydrogen yang terikat pada suatu atom karbon yang letaknya disebelah atom karbon lain yang mempunyai ikatan rangkap dapat dihilangkan oleh suatu kuantum energi sehingga membentuk radikal bebas. Radikal bebas ini dengan adanya oksigen (02 ) akan membentuk peroksida aktif, yang dapat membentuk hidroperoksida yang bersifat sangat labil dan mudah pecah menjadi senyawa dengan rantai mkarbon yang lebih pendek. 24
+Penguraian ini bisa terjadi Jarena radiasi energi tineel energi panas, logam atau enzim Senyawa-senyawa dengan rantai C lebih pendek ini adalah asam-asam lemak, aldehidaaldehida dan keton yang bersifat volatile dan menimbulkan bau tengik pada lemak. Pencegahan ketengilan Proses ketengikan sangat dipengaruhi oleh adanya peroksida dan anti oksidan. Peroksida akan mempercepat terjadinya oksidasi, sedangkan antioksidan akan menghambat terjadinya oksidasi. Karena itu penyimpanan lemak yang baik, adalah dalam tempat tempat tertutup yang gelap dan dingin, Wadah lebih baik terbuat dari aluminium atau stainless stell dan harus dihindarkan penyimpanan dalam wadah dari logam besi, atau tembaga. Bila minyak diolah menjadi bahan makan lain, ketengikannya akan berbeda. Kandungan gula yang tinggi dapat mengurangi kecepatan timbulnya ketengikan, Misalnya, biscuit yang manis akan lebih sukar menjadi tengik dari pada yang ildak bergula. Adanya antioksidan dalam lemak akan mengurangi proses kecepatan ketengikan (proses oksidasi ), antioksidan terdapat secara alamiah dalam lemak nabati dan kadangkadang dengan sengaja ditambahkan pada bahan makanan, (lihat Permenkes No. 235/Menkes/Per/V1/79 tentang bahan tambahan makanan ) Pengujian terhadap bahan amakanan yang mengandung lemak/minyak antara lain adalah: Uji mutu yang umum pada lemak dan minyak Uji ketengikan : Uji ketengikan dilakukan untuk menentukan derajat ketengikan, dengan cara mengukur senyawa-senyawa hasi! oksidasi. Penentuan yang dilakukan meliputi penentuan bilangan peroksida, jumlah karbonil, oksigen aktif, asam tio barbiturat dan uji oven schaaal. 1. Bilangan peroksida Yang dimaksud dengan bilangan peroksida adalah banyaknya milligram equivalen peroksida yang terdapat dalam 100 gram lemak / minyak. Atau banyaknya miligrol peroksida dalam 1000 gram lemak atau minyak. Bilangan peroksida ditentukan berdasarkan jumlah lodium yang dibebaskan setelah lemak / minyak ditambah Kl. Pada prinsipnya lemak / minyak direaksikan dengan KI dalam pelarut asam asetat dan kloroform (2:1), kemudian lodium yang terbentuk ditentukan secara titrimetri dengan larutan NazS2O3. 2. Jumlah karbonil Jumlah karbonil ditentukan secara tidak langsung dengan menambahkan senyawa tertentu yang dapat membentuk warna bila direaksikan dengan karbonil, lalu dititrasi dengan larutan floroglusinol Icara Kreiss atau dengan larutan 4 dinitrofenil hidrazin (cara Happin Clark)
+3. Oksigen aktif Oksigen aktif dihitung dengan cara melewatkan udara dengan kondisi tertentu pada lemak yang dipanaskan pada suhu tetap 100°C kemudian diukur waktu yang diperlukan untuk menghasilkan 20 miliequivalen peroksida. Cara ini sering dipakai untuk menentukan keadaan awal lemak dengan tanpa antioksidan. 4.Uji asam tio barbiturat Uji ini dipakai untuk menentukan adanya ketengikan lemak. Lemak yang tengik akan bereaksi dengan asam tio barbiturat menghasilkan warna merah. Intensitas warna menunjukkan derajat ketengikan. 5. Uji oven Schaal Uji oven Schaal sering dilakukan pada industri biscuit. Bahan dimasukkan kedalam gelas bersih dengan tutup yang agak longgar, supaya masih bisa masuk. Kemudian dipanaskan sampai 65°C. dalam selang waktu diukur bau dan rasanya. Bilangan Penyabunan Bilangan penyabunan adalah jumlah mg KOH yang dibutuhkan untuk menyabunkan 1 gram lemak / minyak. Untuk menetralkan sátu molekul gliserida dengan asam lemak yang rantai C=nya pendek, akan didapat bilagan penyabunan yang lebih tinggi dibandingkan dengan asam lemak yang rantai C-nya panjang Bilangan Asam Bilangan asam adalah bilangan yang menunjukkan jumlah mg KOH yang dibutuhkan untuk menetralkan asam lemak bebas yang etrdapat dalam 1 gram lemak/ minyak Bilangan Ester Bilangan ester adalah jumlah mg KOH yang diperlukan untuk menetralkan asam hasil hidrolisa seumpama 1 gram lemak / minyak. Jadi bilangan ester = bilangan penyabunan - bilangan asam. Bilangan lodium Bilangan lodium adalah bilangan yang menunjukkan jumlah gram la yang diserap oleh 100 gram lemak / miityak. Ia akan mengadisi ikatan rangkap pada asam lemak tidak jenuh baik dalam bentuk bebas maupun dalam bentuk ester. Bilangan Iodium tergantung pada jumlah asam lemak tidak jenuh dalam lemak. Lemak yang akan diperiksa dilarutkan dalam CHCL (CCO) 26
+kemudian ditambah larutan Jodium berlebih (0,1 - 0,5 gram). Sisa lodium yang tidak bereaksi dititrasi dengan larutan tiosulfat. Ada dua cara yang digunakan untuk mengukur bilangan jodium tersebut, yaitu cara Hanus dan cara Wijs. Pada cara Hanus, larutan iodium standar dibuat melarutkan 12 dan Br2 dalam larutan asam asetat pekat. Sedangkan pada cara Wijs, larutan standar Jodium dibuat dengan melarutkan 12 dan sodium klorida dalam larutan asam pekat glacial. Fumgsi iodium-beramida dan sodium klorida pada kedua larutan standar tersebut adalah sebagai pemicu reaksi. Uji kualitatif terhadap minyak mineral Untuk mengetahui apakah lemak / minyak murni tidak tercampur dengan minyak mineral, maka dilakukan uji minyak mineral. Bilangan Hehner Jumlah persen asam lemak tidak larut ditambah bagian tidak tersabunkan dalam minyak atau lemak. Bilangan Reichert - Meisel Jumlah ml Natrium hidroksida 0,1 N yang dibutuhkan untuk menetralisir asam lemak yang larut dalam air yang didestilasi dari 5 gram lemak atau minyak dengan kondisi tertentu. Sebagian asam lemak yang diperoleh dari lemak dan minyak menguap dengan uap air dan sebagian tidak. Asam lemak yang menguap : asam butirat, kaproat, kaprilat, kaprat, laural dan asam miristat. Asam butirat, kaproat larut dalam air dan asam kapriiat dan kaprat sedikit larut dalam air ditetapkan dalam bilangan Reichert - Meissl. Asam kaprat, laurat dan miristat ditetapkan dalam bilangan polenshe. Bagian tidak tersabunkan Zat yang tidak larut dalam air setelah penyabunan lemak digolongkan kedalam bagian yang tidak tersabunkan. Dalam minyak / lemak murni bagian tidak tersabunkan terdiri atas kolesterol dan sitosterol. Yang termasuk kedalam bagian tidak tersabunkan adalah 200 sterin dan fitosterin, hidrokarbon dan alcohol tinggi. Juga pemalsuan dengan minyak mineral mempertinggi bagian tidak tersabunkan. Jadi bagian tidak tersabunkan merupakan uji kemurnian. Indeks bias Indeks bias tergantung dari suhu, karena itu penting untuk mengetahui suhu penetapan. Biasanya lemak berupa cair pada suhu 40°C tetapi daftar yang ada pada 20°C. 27
+Suhu lebur Gliserida murni dapat dihablurkan dan mempunyai suhu lebur tetap. Cara penghabluran yang berbeda dapat memberikan hablur dengan suhu lebur yang bervariasi. Lemak yang merupakan campuran berbagai jenis gliserida tidak mempunyai suhu lebur yang tajam. Penyabunan dan zat yang tidak tersabunkan. Penyabunan adalah hidrolisa ester, biasanya dengan mendidihkan dalam alkali. Trigliserida adalah ester, bila direaksikan dengan kalium hidroksida, maka 3 molekul kalium hidroksida bereaksi satu molekul lemak : Gambar II. 1. Reaksi penyabunan lemak Apabila lemak atau minyak direaksikan dengan alkali maka trigliseridatrigliserida, fosfolipida waxes dan asam lemak bebas akan membentuk sabun yang terdisperi di dalam air, dan hasil. 28
+Uji kuantitatif Untuk mengetahui kadar lemak dari suatu bahan, dilakukan beberapa cara antara lain : a. cara Rose Gottlicb b. Cara HCL dengan alat Soxhlet c. Cara Gerber. Prinsip pengujian kadar lemak : Berdasarkan sifat lemak yang mudah larut dalam pelarut organic, maka uji kadar lemak dilakukan dengan cara ekstraksi. Pelarut organic yang umumnya digunakan adalah petroleum eter atau dietil eter. Setelah pelarutnya diuapkan, lemaknya ditentukan kadarnya dengan cara ditimbang. Lemak yang biasa terdapat dalam bahan makanan, umumnya tertutup oleh zat-zat lain. Misalnya kacang tanah lemaknya terdapat dalam sel-sel dari selulosa. Dalam daging atau susu, lemaknya biasanya tertutupi oleh dinding protein. Lemak tersebut harus dibebaskan dengan memanaskannya dengan HCL 25 % sehingga selulosanya ataupun proteinnya larut sedangkan lemaknya tidak. Cara pengujian ini disebut cara HCL dan alat yang digunakannya adalah alat sokslet.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 54,
+                'id_mapel' => 7,
+                'judul_materi' => 'Protein',
+                'detail_materi' => 'Protein termasuk suatu zat makanan yang sangat penting bagi pertumbuhan, karena selain berfungsi sebagai bahan atau sumber kalori yang diperlukan atas asam amino yang mengandung unsure-unsur C, H, O dan N yang tidak dimiliki oleh lemak ataupun karbohidrat. Molekul protein dapat mengandung fosfor, belerang atau logamlogam lain misal : besi dan tembaga. Protein adalah bagian utama dari seluruh kehidupan sel tanaman dan hewan, karena protein merupakan bagian utama dari penyusun sel. Protein adalah polimer dari beberapa 21 asam amino yang bergabung bersama dengan ikatan peptida. Akibat berbeda rantai penyusun dari asam amino penyusun • protein makan dapat mempunyai sifat kimia berbeda dan juga berbeda struktur sekunder dan tersier. Asam amino digolongkan berdasarkan sifat kimia rantai penyusun. Pengujian protein metoda konvensional digunakan untuk mengetahui kadar protein dalam makanan berdasarkan penetapan jumlah Nitrogen total yang kemudian dikonversikan menjadi protein. Pengujian protein semakin berkembang tidak hanya berapakah kandungan protein dalam makanan yang diuji, namun sekarang telah berkembang asam-asam amino apakah yang menyusun protein tersebut dan berapakah kandungannya.
+II. KOMPOSISI ASAM AMINO Asam amino bergabung bersama menggunakan ikatan peptida membentuk protein struktur primer. Komposisi asam amino dibentuk secara alami dengan struktur sekunder dan tersier. Sebaliknya ini adalah faktor penting termasuk sifat dan fungsi dari protein makanan dan perlakuan selama prosessing dari 2 asam amino, hanya 8 yang penting bagi nutrisi manusia. Jumlah asam amino esensial yang terdapat didalam protein dan ketersediaan penetapannya dari kualitas nutrisi protein, secara umum protein hewani lebih tinggi kualitasnya dari protein nabati.
+III. KLASIFIKASI PROTEIN Protein adalah molekul komplek dan klasifikasinya umum didasarkan atas kelarutan dalam pelarut yang berbeda. Dengan bertambahnya pengetahuan, seperti meningkatnya ilmu pengetahuan komposisi molekuler dan diketemukannya struktur, ataụ criteria lain digunakan sebagai dasar klasifikasi ini termasuk kelakuan dalam ultrasentrifugasi dan sifat elektroporetiknya. Protein dibagi menjadi 3 group utama yaitu protein sederhana, terkonjugasi dan derivat protein. 30
+1. Protein sederhana Protein sederhana hanya menghasilkan asam amino pada hidrolisa Albumin Larut dalam air netral dan bebas garam. Biasanya adalah protein dengan bobot molekul rendah, misal albumin telur, laktalbumin dan serum albumin dalam protein ( air dadihnya ) dari susu, leukosin dari seralia dan legurelin dalam biji kacang-kacangan b. Globulin Larut dalam larutan garam netral dan hampir tidak larut dalam air. Misal serum globulin dan B-laktoglobulin dalam susu, myosin dan aktin dalam daging, glisin dalam kedele. c. Glutelin Larut dalam asam atau basa encer, tidak larut dalam pelarut netral, protein ini terdapat pada seralia, misal glutenin dalam gandum dan orizonin dalam beras., d. Prolamin Larut dalam etanol 50 - 90 % dan tidak larut dalam air. Protein ini mempunyai prolin dan asam glutamat dalam jumlah besar dan terdapat dalam seralia. Misal zain dalam jagung, gliadin dalam gandum dan hordein dalam barley. e. Skelroprotein Tidak larut dalam air dan pelarut netral dan tahan terhadap enzim hidrolisa. Ini merupakan serta protein dan berguna sebagai pengikat. Kolagen dari jaringan otot termasuk dalam group ini dan gelatin merupakan derivat dari kolagen. Elastin adalah komponen dari tendon dan keratin dari rambut dan kuku.. & Protamin Merupakan basa kuat yang mengandung molekul berbobot rendah ( 4000 - 8000 ), yang kaya akan arginin, misal klupein dari ikan herring dan scrombin dari ikan mackarel, oleh sebab itu bersifat amfoter artinya dapat bereaksi dengan asam atau basa gugus yang bereaksi dengan asam 3. Derivat Protein Senyawa ini diperoleh dengan metoda kimia atau enzimatil dan dibagi menjadi derivat primer dan skunder tergantung pada luas dari perubahan yang telah diambil. Derivat primer sedikit termodifikasi dan tidak larut di dalam air. Derivat skunder lebih luas permukaannya dan termasuk proteuses, pepton dan peptida. Perbedaan antara hasil uraian adalah ukuran dan kelarutan. Seluruhnya larut didalam air dan tidak terkoagulasi oleh panas, tetapi proteuses dapat diendapkan oleh larutan ammonium sulfat jenuh. Peptida mengandung dua atau lebih asam amino residu. Kerusakan dari produk terbentuk selama prosessing dari berbagai makanan, misal: selania mematangkan keju.
+IV. DENATURASI
+ Denaturasi adalah proses perubahan dalam struktur tanpa pemecahan ikatan kovalent. Proses ini adalah anch pada protein dan efek protein nerbeda hingga derajat berbeda. Denaturasi dapat diakibatkan oleh beberapa senyawa atau bahan dan sangat penting adalah panas, pH, garam, asam, basa dan berbagai jenis senyawa kimia atau fisika yang dapat merubah struktur protein. Dengan adanya denaturasi dapat merubah tekstur dan bau, rasa dari makanan.
+ A. Sifat protein
+1. Protein bersifat amfoter NH2 Rumus umum protein adalah R-C H COOH oleh sebab itu bersifat amfoter artinya dapat bereaksi dengan asam atau basa gugus yang bereaksi dengan asam adalah amino bebas sedangkan yang bereaksi dengan basa adalah gugus karbohidrat bebas. Protein dapat bersifat asam atau basa, tidak saja bergantung pada banyaknya gugus karboksilat atau amino, tetapi juga pada letak gugus tersebut apakah dekat permukaan atau tertutup dalam molekul protein.
+2. Protein bersifat mengikat ion Protein dapat mengikat kation atau anion dengan cara bereaksi dengan gugus amino tau karboksilat. Pada pH diatas titik isoelektrisnya suatu protein bersifat ion negatif dan dapat mengikat kation, NH3 NH2 R-C-COO® + Na* + OH --R-C-COONa+ H20 . н н Pada pH dibawah titik isoelektrisnya protein bersifat ion positif dan dapat mengikat anion NH NH R-C-C00- + CL- + H+ --R-C-COOH H Н Pada titik isoelektris protein merupakan zwitter ion dan muatannya seimbang. NH* R-C-C00 32
+B. Uji Kualitatif Protein Protein mempunyai ikatan peptida yang dapat bereaksi dengan tembaga (+2) dalam suasana basa, membentuk senyawa kompleks tembaga yang berwarna ungu. Uji kualitatif ini dikenal sebagai uji cara Diuret, PENGUJIAN KUANTITATIF PROTEIN DALAM MAKANAN Hingga akhir-akhir ini penetapan kandungan protein dalam makanan / mimaran hanya dilakukan dan ditetapkan kandungan nitrogen organic menggunakan prosedur Kjeldahl, Bekarang beberapa metoda Kimia dan fisika sebagai metoda alternatif telah ada, bahkan beberapa metoda telah dilakukan secara semi otomatik bahkan hingga otomatik Metoda umum jumlahnya dapat dihitung untuk penetapan nitrogen di dalam bahan makanan telah dibuat oleh lilevik (1970) dan Pomerasa dan Meloen (1978), Lakin 1978 ) telah mengembangkan lebih modern,Prosedur Kjeldahl Walaupun telah dimodifikasi beberapa tahun, prosedur dasar kjeldahl tetap terjaga posisinya sebagai teknik yang paling dipercaya untuk penetapan nitrogen organic. Lebih lanjut hasil yang diperoleh dengan cara kjeldahl digunakan untuk mengkalibrasi metoda fisika dan otomatik, Metoda kjeldahl berdasarkan pembakaran secara basah ( destruksi basah ) dari sampel dengan asam sulfat pekat dengan adanya katalisator logam dan lain katalisator yang berefek mereduksi Nitrogen organic dalam sampel makanan menjadi ammonia yang tertahan sebagai ammonium sulfat. Hasil digesti dibuat alkali dan disuling atau menggunakan penyulingan uap untuk membebaskan ammonía yang ditampung dalam asam lemah dan kelebihan asam dititrasi menggunakan larutan baku basa. Umumnya sebagai katalisator digunakan merkuri sebagai merkuri oksida disetujui bahwa katalisator ini yang saling efektif, dengan selenium juga efektif, tetapi kedua senyawa tersebut sangat berbahzya dan beracun serta menimbulkan problem pada pembuangan sampahnya. Lebih lanjut merkuri bentuk ammonia komplek selama digesti memerlukan penambahan natrium tio sulfat untuk mencegah kompleks dan melepaskan ammonia. William ( 1976 ) merekomendasikan penggunaan campuran tembaga (II) sulfat dan titaniurn dioksida. Walaupun menurut Wall dan Gehrke ( 1975 ) memandang. bahwa campuran kurang efektif. 29
+Reduksi pada waktu digesti telah dipertajam dengan penambahan kalium atau natrium tio sulfat yang meningkatkan suhu digesti, Katalisator logam yang untuk memudahkan pemakaiannya tersedia dalam bentuk tablet yang etrsusun dengan dasar kalium sulfat. Concon dan Soltneass ( 1973 ) dan Koops ( 1975 ) dan rekan melaporkan bahwa penambahan hydrogen peroksida menaikkan perolehan kembali digesti dan menurunkan terjadinya busa. Secara tradisional, ammonia yang dibebaskan dari digesti dengan membuat suasana alkali, disuling kedalam larutan standar yang telah diketahui secara kuantitatif dalam asam encer yang akhirnya dititrasi menggunakan larutan standar basa untuk mendapatkan kandungan nitrogen dari sampel. Sekarang yang popular disuling kedalam larutan asam berat 4 % dan titrasi secara langsung ammonia menggunakan asam sulfat standar. Prosedur mengikuti prosedur makro Kjeldahl berdasarkan AOAC. Reaksi : Reaksi pada saat destruksi NH2 R-C-COOH - CO2 + H20 = NH3 +SO2 H .Cutt NH3 + H2SO4 -- NH4HSO4 Pada saat destilasi NH3 NH4HSO4 + NaOH - Na2SO4 + NH3 + H2O NH3 + HCL -- NHACL Pada saat titrasi kelebihan HCL + NaOH -- NaCl + H20 Faktor-faktor konversi untuk kadar protein 6,38 6,26 5,46 5,93 1. Susu 2. Jagung 3. Kacang tanali 4. Beras 5. Tepung gandum 6. Tepung gandum 7. Kacang kedelai 5,70 5,70 5,71 35
+BAB X PENETAPAN KADAR ETANOL / METANOL PADA MINUMAN BERALKOHOL
+Minuman merupakan kebutuhan pokok bagi manusia didunia baik mereka yang berstatus sosial rendah maupun tinggi. Fungsi minuman bagi manusia sangat beraneka ragm, muli dari obat penghapus dahaga, menambah kalori, penyegar dan lain-lain. Kebutuhan minuman semakin membengkak mengikuti pembengkakan populasi manusia di dunia dan searah dengan perkembangan teknologi jenis minuman maupun kemasannya semakin beraneka ragam pula. Secara garis besar minuman dikelompokkan menjadi 2 kelompok yang besar yakni : - minuman ringan - minuman keras (beralkohol) berdasarkan Peraturan Menteri Kesehatan RI No. 86/Menkes/Per/IV/77 tentang minuman keras dijelaskan bahwa minuman keras dikelompokkan menjadi 3 yakni : - kelompok A, mengandung etanol 1 - 5 % v/v - kelompok B, mengandung etanol >5 - 20 % v/v - kelompok C, mengandung etanol > 20 - 55 % v/v Sedangkan minuman yang berisi alcohol dengan kadar dibawah kelompok tersebut diatas dinyatakan sebagai minuman ringan. Minuman keras yang beredar dipasaran sangat beragam ditinjau dari cara pengolahan dan kandungan etanolnya. Menurut edaran Direktur Jenderal Pengawasan Obat dan Makanan No. 00365/5/11/86 tertulis beberapa jenis minuman keras beserta kandungan etanolnya.
+Beberapa alcohol alfatik merupakan bahan yang bersifat toksis, tetapi dari kelompok tersebut hanya etanol yang mempunyai efek farmakologi. Biarpun etanol sangat terbatas pemakaiannya sebagai obat, tetapi bahan ibi sangat banyak dipergunakan dalam bentuk minuman sehingga menarik untuk dipelajari. Etanol ( ctil alcohol ) merupakan alcohol alifatik sederhana dengan rumus molekul CH3CH2OH. Dapat diperoleh dari hasil oksidasi gula secara fermentasi, misal fermentasi dari teles tebu atau buah-buahan. Beberapa minuman beralkohol dapat ditemui di pasaran termasuk anggur, bir dan minuman lain hasil fermentasi. Minuman yang diperoleh dari hasil fermentasi mempunyai kandungan alcohol relatif rendah sebab kadar alcohol lebih dari 12 % akan bersifat toksis bagi ragi yang dipergunakan untuk fermentasi. Minuman dengan kadar alcohol tinggi biasanya merupakan hasil destilasi dari minuman hasil fermentasi tersebut diatas. Pada umumnya kita percaya bahwa segala akibat yang ditimbulkan dari minuman beralkohol berasal dari pengaruh alcohol. Metanol / Alofatik sikert u dapat membut dan mata. Metanol : metil alcohol alifatik yang paling sederhana. Senyawa ini tidak mempunyai manfaat untuk pengobatan, tetapi banyak dipergunakan sebagai pelarut maupun sebagai bahan bakar. Kerja farmakologi methanol mirip dengan etanol, sehingga bahan itu kadang kala dipergunakan sebagai pengganti alcohol. Tapi penggantian ini memberikan hasil yang lebih jelek bagi kesehatan manusia karena dapat menyebabkan seseorang mengalami kebutaan, tak sadarkan diri dan mati.
+Kecepatan absorbsi methanol lebih kurang 1/7 kali kecepatan etanol, dan keracunan methanol mula-mula ditunjukkan dengan pembentukan formaldehid atau asam formiat. Pembentukan kedua bahan itu akan menyebabkan kerusakan jaringan mata, dan hal ini akan menyebabkan seseorang akan mengalami kebutaan sebagian atau kebutaan total. Kerusakan mata ini diakibatkan oleh kerusakan pada pusat saraf penglihatan tetapi bukan disebabkan oleh kerusakan pada retina. Pengujian etanol maupun methanol dapat dilakukan melalui beberapa metoda yaitu metoda fisika, kimia fisika dan metoda enzimatik. Metoda fisika berdasarkan pada penetapan bobot jenis dari cairan yang diuji dan penetapan dengan cara ini akan dihitung alcohol total yang dihitung sebagai etanol Metoda kimia fisika berdasarkan pada pemisahan dari methanol dan etanol didalam kolom kromatografi gas. Disamping itu dapat pula ditetapkan berdasarkan sifat resapan maksimum methanol pada panjang gelombang tertentu setelah methanol tersebut direaksikan dengan asam kromatropat. Metoda enzimatis berdasarkan reaksi oksidasi secara enzimatis antara alcohol dengan nikotinamid dinukleotida (NAD) dengan katalisator alcohol dehidrogenase (ADG ). Penetapan ini akan menghitung alcohol total dihitung sebagai etanol. Penetapan etanol secara fisika Dasar dari metoda ini adalah gravimetric yakni penetapan bobot jenis dari larutan uji setelah dilakukan proses destilasi. Penetapan bobot jenis dilakukan pada temperatur tertentu dan kadar alcohol ditetapkan berdasarkan table yang menggambarkan hubungan antara bobot jenis dengan kadar etanol (Tabel ini terdapat di Farmakope Indonesia edisi III ). Prosedur pengujian dapat dilakukan melalui 3 tingkat seperti tersebut dibawah ini : 1. ekastraksi / destilasi -> Penyulugon -> pe mitsd hou 2 porsuqan. 2. penetapan bobot jenis 3. penetapan kadar alcohol Penetapan kadar alcohol Dari data bobot jenis cairan uji yang telah ditetapkan dengan cara seperti tersebut diatas, dapat ditetapkan kadar etanolnya berdasarkan table bobot jenis versus kadar etanol ( daftar ini termuat di Farmakope Indonesia edisi III ). Contoh : Bobot jenis cairan uji hasil perhitungan = 0,8115 38
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 55,
+                'id_mapel' => 8,
+                'judul_materi' => 'Pengenalan Kimia Air',
+                'detail_materi' => '
+Air merupakan bagian terbesar dari kehidupan di permukaan bumi. Air mendominasi permukaan bumi dengan 97 % air lautan dan hanya 3 % yang berasal dari air hujan, salju, es dan air dalam tanah. 97 % air tawar di permukaan bumi berada di daerah kutub secara permanen dalam bentuk gunung es atau glacier sedangkan sisanya berada di dalam lapisan tanah.
+Dari kenyataan ini di peroleh bahwa hanya sebagian kecil saja dari air yang ada di bumi yang dapat dipergunakan oleh manusia. Untuk itu pemeliharaan sumber air untuk menjamin penyediannya.
+PERANAN AIR BAGI KEHIDUPAN
+Air berperan dalam proses metabolisme makhluk hidup. Tubuh manusia mengandung 60-70% air dari seluruh berat badannya. Kehilangan 20% dapat menimbulkan kematian pada manusia. Air juga berperan dalam kegiatan sehari-hari. Untuk kebersihan diri dan juga menjalankan kegiatan industri dalam skala yang lebih besar lagi. Selain peran-peran positifnya air juga berperan dalam menimbulkan musibah bagi kehidupan. Bencana alam tak kurang yang disebabkan oleh air. Air berperan pula sebagai tempat berkembangbiaknya bibit penyakit dan berperan pula dalam penularannya.
+MACAM-MACAM AIR
+Air berada di bumi sebagai suatu proses alam yang berlanjut sehingga merupakan suatu siklus. Energi untuk berlangsungnya siklus ini diperoleh dari matahari. Sinar matahari sebagai sumber energi akan memanasi permukaan bumi termasuk sumber air permukaan hingga terjadi penguapan (evaporasi). Penguapan dari hasil proses biologis hewan, tumbuh-tumbuhan dan manusia disebut sebagai transpirasi. Uap air ini di udara mengalami peristiwa pengembunan yang disebut kondensasi.
+Proses kondensasi dibagi menjadi 2 :
+1.	Proses coalescence
+Pada proses ini uap air di udara saling berbenturan (hamine) partikel yang lebih besar (awan) dan karena berat lalu turun ke bumi sebagai hujan
+2.	Proses Bergeron
+Pada proses ini terjadi awan yang diatasnya terdapat kristal-kristal es sedang bagian bawahnya menjadi sangat dingin. Kristal es itu lalu menjadi tetes-tets air dan selanjutnya turun sebagai hujan.
+Air hujan yang turun ke bumi sebagian mengalir dan sebagian lagi terserap ke dalam tanah (infiltrasi). Air hujan yang masuk ke dalam tanah ini dapat keluar kembali ke sungai-sungai dan disebut interflow sedang yang tersimpan di dalam tanah disebut air tanah (ground water)
+Berdasarkan sumbernya air dapat dibagi menjadi :
+1.	Air angkasa seperti : hujan, salju dan es dengan karakteristik bersifat lunak (soft water) karena kurang mengandung mineral, dapat mengandung beberapa zat yang ada di udara seprti CO2 agresif dan NH3 serta dari segi bakteriologis relatif lebih bersih dari air permukaan.
+2.	Air tanah seperti : mata air, sumur dangkal, sumur dalam dan air artesis dengan karakteristik debitnya dapat berubah-ubah dipengaruhi oleh curah hujan ataupun run off, kurang baik untuk langsung dikonsumsi.
+3.	Air permukaan seperti : air sungai, air rawa, danau, telaga dan sebagainya. Air ini mempunyai karakteristik mengandung banyak mineral, lebih praktis untuk mendapatkan dan membaginya, dapat dibuat dekat pemukiman dan dari segi bakteriologis menguntungkan.
+
+STANDAR KUALITAS AIR
+Standar kualitas air adalah : ketentuan-ketentuan yang dituangkan dalam bentuk pernyataan atau angka yang menunjukkan persyaratan-persyaratan yang harus dipenuhi agar air tersebut tidak menimbulkan gangguan-gangguan kesehatan, gangguan teknis atau gangguan dalam bentuk aestetika.
+Fungsi dari standar kualitas air adalah : sebagai ukuran untuk mengukur kualitas air :
+Ada macam-macam standar kualitas air misalnya :
+1.	Syarat fisik,
+Perubahan sifat fisik kualitas air dari keadaan alami dapat digunakan sintetik petunjuk tentang kondisi dari suatu jenis badan air. Nilai-nilai normal dari sifat fisik kualitas air sangat tergantung pada berbagai kondisi spesifik badan air dan adanya pencemaran yang mungkin masuk ke dalam badan air tersebut. Tingkat perubahan yang nyata dari beberapa parameter dan perubahan yang terjadi sesuai dengan perjalanan waktu.
+2.	Syarat kimia
+Nilai-nilai parameter sifat kimia air merupakan petunjuk penting untuk menggolongkan tingkat kualitas suatu badan air. Beberapa pokok yang harus dipertimbangkan dan diperhatikan sehubungan dengan sifat kimia air diantaranya yaitu :
+a.	senyawa-senyawa kimia yang terdapat di dalam air yang keberadannya secara alami atau sintesis.
+b.	Senyawa-senyawa kimia mempunyai sifat tidak stabil, agak stabil dan stabil
+c.	Senyawa-senyawa kimia yang selalu terdapat dalam air dalam jumlah yang cukup dan terutama sangat mempengaruhi kualitas atau ada senyawa-senyawa yang tidak terlampau banyak.
+3.	Sifat mikrobiologis
+Air merupakan media yang baik untuk kehidupan organisme pathogen maupun non pathogen sehingga timbul istilah "water born disease". Adanya bakteri-bakteri seperti Salmonella typhi dan vibrio cholerae menunjukkan air sudah terkontaminasi oleh tinja. Jenis-jenis organisme non patogen diantaranya yaitu Actinomycetes, algae, bakteri coli, bakteri Fe dan rotifera. Komunitas yang ada pada suatu badan air memberikan gambaran tingkat bahan organic maupun pencemaran organic.
+4.	Syarat radioaktifitas
+Pengaruh bahan-bahan buangan yang memberikan emisi radioaktif akan membahayakan manusia. Beberapa bahan yang dapat mengadakan emisi radioaktif pada kegiatan tertentu dan dikenal dengan nama isotop. Badan-badan air dapat mengandung bahan radiaktif yaitu berasal dari kegiatan manusia yang berhubungan dengan nuklir melalui pencemaran bersama air hujan.
+Menurut PP-RI No. 20 Tahun 1990 berdasarkan peruntukannya air dibagi atas 5 golongan
+1.	Air golongan A yaitu air pada sumber air yang dapat digunakan sebagai air minum secara langsung tanpa pengolahan dahulu.
+2.	Air golongan B yaitu air yang dapat digunakan sebagai air baku untuk diolah menjadi air minum dan keperluan rumah tangga lainnya.
+3.	Air golongan C yaitu air yang dapat dipergunakan untuk keperluan perikanan dan peternakan
+4.	Air golongan D yaitu air yang dapat dipergunakan untuk keperluan pertanian dan dimanfaatkan untuk usaha di perkotaan, industri dan listrik tenaga air.
+5.	Air golongan E yaitu air yang tidak dapat dipergunakan untuk keperluan tersebut pada peruntukkan air golongan A, B, C dan D,
+
+Air libah dibagi menjadi 4 golongan :
+1.	Limbah golongan I yaitu air limbah yang dibuang ke dalam air golongan B
+2.	Limbah golongan Il yaitu air limbah yang dibuang ke dalam air golongan C
+3.	Limbah golongan III yaitu air limbah yang dibuang ke dalam air golongan D
+4.	Limbah golongan IV yaitu air limbah yang dibuang ke dalam air golongan E
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 56,
+                'id_mapel' => 8,
+                'judul_materi' => 'Cara Pengambilan Sampel Air',
+                'detail_materi' => 'PENGAMBILAN AIR DAN PERSYARATAN TEMPATNYA UNTUK PEMERIKSAAN KIMIA
+Jumlah contoh air untuk pemeriksaan kimia lebih kurang 2 liter dan tidak boleh digabungkan untuk pemeriksaan mikrobiologis. Dan segera mungkin langsung diperiksa dilaboratorium.
+Beberapa hal yang harus diperhatikan :
+	Untuk pemeriksaan AI, Cd, Cr, Cu, Fe, Pb, Mn, Hg, Zn dan zat organic perlu dipisahkan dan diberi HCL,
+〖HNO〗_3 atau
+H_2 〖SO〗_4 pekat hingg pH 3,5 agar tidak terjadi pengendapan dan adsorbsi oleh dinding botol.
+	Untuk pemeriksaan senyawa nitrogen contoh air dipisahkan dan diawetkan dengan beberapa tetes toluol
+	Untuk pemeriksaan suhu, gas terlarut langsung diperiksa di lapangan
+	Senyawa besi dan mangan valensi rendah larut sedangkan valensi tinggi mengendap
+	Jasad renik dapat merubah keseimbangan nitrit, ammonia, menurunkan kadar phenol, BOD dan mereduksi sulfat menjadi sulfide
+	Sisa klor akan direduksi menjadi klorida
+	Sulfida, sulfit, ferro, iodida dan cyanida akan hilang karena pengaruh oksidasi
+	Warna, bau dan kekeruhan dapat bertambah, berkurang atau berubah sifatnya.
+Peralatan :
+	Botol timba dengan pemberat dari timah putih dan pengikat dari kuningan atau tembaga dan tidak boleh pengikat dari besi karena dapat berkarat. Mulut botol harus bermulut besar sehingga dapat dimasuki sumbat karet yang diberi lubang 2.
+	Jirigen plastik 1000 ml
+	Jirigen plastik 500 ml
+	Botol plastik 250 ml
+	Botol plastik pereaksi (tutup asah) 250 ml
+Bahan-bahan :
+	H_2 〖SO〗_4 pekat ditambahkan ke botol 500 ml
+	Toluol 5 tetes ditambahkan ke 250 ml
+Cara kerja :
+	Air pada pengambilan pertama dibuang untuk membilas botol timba
+	Air pada pengambilan ke dua dipakai untuk membilas wadah-wadah penyimpanan contoh air
+	Air pada pengambilan ketiga dan seterusnya dipakai untuk contoh air
+	Pada masing-masing wadah ditempelkan label yang berisi data-data kode, jam, tanggal dan tempat pengambilan contoh air, pengawet yang digunakan, nama pengambil contoh air, tanda tangan pengambil contoh air dan jenis pemeriksaannya (kimia/mikrobiologi)
+PENGAMBILAN AIR DAN PERSYARATAN TEMPATNYA UNTUK PEMERIKSAAN MIKROBIOLOGI
+Air yang tidak diolah atau air yang telah tercemar oleh bahan pencernar seperti limbah, faeces besar kemungkinannya mengandung bakteri patogen. Untuk menentukan adanya bakteri patogen tersebut digunakan indikator bakteri golongan coli (coliform bakteri). Dengan kata lain bakteri golongan coli selalu dihubungkan dengan bakteri patogen. Oleh karena itu dalam pemeriksaan mikrobiologis air selalu ditekankan pada pemeriksaan bakteri koliform.
+Dalam pemeriksaan mikrobiologis sangat dihindarkan terjadinya kontaminasi, untuk itu dalam pengambilan contoh air alat-alat yang akan dipakai harus disterilkan dahulu.
+Peralatan :
+Botol bermulut besar yang steril (autoclave 121 derajat celcius 15 menit)
+Bahan-bahan :
+Natrium thio sulfat 15% sebanyak 0,1 ml dapat menetralkan sisa klor 15 mg/l. (bila diperlukan)
+Cara kerja:
+Untuk contoh air kran
+	Air kran di biarkan mengalir selama 2-3 menit, tutup kran
+	Mulut kran dipanaskan lalu masukkan air kran
+	Apabila air yang akan diambil contohnya mengandung klor maka penambahan larutan natrium thio sulfat 10% sebanyak 0,1 ml dapat menetralkan sisa klor sebanyak 15 mg/l dalam contoh air. Penambahan dilakukan sebelum botol contoh disterilisasi. Selanjutnya pada label seperti pada pengambilan contoh untuk pemeriksaan kimia.
+CARA PENGIRIMAN CONTOH AIR
+	Contoh air yang dikirim adalah contoh yang diambil sesuai dengan persyaratan yang ditentukan dan harus sesegera mungkin dikirimkan ke laboratorium
+	Contoh yang dikirim harus mempunyai label dan tulisan yang lengkap seperti diuraikan di atas
+	Contoh disertai surat pengantar yang jelas yang mencantumkan nama dan tanda tangan pengirim serta maksud pemeriksaan
+	Contoh air yang dikirim harus disimpan di dalam tempat yang terjamin keamanannya seperti termos atau peti.
+
+SELANG WAKTU ANTARA PENGAMBILAN DAN ANALISA CONTOH AIR
+Makin pendek selang waktu antara pengambilan dan analisa contoh air, akan memberikan hasil yang makin baik. Batas waktu maksimum untuk menunda analisa kimia adalah :
+	Untuk air bersih			72 jam
+	Untuk air yang sedikit tercemar	48 jam
+	Untuk air kotor/limbah		12 jam
+Beberapa unsur dapat mengalami perubahan yang cepat, untuk itu harus diperiksa secara langsung di lapangan. Beberapa unsure lain dapat mengalami perubahan selama penyimpanan, untuk itu diperlukan penambahan bahan pengawet. Bahan pengawet yang digunakan dicantumkan pada label
+Untuk pemeriksaan mikrobiologis maksimum waktu yang diizinkan adalah 1 jam sesudah pengambilan contoh dan tidak boleh lebih dari 12 jam dan sebaiknya dalam pengiriman contoh air tersebut didinginkan.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 57,
+                'id_mapel' => 8,
+                'judul_materi' => 'Pemeriksaan Air Secara Fisika Kekeruhan',
+                'detail_materi' => 'Air yang jernih diperlukan untuk keperluan rumah tangga dan industri makanan, farmasi dan industri-industri lain. Kekeruhan dalam air ditimbulkan oleh bahan-bahan yang tersuspensi misalnya tanah liat, Lumpur, bahan-bahan organik yang halus, plankton dan mikroba. Hal ini disebabkan partikel-partikel tersebut menghaburkan cahaya yang melewati air.
+Akibat yang ditimbulkan oleh kekurangan air adalah :
+	Mengurangi aestetika
+	Mengurangi efektifitas desinfeksi air
+Menurut standar kualitas air kekeruhan air ditetapkan 5-25 unit dalam skala silikat yaitu kekeruhan yang disebabkan oleh mg/l 〖SiO〗_2.
+Kekeruhan sebaiknya diukur pada hari yang sama dengan pengambilan sampel. Bila pemeriksaan ditunda, sampel harus disimpan ditempat gelap dan diperiksa sebelum 24 jam. Lebih dari waktu tersebut terjadi perubahan kekeruhan pada sample tersebut. Sampel harus digojok kuat sebelum pemeriksaan. Pereriksaan kekeruhan dengan menggunakan metode turbidimetri (nevelometrik).
+Ada beberapa metode pengukuran kekeruhan :
+	Metode turbidimetri (Nepbelometrik)
+Prinsip : Membandingkan intensitas cahaya yang dihamburkan oleh sampel dengan intensitas cahaya yang dihamburkan oleh suspensi baku pembanding pada kondisi sama. Makin tinggi intensitas cahaya yang terhambur makin tinggi keterhambur, makin tinggi kekeruhannya.
+Pengganggu : adanya gelembung udara, getaran dan pemakaian alat gelas yang kotor memberikan hasil yang salah. Adanya warna air yang ditimbulkan oleh zat-zat terlarut yang menyerap cahaya memberikan hasil pengukuran lebih rendah
+Alat	: Turbidimetri
+Satuan	: NTU (Nephelometric Turbidity Unit)
+Alat ini sangat peka, sebagai pembanding dibuat dari 1 g silika gel H yang dilarutkan dalam 1000 ml air suling, sehingga setiap 1 ml mengandung 1 mg 〖SiO〗_2 atau kekeruhannya 1 unit
+	Metode Visual
+Prinsip : mengukur panjang cahaya yang melalui suatu suspensi yang dihitung tepat pada saat bayangan lilin (candle) hilang makan panjang jalan cahaya makin rendah kekeruhan.
+Alat	: Candle turbidity
+Satuan	: JTU (Jackson Turbidity Unit)
+	Metode Hellige
+Prinsip : penerapan efek Tyndall dalam pengusunan sumber cahaya terhadap sampel air.
+Dalam hal ini tidak digunakan suspensi standar
+Alat : Turbiditer Hellige
+Metode ini untuk kekeruhan 0 - 15 unit
+Penentuan Kekeruhan
+Prinsip : membandingkan intensitas cahaya yang dihamburkan oleh sample dengan intensitas cahaya yang dihamburkan oleh suspensi baku pembanding pada kondisi sama. Makin tinggi intensitas cahaya yang terhambur makin tinggi keterhambur, makin tinggi kekeruhannya.
+Pengganggu : adanya gelembung udara, getaran dan pemakaian alat gelas yang kotor memberikan hasil yang salah. Adanya warna air yang ditimbulkan oleh zat-zat terlarut yang menyerap cahaya memberikan hasil pengukuran lebih rendah.
+Alat : Turbidimetri
+Alat ini sangat peka. Sebagai pembanding dibuat dari 1 g silika gel H yang dilarutkan dalam 1000 ml air suling, sehingga setiap 1 ml mengandung 1 mg 〖SiO〗_2 atau kekeruhannya 1 unit
+Cara lain adalah dengan standar hidrazin sulfat dan hexamethylen tetramin
+Prinsip : membandingkan intensitas cahaya contoh air dengan intensitas cahaya larutan standar secara turbidimetri.
+Bahan :
+	Larutan I Hidrazin sulfat
+Pembuatan : timbang 1 g Hidrazin sulfat, larutkan dengan air destilasi dan dipenuhkan volumenya hingga 100 ml di dalam labu takar
+	Larutan II Hexamethylene tetramin
+Pembuatan : timbang 10 g hexamethylene tetramin, larutkan dengan air destilasi dan penuhkan volumenya hingga 100 ml
+	Larutan campuran : Campur 5 ml larutan 1 dengan 5 ml larutan II lalu dibiarkan selama 24 jam pada 25-28°C lalu diencerkan hingga 100 ml. larutan ini mempunyai kekeruhan 400 NTU (Nephlometer Turbidity Unit)
+Alat :
+	Turbidity meter
+	Pipet volume
+Cara kerja :
+Buah deretan larutan standar 0-5-10-15-20-25 NTU (Tahan 1 minggu). Baca kekeruhannya pada turbidity meter pada λ 450 nm. Buat grafik NTU vs absorbans. Ambil 50 ml contoh air. Baca kekeruhannya pada turbidity meter. Hasil pembacaan absorbans contoh diekstrapolasikan pada kurva kalibrasi (kurva antara absorbansi dan konsentrasi kekeruhan standar). Bila contoh keruh encerkan dengan air destilasi
+Perhitungan :
+NTU cth encer pada grafik x (Vol. Pengencer + Volume contoh)
+Kekeruhan (NTU) =
+Volume contoh
+
+JUMLAH PADATAN TERLARUT
+Air yang mengandung padatan terlarut yang tinggi terutama akan mempengaruhi rasanya. Air yang kandungan mineralnya tinggi juga tidak dapat dipergunakan untuk keperluan industri. Untuk air minum kandungan jumlah padatan terlarut dianjurkan tak lebih dari 500 mg/l. jumlah padatan terlarut adalah residu setelah sample diuapkan kemudian dikeringkan pada suhu 103-105°C. suhu pengeringan sangat mempengaruhi hasilnya, karena pengurangan berat dapat terjadi karena penguapan zat organic, air kristal, penguapan gas-gas yang terjadi karena perubahan susunan kimia, atau terjadi kenaikan berat karena oksidasi.
+Akibat yang ditimbulkan dari jumlah zat padat yang berlebihan adalah :
+	Mempengaruhi daya hantar listrik air
+	Air tidak enak rasanya
+	Menyebabkan rasa mual terutama bila zat padatnya merupakan senyawa natrium sulfat dan magnesium sulfat
+	Terjadinya cardiac disease serta toxacmia pada wanita-wanita hamil
+Total solid adalah jumlah dari zat tersuspensi dengan zat terlarut (TDS = Total Disolved Solid)
+TS = TSS + TDS
+PENENTUAN SOLID
+Prinsip : Sejumlah air diuapkan aimya. Zat padat yang tertinggal ditentukan secara gravimetri.
+Alat
+	Cawan porselen
+	Oven
+	Pipet volume
+	Desikator
+	Neraca
+Cara kerja
+Timbang cawan porselen kosong (A.). pipet 25 ml air lalu masukkan. Uapkan hingga airnya kering. Panaskan di dalam oven pafa temperatur 100° selama 1 jam kemudian dinginkan di dalam desikator. Timbang bobotnya. (B)
+Perhitungan :
+Total Solid (mg/1)=((B-A)  x 1.000.000)/(Volume contoh)
+
+ZAT TERSUSPENSI
+
+Pada air keruh atau air limbah sering diminta untuk menentukan zat tersuspensi, yang di dapat dengan cara menyaring air tersebut dengan saringan tertentu yang sudah diketahui beratnya. Kemudian saringan dan isinya dikeringkan pada 103 - 105°C. Selisih beratnya adalah zat terendap. Dapat pula ditentukan dengan menguapkan tapisan dan dikeringkan pada 103 - 105°C dan ditimbang. Selisih zat padat jumlah dengan tapisan jumlah adalah zat tersuspensi.
+
+PENENTUAN TOTAL SUSPENDED SOLID (TSS)
+Prinsip : zat padat yang tersuspensi di dalam air disaring dengan filter selulosa Residu yang tidak lolos saringan diuapkan dan kemudian dikeringkan pada temperatur 105°C. setelah dingin ditimbang sampai diperoleh bobot yang tetap
+Alat :
+	Filter GF/A
+	Milivor vacuum
+	Oven
+	Pipet
+Cara kerja :
+Timbang bobot kertas saring filter GF/A (A). pipet 25 mi contoh air saring dengan filter GF/A dengan alat milivor vacuum. Keringkan di dalam oven pada temperatur 105°C selama 1 jam. Dinginkan di dalam desikator dan ditimbang bobotnya (B). bila air limbah pekat, lakukan pengenceran dengan air destilasi.
+Perhitungan :
+TSS (mg/1)=((B-A)  x pengenceran x 1.000.000)/(Volume contoh)
+
+
+BAU DAN RASA
+Biasanya bau dan rasa dalam air terjadi bersamaan yaitu akibat dari adanya organisme seperti plankton, octimycetes, bakteri atau karena dekomposisi bahan organik di dalam air dan juga karena adanya bahan kimia tertentu.
+Air untuk keperluan air minum dan industri makanan, minuman dan farmasi harus tidak berbau dan tidak berasa. Sebahagian besar zat organic dan beberapa zat anorganik menimbulkan rasa atau bau. Zat-zat ini berasal dari buangan rumah tangga dan industri, atau dari alam misalnya pembusukan daun atau dari kegiatan mikroba. Ada 4 sensasi rasa yaitu asam, manis, asin dan pahit. Garam-garam Cu, Fe, Mn, K, Na dan Zn dapat diketahui dari rasa. Pemeriksaan rasa hanya dilakukan untuk sampel air minum. Tidak dilakukan untuk air yang kemungkinan tercemar bakteri, virus, parasit atau zat kimia beracun, juga tidak dikerjakan untuk air limbah dan air kotor.
+
+WARNA
+ Warna air ditimbalkan oleh ion-ion logam terutama besi dan mangan, humus dan susunan tanah, plamgton, ganggang dan linbah industri.
+Warna ini dapat berasal dari bahan padat atau tersuspensi, tetapi dapat juga dalam larutan. Karena itu warna dalam air dapat dibedakan menjadi dua.
+	Wama yang sesungguhnya yaitu warna yang tampak setelah suspensi dalam air dihilangkan
+	Warna yang tampak yaitu warna air termasuk suspensi-suspensi dalam air
+Warna air ditetapkan dengan membandingkan sample dengan warna larutan Platina-Cobalt baku, atau dengan disk berwarna yang sudah dibakukan. 1 unit Pt-Co adalah warna yang ditimbulkan oleh 1 mg Platina/liter, sebagai ion kloroplatinat.
+Akibat yang ditimbulkan bila warna menyimpang dari ketetapan tersebut adalah :
+	Air tidak disukai konsumen karena secara aestetika tidak diterima masyarakat
+	Konsumen mencari sumber air lain mungkin malah sangat tidak sesuai dengan persyaratan kesehatan kecuali parameter warna saja.
+
+PENENTUAN WARNA
+
+Prinsip :
+Dengan deretan larutan kalium kloroplatinat yang konsentrasinya berbeda sebagai standart, absorbans contoh air diekstrapolasikan pada kurva kalibrasi
+Bahan :
+	Larutan standar warna
+Pembuatan : timbang 12,46 g K_2 〖PtCl〗_6 dan 1 g 〖Cocl〗_2. 〖6H〗_2 O ke dalam beaker glass 500 ml larutkan dengan 100 ml HCL pekat lalu [indahkan ke labu ukur 11 dan  penuhkan volumenya hingga tanda batas
+	Larutan 1 N H_2 〖SO〗_4
+	Larutan 1 N NaOH
+Alat	:
+	Spektrofotometer
+	Filter Ø 40 µm
+Cara kerja :
+Pipet 50 ml contoh lalu disentrifus. Ambil cairan jernihnya dan atur pHnya hingga 7,6 dengan menambahkan larutan 0,1 N H_2 〖SO〗_4  atau larutan 1 N NaOH. Baca absorbansnya pada λ dimana terjadi absorbansi maksimum pada kisaran λ 400 – 700. Buat deretan standar 0-5-10-20-30-40-50 unit. Baca absorbansnya lalu buat grafik antara unit warna dengan absorbansi. Hasil pembacaan absorbans contoh diekstrapolasikan pada kurva kalibrasi.
+(kurva antara absorbansi dan konsentrasi warna standar)
+Perhitungan	:
+Color unit=(Pengenceran x 50)/(Volume contohml contoh)
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 58,
+                'id_mapel' => 8,
+                'judul_materi' => 'Pemeriksaan Kimia Di Lapangan Sisa Klor',
+                'detail_materi' => 'Pembubuhan klor yang disebut juga klorinasi dalam air minum dan air tercemar dimaksud untuk membunuh mikroba. Tujuan kedua adalah untuk meningkatkan kualitas air karena klor bereaksi dengan ammonia, besi, mangan, sulfida dan beberapa senyawa organik. Apabila pemberian berlebihan, sisa klor akan mempengaruhi bau dan rasa air minum. Disamping itu klorinasi dapat mempertajam rasa dan bau senyawa fenol dan senyawa organic
+Pembubuhan klor dapat sebagai unsurnya atau sebagai garam hipoklorit. Klor bebas yang terjadi tergantung pH-nya dan pada pH air normal yang terbanyak berupa asam hipoklorit dan ion hipoklorit.
+〖Cl〗_2+ H_2 O= H^1+Cl+H^3+Cl + HOCl as. Hipoklorit
+PH tinggi pH rendah
+H^1 + OCl
+Ion hipoklorit
+HOCI sifat desinfektannya 10 kali lebih tinggi dari ion hipoklorit
+Metode penetapan klor aktif terutama berdasarkan reaksinya dengan bahan-bahan pereaksi, sehingga beberapa oksidator termasuk halogen-halogen berbasa akan terhitung sebagai klor bebas. Cara yang sering dipergunakan adalah metode ortotolidine karena mudah dikerjakan, juga dilapangan. Akan tetapi metode ini mulai tergeser dengan metode DPD (NN-dietil-p-fenilan diamin) karena ortotolidine bersifat karsinogenik. Dicegah pemipetan dengan mulut dan kontak kulit.
+Metode ortotolidine
+Prinsip : Ortotolidine berubah menjadi senyawa yang berwarna kuning dalam larutan asam kuat, setelah terikat dengan klor bebas. Untuk memperoleh warna yang benar yang dibentuk oleh klor dengan ortotolidine :
+	pH larutan pada waktu bereaksi 1,3 atau lebih rendah
+	Perbandingan berat antara ortotolidine dengan klor paling sedikit 3 : 1
+	Kadar klor tidak boleh lebih dari 10 mg/l
+Alat : komparator Taylor
+Cara kerja :
+	Tabung gelas komparator dibersihkan dengan sample air yang akan diperiksa kadar klornya
+	Tabung gelas komparator ini diisi dengan sample air sampai batas tertentu
+	Salah satu tabungnya diberi indikator ortho toulidine 5 tetes
+	Dicampur dengan membalikkan tabung tersebut ditutup dengan ibu jari
+	Ketiga tabung tersebut diletakkan pada komparator dan tabung berwarna diletakkan ditengah-tengah
+	Tunggu 5 menit kemudian bandingkan dengan warna larutan dengan warna larutan standar.
+Reaksi :
+〖2H〗_2 O + 〖2Cl〗_2 => 4 HCI + O_2
+NH_2 CH_3 C_6 H_3 C_6 H_3 〖CH〗_3 NH_2 NHCL => +〖NOCH〗_3 C_6 H_3 C_6 H_3 〖CH〗_3 NH_2 NHL+ H_2 O
+Cara yang lain adalah dengan metode lod-pati, yang berdasarkan prinsip iodometri. Sisa klor akan bereaksi dengan KI dan l_2 yang bebas dititrasi dengan larutan thio dengan indikator pati (amylum).
+Reaksi :
+ 2KI + 〖Cl〗_2 => l_2 + 2KCL
+l_2 + 2Na_2 S_6 O_3  => 2 Nal + Na_2 S_4 O6
+
+
+SUHU
+Pada keadaan normal suhu air sama dengan suhu udara lingkungan. Peningkatan suhu terjadi pada air yang dibuang dari proses produksi yang menggunakan pemanasan, yang akan mengganggu kehidupan biota air atau tanaman. Suhu mempengaruhi pertumbuhan dan perkembangan algae tertentu. Temperatur yang diharapkan antara 1015°C. akibat dari penyimpangan suhu adalah :
+	Air tersebut tidak disukai konsumen
+	Meningkatnya daya toksin bahan kimia yang mencemari air
+	Pertumbuhan mikroba di dalam air
+Pengukuran dilakukan dengan termometer air raksa biasa dan dilaporkan dalam Pengukuran suhu dilakuka derajat yang terdekat.
+
+PH
+Air di alam umumnya mempunyai pH di antar 4-9. sebagian besar agak alkalis adanya karbinat dan bikarbonat. Perubahan pH dibawah atau diatas normal terjadi karena buangan industri yang bersifat asam kuat atau basa kuat. Penentuan pH sangat penting untuk kegiatan sanitasi. Untuk penyediaan air bersih merupakan faktor yang penting dalam proses koagulasi, desinfeksi, pelunakan air dan pengawasan korosi pada system distribusi. Pada proses pengolahan air limbah industri secara biologik, pH harus dijaga supaya sesuai dengan pertumbuhan optimal kuman yang dipergunakan.
+Penetapan pH air dapat dilakukan dengan :
+Kertas pH
+Dipilih kertas pH yang mempunyai daerah pH antara 6 - 9. cara ini kasar, tidak teliti.
+Cara kolorimetrik
+Dilakukan dengan menggunakan deret larutan dapar yang sudah diketahui pH-nya, dan diberi larutan indikator yang tepat. Sample air diberi indikator yang sama, warnanya dibandingkan dengan deret larutan dapar baku. Larutan indikator yang dapat dipakai adalah :
+Biru brom timol	: daerah pH 6,0 - 7,6
+Fenolftalein		: daerah pH 8,2-9,8
+Dapat pula menggunakan komparator Hellige atau komparator lovibond, warna sample air yang sudah ditambah larutan indikator dibandingkan dengan warna disk dalam komparator
+
+
+
+PH meter
+Dengan alat pengukuran potensial yang dilengkapi dengan elektroda gelas. Perubahan pH akan merubah potensial sebesar 59,1 mV setiap unit pH pada suhu 25°C. elektroda sebelumnya harus dibakukan terhadap larutan dapar baku yang sudah diketahui pH-nya. Cara penetapan pH dengan pH meter lebih teliti dari pada cara kolorimetri karena tidak terganggu oleh adanya warna dalam sample air, kekeruhan, kandungan garam yang tinggi, bahan-bahan koloid, klor bebas, oksidator dan reduktor.
+
+OKSIGEN TERLARUT
+Oksigen merupakan gas yang sukar larut dalam air. Kelarutan oksigen dalam air tawar antara 14,6 mg/l pada 0°C dan 7 mg/l pada 35°C pada tekanan 1 atmosfer. O_2   merupakan petunjuk apakah air itu kotor atau bersih. Air dikatakan bersih bila O_2 terlarut besar dan tidak melampaui batas maksimum. Dan air dikatakan kotor bila O_2 sangat kecil dan mendekati nol.
+Kelarutan O_2 sangat dipergaruhi oleh tekanan udara pada suatu suhu. Karena proses oksidasi biologik bertambah cepat dengan naiknya suhu, kebutuhan oksigen juga bertambah. Oksigen terlarut diperlukan untuk pemurnian air alam dan pengolahan air limbah yaitu mengurangi bahan pencemaran sebelum dimasukkan kedalam air sungai. Proses pengolahan dilakukan oleh jasad renik aerob atau anaerob. Yang acrob memerlukan oksigen bebas untuk mengoksidasi bahan organik dan anorganik sehingga diperoleh hasil yang tidak berbahaya. Oksigen terlarut disebut juga dissolved oxygen (DO), dinyatakan dalam mg/1 O_2.
+DO sangat diperlukan pula untuk pertumbuhan dan perkembangbiakan ikan-ikan dan makhluk air lainnya. Persyaratan DO untuk air golongan B dianjurkan lebih besar dari 4 mg/l, sedang untuk air golongan C dianjurkan lebih dari 3 mg/l O_2.
+Kadar oksigen terlarut dalam air buangan tergantung keadaan fisik, khemis dan aktifitas biologisnya. Analisa oksigen terlarut merupakan kunci tes terhadap pencemaran air dan kontrol terhadap pengolahan air buangan. Penetapan oksigen terlarut merupakan dasar dari penetapan BOD yang menilai derajat pencemaran pencemaran dari buangan rumah tangga maupun industri. Pengambilan contoh untuk penetapan oksigen terlarut dalam BOD.
+Cara pengambilan contoh air untuk penentuan oksigen terlarut memerlukan cara tersendiri. Kadar oksigen ini biasanya lebih rendah dari pada kadar jenuhnya, sehingga kalau berhubungan dengan udara akan berubah.
+Alat yang dipergunakan adalah botol pereaksi tutup asah (botol oksigen) 250 ml. botol diisi penuh oleh dengan contoh air, ditutup hati-hati sehingga tidak ada gelembung udara dalam botol. Diperlukan 2 botol, satu untuk oksigen terlarut yang lain untuk BOD. Penentuan oksigen ini tidak dapat ditunda harus dilakukan dilapangan. Kadar oksigen akan berubah karena kegiatan biologik, sehingga diperlukan pemantapan (fiksasi) dengan menambah pereaksi O2 dilapangan, kemudian penentuannya dilanjutkan di laboratorium. Dengan cara ini kegiatan jasad renik dihambat dan titrasinya dapat ditunda sampai 6 jam. Sample kemudian segera dibawa kelaboratorium dengan memasukkannya dalam termos yang diberi es.
+Penetapan oksigen terlarut metode Winkler
+Prinsip : Air dalam botol bertutup asah. Jika tidak terdapat DO, akan terjadi endapan putih 〖Mn(OH)〗_2 karena pereaksi O_2 terdiri dari NaOH dan KL.
+〖Mn〗^(2+)+ 2 〖OH〗^- => 〖Mn(OH)〗_2 ↓ putih
+Jika terdapat oksigen, akan terjadi oksidasi sejumlah 〖Mn〗^2 yang setara menjadi endapan 〖MnO〗_2  yang berwarna coklat.
+〖Mn〗^(2+)+2OH- + ½ O_2 => 〖MnO〗_2 + H_2 O
+Pada reaksi 〖Mn〗^(2+) menjadi 〖MnO〗_2  ini disebut juga pengikatan oksigen, berjalan lambat terutama pada suhu rendah. Oleh karena itu diperlukan pencampuran kuat paling sedikit 20 detik. Setelah semua oksigen bereaksi, endapan dibiarkan mengendap dan setelah cairan yang jernih setebal kira-kira 5 cm, ditambah asam sulfat. Maka 〖MnO〗_2, akan mengoksidasi I^2 menjadi I2
+〖MnO〗_2+〖2I〗^- 〖+ 4〗^+ => 〖Mn〗^(2+)+I_2+〖2H〗_2O
+2+Na_2 S_2 O_3 => 2 Nal + Na_2 S_4 O_6
+Cara lain menggunakan DO-meter, secara potensiometrik.
+Adanya nitrit, garam besi dan beberapa bahan organik tertentu dapat mengganggu. Nitrit dalam medium asam sulfat akan bereaksi dengan KI dan membebaskan I_2 sehingga hasil percobaan menjadi lebih tinggi dari yang sebenarnya. Nitrit dapat terbentuk di dalam air antara lain bila contoh air dibiarkan pada tempat terbuka. Pada keadaan ini oksigen terlarut dapat bereaksi dengan N_2 O_2 menghasilkan senyawa nitrit. Untuk mencegahnya contoh air tidak boleh dibiarkan di udara terbuka. Efek nitrit dapat dihilangkan dengan penambahan natrium azida. Pada metode Rideal-Stewart gangguan nitrit, garam besi dan senyawa organic dihilangkan dengan cara mengoksidasinya dengan kalium oksalat pada persiapan contoh air. Akan tetapi bila kalium oksalat terlalu berlebihan dapat juga mengganggu pada akhir reaksi.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 59,
+                'id_mapel' => 8,
+                'judul_materi' => 'Pemeriksaan Air Secara Kimia Alkaliniti (Kebebasan)',
+                'detail_materi' => 'Ada tiga jenis alkalinitas yaitu hidroksida (OH), karbon normal (〖CO〗_2) dan bikarbonat (〖HCO〗_2). Karbonat normal disebut juga mono karbonat. Penentuan alkalinitas dilakukan dengan titrasi asam-basa dengan menggunakan indikator ferolftalein yang memberikan warna pink bila terdapat hidroksida atau karbonat normal. Perubahan warna pink menjadi tidak berwarna berlangsung pada pH 8,3. metil orange akan berwana kuning jika terdapat ketiga jenis alkalinitas dalam suasana basa dan berubah menjadi merah jika dalam suasana asam. Perubahan warna berlangsung pada pH sekitar 4,4.
+Ada 5 kondisi alkaliniti yang mungkin terjadi :
+	Hanya hidroksida saja (P = T atau M=0) 2.
+	Hidroksida dan normal karbonat (P> ½T)
+	Hanya normal karbonat (P=½ T atau P=M)
+	Normal karbonat dan bikarbonat (P<½T)
+	Hanya bikarbonat saja (P  O)
+P adalah alkalinitas yang ditunjukkan dari hasil titrasi dengan indikator penolftalein.
+T adalah alkalinitas yang ditunjukkan dari hasil titrasi dengan indikator metil orange (total alkaliniti)
+M = T-P adalah alkalinitas yang ditunjukkan dari selisih hasil titrasi dengan indikator metil orange dan fenolftalein.
+Kelima keadaan ini dapat ditentukan jumlahnya dari hasil titrasi dengan asam, biasanya digunakan asam sulfat 0,02 N.
+
+ALKALINITAS P
+Prinsip : Ion hidroksil dalam contoh air sebagai hasil disosiasi atau hidrolisis dititrasi dengan larutan asam dengan indikator phenolfalein.
+Bahan :
+	Larutan 0,02 N H_2 〖SO〗_4
+	Indikator Phenolftalein
+Alat :
+	Buret
+	Erlenmeyer
+	Pipet volume
+Cara kerja :
+Pipet contoh air sebanyak 20 ml dengan pipet volume lalu masukkan ke dalam Edlenmeyer 100 ml. tambahkan 5 tetes indikator phenolftalein. Jika timbul warna merah jambu berarti alkalinitas ada dan selanjutnya titrasi dengan larutan standar 0,02 N H_2 〖SO〗_4  hingga warna merah hilang. Jika setelah penambahan indicator phenolftalein tidak timbul warna merah jambu berarti alkalinitas P tidak ada dilanjutkan ke penentuan alkalinitas M.
+Perhitungan :
+Alkalinitas P (mg/1)-  (MI H_2 〖SO〗_(4 ) X H_2 〖SO〗_4  x 50.000)/(Volume contoh)
+
+ALALINITAS M
+Prinsip : lon-ion bikarbonat dititrasi dengan larutan asam dengan indikator metil jingga.
+Bahan :
+	Larutan 0,02 N H_2 〖SO〗_4
+	Indikator metil orange
+Alat :
+	Buret
+	Erlenmeyer
+	Pipet volume
+Cara kerja : Pipet 100 ml contoh air dengan pipet volume lalu masukkan ke dalam Erlenmeyer 400 ml. tambahkan 5 tetes methyl orange lalu titrasi dengan larutan standar 0,1 N HCL hingga timbul warna jingga.
+Perhitungan :
+Karbonat (mg/l) = M- (2 x P) x 100 x N HCL x 6,1
+M = volume H_2 〖SO〗_4 pada titrasi karbonat
+P = volume HCL pada titrasi bikarbonat
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 60,
+                'id_mapel' => 8,
+                'judul_materi' => 'Aciditi (Keasaman)',
+                'detail_materi' => 'Keasaman didalam air dan limbah biasanya disebabkan oleh karbon dioksida, asam mineral dan hasil hidrolisa garam. Kebanyakan air cenderung bersifat alkalis walaupun didalamnya terkandung karbon dioksida yang berada didalam air sebagai asam karbonat 〖(H〗_2 〖CO〗_3). Inilah sebabnya banyak air menggunakan NaOH sebagai larutan standart dan fenolftalein sebagai indikator.
+C_2+NaOH=> 〖NaHCO〗_3
+Limbah industri biasanya berperan sebagai sumber asam didalam air.
+
+PENENTUAN CO_2 (ZAT ASAM ARANG)
+
+Analisa ini dilakukan bila kandungan karbonat tidak nyata di dalam contoh air.
+Prinsip : Titrasi asam basa dengan larutan standar NaOH dan indikator phenolftalein
+Bahan :
+	Larutan 0,02 N NaOH
+	Indikator phenolftalein
+Alat :
+	Buret
+	Erlenmeyer
+	Pipet volume
+Cara kerja :
+Pipet 100 ml contoh air lalu tambahkan 5 tetes indikator phenolftalein selanjutnya titrasi dengan larutan standar 0,02 N NaOH sampai terbentuk warna merah.
+Perhitungan :
+〖CO〗_2 (mg/l) = ml titrasi x 10 x N NaOH x 44
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 61,
+                'id_mapel' => 8,
+                'judul_materi' => 'Besi FE',
+                'detail_materi' => 'Besi terdapat dalam air alam, dengan kadar sangat rendah. Air permukaan yang alkalis dan disaring, jarang mengandung besi lebih dari 1 mg/1. beberapa air tanah dan air permukaan yang asam, kadang-kadang mengandung besi yang lebih banyak.
+Besi dapat menimbulkan bekas berkarat pada pakaian dan porselen (dalam bentuk 〖Fe〗_2 O_3). Pada konsentrasi lebih dari 0,31 ppm dapat menimbulkan rasa pahit. Di dalam air besi terlarut dalam bentuk ferro yang bila terkena udara dapat teroksidasi membentuk ferihidroksida yang berwarna abu-abu putih. Karena ferihidroksida tidak stabil, di udara akan terurai membentuk endapan merah ferioksida. lon ferro dalam air biasanya terdapat bersama-sama dengan ion Mn. Bila ion Mn ini banyak terminum akan terjadi akumulasi besi di hati dan ginjal.
+Dalam keadaan yang tereduksi sebagai ferro, besi ini larut dalam adanya ion-ion pembentuk kompleks, ion fero hanya larut pada pH kurang dari 5. di udara terbuka atau karena oksidasi akan terbentuk ferri dan dapat terhidrolisa menjadi ferri oksida hidrat yang tak larut. Bentuk ini banyak terdapat dalam sample-sample yang sampai di laboratorium bila tidak dicegah terjadinya oksidasi. Pembentukan besi dapat juga karena pertumbuhan kuman selama penyimpanan maupun pengiriman. Pada air limbah yang asam dengan pH kurang dari 3,5 besi akan larut dalam bentuk ferri. Jadi dalam air, besi dapat sebagai larutan maupun bentuk koloidal yang mengikat bahan organic dalam bentuk ferri maupun ferro.
+Besi dapat ditemukan dalam Lumpur yang berada dalam air. Dapat berasal dari kerusakan pipa-pipa atau tutup wadah sampel yang terbuat dari logam. Secara analitis sukar dibedakan antara besi terlarut dan besi tersuspensi karena di udara terbuka ion ferro yang larut dapat dioksidir oleh oksigen terlarut dan dihidrolisa pada pH lebih dari 5 menjadi ion ferri yang tak larut. Dalam jurnlah kecil besi diperlukan untuk pembuatan sel-sel darah merah. Batas yang diizinkan adalah 0,1 - 1,0 mg/l. penyimpangan terhadap standar kualitas ini akan menyebabkan :
+	Oksidator kuat, sianida, nitrit, fosfat-fosfat, krom.
+	Seng yang kadarnya 10 kali besi
+	Bi, Cd, Hg, Ag, Molibdat
+Akan mengendapkan fenantroline, pendidihan dengan asam akan merubah pirofosfat menjadi ortofosfat yang tak mengganggudan menghilangkan sianida dari nitrit-nitrit. Penambahan hidroksilamin lebih banyak dan mengurangi kesalahan-kesalahan yang timbul oleh oksidator kuat. Bila terdapat logam-logam pengganggu, tambahkan fenantroline lebih banyak untuk mengganti yang diikat oleh ion-ion logam tadi. Bila sample berwarna dan mengandung zat organic, mungkin perlu penguapan sample sampai kering dan residunya dilarutkan dalam asam. Pengeringan sebaiknya dalam cawan silica, porselen atau platina yang sebelumnya direbus dalam HCL 1+1 selama beberapa jam. Selain itu analisa Fe secara kolorimeter dengan pereaksi ammonium thiosianida.
+Reaksi
+〖Fe〗^(2+)+〖3 NH〗_4 CNS =>  〖Fe(CNS)〗_3 + 〖3NH〗^(3+)
+〖Fe〗^(2+)+〖KMn〗_4+H_2 〖SO〗_4 =>  〖MnSO〗_(4 )+ 〖Fe〗^(3+)+ K_2 〖SO〗_4+ H_2 〖SO〗_4
+ 〖Fe〗^(3+)+〖3 NH〗_4 CNS =>  〖Fe(CNS)〗_3 + 〖3NH〗^(4+)
+				Merah
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 62,
+                'id_mapel' => 8,
+                'judul_materi' => 'Karbon Dioksida Agresif',
+                'detail_materi' => 'Air di alam mengandung karbon dioksida yang menurut bentuknya dapat dibedakan menjadi :
+	〖CO〗_2 bebas yaitu 〖CO〗_2 yang terlarut di dalam air
+	〖CO〗_2 di dalam kesetimbangan dengan 〖HCO〗_3
+	〖CO〗_2 agresif yaitu 〖CO〗_2 yang dapat merusak bangunan perpipaan.
+Karbondioksida agresif adalah 〖CO〗_2 yang mampu merusak marmer. Air yang mengandung 〖CO〗_2 agresif akan merusak bangunan dari semen dan beton. Dalam standar kualitas air 〖CO〗_2 agresif tidak boleh ada. Penyimpang terhadap standar tersebut akan mengakibatkan korosi (pengikisan) pada pipa air yang terbuat dari logam. Pemeriksaannya dilakukan dengan cara analitis yaitu mereaksikan sejumlah sample air dengan serbuk marmer, kadar CO2 diukur sebelum dan sesudah dibiarkan selama 24 jam.
+Cara lain dilakukan dengan menggunakan grafik.
+Prinsip : ditentukan terlebih dahulu kadar 〖CO〗_2 dengan menitrasi sampel dengan NaOH 0,1 N dengan inkator fenolftalein. Kemudian ditentukan kadar 〖HCO〗_3 dengan menitrasi sampel HCL 0,1 N dengan indikator metil jingga. Misalnya kadar 〖CO〗_2 = 50 mg/l dan 〖HCO〗_3 = 140 mg/l. pada grafik dari harga 〖CO〗_2 ditarik garis mendatar dan dari harga 〖CO〗_2 ditarik garis mendatar dan dari harga 〖HCO〗_3 ditarik garis tegak yang bertemu pada titik A. di tarik garis melalui titik A sejajar dengan garis marmer yang memotong garis lengkung di titik B. dari titik B ditar a dari titik B ditarik garis mendatar akan memotong garis tegak 〖HCO〗_3 = 140 mg/l pada titik C. kadar 〖CO〗_2 agresif = garis AC = (50 - 14) mg/l = 36 mg/1.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 63,
+                'id_mapel' => 8,
+                'judul_materi' => 'Zat Organik',
+                'detail_materi' => 'Air minum mempunyai batas syarat zat organik, yang diukur dengan banyaknya mg/l KMnO4 yang diperlukan untuk mengoksidir zat organik yang terkansung di dalamnya dengan pendidihan selama 10 menit. Adanya zat organik di dalam air disebabkan karena pencemaran air dari buangan rumah tangga, industri, kegiatan pertanian dan pertambangan. Kandungan zat organik yang melebihi batas memungkinkan pertumbuhan kuman, disamping menunjukkan pengotoran zat-zat organic yang kemungkinan membahayakan kesehatan.
+Akibat yang ditimbulkan dari penyimpangan angka permanganat adalah :
+	Timbulnya bau yang tidak sedap
+	Menyebabkan sakit perut.
+Di dalam standar kwalitas ditentukan angka maksimal adalah 10 mg/l.
+Metode asam untuk penentuan bilangan permanganat dipakai untuk air yang mengandung ion Cl kurang dari 300 mg/l. pengganggu ion sulfida dan nitrit untuk menghilangkan harus dipanaskan dengan H_2 〖SO〗_4  encer sampei H_2 S  dan nitritnya hilang. Air yang menguap kemudian diganti dengan air suling. Gangguan dari garam ferro dihilangkan dengan penambahan beberapa tetes larutan 〖KMnO〗_4  sebelum dianalisa Larutan tetap merah muda. Adanya klorida lebih dari 300 mg/l memerlukan perlakuan khusus yaitu oksidasi dalam suasana basa Asam.
+Metode basa,  untuk air yang mengandung ion Cl kurang dari 300 mg/l
+Prinsip : sample dididihkan dahulu dengan NaOH, selanjutnya dioksidasikan dengan larutan baku 〖KMnO〗_4 direduksi dengan larutan baku asam oksalat yang diberikan berlebih. Kelebihan asam oksalat dititrasi kembali dengan larutan baku 〖KMnO〗_4
+Metode basa, untuk air yang mengandung ion Cl lebih dari 300 mg/l
+Prinsip : Sampel dididihkan dahulu dengan NaOH, selanjutnya dioksidasikan dengan Lamitan baku 〖KMnO〗_4. sisa 〖KMnO〗_4 direduksi dengan larutan asam oksalat yang diberikan berlebih Kelebihan asam oksalat dititrasi kembali dengan larutan baku 〖KMnO〗_4
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 64,
+                'id_mapel' => 8,
+                'judul_materi' => 'Kesadahan',
+                'detail_materi' => 'Kesadahan air artinya daya air tersebut untuk mengendapkan sabun. Sabun terutama diendapkan oleh ion kalsium dan magnesium yang ada dalam air, serta diendapkan pula oleh ion-ion logam bermartabat tinggi seperti aluminium, besi, mangan, stronsium dan seng juga oleh ion hydrogen. Tetapi karena ion-ion logam tersebut selain Ca dan Mg. Tetapi bila ion-ion logam yang menimbulkan kesadahan berjumlah cukup besar, harus dimasukkan dalam perhitungan.
+ Kesadahan disebabkan terutama oleh ion Ca dan Mg dan kadang-kadang oleh aluminium dan besi. Kesadahan oleh calsium dan magnesium adalalı sebagai Ca dan Mg karbonat dan bikarbonat. Selain itu terdapat ada juga kesadahan yang disebabkan calsium dan magnesium sulfat, nitrat dan klorida.
+Kesadahan dibagi menjadi dua :
+	Kesadahan tetap yaitu kesadahan yang tetap di dalam air walaupun contoh air di didihkan. kesadahan ini terutama disebabkan oleh calsium sulfat. Senyawa yang menyebabkan kesadahan tetap disebut incrustants. Kesadahan tetap, ion Ca dan Mg berada sebagai karbonat dan sebagainya.
+	Kesadahan sementara yaitu kesadahan yang dapat dihilangkan dengan pendidihan kesadahan sementara oleh Ca dan Mg bikarbonat. Pada kesadalian sementara, ion Ca dan Mg berada sebagai bikarbonat.
+Kesadahan jumlah (total) adalah jumlah kedua kesadahan diatas.
+Dalam menentukan kesadahan dipakai satuan derajat kesalahan (°D) yang artinya di beberapa negara berbeda.
+1°D (Jerman) sesuai dengan 10 mg CaO/ atau 7,1 mg MgO/
+1° (Prancis) sesuai dengan 10 mg 〖CaCO〗_3/1 atau 8,4 mg 〖MgCO〗_3/l. sedangkan di Amerika kesadahan dinyatakan sebagai mg 〖CaCO〗_3/1 atau ppm 〖CaCO〗_3. Indonesia memakai derajat kesadahan Jerman.
+Akibat yang ditimbulkan oleh kesadahan yang tinggi :
+	Mengurangi efektifitas kerja sabun
+	Menyebabkan kerak pada alat dapur dari logam
+	Menyebabkan kerak pada pada ketel (boiler) yang mengakibatkan ketel sukar menghantarkan panas dan keraknya sukar dihilangkan sehingga memungkinkan menghantarkan terjadinya ledakan pada boiler
+	Pipa-pipa tersumbat
+	Sayur-sayuran menjadi keras bila dicuci dengan air yang sadah
+Untuk air minum dikehendaki kesadahan antara 5 - 10°D.
+Untuk menurunkan kadar kesadahan di lakukan pengolahan air yang disebut dengan pelunakan air (water softening) dengan lime-soda proses dengan menggunakan 〖Ca(OH)〗_(2 )untuk mengendapkan Ca dan Mg karbonat dan 〖Na〗_2 〖CO〗_3 untuk menghilangkan Ca dan Mg untuk mengendapkan Ca dan Me yang non karbonat
+Kesadahan penting artinya bagi air industri karena air yang mempunyai kesadahan tinggi bon menimbulkan kerak pada ketel yang sukar menghantarkan panas dan sukar dihilangkan Untuk air minum dikehendaki kesadahan antara 5 - 10°D.
+Metoda untuk menentukan kesadahan antara lain :
+	Dengan cara perhitungan
+Diperoleh dengan menjumlah kadar ion-ion Ca dan Mg. Bila terdapat sejumlah besar ion-ion lain yang mempengaruhi kesadahan harus dimasukkan dalam perhitungan. Caranya mengalikan kadar tiap ion dengan suatu faktor, sehingga di dapat CaCO yang ekivalen.
+Kation	Faktor	Kation	Faktor
+Ca	1,398	Al	3,116
+Mg	2.305	Zn	0,857
+Sr	0.640	Mn	1,203
+Fe	1,004
+
+	Kompleksometri
+Prinsip : Etilen Diamin Tetra Acetic Acid (EDTA) dan garamnya membentuk senyawa complex yang larut bila ditambahkan kepada kation logam. Bila indicator eriokrom black T ditambahkan kepada suatu larutan yang mengandung ion Ca dan Mg pada pH 10 + 0,1 larutan akan menjadi merah anggur. Bila kemudian di titer dengan EDTA. Ion Ca dan Mg akan terikat sebagai kompleks. Pada TAT yaitu bila seluruh ion Ca dan Mg sudah terikat oleh EDTA, larutan yang berwarna merah anggur akan berubah menjadi biru.
+Logam - Indikator + EDTA logam EDTA + Indikator
+Merah 					biru
+
+Untuk mendapatkan TAT yang jelas harus ada ion Mg dalam larutan. Ketajaman TAT naik dengan naiknya pH. Akan tetapi tidak boleh terlalu tinggi karena terjadi endapan 〖CaCO〗_3 atau 〖Mg(OH)〗_2 dan indikator juga rusak. Disarankan membuat pH 10,0 ± 0,1. titrasi harus dilakukan kurang dari 5 menit untuk mengurangi terjadinya endapan 〖CaCO〗_3. paling baik titrasi dilakukan pada suhu kamar, karena pada suhu rendah nenbaitan wama agak lambat dan pada suhu tinggi akan terjadi kerusakan indicator.
+Untuk mencegah pengendapan 〖CaCO〗_3  beberapa cara dapat dilakukan :
+	Sample diencerkan untuk memperkecil kadar 〖CaCO〗_3.
+	Bila pada orientasi didapatkan harga kesadahan kira-kira dapat ditambahkan titrasi 90% atau lebih kedalam sample sebelum pH-nya disesuaikan dengan dapar
+	Sample diasamkan dan diaduk selama 2 menit untuk mengusir 〖CO〗_2 sebelum pH-nya disesuaikan dengan dapar. Banyaknya asam yang ditambahkan diperhitungkan dari penentuan alkalinitas yang dilakukan sebelumnya.
+
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 65,
+                'id_mapel' => 8,
+                'judul_materi' => 'Kalsium (Ca)',
+                'detail_materi' => 'Adanya kalsium berasal dari aliran air yang melewati tanah-tanah kapur. Kadar kalsium berada diantara 0 sampai beberapa ratus mg/1, tergantung keadaan air tersebut dan pengolahannya. 〖CaCO〗_3 dengan kadar rendah mencegah korosi dari pipa-pipa logam karena membentuk lapisan pelindung. Banyaknya Ca dalam air diukur dengan mg/l dengan batas 75 - 200 mg/l. apabila konsentrasi kurang dari 75 mg/l dapat menyebabkan penyakit tulang rapuh karena Ca dibutuhkan untuk pertumbuhan tulang dan gigi. Apabila konsentrasi lebih dari 200 mg/l dapat menyebabkan merusak ketel, pipa (korosifitas) dan alat-alat memasak.
+Untuk menurunkan kadar kalsium harus dilakukan pengolahan air tersebut. Penyimpanan sample dijaga supaya 〖CaCO〗_3 yang mengendap pada waktu disimpan dapat larut kembali.
+Ada beberapa cara penetapan kadar Ca dalam air :
+	Gravimetri
+Prinsip : Amonium oksalat dapat mengendapkan kalsium secara kwantitatif sebagai Ca-Oksalat. Sedikit kelebihan ammonium oksalat mengatasi yang kurang baik dari Mg. Pembentukan kristal yang sempurna dilakukan dengan cara pengendapan bertahap, dengan cara merubah pH perlahan-lahan sampai pH yang dikehendaki. Endapan Ca-Oksalat dipijarkan dan ditimbang sebagai Cao.
+	Permanganometri
+Prinsip : Seperti halnya pada cara gravimetric, tetapi Ca-Oksalat yang terbentuk dilarutkan kembali dalam asam dan dititrasi dengan permanganat. Banyaknya permanganat yang diperlukan untuk mengoksidir oksalat sesuai dengan banyaknya kalsium
+	Kompleksometri
+Prinsip : Bila EDTA ditambahkan kedalam air yang mengandung Ca dan Mg mula-mula EDTA akan mengikat Ca yang ada. Penetapan Ca dengan EDTA dapat dilakukan dengan cara membuat pH cukup tinggi sehingga Mg akan mengendap sebagai hidroksida dan dengan memakai indicator yang hanya mengikat Ca. dapat dipakai indicator Murexid yang pada titik akhir titrasi, yaitu bila Ca seluruhnya telah terikat oleh EDTA, pada pH 12 - 13 berubah warnanya dari merah muda menjadi ungu merah. Karena indikator Murexide cepat rusak dalam suasana alkalis, diberikan dalam bentuk kering yaitu 200 mg Murexide dicampur dengan 100 g NaCl dan digerus halus, pemakaian 0,1-0,2 g.
+
+PENENTUAN KADAR KALSIUM
+Prinsip : Titra kompleksometri dimana ion-ion Ca membentuk senyawa kompleks berwarna dengan indicator logam. Pada penambahan larutan pengkompleks (EDTA) indikator yang dibebaskan akan membentuk warna yang berbeda dengan warna kompleks logam dengan indikator.
+Bahan :
+	Larutan standar EDTA
+Pembuatan : larutkan 6,64 g EDTA (C10H14N2Na203.2H20) dengan air destilasi hingga volume 1 L
+	Larutan 4 N NaOH
+Pembuatan : larutkan 80 g NaOH dengan air destilasi hingga volume 500 ml
+	Indikator 1 % murexid
+Pembuatan : campur 0,5 g murexid dengan 50 g NaCl p.a. giling dan panaskan 1 jam pada temperatur 100°C. simpan di dalam botol berwarna.
+Alat :
+1. Buret
+2. Erlenmeyer
+3. Pipet volume
+Cara kerja :
+ke dalam Erlenmeyer yang dipipet 50 ml contoh air dan ditambahkan 10 ml 4 N NaOH. Ditambahkan indikator murexid dan dititrasi dengan EDTA sampai terbentuk warna lembayung. Dicatat volume titrasinya. Perhitungan :
+Volume titrasi x pengenceran x mg/l Ca Komplekson Cao
+(mg/l) Ca=	 bobot contoh x 1000
+Standarisasi larutan komplekson (EDTA)
+timbang 0.250 g CaCO3 laiu larutkan hingga volume 250 ml di dalam labu takar. Pipet lalu tambahkan 90 ml air destilasi, 1 ml 4 N NaOH dan indikator murexid. Titrasi hingga warna lembayung.
+Perhitungan :
+1 x MeCao
+(mg/l) CaO = Vol,. Titrasi x Mr CaCO3
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 66,
+                'id_mapel' => 8,
+                'judul_materi' => 'Magnesium',
+                'detail_materi' => 'Terdapat dalam air alain, mempengaruhi kesadahan air. Banyaknya Mg dalam air juga diukur dengan mg/1. daiam jumlah kecil Mg diperlukan untuk pertumbuhan tulang akan tetapi dalam jumlah lebih dari 125 mg/l dapat menimbulkan daya pencaliar dan diuretika dan kadar diatas 150 mgl dapat menimbulkan rasa mual. Kadar Mg dalam air berkisar antara 0 sampai beberapa ratus mg/l tergantung asalnya dan pengolahannya. Ada beberapa cara penetapan Mg, diantaranya adalah :
+a.	Cara Gravimetri
+Prinsip : Diamonium hydrogen fosfat akan mengendapkan Mg secara kwantitatif dari larutan amoniakal, membentuk magnesium ammonium fosfat, MgNH4PO4.6H20. endapan ini dipijarkan dan ditimbang sebagai Mg pyrofosfat, Mg2P207.
+b.	Cara kompleksometri
+Prinsip : Ca yang diendapkan dahulu sebagai Ca Oksalat, supaya sempurna pembentukannya dikocok berulang-ulang selama 2 jam atau didiamkan selama 1 malam dan disaring. Filtrat dititrasi dengan EDTA, indicator eriokrom black T pada pH 10. perubahan warna pada TAT adalah dari merah ke biru. Pembentukan ikatan komplek Mg dengan EDTA agak lambat, sehingga dekat titik akhir titrasi harus dilakukan agak lambat atau dipanaskan sekitar 40°C.
+c.	Dengan perhitungan
+karena yang menyebabkan kesadahan air yang terutama adalah ion Ca dan Mg  maka setelah didapat angka kesadah yang menyebabkan kesadahan air yang terutama adalah ion Ca dan Mg, maka dapat angka kesadahan dalam CaCO3/1 dikurangi kadar Ca dalam mg CaC02/1 dapat kadar Mg dalam CaCO3/1. kadar Mg(mg/l)= angka di atas dikalikan 0.24.
+
+PENENTUAN KADAR MAGNESIUM
+prinsip: titrasi kompleksometri dimana ion-ion Ca membentuk senyawa kompleks berwarna dengan indikator logam. Pada penambahan larutan pengkompleks (EDTA) indicator yang dibebaskan akan membentuk warna yang berbeda dengan warna kompleks logam dengan indikator.
+Bahan :
+1. larutan standar EDTA pembuatan : timbang 6,64 g EDTA (C10H/4N Na2O2.2H2O) larutkan dengan air destilasi hingga volume 1 liter
+2. larutan buffer ammonium pH 10 pembuatan : ke dalam 5,4 g NH4Cl tambahkan 35 ml ammonia pakat (25 % bj 0.91, Mr : 17,03) lalu larutkan dengan air destilasi hingga volumenya 100 ml
+3. Indikator 1 % Eriochrome Black -T Pembuatan : campur 0,5 g bubuk EBT dengan 100 g NaCl p.a
+Alat :
+1. Buret
+2. Erlenmeyer
+3. Pipet voluma
+Cara kerja :
+Pipet 100 ml contoh air dan masukkan ke dalam Erlenmeyer 250 ml. tambahkan 2 ml buffer ammonium dan indicator EBT. Titrasi dengan EDTA sampai terbentuk warna biru terang. Catat volume titrasinya.
+Perhitungan :
+M titrasi (Mg-Ca) x pengenceran x mg/1 Mg komplekson x 100
+ MgO (%) =	 Bobot contoh air
+TEMBAGA (Cu) Tembaga merupakan unsur yang penting untuk tubuh manusia, diperkirakan In sehari 2 mg. Dalam kecil Cu sangat diperlukan tubuh untuk pembentukan seldarah merah, sedangakan dalam jumlah yang besar dapat menyebabkan rasa tidak muntah, dan masuknya tembaga berlebih kedalain tubuh lama kelamaan akan kebutuhan sehari 2 mg. Dal merusak hati.
+Kadar 1,0 mg/l dalam air membuat rasa pahit. Dalam air minum jarang terdapat tembaga lebih dari 600 mg/l, umumnya kurang dari 30 mcg, batas yang diizinkan 0,05 - 15 mg/l. bila Cu terdapat dalam jumlah yang besar dapat menyebabkan :
+1. rasa tidak enak di lidah
+2. kerusakan hepar
+Garam Cu dipergunakan untuk mencegah pertumbuhani jasad reaik, sebagai katalisator oksidasi mangan. Kerusakan pipa air dapat mengakibatkan naiknya kadar tembaga dalam air.
+Penetapan kadar tembaga dengan inetode dietil ditokarbamat.
+Prinsip : Ion Cu dengan dietil ditiokarbamat membentuk persenyawaan kompleks koloidal berwarna coklat. Tetapi bila kadar Cu tinggi koloid akan menjadi kekeruhan. Warna yang terjadi dibaca dengan spektrofotometer. Pembacaan setelah 5 menit tetapi kurang dari 1 jam. Warna yang terjadi sama dalam suasana sedilat asam, netral atau alkalis. Dengan tabung Nessler deteksi minimum 0,05 mg.
+Pengganggu : pada penetapan air minum tidak boleh ada zat pengganggu seperti Zn, Pb, logam-logam yang lain menimbulkan kekeruhan putih. Bila perbandingan Fe dan Cu
+lebih dari 50 : 1 akan terjadi warna coklat dari senyawa Fe-kompleks yang menutup warna dari Cu-kompleks. Metode yang lebih peka adalah dengan menggunakan spektrofotometer serapan atom.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 67,
+                'id_mapel' => 8,
+                'judul_materi' => 'Timbal (Pb)',
+                'detail_materi' => 'Timbal merupakan racun tubuh yang bersifat kumulatif. Air alami jarang mengandung Pb lebih dari 20 mg/1. sumber pencemaran Pb dapat berasal dari alam atau dari aktifitas manusia Ceas manusia, yang akhirnya dapat mempengaruhi kadarnya di dalam air, udara h Emisi yang berasal dari aktifitas manusia terutama berasal dari pembakaran bar timbal, Pb (CH3)4 yang digunakan sintetik anti knocking Pb juga dapat el dari batuan galena (PbS) dan kerusakan pipa-pipa air yang sudah aus, terutama ma bersifat lunak dan sedikit asam. Keracunan Pb akan menyebabkan kerusakan bahan bakar timbal, Pb sustem reproduksi, hati, otak dan sistem syaraf.
+Sebagaimana layaknya logam berat lainnya, Pb merupakan penghambat reaksi enzymatic. Keracunan Pb akan menyebabkan kerusakan ginjal, sistem reproduksi, hati. otak dan sistem syaraf sentral. Sumber pencemaran P5 lainnya berasal dari bungkus makanan, cat tembok, pipa timbal, buangan industri solder dan ceceran bensin. Kandungan maksimum yang diperbolehkan hanyalah 0,1 mg/l.
+Analisa Pb dengan jumlah runut dengan metoda ditizon dianggap cukup peka. Bila perlu dilakukan digestion yaitu bila berada dalam ikatan organic atau anorganik yang tidak larut atau larut, maka diperlukan sample sebanyak 2 liter. Pada penganbilan sample perlu penambahan asam nitrat pekat 1,5 ml/1 sampel (pH V 2) agar pB tidak melekat pada dindingwadah. Sampai dilaboratorium harus segera diperiksa.
+Penetapan kadar timbal dengan metode dithizone
+Prinsip : Ditizone yang larut dalam kloroform akan menarik ion Pb dari larutan yang sedikit alkalis. Akan terbentuk Pb ditizone yang berwarna merah cherry dalam larutan kloroform. Warna merah yang terbentuk dibandingkan dengan warna baku pembanding
+Pengganggu :
+Sebelum mengerjakan metode ini, harus dikuasai teori dan praktek ditizon. Harus dijaga dari kontaminasi Pb, kalau perlu alat gelas yang dipakai khusus analisa Pb, reagen harus disari dengan ditizon untuk menghilangkan runut Pb. Harus dikerjakan blanko untuk memeriksa pb yang mungkin terkandung dalam reagens. Karena hampir 20 macam logam dapat bereaksi dengan ditizone membentuk senyawa kompleks yang berwarna, harus dihindari gangguan dari logam-logam tersebut. Maka pb-ditizon disari pada suasana amonikal kuat pada pH 10,0 - 11,5. deteksi minimum 1 meg Pb. Metode yang lebih peka dengan spektrofotometer serapan atom.
+Sebelum melakukan analisa terhadap contoh air perlu dilakukan ekstraksi untuk menghilangkan zat pengganggu. Setelah itu contoh air ditambah cegah pembentukan hidroksida dan NaCN. Kemudian timbal diekstraksi pendahuluan untuk mengh tartrat untuk mencegah pembent dengan larutan eter diti timbal dithizonat tertutu stap eter ditizon. Karena pemberian ditizon berlebihan maka warna "ni hizonat tertutup oleh warna hijau dari dithizone yang berlebihan dan hal ini dengan larutan alkali sianida sehingga di dalam yang tertinggal hanya ot Larutan diencerkan hingga volume tertentu dan intensitas warnanya dapat diatasi dengan larutan dithizonat. Larutan diencer ditentukan secara spektrofotometer.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 68,
+                'id_mapel' => 8,
+                'judul_materi' => 'Amonia (NH3)',
+                'detail_materi' => 'Dalam air badan air dan air limbah, seballagian besar nitrogen terdapat sebagai rat nitrit ammonia dan nitrogen organic. Secara analitik, nitrogen organik dan amidonia dapat ditetapkan bersama dan disebut nitrogen jumlah atau lebih tepatnya nitrogen kjeldahl karena penetapannya dilakukan dengan metode kjeldahl. Bentuk-bentuk senyawa di atas, seperti halnya gas N2 merupakan komponen dari siklus nitrogen. Banyaknya ammonja dalam air diukur dengan mg/l bahan ini sangat berbau sehingga tidak boleh sama sekali di dalam air.
+Amonia secara alami ada pada air permukaan dan air tanah serta air limbah. Sebahagian besar erjadi pada uraian zat organic yang mengandung nitrogen oleh mikroorganisme dan dari hidrolisa urea. Secara alami juga merupakan hasil reduksi nitrat pada kondisi anaerob. Maka adanya ammonia merupakan salah satu petunjuk adanya pencemaran zat organik pada badan air.
+Penetapan kadar ammonia secara kolorimetrik
+Prinsip :
+Amonia dapat bereaksi dengan reagen Nessler yaitu suatu larutan garam kompleks Kx(Hg14). Tergantung banyaknya ammonia, akan terbentuk larutar. koloid kuning sampai orange coklat. Warna yang terjadi dibandingkan dengan larutan baku ammonium yang sudah diketahui kadarnya, dengan spektrofotometer dengan panjang gelombang 400 - 500 nm atau dengan tabung Nessler.
+2 K2 [Hg[4] + 2 NH2 + NH,Hg213 + 4 KI + NHI
+Hasil analisa dinyatakan sebagai N
+Pengganggu :
+Ca, Fe,Mg dan sulfida dapat menimbulkan kekeruhan dengan reagens Nessler, dapat hindari dengan penambahan seng sulfa dan alkali atau KNa-tartrai.
+PENENTUAN AMONIA
+prinsip : Senyawa ammonia dengan pereaksi nessler dalam suasana basa akan membentuk senyawa kompleks berwarna kuning.
+Reaksi : 2 (2KI.Hg/2) +2 NH; + 3 KOH                   (NH2)2HgOHHgI + 7 KI + 2H2O
+Bahan:
+1.	Pereaksi Nessler
+Pembuatan : larutkan 10 g Hgt2 + 7 g KI dengan 25 ml H20. kocok dan tambahkan 16 g NaOH dalam 50 nd H20. penuhkan volume campuran hingga 100 ml.
+2.	Standar Ammonium 100 mgfi
+Pembuatan : larutkan 2,966 g NH4Cl p.a sampai 1 L. pipet 10 ml dan encerkan hingga volume 100 ml dengan air destilasi bebas ammonia.
+Alat :
+1. Tabung Nessler
+2. .Labu ukur 100ml
+3. Pipet volume 10 ml
+Cara kerja :
+Buat larutan seri standar 0-5-10-20-30-40-50 mg/l NH4. ke dalam labu ukur 100 ml pipet 50 ml contoh air, blanko dan larutan seri standar. Tambahkan 1 ml pereaksi Nessler lalu penuhkan volumenya hingga 100 ml dengan air destilasi. Larutan akan berwarna kuning. Baca absorbansinya pada à maksimum pada 400 - 425 nm. Hasil whecaan absorbans contoh diekstrapolasikan pada kurva kalibrasi (kurva antara absorbansi dan konsentrasi NHA standar).
+Cara lain dengan menitrasi larutan blanko dalam tabung Nessler dengan larutan standar ammonia 10 mg/l sambil dicampur sampai warnanya sesuai dengan warna larutan contoh.
+Perhitungan :
+Dengan spektrofotometer:
+NH (mg/l) = NHA pada grafik x pengenceran
+Dengan tabung Nessler :
+NH. (mg/l)-ml standar x konsentrasi standar (mg/l) x 1000/ml contoh
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 69,
+                'id_mapel' => 8,
+                'judul_materi' => 'Nitrat (No3)',
+                'detail_materi' => 'Nitrat merupakan hasil akhir dalam siklus nitrogen alam. Umumnya hanya terdapat dalam jumlah runut dalam air permukaan tetapi pada beberapa air tanah kadarnya lebih tinggi. Satuannya mg/l dengan batas maksimum 20 mg/l. jumlah nitrat yang besar dalam usus cenderung untuk berubah menjadi nitrit yang dapat bereaksi langsung dengan Hb membentuk methaemoglobin yang dapat menghalangi perjalanan oksigen di dalam tubuh. Bila kadarnya dalam air cukup besar dapat membahayakan kesehatan pada anak kecil mengakibatkan infant methaemoglobinemia.
+Nitrat dapat ditentukan dengan 2 cara :
+1. dengan mereduksinya menjadi ammonia dengan hydrogen nacendi. Reduksi dilakukan dengan medium HCL sehingga ammonia berubah menjadi ammonium klorida. NaNO3 + 8H + 2 HCI- NH-CI + NaCl + 3H20 Ammonia kemudian ditentukan dengan metode ammonia nitrogen dan dikonvensi sebagai N-NO3.
+2. Cara lain adalah dengan metode asam disulfat. Asam disulfonat dibuat dengan mereaksikan phenol dengan asam sulfat. CHOH + 2H2SO4 CH3 (OH) (SO3)2 + 2H2O
+Jika nitrat direaksikan dengan asam disulfonat dan larutan hasilnya di basakan dengan NaOH akan dihasilkan senyawa berwarna kuning. Senyawa ini adalah garam natrium dari asam pikrat yang terbentuk karena nitrasi phenol. CH(OH) (SOH)2 + 3HNO; - CH(OH) (NO2)2 + 2H2SO4+H2O Warna yang dihasilkan dibandingkan dengan warna dari standar yang telah diperlakukan sama dengan larutan contoh.
+
+Penetapan kadar nitrat dengan metode asam fenoldisaifonat
+Prinsip : Nitrat dapat bereaksi dengan asam fenoldisulfonat membentuk warna kuning. Warna yang terjadi dibandingkan dengan deret baku dengan spektrofotometer pada panjang gelombang 410 nm atau dengan tabung-tabung Nessler.
+Pengganggu :
+Adanya klorida menyebabkan hasil lebih rendah, harus direduksi jumlahnya sampai dibawah 10 mg/l dengan mengendapkannya dengan AgSO4, nitrit dengan kadar lebih dari 0,2 mg/l menyebabkan hasil lebih tinggi, harus diubah dahulu menjadi nitrat. Hasil yang didapat harus dikurangi dengan kadar nitrit. Sample yang berwarna harns dihilangkan dahulu warnanya dengan Al(OH)3. Deteksi minimum 10 mg/i.
+
+Penetapan kadar nitrat dengan metode brusin
+Prinsip : Reaksi antara nitrat dengan brusin menghasilkan warna kuning yang dapat diperiksa secara spektrofotometrik pada panjang gelombang 410 nm. Kecepatan reaksi dipengaruhi oleh jumlah panas yang dihasilkan selama pengujian. Pengaturan panas dilakukan dengan penambahan reagens secara berurutan dan mengeramkan campuran selama waktu tertentu pada suhu tertentu pula. Suasan asam dan waktu reaksi diperlukan untuk pembentukan warna yang optimum dan stabil. Metoda ini dapat digunakan pula pada air asin.
+Metode ini hanya baik untuk kadar nitrat diantara 0,1-1 mg/l nitrat-N.
+Pengganggu :
+Semua oksidator atau reduktor kuat. Bila ada sisa klor dinetralkan dengan Na-arsenit, gangguan dari nitri-N sampai 0,5 mg/l diatasi dengan asam sulfanilat.
+Catatan : Brusin sangat toksik, hindari memipet dengan mulut
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 70,
+                'id_mapel' => 8,
+                'judul_materi' => 'Penentuan Kadar Nitrat',
+                'detail_materi' => 'Prinsip : Senyawa nitrat dengan asam phenoldisulfonat dalam suasana basa akan Prinsip : Senyawa nitrat bentuk senyawa yang berwarna kuning.
+Reaksi :
+CH(OH) (SO3H2)2 + 3 HNO, - C6H (OH) (NO2)3 + 2H2SO4 + H20
+Bahan :
+1. asam phenol disulfonat
+2. pembuatan : tambahkan 75 ml 85 % asam sulfat dan 37,5 ml asam sulfat berasap kedalam 12 ml phenol
+3. larutan 12 N KOH
+4. pembuatan : larutkan 67,2 g KOH hingga volume 100 ml
+5. larutan standar nitrat 100 mg/l pembuatan : timbang 0,72189 g KNO3 yang telah dikeringkan 105°C selama 24 jam. Larutkan hingga 1 L di dalam labu ukur. Tambahkan 2 ml CHCI, untuk pengawetan.
+Bahan :
+1. Labu ukur 100 ml
+2. Spektrofotometer
+3. Tabung Nessler
+Cara kerja :
+Buat larutan seri standar 0-1-2-4-6-8-10 mg/l NO3. pipet larutan contoh, standar dan blanko sebanyak 25 ml lalu masukkan ke dalam beaker glass. Keringkan dengan water bath.setelah kering tambahkan 2 ml asam phenoldisulfonat dan 20 ml air destilasi serta 2 ml 12 N KOH.
+Masukkan ke labu ukur 100 ml. penuhkan dengan air destilasi sampai tanda batas. cari maksimumnya pada spektrofotometer, baca absorbans blanko, deret larutan standar dan contoh. Hasil pembacaan absorbans contoh diekstrapolasikan pada kurva kalibrasi (kurva antara absorbansi dan konsentrasi NO3 standar).
+Cara lain adalah dengan membandingkan warna larutan contoh dengan warna Cara lain adalah dengan me Contoh lebih pekat. Pada blanko ditambahkan larutan standar nitrat 1 blanko. Bila warna contoh leb; ma blanko sama dengan warna contoh. catat volume larutan standar yang mg/l sampai warna blant terpakai.
+Perhitungan :
+Dengan spektrofotometer : NO3 (mg/l) = NO3 pada grafik x pengenceran.
+Dengan tabung Nessler :
+NO3 (mg/l) = ml titrasi x konsentrasi larutan standar (mg/l) x 1000/ml contoh.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 71,
+                'id_mapel' => 8,
+                'judul_materi' => 'Nitrit (No2)',
+                'detail_materi' => 'Nitrit dalam air merupakan peruraian biologik dari zat organik. Bila dihubungkan dengan bentuk-bentuk nitrogen yang lain, adanya tapak nitrit merupakan petunjuk adanya pencemaran organic. Dalam air minum jarang terdapat nitrit lebih dari 0,1 mg/1. nitrit dapat menyebabkan penyakit blue babies. Nitrit ditentukan dengan mereaksikan larutan contoh asam sulfanilat dan naphtylamin HCI. Warna merah azobenzol-naphtylamin asam sulfanilat yang timbul dibandingkan dengan warna dari larutan standar yang telah diperlakukan sama dengan larutan contoh.
+C.H4 (NH2) (SO3H) + NaNO2 + 2 HCl - C6H4(N=N-CI)(SO3H) + NaCl + 2 H2O Asam sulfanilat
+C6H4 (N=N-CI) (SO3H) + C6H6C_H4(NH2) CH.SO3H-N=N-C6H6C_H4(NH2)
+
+Penetapan kadar nitrit dengan metode diazo
+Prinsip : Nitrit akan mengikatkan asam sulfanilat dengan nafilamin HCl membentuk senyawadiazo pada pH 2,0 - 2,5 yang berwarna merah. Warna yang erjadi dibandingkan baku dan dibaca pada spektrofotometer pada panjang gelombang 520 nm atau dengan tabung Nessler, menggunakan pembanding deret baku. Deteksi minimum 1 mcg/l dengan tabung Nessler.
+PENENTUAN NITRIT
+Prinsip : Senyawa nitrit senyawa dengan asam sulfanilat dan maphtylamin akan membentuk warna merah yang kepekatannya sebanding dengan kandungan nitrit dalam berwarna contoh air.
+Bahan :
+1.	Asam sulfanilat
+pembuatan : 2 g asam sulfanilat dilarutkan dengan 50 ml 4 N (50%) asam asras.
+2.	a-naphtylamin
+pembuatan : 1 g naphtylamin dilarutkan dalam 50% asam asetat
+3.	Larutan standar 100 mg/l NO2
+Pembuatan : Timbang 4,93 g NaNO2 larutkan dengan air destilasi hingga 1 L
+Alat :
+1. Labu ukur 100 ml
+2. Tabung Nessler
+3. Spektrofotometer
+Cara kerja :
+Buat deretan larutan standar 0-5-10-20-30-40-50 mg/l. pipet 50 ml contoh, baloko dan seri standar ke dalam labu ukur 100 ml lalu tambahkan 1 ml asam sulfanilat dan 1 ml -naphtylamin. Isi dengan air destilasi sampai tanda batas. Jika warna merah muncul berarti nitrit ada. Lalu dibaca absorbansnya dengan spektrofotometer pada 7. 520 mm. Hasil pembacaan absorbans contoh diekstrapolasikan pada kurva kalibrasi (kurva antara absorbansi dan konsentrasi NO2 standar). Cara lain adalah dengan membandingkan warna contoh dengan warna blanko di dalam tabung Nessler. Titrasi dengan larutan standar nitrit 1 mg/l sampai warnanya sama dengan warna contoh. Dicatat volume larutan standar.
+Perhitungan :
+Dengan spektrofotometer:
+NO2 (mg/i) = NO3 pada grafik x pengenceran
+Dengan tabung Nessler : NO2 (mg/l) = ml titrasi x konsentrasi larutan standar (mg/l) x 1000/ml ',
+                'gambar' => '',
+            ],
+            [
+                'id' => 72,
+                'id_mapel' => 8,
+                'judul_materi' => 'Flourida',
+                'detail_materi' => 'Satuan yang digunakan untu ng diizinkan adalah 1,0 - 2.0 sebagai pencegah karies gigi melebihi 1,0 mg/l dapat noda coklat yang susah hilang) Fluorida dalam air minum karies gigi. Fluorida dapat secara minum. Bila kadarnya melebihi ha h hilang) kadar 1-2 mg/l tersebut untuk daerah tropis perlu direvisi.
+Fluorida dalam  air minum dengan kadar sekitar 1,0 mg/l secara efektif mencegah dapat secara alami ada dalam air atau sengaja ditambahkan dalam air va melebihi batas dapat menimbulkan fluorosis yaitu kerusakan pada gigi.
+Penetapan fluorosis secara kolorimetrik :
+Prinsip:
+Ion fluorida bereaksi dengan zat warna zikronil-alizarin senyawa kompleks yang tidak berwarna.Sehingga makin tinggi kadar fluorida, warna makinn hendingkan dengan larutan baku, dalam deret tabung Nessler atau dengan terjadi dibandingkan dengan larutan baku, dalam deret tabung Nessler atau dengan kolorimeter.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 73,
+                'id_mapel' => 8,
+                'judul_materi' => 'Klorida (CI)',
+                'detail_materi' => 'Klorida adalah salah satu anion yang terbanyak terkandung dalam air. Rasa asin yang ditimbulkan oleh klorida berbeda-beda tergantung dari susunan kimia air tersebut. Air yang mengandung klorida 250 mg/l terasa asin bila mengandung pula ion natrium. Ada pula air yang rasa asinnya berbeda meskipun mengandung klorida 100 mg/l bila mengandung banyak ion Ca dan Mg. Klorida yang kadarnya tinggi akan merusak pipapipa logam dan tanaman.
+Penetapan kadar secara Argentometri
+Prinsip :
+Dalam larutan netral atau sedikit alkalis klorida diendapkan oleh larutan perak nitrat. Indikator yang dipilih adalah kalium kromat yang pada TAT membentuk endapan perak kromat yang berwarna merah.
+Pengganggu : Bahan-bahan yang normal terdapat dalam air minum tidak mengganggu.bromida, lodida dan Sianida terhitung sebagai klorida, sulfida dan tiosulfat mengganggu, dihilangkan dengan perhidrol dalam suasana netral. H2S bebas dihilangkan dengan pendidihan.
+PENENTUAN KADAR KLORIDA
+Prinsip : Dalam suasana netral atau se na netral atau sedikit basa klorida yang terkandung di dalam contoh air akan beraksi dengan AgNO3 membentuk AgCl pada titik akhir titrasi, kelebihan AgNO3 aksi dengan K2C+04 membentuk AgCrO4 yang berwarna merah bata.
+Reaksi : cr +AgNO3 --- AgCl + NO, AgNO3 + K2CrO4 ---- AgCrO4/
+Bahan :
+1.	Larutan standa AgNO3 merah coklat
+Pembuatan : larutkan 4,7924 g AgNO3 di dalam labu ukur 1 L dengan air destilasi hingga tanda batas
+2.	Larutan 5% KCM.
+Pembuatan : 50 g KC14 dilarutkan sarnpai voluine 1 L di dalam labu ukur
+Alat:
+1. Buret
+2. Pipet
+3. Erlenmeyer
+Cara kerja :
+ke dalam 100 ml contoh air tambahkan 1 ml kalium kromat, titrasi dengan AgNO3 sampai warna merah coklat. Catat volume titrasiny (A). dibuat juga penentuan blanko (B).
+(B-A)x 1000 x AgNO3
+Cl (mg/l) =	Ml contoh
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 74,
+                'id_mapel' => 8,
+                'judul_materi' => 'BOD = Biochemical Oxygen Demand (Kebutuhan Biologik Akan Oksigen)',
+                'detail_materi' => 'BOD adalah banyaknya oksigen yang diperlukan utnuk menguraikan zat organik BOD adalah banyaknya oksi dalam air secara biologik, sampai menjadi senyawa yang stabil. Dalam air limbah, bahan pencemar organik akan diuraikansecara alami oleh bakteri yang ada. Bakteri dalam air dapat digolongkan menjadi beberapa golongan. Golongan aerob adalah mereka memerlukan oksigen bebas untuk kehidupannya dan golongan anaerob adalah yang tidak memerlukan oksigen bebas pemecahan senyawa lain. Ada golongan ketiga yang dinamakan golongan falkultatif yang dapat berlaku sebagai aerob maupun anaerob tergantung keadaan lingkungannya. Kebanyakan Bakteri dalam air kotor adalah sapropit, hidup dari zat organik yang telah banyakan bakteri dalam air kotor adalah san mati.
+Kalau DO cukup banyak, bakteri aerob akan melakukan oksidasi dan terbentuklah yawa nitrit yang selanjutnya menjadi nitrat. Kalau kehabisan DO selama proses ini nitrat akan direduksi kembali menjadi nitrit oleh bakteri anaerob. Ini akan terjadi bila sebahagian besar zat otganik tersebut telah dioksidasi menjadi nitrat. Kalau persediaan oksigen tidak cukup zat organik akan diuraikan oleh bakteri anaerob membentuk amonia. Jadi bila ada pencemar organik dalam air limbah, DO yang ada akan dipergunakan oleh bakteri untuk menguraikannya, sehingga cepat habis. Sebaliknya bila air limbah yang mengandung bahan pencemar organik diberi oksigen secukupnya (dilakukan aerasi) akan terjadi peruraian aerobik sampai mencapai keadaan stabil. Banyaknya oksigen yang diperlukan untuk mencapai keadaan stabil ini yang disebut BOD.
+BOD merupakan petunjuk penting untuk mengetahi banyaknya zat organik yang terkandung dalam air limbah. Makin banyak kandungan zat organik makin tinggi BODnya. Nilai BOD dipengaruhi oleh suhu, cahaya matahari, pertumbuhan biologik, gerakan air dan kadar oksigen.
+BOD ditentukan dengan mengukur oksigen yang dioksidasi oleh zat organik dalam sample yang diwakili oleh mikroorganisme. Uji ini dilakukan dengan mengukur. kadar oksigen terlarut dari sua dari suatu contoh segar dan diikuti pengukuran kadar oksigen lah diinkubasi selama 5 hari pada suhu 20°C.jika kebutuhan worlarut untuk contoh yang telah diinkubasi sa lebih besar dari oksigen yang terlarut perlu dilakukan pengenceran otoh analisis. Besarnya pengenceran tergantung dari kebutuhan oksigen dan terlarut itu sendiri. Untuk contoh air limbah perlu dilakukan oksigen dari sample lebih bese terhadap contoh analisis. jumlah kandungan oksigen sejumlah penmgenceran untuk Beberapa faktor yang dapa jenis larutan peng penceran untuk meyakinkan salah satunya sesuai dengan yang dibutuhkan yang dapat meningkatkan laju oksidasi zat organik oleh bakteri yaitu genceran, pH dan kandungan bakteri. Beberapa larutan pengencer mengandung garam Ca, Mg, PO, dan NH.NO,
+Untuk mencapai keadaan stabil dilaboratorium diperiukan waktu inkubasi. dipakai waktu 5 hari pada suhu 20°C. jadi bila 1 liter limbah memerlukan 100 dalam waktu hari pada suhu 20°C maka BOD-nya untuk 5 hari pada suhu 20°C umumnya dipakai waktu 5 har mg O2 dalam waktu h adalah 100 mg/l atau BOD. 20°C = 100 mg/i.
+Prinsip penetapan BOD :
+Karena sering kali DO sampel rendah, maka diperlukan air untuk pengencer yaitu air suling yang diberi nutrien untuk perumbuhan bakteri (terdiri dari dapar pospat, MgSO4, CaCl2 dan FeCl3) kemudian sampai jenuh oksigen.
+Disediakan 5 botol oksigen :
+1. Botol I diisi air pengencer, tentukan DO = a mg/l
+2. Botol II diisi air pengencer, diinkubasi 5 hari pada suhu 20°C, tentukan DO = b mg/l
+3. Botol III diisi sample + air pengencer, tentukan DO=cmg/l
+4. Botol IV dan V diisi sample_ air pengencer, diinkubasi 5 hari pasa suhu 20°C, tentukan DO = d dan e mg/l
+DO air pengencer rata-rata = 2 x (a + b) mg/l
+DO sample + air pengencer setelah inkubasi rata-rata = 2 x (d + c) mg/l = y mg/l
+HOD sample = faktor pengenceran x (c-y), dinginkan antara 20 - 80 % dari Z Pada keadaan tertentu diperlukan seeding yaitu penambahan bakteri karena dalam sample tidak cukup jumlah bakterinya.
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 75,
+                'id_mapel' => 8,
+                'judul_materi' => 'Penentuan BOD = Biochemical Oxygen Demand',
+                'detail_materi' => 'Prinsip: Oksigen di dalam contoh air limbah akan mengoksidasi Mnso, yang ke dalam contoh dalam keadaan alkalis, sehingga terjadi endapan MnO ambahan dan KI, akan dibebaskan 12 yang jumlahnya ekivalen dengan jumlah erlarut. Iodium yang dibebaskan dititrasi dengan larutan standar tiosulfat dengan ditambahkan ke dalam cont dengan penambahan dan oksigen terlarut. Iodium indikator amilum.
+ Reaksi :
+MnSO4 +2 KOH Mn(OH)2 + 1/2O2
+MnO2+2 KI + 2H2O 12 + 2S2O3
+Mn(OH)2 + K2SO4 MnO2 + H2O
+ Mn(OH)2 + 12 + 2KOH S204 +21
+Bahan :
+1.	Larutan MnSO4
+Pembuatan : larutkan 480 g MnSO4.4H20 atan 400 g MnS04.2H20 atau 364 g MnSO4.H20 dengan air destilasi. Saring dan tepatkan volumenya sampai 1 L
+2.	 Larutan alkali-iodide-azide
+Pembuatan : larutkan 500 g NaOH di dalam air destilasi dengan bobot yang sama. Biarkan beberapa hari untuk mengendapkan karbonat. Pindahkan larutan yang kernih ketempat lain lalu tambahkan 150 g KI dan 10 g Na-azide (encerkan dengan air destilasi) penuhkan volumenya sampai 1 L.
+3.	H2SO4 (p)
+4.	 Larutan kanji
+Pembuatan : Emulsikan 5g amylum dengan sedikit air destilasi lalu masukkan ke dalam 1 L air mendidih. Awetkan dengan menambahkan 1,25 g asam salisilat untuk tiap liternya atau beberapa tetes toluen.
+5.	Larutan stok 0,25 N Na2S2O3 Pembuatan : 63 g Na2S2O3.5H20 dilarutkan dalam 1 L dengan air destilasi. Stabilkan dengan menambahkan 1 ml CHCl3. biarkan beberapa hari sebelum digunakan.lalu Larutan standar 0,0125 dan penuhkan volumenya hingga 1 L (setiap satu minggu ambahkan 1 ml CHC13 dan penuhkan v 5o FeCl2.6H2O dalam 1 liter air destilasi, larutkan 11,0 g sekali distandarisasi).
+6.	Larutan pengencer:
+Sediakan larutan 0,25 g Fe CaCl2 dalam 1 L air destilas larutan buffer fosfat sir destilasi, larutkan MgSO4.7H2O dalam 1 L air destilasi dan sfat (34 g KHPO4 dalam 500 ml air destilasi tambahkan 175 ml 1 15 g ammonium sulfat lalu encerkan sampai 1 liter) lalu ambil N NaOH dan 1,5 g ammonium bo-masing 0,5 ml FeCl3.6H20, 2,5 ml CaCl2 2,5 ml MgSO4.7H,O dan 1.25 buffer fosfat kemudian encerkan sampai 1 liter.
+Alat:
+1. Botol Winkler
+2. Inkubator
+3. Buret
+Cara kerja :
+Masukkan 1 mi air limbah ke dalam dua buah botol BOD (botol winkler) penuhkan volumenya dengan larutan pengencer. Tutup rapat mulut botol lalu goncang sehingga sehingga isinya tercampur rata. Inkubasikan botol kedua di dalam inkubator pada temperatur 20°C selama 2 hari (BOD) sedang botol pertama langsung tentukan kandungan oksigen terlarutnya dengan cara berikut (BOD) :
+ke dalam botol BOD tambahkan 2 ml MnSO4 dan 2 ml Na-azide. Tutup botolnya dan goncang. Akan terbentuk endapan berwarna coklat. Diamkan hingga semua endapan mengendap. Buang cairan atasnya dan jaga jangan sampai ada endapan yang terbuang. Tambahkan 2 ml asam sulfat pekat. Endapan coklat akan larut. Titrasi dengan larutan standar natrium tio sulfat hingga terbentuk warna kuning lemah. Tambahkan 1 ml larutan kanji. Lanjutkan titrasi hingga warna biru tepat hilang. Setelah 3 hari tentukan oksigen terlarut pada botol kedua dan blanko.
+Perhitungan :
+(V BOD. - V cth BOD)-( v bl BOD. - VI BOD)]) x 100 x N thio X8
+mg/1 BOD = 	volume contoh - 2 ml
+V cth= Volume contoh
+V bl= volume blanko
+',
+                'gambar' => '',
+            ],
+            [
+                'id' => 76,
+                'id_mapel' => 8,
+                'judul_materi' => 'COD = Chemical Oxygen Demand (Kerutuhan Kimiawi Akan Oksigen',
+                'detail_materi' => 'Penetapan COD gunanya untuk mengukur banyaknya oksigen setara dengan bahan organik dalam sample air, yang mudah dioksidasi oleh senyawa kimia oksidator Penetapan ini sangat penting untuk dapat diuraikan secara biologik. Maka dapat an COD adalah banyaknya oksidator kuat yang diperlukan untuk mengoksidasi panik dalam air, dihitung sebagai mgf. 02. beberapa zat organik yang tidak terurai secara biologik antara lain asam asetat, asam sitrat, selulosa dan lignin (zat kaya).
+Penggunaan teknik yang benar-benar sama antara lain sample dan blanko pada setiap penetapan sangat penting karena hanya sebahagian dari senyawa zat organik vang terhitung, tergantung pada oksidator kimia yang dipakai. Cara refluks dengan dikromat dipilih untuk penetapan COD karena kemampuannya untuk mengoksidasi, pemakaiannya luas terhadap berbagai jenis sample dan mudah dilakukan.
+Prinsip :
+Kebanyakan dari jenis bahan organic dirusak oleh campuran senyawa dikromat dan asam sulfat mendidih. Kelebihan dikromat dititrasi dengan fenro ammonium sulfat. Banyaknya bahan organic yang dioksidasi dihitung sebagai oksigen yang setara dengan kalium dikromat yang terikat.
+
+
+Pengganggu :
+Senyawa alifatik rantai 1 ebih baik dari cara permanganat. Senyawa alifatik rantai lurus lebih meskipun cara ini lebih baik nambahkan katalisator AgSO4, tetapi akan terjadi endapan efektif oksidasinya vida atau klorida yang hanya sebahagian dioksidasi dalam prosedur dengan iodida, bromida atau ini. Pada oksidasi hidroka rantai lurus. Kesulitan omatik penambahan katalisator tidak ada manfaatnya,  karena adanya klorida dalam sample diatasi dengan so, sebelum direfluks. Akan terjadi komplek merkuri klorida yang larut penambahan HgSO4 sebelum d berkurang kemampuannya untuk bereaksi lebih lanjut.
+PENENTUAN CHEMICAL OXYGEN DEMAND (COD)
+Prinsip :
+bahan kimia organic pada air limbah akan mengoksidasi K2Cr2O7 dalam suasana asam Bhan kimia organic pada air limbah Velebihan kalium bikromat dititrasi dengan larutan standar ferri ammonium sulfat dengan indicator diphenil amin.
+Reaksi : 3C +2 C1207 Cr207 + FeSO4 3 CO2 +4 Cr3+ + 8H20 Cr2(SO4)3 + Fe3+
+Bahan :
+1. Reaktor COD
+2. Buret
+3. Erlenmeyer
+Cara kerja :
+Masukkan 1 ml air limbah PKS ke dalam tabung yang sudah berisi reagen untuk penentuan COD. Masukkan ke dalam lubang reactor COD. Lakukan destruksi pada temperatur 150°C selama 2 jam. Setelah dingin masukkan ke dalam Erlenmeyer 100 ml sambil dibilas dengan air destilasi. Tambahkan 0,5 ml indicator diphenil amin lalu titrasi dengan larutan ferroamonium sulfat (FAS) hingga terjadi perubahan warna dari biru menjadi hijau.
+Perhitungan:
+(ml blanko - ml contoh) x N larutan FAS x 8000
+COD (mg/1) = 	Volume contoh air SO
+',
+                'gambar' => '',
+            ],
+
 
 
 
