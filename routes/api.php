@@ -35,6 +35,7 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
     Route::get('/materiindex/{id_mapel}','MateriController@materiindexapi')->name('materi.index');
     Route::get('/pratikumindex/{id_mapel}','PratikumController@pratikumindexapi')->name('pratikum.index');
     Route::get('/latihanindex/{id_mapel}','LatihanController@latihanindexapi')->name('latihan.index');
+    Route::get('/login','UserController@loginApi')->name('login.api');
 });
 
 Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')->group(function () {
