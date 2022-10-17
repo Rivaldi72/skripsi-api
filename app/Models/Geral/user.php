@@ -22,7 +22,8 @@ class User extends Authenticatable
         'email',
         'tanggal_lahir',
         'no_hp',
-        'keahlian'
+        'keahlian',
+        'api_token'
 
     ];
     

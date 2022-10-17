@@ -23,6 +23,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
         Route::get('/', 'LowonganController@indexApi')->name('index');
         Route::get('/data-lowongan/index', 'LowonganController@indexLowonganApi')->name('index.lowongan');
         Route::get('/data-user/user', 'UserController@userPageApi')->name('index.user');
+        Route::get('/login', 'AuthController@apiLogin')->name('api.login');
     });
 
 
@@ -45,5 +46,5 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/mapel/{id}','MapelController@apiMapel')->name('mapel.index');
     Route::get('/guru/detail/{id}','GuruController@apiDetailGuru')->name('detail.guru');
     Route::get('/siswa/detail/{id}','SiswaController@apiDetailSiswa')->name('detail.siswa');
-
+    Route::get('/login','UserController@apiLogin')->name('user.login');
 });

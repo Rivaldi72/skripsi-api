@@ -24,6 +24,7 @@ class CreateGeralUserTable extends Migration
             $table->string('jenis_kelamin')->nullable();
             $table->string('no_hp')->nullable();
             $table->string('keahlian')->nullable();
+            $table->string('api_token', 80)->unique()->nullable()->default(null);
             $table->rememberToken();
             $table->timestamps();
         });
@@ -41,6 +42,7 @@ class CreateGeralUserTable extends Migration
                     'jenis_kelamin'             =>      'Laki-laki',
                     'no_hp'                     =>      '08512812383',
                     'keahlian'                  =>      'Programmer',
+                    'api_token'                 =>      'VfakmMJQtYCzZJTbAijpGKxkDKvwbC',
                     'created_at'                =>      now(),
                     'updated_at'                =>      now(),
                 ],
@@ -55,6 +57,7 @@ class CreateGeralUserTable extends Migration
                     'jenis_kelamin'             =>      'Laki-laki',
                     'no_hp'                     =>      '08512812383',
                     'keahlian'                  =>      'Programmer',
+                    'api_token'                 =>      'LqnLCKpTjMZCAMBNJhSxSLwKwTnteD',
                     'created_at'                =>      now(),
                     'updated_at'                =>      now(),
                 ]
