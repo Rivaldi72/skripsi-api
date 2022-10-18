@@ -14,16 +14,13 @@ class AuthController extends Controller
      }
 
     public function apiLogin(Request $request){
-        $credentials = $request->only('email', 'password');
-        $loginData = Auth::attempt($credentials);
-        if($loginData){
-            return $loginData;
-        }
-        // $username = $request -> username;
-        // $password = $request -> password;
+        
+        $username = $request -> username;
+        
 
-        // $loginData = User::where('username', bcrypt($username))->where('password', bcrypt($password))->get();
+        $loginData = User::where('username', $username)->first();
 
+        return $loginData;
        
     }
 }
