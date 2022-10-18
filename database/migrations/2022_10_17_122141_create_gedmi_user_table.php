@@ -29,7 +29,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 1,
                 'username' => 'admin123',
-                'password' => bcrypt('admin123'),
+                'password' => 'admin123',
                 'role' => 'admin',
                 'api_token' => 'K@92gnVE}nuVbc!:7}gD7F:SByQ.:k',
                 'created_at' => now(),
