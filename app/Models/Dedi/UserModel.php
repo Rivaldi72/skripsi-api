@@ -11,9 +11,9 @@ class UserModel extends Authenticatable implements MustVerifyEmail
 {
     use HasFactory, Notifiable;
 
-    protected $guard = 'dedi_user';
+    // protected $guard = 'dedi_user';
 
-    // protected $table = 'dedi_user';
+    protected $table = 'dedi_user';
 
     // protected $primaryKey = 'id';
 
