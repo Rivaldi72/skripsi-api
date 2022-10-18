@@ -9,6 +9,7 @@ use App\Models\Dedi\MateriModel;
 use App\Models\Dedi\PratikumModel;
 use App\Models\Dedi\LatihanModel;
 use App\Models\Dedi\MapelModel;
+use Auth;
 
 class UserController extends Controller
 {
@@ -47,5 +48,20 @@ class UserController extends Controller
     public function tambahsiswapost(Request $request){
         UserModel::create($request->all());
         return redirect()->route('dedi.siswa.daftar');
+    }
+
+    public function loginApi(Request $request){
+        // $credentials = $request->only('email', 'password');
+        // $loginData = Auth::attempt($credentials);
+        // if ($loginData){
+
+        // }
+        $email = $request ->email;
+        $password = $request ->password;
+
+        $loginData = UserModel::where('email', $email)->where('password', bcrypt($password))->get();
+
+        return $loginData;
+
     }
 }

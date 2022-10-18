@@ -21,8 +21,8 @@ class MapelController extends Controller
         return view('content.pages.gedmi.mapel.mapelindex', compact('mapel'));
     }
     
-    public function apiMapel(){
-        $mapel = MapelModel::all();
+    public function apiMapel($kelas){
+        $mapel = MapelModel::where('kelas', $kelas)->get()->groupBy('hari');
         return $mapel;
     }
 

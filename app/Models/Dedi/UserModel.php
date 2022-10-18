@@ -11,9 +11,11 @@ class UserModel extends Authenticatable implements MustVerifyEmail
 {
     use HasFactory, Notifiable;
 
-    protected $table = 'dedi_user';
+    protected $guard = 'dedi_user';
 
-    protected $primaryKey = 'id';
+    // protected $table = 'dedi_user';
+
+    // protected $primaryKey = 'id';
 
     protected $fillable = [
         'id',
@@ -24,6 +26,7 @@ class UserModel extends Authenticatable implements MustVerifyEmail
         'alamat',
         'email',
         'password',
+        'token_api',
     ];
 
     protected $hidden = [
