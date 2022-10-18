@@ -5,20 +5,19 @@ namespace App\Http\Controllers\Gedmi;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gedmi\UserModel;
-use Auth;
+// use Auth;
 
 class UserController extends Controller
 {
     
         public function apiLogin(Request $request) {
-            $credentials = $request->only('username', 'password');
-            $loginData = Auth::attempt($credentials);
-            if ($loginData) {
+            $username = $request->username;
+            $loginData = UserModel::where('username', $username)
+                                ->first();
 
                 return $loginData;
-            }
                
 
-            // return view('content.pages.gedmi.login');
+                return view('content.pages.gedmi.login');
          }
 }
