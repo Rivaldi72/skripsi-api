@@ -18,6 +18,10 @@ class CreateGedmiUserTable extends Migration
             $table->string('username')->unique();
             $table->string('password');
             $table->string('role');
+            $table->string('api_token', 80)
+            ->unique()
+            ->nullable()
+            ->default(null);
             $table->timestamps();
         });
 
@@ -25,7 +29,7 @@ class CreateGedmiUserTable extends Migration
             [
                 'id' => 1,
                 'username' => 'admin123',
-                'password' => 'admin123',
+                'password' => bcrypt('admin123'),
                 'role' => 'admin',
                 'api_token' => 'K@92gnVE}nuVbc!:7}gD7F:SByQ.:k',
                 'created_at' => now(),
