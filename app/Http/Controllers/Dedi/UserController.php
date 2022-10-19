@@ -9,6 +9,7 @@ use App\Models\Dedi\MateriModel;
 use App\Models\Dedi\PratikumModel;
 use App\Models\Dedi\LatihanModel;
 use App\Models\Dedi\MapelModel;
+use Illuminate\Support\Facades\Hash;
 use Auth;
 
 class UserController extends Controller
@@ -50,18 +51,27 @@ class UserController extends Controller
         return redirect()->route('dedi.siswa.daftar');
     }
 
-    public function loginApi(Request $request){
-        // $credentials = $request->only('email', 'password');
-        // $loginData = Auth::attempt($credentials);
-        // if ($loginData){
 
-        // }
+    public function login(Request $request)
+    {
+        return view('content.pages.dedi.login');
+    }
+
+    public function loginApi(Request $request){
         $email = $request ->email;
         $password = $request ->password;
+        $loginData = UserModel::where('email', $email)
+                                ->first();
 
-        $loginData = UserModel::where('email', $email)->first();
-
-        return $loginData;
+       if($loginData == null) {
+            return response()->json(['pesan' => 'Email yang anda masukkan tidak terdaftar']);
+        } else {
+            if(Hash::check($password, $loginData->password)) {
+                return response()->json($loginData);
+            } else {
+                return response()->json(['pesan' => 'Kata sandi yang anda masukkan salah']);
+            }
+        }
 
     }
 }
