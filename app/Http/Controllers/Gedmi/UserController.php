@@ -13,7 +13,7 @@ class UserController extends Controller
         public function apiLogin(Request $request) {
             $username = $request->username;
             $loginData = UserModel::where('username', $username)
-                                ->get();
+                                ->first();
 
                 return $loginData;
                
