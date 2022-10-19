@@ -19,17 +19,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
+    Route::get('/index','GudangController@apiIndex')->name('index');
+    Route::post('/login','UserController@apiLogin')->name('login');
+});
+
     Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')->group(function () {
         Route::get('/', 'LowonganController@indexApi')->name('index');
         Route::get('/data-lowongan/index', 'LowonganController@indexLowonganApi')->name('index.lowongan');
         Route::get('/data-user/user', 'UserController@userPageApi')->name('index.user');
         Route::get('/login', 'AuthController@apiLogin')->name('api.login');
     });
-
-
-Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
-    Route::get('/index','GudangController@apiIndex')->name('index');
-});
 
 Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
     Route::get('/daftarsiswa','UserController@daftarsiswaapi')->name('siswa.daftar');
