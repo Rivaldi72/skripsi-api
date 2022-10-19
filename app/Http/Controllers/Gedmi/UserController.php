@@ -9,15 +9,16 @@ use App\Models\Gedmi\UserModel;
 
 class UserController extends Controller
 {
+    public function login(Request $request)
+    {
+        return view('content.pages.gedmi.login');
+    }
     
-        public function apiLogin(Request $request) {
-            $username = $request->username;
-            $loginData = UserModel::where('username', $username)
+    public function apiLogin(Request $request) {
+        $username = $request->username;
+        $loginData = UserModel::where('username', $username)
                                 ->first();
 
-                return $loginData;
-               
-
-                return view('content.pages.gedmi.login');
-         }
+        return $loginData;
+    }
 }
