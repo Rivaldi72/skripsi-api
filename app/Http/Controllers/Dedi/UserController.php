@@ -59,7 +59,7 @@ class UserController extends Controller
         $email = $request ->email;
         $password = $request ->password;
 
-        $loginData = UserModel::where('email', $email)->where('password', bcrypt($password))->get();
+        $loginData = UserModel::where('email', $email)->first();
 
         return $loginData;
 
