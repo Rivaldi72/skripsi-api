@@ -55,9 +55,10 @@ class LatihanController extends Controller
         );
         return redirect()->route('dedi.latihan.index');
     }
-            public function latihandelete($id) {
-            $latihan = LatihanModel::find($id);
-            $latihan ->delete();
+
+    public function latihandelete($id) {
+        $latihan = LatihanModel::find($id);
+         $latihan ->delete();
         return redirect()->route('dedi.latihan.index', ['message' => 'succes']);
 }
 }

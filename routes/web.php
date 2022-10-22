@@ -44,6 +44,8 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
     Route::get('/daftarsiswa','UserController@daftarsiswa')->name('siswa.daftar');
     Route::get('/siswatambah','UserController@tambahsiswa')->name('siswa.tambah');
     Route::post('/siswatambah/post','UserController@tambahsiswapost')->name('siswa.tambah.post');
+    Route::delete('/siswadelete/{id}','UserController@siswadelete')->name('siswa.delete');
+
     Route::get('/materiindex','MateriController@materiindex')->name('materi.index');
     Route::get('/materitambah','MateriController@materitambah')->name('materi.tambah');
     Route::post('/materitambah/post','MateriController@materitambahpost')->name('materi.tambah.post');
