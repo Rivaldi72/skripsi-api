@@ -25,8 +25,14 @@ class AuthController extends Controller
         if($loginData == null) {
             return response()->json(['pesan' => 'User yang anda masukkan tidak terdaftar']);
         } else {
+
             if(Hash::check($password, $loginData->password)) {
-                return response()->json($loginData);
+                if(!$loginData->isAdmin) {
+                    return response()->json($loginData);
+                } else{
+                     return response()->json(['pesan' => 'User harus login melalui aplikasi Web']);
+                }
+               
             } else {
                 return response()->json(['pesan' => 'Kata sandi yang anda masukkan salah']);
             }
