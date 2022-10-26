@@ -20,7 +20,7 @@ class User extends Authenticatable
         'isAdmin',
         'nama_lengkap',
         'email',
-        'tanggal_lahir',
+        'umur',
         'no_hp',
         'keahlian',
         'api_token'

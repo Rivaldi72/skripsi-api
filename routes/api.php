@@ -29,6 +29,7 @@ Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Ch
         Route::get('/data-lowongan/index', 'LowonganController@indexLowonganApi')->name('index.lowongan');
         Route::get('/data-user/user', 'UserController@userPageApi')->name('index.user');
         Route::post('/login', 'AuthController@apiLogin')->name('api.login');
+        Route::post('/data-user/tambah/post', 'UserController@apiLogin')->name('api.tambah.user');
     });
 
 Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
