@@ -19,7 +19,7 @@ class UserController extends Controller
      }
 
      public function userTambahPost() {
-      lowongan::create( $request->all());
+      User::create( $request->all());
          // return redirect()->route('geral.index.lowongan');
    }
 }

@@ -29,7 +29,7 @@ Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Ch
         Route::get('/data-lowongan/index', 'LowonganController@indexLowonganApi')->name('index.lowongan');
         Route::get('/data-user/user', 'UserController@userPageApi')->name('index.user');
         Route::post('/login', 'AuthController@apiLogin')->name('api.login');
-        Route::post('/data-user/tambah/post', 'UserController@apiLogin')->name('api.tambah.user');
+        Route::post('/data-user/tambah/', 'UserController@')->name('api.tambah.user');
     });
 
 Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->group(function () {
@@ -47,5 +47,5 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::get('/mapel/{id}','MapelController@apiMapel')->name('mapel.index');
     Route::get('/guru/detail/{id}','GuruController@apiDetailGuru')->name('detail.guru');
     Route::get('/siswa/detail/{id}','SiswaController@apiDetailSiswa')->name('detail.siswa');
-    Route::post('/login','UserController@apiLogin')->name('user.login');
+    Route::post('/login','UserController@userTambahPost')->name('user.tambah.post');
 });

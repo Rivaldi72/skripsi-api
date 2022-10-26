@@ -117,7 +117,7 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
-    Route::post('/data-user/tambah/post', 'UserController@userTambahPost')->name('tambah.user.post');
+    
 });
 
 
