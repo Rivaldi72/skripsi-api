@@ -10,6 +10,7 @@ use App\Models\Dedi\PratikumModel;
 use App\Models\Dedi\LatihanModel;
 use App\Models\Dedi\MapelModel;
 use Illuminate\Support\Facades\Hash;
+use Session;
 use Auth;
 
 class UserController extends Controller
@@ -46,15 +47,17 @@ class UserController extends Controller
         return view('/content/pages/dedi/user/tambah_siswa');
     }
 
+
+
     public function tambahsiswapost(Request $request){
         UserModel::create($request->all());
         return redirect()->route('dedi.siswa.daftar');
     }
 
 
-    public function login(Request $request)
+    public function login()
     {
-        return view('content.pages.dedi.login');
+        return view('content.pages.dedi.user.login');
     }
 
     public function loginApi(Request $request){
@@ -79,4 +82,27 @@ class UserController extends Controller
             $user ->delete();
         return redirect()->route('dedi.siswa.daftar', ['message' => 'succes']);
     }
+
+    public function loginPost(){
+        $username = $request->username;
+        $password = $request->password;
+        $loginData = UserModel::where('username', $username)
+                                ->first();
+        if($loginData == null) {
+         return redirect()->back()->withErrors('User Tidak Ditemukan');
+        } else {
+            if(Hash::check($password, $loginData->password)) {
+                if($loginData->isAdmin) {
+                 return redirect()->back()->withErrors('User Tidak Ditemukan');
+                }
+                Session::put('', $loginData->username);
+                Session::put('nama', $loginData->nama);
+                return response()->json($loginData);
+            } else {
+                return response()->json(['pesan' => 'Kata sandi yang anda masukkan salah']);
+            }
+        }
+    }
+
+
 }

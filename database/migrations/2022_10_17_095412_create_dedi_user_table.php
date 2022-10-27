@@ -84,7 +84,7 @@ class CreateDediUserTable extends Migration
                 'alamat' => 'Jalan.Wiliam Iskandar',
                 'email' => 'naldo1002@gmail.com',
                 'password' => bcrypt('azmi1002'),
-                'api_token' => '@pnMLM6+6x+(}Uz.m2EWr{qCT*}$U#,',
+                'api_token' => '@pnMLkl6+6x+(}Uz.m2EWr{qCT*}$U#,',
             ],
 
         ];
