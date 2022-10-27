@@ -5,15 +5,24 @@ namespace App\Http\Controllers\Geral;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Geral\lowongan;
+use Session;
 
 class LowonganController extends Controller
 {
     public function index() {
+      $isLogin = Session::get('username') != null;
+        if(!$isLogin) {
+            return redirect()->route('geral.page.login');
+        }
         return view('content.pages.geral.index');
      }
     
      public function indexLowongan() {
          $dataLowongan= lowongan::all();
+         $isLogin = Session::get('username') != null;
+         if(!$isLogin) {
+             return redirect()->route('geral.page.login');
+         }
         return view('content.pages.geral.data-lowongan.index', compact('dataLowongan'));
      }
 
@@ -27,6 +36,10 @@ class LowonganController extends Controller
   }
 
      public function tambahPage() {
+      $isLogin = Session::get('username') != null;
+      if(!$isLogin) {
+          return redirect()->route('geral.page.login');
+      }
       return view('content.pages.geral.data-lowongan.tambah');
       }
 
@@ -38,6 +51,10 @@ class LowonganController extends Controller
       
    public function editPage($id) {
       $dataLowongan = lowongan::where('id', $id)->first();
+      $isLogin = Session::get('username') != null;
+      if(!$isLogin) {
+          return redirect()->route('geral.page.login');
+      }
       return view('content.pages.geral.data-lowongan.edit', compact('dataLowongan'));
    }
    public function delete($id) {

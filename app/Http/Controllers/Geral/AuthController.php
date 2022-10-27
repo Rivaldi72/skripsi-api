@@ -12,6 +12,10 @@ use Session;
 class AuthController extends Controller
 {
     public function login() {
+        $isLogin = Session::get('username') != null;
+        if($isLogin) {
+            return redirect()->route('geral.index');
+        }
         return view('content.pages.geral.login');
      }
 
@@ -43,7 +47,8 @@ class AuthController extends Controller
 
     public function loginPost(Request $request)
     {
-        $username = $request -> username;
+        // dd($request->all());
+        $username = $request->username;
         $password = $request->password;
         
 
@@ -66,5 +71,10 @@ class AuthController extends Controller
                 return redirect()->back()->withErrors('Katasandi yang anda masukkan salah');
             }
         }
+    }
+    public function logout(Request $request)
+    {
+        $request->session()->flush();
+        return redirect()->route('geral.page.login');
     }
 } 

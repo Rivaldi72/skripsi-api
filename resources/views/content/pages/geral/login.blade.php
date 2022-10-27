@@ -38,9 +38,9 @@
                 <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                     <h2 class="card-title fw-bold mb-1">Selamat Datang di Internzeep👋</h2>
                     <p class="card-text mb-2">silahkan login terlebih dahulu</p>
-                    @foreach ($errors as $error)
+                    @foreach ($errors->all() as $error)
                         <div class="alert alert-danger" role="alert">
-                            <h6 class="alert-heading">Warning!</h6>
+                            <h6 class="alert-heading">Warning</h6>
                             <div class="alert-body">
                                 {{ $error }}
                             </div>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="input-group input-group-merge form-password-toggle">
                                 <input class="form-control form-control-merge" id="login-password" type="password"
-                                    name="login-password" placeholder="············" aria-describedby="login-password"
+                                    name="password" placeholder="············" aria-describedby="login-password"
                                     tabindex="2" />
                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                             </div>
