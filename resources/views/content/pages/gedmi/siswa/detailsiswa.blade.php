@@ -723,4 +723,8 @@
 
         <!--/ Zero configuration table -->
     </div>
-@endsection
+    <a href="{{ route('gedmi.siswa.index') }}"><button type="button"
+            class="btn btn-relief-primary mr-1 mb-1 float-right">Simpan
+
+        </button>
+    @endsection

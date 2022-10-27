@@ -17,4 +17,13 @@ class UserController extends Controller
         $dataUser= User::all();
         return $dataUser;
      }
+
+     public function userTambahPost(Request $request) {
+      $registerData = User::create( $request->all());
+         if($registerData){
+                return response()->json(['pesan' => 'User Berhasil Didaftartan','status'=> 'Berhasil']);
+         }else{
+            return response()->json(['pesan' => 'User tidak berhasil di daftarkan data yang anda masukkan salah','status'=> 'gagal']);
+         }
+   }
 }
