@@ -30,6 +30,7 @@ use App\Http\Controllers\ChartsController;
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/login','AuthController@login')->name('login');
+    Route::get('/logout','AuthController@logout')->name('logout');
     Route::post('/login/post','AuthController@loginPost')->name('login.post');
     Route::get('/register','AuthController@register')->name('register');
     Route::post('/register/post','AuthController@registerPost')->name('register.post');
@@ -106,6 +107,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::delete('/mapel/hapus/{id}','MapelController@deleteMapel')->name('delete.mapel');
 
     Route::get('/login', 'UserController@login')->name('page.login');
+    Route::get('/logout', 'UserController@logout')->name('page.logout');
     Route::post('/login/post', 'UserController@loginPost')->name('login.post');
 });
 

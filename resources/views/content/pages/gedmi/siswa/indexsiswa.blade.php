@@ -36,7 +36,9 @@
                                         <th>Jenis Kelamin</th>
                                         <th>Agama</th>
                                         <th>Alamat</th>
-                                        <th>Action</th>
+                                        @if (session('role') == 'admin')
+                                            <th>Action</th>
+                                        @endif
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -52,38 +54,39 @@
                                             <td>{{ $item->jenis_kelamin }}</td>
                                             <td>{{ $item->agama }}</td>
                                             <td>{{ $item->alamat }}</td>
-
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button type="button"
-                                                        class="btn btn-sm dropdown-toggle hide-arrow py-0"
-                                                        data-bs-toggle="dropdown">
-                                                        <i data-feather="more-vertical"></i>
-                                                    </button>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item"
-                                                            href="{{ route('gedmi.edit.siswa', ['id' => $item->id]) }}">
-                                                            <i data-feather="edit-2" class="me-50"></i>
-                                                            <span>Edit</span>
-                                                        </a>
-                                                        <form
-                                                            action="{{ route('gedmi.delete.siswa', ['id' => $item->id]) }}"
-                                                            method="post">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="dropdown-item">
-                                                                <i data-feather="trash" class="me-50"></i>
-                                                                <span>Delete</span>
-                                                            </button>
-                                                        </form>
-                                                        <a class="dropdown-item"
-                                                            href="{{ route('gedmi.detail.siswa', ['id' => $item->id]) }}">
-                                                            <i data-feather="info" class="me-50"></i>
-                                                            <span>Detail</span>
-                                                        </a>
+                                            @if (session('role') == 'admin')
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button type="button"
+                                                            class="btn btn-sm dropdown-toggle hide-arrow py-0"
+                                                            data-bs-toggle="dropdown">
+                                                            <i data-feather="more-vertical"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item"
+                                                                href="{{ route('gedmi.edit.siswa', ['id' => $item->id]) }}">
+                                                                <i data-feather="edit-2" class="me-50"></i>
+                                                                <span>Edit</span>
+                                                            </a>
+                                                            <form
+                                                                action="{{ route('gedmi.delete.siswa', ['id' => $item->id]) }}"
+                                                                method="post">
+                                                                @csrf
+                                                                @method('DELETE')
+                                                                <button type="submit" class="dropdown-item">
+                                                                    <i data-feather="trash" class="me-50"></i>
+                                                                    <span>Delete</span>
+                                                                </button>
+                                                            </form>
+                                                            <a class="dropdown-item"
+                                                                href="{{ route('gedmi.detail.siswa', ['id' => $item->id]) }}">
+                                                                <i data-feather="info" class="me-50"></i>
+                                                                <span>Detail</span>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
+                                                </td>
+                                            @endif
                                         </tr>
                                     @empty
                                         <tr>
@@ -99,9 +102,11 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <a href="{{ route('gedmi.tambah.test') }}" class="btn btn-relief-primary mr-1 mb-1 float-right">
-                    Tambah
-                </a>
+                @if (session('role') == 'admin')
+                    <a href="{{ route('gedmi.tambah.test') }}" class="btn btn-relief-primary mr-1 mb-1 float-right">
+                        Tambah
+                    </a>
+                @endif
             </div>
         </div>
     </div>
