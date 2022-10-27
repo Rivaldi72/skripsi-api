@@ -6,10 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Chairiah\GudangModel;
 use Str;
+use Session;
 
 class GudangController extends Controller
 {
     public function index(){
+        $isLogin = Session::get('username') != null;
+        if(!$isLogin) {
+            return redirect()->route('chairiah.login');
+        }
         return view('content.pages.chairiah.index');
     }
 
@@ -19,14 +24,18 @@ class GudangController extends Controller
     }
 
     public function profilGudang(){
-        $data = GudangModel::where('id_user', 1)->get()->first();
+        $isLogin = Session::get('username') != null;
+        if(!$isLogin) {
+            return redirect()->route('chairiah.login');
+        }
+        $data = GudangModel::where('id_user', Session::get('id'))->get()->first();
         return view('content.pages.chairiah.profil-gudang', compact('data'));
     }
 
     public function profilGudangPost(Request $request) {
         // dd($request->all());
-        $id_user = 1;
-        $dataGudang = GudangModel::where('id_user',$id_user)->get()->first();
+        $id_user = Session::get('id');
+        $dataGudang = GudangModel::where('id_user', $id_user)->get()->first();
         if($request->gudangImage != null) {
             $getFileExt = $request->gudangImage->getClientOriginalExtension();
             $fileName =  'gudang-image' . Str::uuid() . '.' . $getFileExt;

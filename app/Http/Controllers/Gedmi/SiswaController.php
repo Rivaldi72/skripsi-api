@@ -5,11 +5,15 @@ namespace App\Http\Controllers\Gedmi;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gedmi\SiswaModel;
+use Session;
 
 class SiswaController extends Controller
 {
     public function siswa1(Request $request){
-        // dd($request->all());
+        $isLogin = Session::get('username') != null;
+        if(!$isLogin) {
+            return redirect()->route('gedmi.page.login');
+        }
         if ($request->filter == "VII") {
             $dataSiswa = SiswaModel::where('kelas', "VII")->get();
         } elseif ($request->filter == "VIII") {

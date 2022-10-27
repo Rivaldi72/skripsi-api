@@ -30,7 +30,10 @@ use App\Http\Controllers\ChartsController;
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/login','AuthController@login')->name('login');
+    Route::get('/logout','AuthController@logout')->name('logout');
+    Route::post('/login/post','AuthController@loginPost')->name('login.post');
     Route::get('/register','AuthController@register')->name('register');
+    Route::post('/register/post','AuthController@registerPost')->name('register.post');
     Route::get('/','GudangController@index');
     Route::get('/index','GudangController@index')->name('index');
     Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
@@ -106,6 +109,8 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::delete('/mapel/hapus/{id}','MapelController@deleteMapel')->name('delete.mapel');
 
     Route::get('/login', 'UserController@login')->name('page.login');
+    Route::get('/logout', 'UserController@logout')->name('page.logout');
+    Route::post('/login/post', 'UserController@loginPost')->name('login.post');
 });
 
 // Route Geral
@@ -119,7 +124,12 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
+<<<<<<< HEAD
 
+=======
+    Route::post('/login/post', 'AuthController@loginPost')->name('geral.login.post');
+    
+>>>>>>> ced193433e115c9d7036d88d4332e7fa4eddf091
 });
 
 

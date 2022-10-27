@@ -1,5 +1,5 @@
 @php
-$configData = Helper::applClassesGeral();
+    $configData = Helper::applClassesGeral();
 @endphp
 @extends('layouts/geral/fullLayoutMaster')
 
@@ -38,12 +38,20 @@ $configData = Helper::applClassesGeral();
                 <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                     <h2 class="card-title fw-bold mb-1">Selamat Datang di Internzeep👋</h2>
                     <p class="card-text mb-2">silahkan login terlebih dahulu</p>
-                    <form class="auth-login-form mt-2" action="/" method="GET">
+                    @foreach ($errors as $error)
+                        <div class="alert alert-danger" role="alert">
+                            <h6 class="alert-heading">Warning!</h6>
+                            <div class="alert-body">
+                                {{ $error }}
+                            </div>
+                        </div>
+                    @endforeach
+                    <form class="auth-login-form mt-2" action="{{ route('geral.login.post') }}" method="POST">
+                        @csrf
                         <div class="mb-1">
-                            <label class="form-label" for="login-email">Email</label>
-                            <input class="form-control" id="login-email" type="text" name="login-email"
-                                placeholder="john@example.com" aria-describedby="login-email" autofocus=""
-                                tabindex="1" />
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" id="username" type="text" name="username"
+                                placeholder="john@example.com" />
                         </div>
                         <div class="mb-1">
                             <div class="d-flex justify-content-between">

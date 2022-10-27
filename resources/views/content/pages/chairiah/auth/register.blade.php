@@ -20,24 +20,25 @@
                     <h4 class="card-title mb-1">Selamat Datang 👋</h4>
                     <p class="card-text mb-2">Silakan Memdaftarkan Akun Anda!!!</p>
 
-                    <form class="auth-login-form mt-2" action="/" method="GET">
+                    <form class="auth-login-form mt-2" action="{{ route('chairiah.register.post') }}" method="POST">
+                        @csrf
                         <div class="mb-1">
                             <label for="login-email" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="login-email" name="login-email"
+                            <input type="text" class="form-control" id="login-email" name="username"
                                 placeholder="Username" aria-describedby="login-email" tabindex="1" autofocus />
                         </div>
 
                         <div class="mb-1">
                             <label for="login-email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="login-email" name="login-email"
-                                placeholder="Email" aria-describedby="login-email" tabindex="1" autofocus />
+                            <input type="text" class="form-control" id="login-email" name="email" placeholder="Email"
+                                aria-describedby="login-email" tabindex="1" autofocus />
                         </div>
 
                         <div class="mb-1">
                             <label for="login-Password" class="form-label">Password</label>
                             <div class="input-group input-group-merge form-password-toggle">
                                 <input type="password" class="form-control form-control-merge" id="login-password"
-                                    name="login-password" tabindex="2"
+                                    name="password" tabindex="2"
                                     placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                                     aria-describedby="login-password" />
                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>

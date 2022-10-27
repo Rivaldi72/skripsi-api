@@ -7,14 +7,49 @@ use Illuminate\Http\Request;
 use App\Models\Gedmi\UserModel;
 use App\Models\Gedmi\SiswaModel;
 use Illuminate\Support\Facades\Hash;
+use Session;
 // use Auth;
 
 class UserController extends Controller
 {
     public function login(Request $request)
     {
+        $isLogin = Session::get('username') != null;
+        if($isLogin) {
+            return redirect()->route('gedmi.dashboard');
+        }
         return view('content.pages.gedmi.login');
     }
+
+    public function logout(Request $request)
+    {
+        $request->session()->flush();
+        return redirect()->route('gedmi.page.login');
+    }
+
+    public function loginPost(Request $request)
+    {
+        $username = $request->username;
+        $password = $request->password;
+        $loginData = UserModel::where('username', $username)
+                                ->first();
+        if($loginData == null) {
+            return redirect()->back()->withErrors('Username tidak ditemukan');
+        } else {
+            if(Hash::check($password, $loginData->password)) {
+                if($loginData->role == 'siswa') {
+                    return redirect()->back()->withErrors('Siswa tidak boleh login');
+                    
+                }
+                Session::put('username', $username);
+                Session::put('role', $loginData->role);
+                return redirect()->route('gedmi.dashboard');
+            } else {
+                return redirect()->back()->withErrors('Kata sandi yang anda masukkan salah');
+            }
+        }
+    }
+    
 
     public function apiLogin(Request $request) {
         $username = $request->username;
