@@ -37,6 +37,7 @@
                         <form action="{{ route('dedi.pratikum.tambah.post') }}" method="POST" id="tambahpratikum"
                             enctype="multipart/form-data">
                             {{ csrf_field() }}
+                            <input type="hidden" name="detail_pratikum" id="detail_pratikum">
                             <div class="col-xl-12 col-md-12 col-12">
                                 <div class="mb-1">
                                     <div class="text-bold-600 font-medium-2 mb-1">
@@ -70,7 +71,7 @@
                             <div class="text-bold-600 font-medium-2 ml-2 mb-1">
                                 Masukkan Isi Materi
                             </div>
-                            <section class="full-editor" name="detail_pratikum" id="detail_pratikum">
+                            {{-- <section class="full-editor" name="detail_pratikum" id="detail_pratikum">
                                 <div id="full-wrapper">
                                     <div id="full-container">
                                         <div class="editor">
@@ -78,7 +79,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+                            </section> --}}
+                            <div id="editor_detail_pratikum"></div>
                             <div class="text-bold-600 font-medium-2 ml-2 mb-1">
                                 Masukkan Gambar
                             </div>
@@ -131,5 +133,14 @@
 @endsection
 @section('page-script')
     <!-- Page js files -->
+    <script>
+        var quill = new Quill('#editor_detail_pratikum', {
+            theme: 'snow'
+        });
+
+        quill.on('text-change', function(delta, oldDelta, source) {
+            $('#detail_pratikum').val(quill.getText());
+        });
+    </script>
     <script src="{{ asset(mix('js/scripts/forms/form-quill-editor.js')) }}"></script>
 @endsection

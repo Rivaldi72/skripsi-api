@@ -29,7 +29,7 @@ class PratikumController extends Controller
     }
 
     public function pratikumtambahpost(Request $request){
-        //  dd($request->toArray());
+        // dd($request->toArray());
         $getFileExt = $request->gambar->getClientOriginalExtension();
         $fileName = 'pratikum-image'.Str::uuid().'.'. $getFileExt;
         $request->file('gambar')->storeAs(
