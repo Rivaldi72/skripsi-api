@@ -35,8 +35,9 @@
                                 <th>Bidang Study</th>
                                 <th>Agama</th>
                                 <th>Alamat</th>
-                                <th>Action</th>
-
+                                @if (session('role') == 'admin')
+                                    <th>Action</th>
+                                @endif
                             </tr>
                         </thead>
                         <tbody>
@@ -52,35 +53,37 @@
                                     <td>{{ $item->bidang_studi }}</td>
                                     <td>{{ $item->agama }}</td>
                                     <td>{{ $item->alamat }}</td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
-                                                data-bs-toggle="dropdown">
-                                                <i data-feather="more-vertical"></i>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-end">
-                                                <a class="dropdown-item"
-                                                    href="{{ route('gedmi.edit.guru', ['id' => $item->id]) }}">
-                                                    <i data-feather="edit-2" class="me-50"></i>
-                                                    <span>Edit</span>
-                                                </a>
-                                                <form action="{{ route('gedmi.delete.guru', ['id' => $item->id]) }}"
-                                                    method="post">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="dropdown-item">
-                                                        <i data-feather="trash" class="me-50"></i>
-                                                        <span>Delete</span>
-                                                    </button>
-                                                </form>
-                                                <a class="dropdown-item"
-                                                    href="{{ route('gedmi.detail.guru', ['id' => $item->id]) }}">
-                                                    <i data-feather="info" class="me-50"></i>
-                                                    <span>Detail</span>
-                                                </a>
+                                    @if (session('role') == 'admin')
+                                        <td>
+                                            <div class="dropdown">
+                                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow py-0"
+                                                    data-bs-toggle="dropdown">
+                                                    <i data-feather="more-vertical"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item"
+                                                        href="{{ route('gedmi.edit.guru', ['id' => $item->id]) }}">
+                                                        <i data-feather="edit-2" class="me-50"></i>
+                                                        <span>Edit</span>
+                                                    </a>
+                                                    <form action="{{ route('gedmi.delete.guru', ['id' => $item->id]) }}"
+                                                        method="post">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="dropdown-item">
+                                                            <i data-feather="trash" class="me-50"></i>
+                                                            <span>Delete</span>
+                                                        </button>
+                                                    </form>
+                                                    <a class="dropdown-item"
+                                                        href="{{ route('gedmi.detail.guru', ['id' => $item->id]) }}">
+                                                        <i data-feather="info" class="me-50"></i>
+                                                        <span>Detail</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
+                                        </td>
+                                    @endif
                                 </tr>
                             @endforeach
                         </tbody>
@@ -90,11 +93,13 @@
         </div>
     </div>
     </div>
-    <a href="{{ route('gedmi.index.test') }}"><button type="button"
-            class="btn btn-relief-primary mr-1 mb-1 float-right">Tambah
+    @if (session('role') == 'admin')
+        <a href="{{ route('gedmi.index.test') }}">
+            <button type="button" class="btn btn-relief-primary mr-1 mb-1 float-right">
+                Tambah
+            </button>
+        </a>
+    @endif
 
-        </button>
-
-
-        <!-- Bordered table end -->
-    @endsection
+    <!-- Bordered table end -->
+@endsection
