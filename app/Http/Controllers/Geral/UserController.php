@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
    public function userPage() {
-      $dataUser= User::all();
+      $dataUser= User::where('isAdmin',0)->get();
       return view('content.pages.geral.data-user.user', compact('dataUser'));
    }
 

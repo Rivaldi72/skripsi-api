@@ -43,7 +43,8 @@ class AuthController extends Controller
 
     public function loginPost(Request $request)
     {
-        $username = $request -> username;
+        // dd($request->all());
+        $username = $request->username;
         $password = $request->password;
         
 

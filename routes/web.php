@@ -120,7 +120,7 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
-    Route::post('/login/post', 'AuthController@loginPost')->name('geral.login.post');
+    Route::post('/login/post', 'AuthController@loginPost')->name('login.post');
     
 });
 
