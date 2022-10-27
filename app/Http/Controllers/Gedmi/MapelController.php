@@ -5,10 +5,15 @@ namespace App\Http\Controllers\Gedmi;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gedmi\MapelModel;
+use Session;
 
 class MapelController extends Controller
 {
     public function mapel(Request $request){
+        $isLogin = Session::get('username') != null;
+        if(!$isLogin) {
+            return redirect()->route('gedmi.page.login');
+        }
         if ($request->filter == "VII") {
             $mapel = MapelModel::where('kelas', "VII")->get();
         } elseif ($request->filter == "VIII") {
