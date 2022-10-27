@@ -27,7 +27,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 1,
                 'hari' => 'Senin',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'PKN',
                 'Kelas' => 'VII',
@@ -37,7 +37,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 2,
                 'hari' => 'Senin',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris	',
                 'Kelas' => 'VII',
@@ -47,7 +47,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 3,
                 'hari' => 'Senin',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA	',
                 'Kelas' => 'VII',
@@ -57,7 +57,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 4,
                 'hari' => 'Senin',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VII',
@@ -67,7 +67,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 5,
                 'hari' => 'Senin',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VII',
@@ -77,7 +77,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 6,
                 'hari' => 'Senin',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VII',
@@ -87,7 +87,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 7,
                 'hari' => 'Senin',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Novenna Nurmalasari, S.Kom',
                 'bidang_studi' => 'Prakarya',
                 'Kelas' => 'VIII',
@@ -97,7 +97,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 8,
                 'hari' => 'Senin',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Novenna Nurmalasari, S.Kom',
                 'bidang_studi' => 'Prakarya',
                 'Kelas' => 'VIII',
@@ -107,7 +107,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 9,
                 'hari' => 'Senin',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Dr. Mesran, M.Pdi',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'VIII',
@@ -117,7 +117,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 10,
                 'hari' => 'Senin',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Dr. Mesran, M.Pdi',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'VIII',
@@ -127,7 +127,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 11,
                 'hari' => 'Senin',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VIII',
@@ -137,7 +137,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 12,
                 'hari' => 'Senin',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VIII',
@@ -147,7 +147,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 13,
                 'hari' => 'Senin',
-                'jam' => '10.45-11.15',
+                'jam' => '10.45 - 11.15',
                 'nama_guru' => 'Almas Adlina,S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'IX',
@@ -157,7 +157,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 14,
                 'hari' => 'Senin',
-                'jam' => '11.15-11.45',
+                'jam' => '11.15 - 11.45',
                 'nama_guru' => 'Agung Sihotang, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'IX',
@@ -167,7 +167,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 15,
                 'hari' => 'Senin',
-                'jam' => '11.45-12.15',
+                'jam' => '11.45 - 12.15',
                 'nama_guru' => 'Agung Sihotang, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'IX',
@@ -177,7 +177,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 16,
                 'hari' => 'Senin',
-                'jam' => '12.15-12.45',
+                'jam' => '12.15 - 12.45',
                 'nama_guru' => 'Agung Sihotang, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'IX',
@@ -187,7 +187,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 17,
                 'hari' => 'Senin',
-                'jam' => '12.45-13.15',
+                'jam' => '12.45 - 13.15',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'PKN',
                 'Kelas' => 'IX',
@@ -198,7 +198,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 18,
                 'hari' => 'Senin',
-                'jam' => '13.15-13.45',
+                'jam' => '13.15 - 13.45',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'PKN',
                 'Kelas' => 'IX',
@@ -208,7 +208,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 19,
                 'hari' => 'Selasa',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'VII',
@@ -218,7 +218,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 20,
                 'hari' => 'Selasa',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'VII',
@@ -228,7 +228,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 21,
                 'hari' => 'Selasa',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'PKN',
                 'Kelas' => 'VII',
@@ -238,7 +238,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 22,
                 'hari' => 'Selasa',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VII',
@@ -248,7 +248,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 23,
                 'hari' => 'Selasa',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VII',
@@ -258,7 +258,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 24,
                 'hari' => 'Selasa',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VII',
@@ -268,7 +268,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 25,
                 'hari' => 'Selasa',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'PKN',
                 'Kelas' => 'VIII',
@@ -278,7 +278,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 26,
                 'hari' => 'Selasa',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'PKN',
                 'Kelas' => 'VIII',
@@ -288,7 +288,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 27,
                 'hari' => 'Selasa',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika	',
                 'Kelas' => 'VIII',
@@ -298,7 +298,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 28,
                 'hari' => 'Selasa',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika	',
                 'Kelas' => 'VIII',
@@ -308,7 +308,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 29,
                 'hari' => 'Selasa',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VIII',
@@ -318,7 +318,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 30,
                 'hari' => 'Selasa',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VIII',
@@ -328,7 +328,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 31,
                 'hari' => 'Selasa',
-                'jam' => '10.45-11.15',
+                'jam' => '10.45 - 11.15',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'IX',
@@ -338,7 +338,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 32,
                 'hari' => 'Selasa',
-                'jam' => '11.15-11.45',
+                'jam' => '11.15 - 11.45',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'IX',
@@ -348,7 +348,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 33,
                 'hari' => 'Selasa',
-                'jam' => '11.45-12.15',
+                'jam' => '11.45 - 12.15',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'IX',
@@ -358,7 +358,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 34,
                 'hari' => 'Selasa',
-                'jam' => '12.15-12.45',
+                'jam' => '12.15 - 12.45',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'IX',
@@ -368,7 +368,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 35,
                 'hari' => 'Selasa',
-                'jam' => '12.45-13.15',
+                'jam' => '12.45 - 13.15',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'IX',
@@ -378,7 +378,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 36,
                 'hari' => 'Selasa',
-                'jam' => '13.15-13.45',
+                'jam' => '13.15 - 13.45',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'IX',
@@ -388,7 +388,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 37,
                 'hari' => 'Rabu',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'VII',
@@ -398,7 +398,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 38,
                 'hari' => 'Rabu',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'ZL. Purba, A.Md',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'VII',
@@ -408,7 +408,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 39,
                 'hari' => 'Rabu',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VII',
@@ -418,7 +418,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 40,
                 'hari' => 'Rabu',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VII',
@@ -428,7 +428,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 41,
                 'hari' => 'Rabu',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Jessica Yolanda, S.Pd',
                 'bidang_studi' => 'SBK',
                 'Kelas' => 'VII',
@@ -438,7 +438,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 42,
                 'hari' => 'Rabu',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama',
                 'Kelas' => 'VII',
@@ -448,7 +448,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 43,
                 'hari' => 'Rabu',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Jessica Yolanda, S.Pd',
                 'bidang_studi' => 'SBK',
                 'Kelas' => 'VIII',
@@ -458,7 +458,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 44,
                 'hari' => 'Rabu',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Jessica Yolanda, S.Pd',
                 'bidang_studi' => 'SBK',
                 'Kelas' => 'VIII',
@@ -468,7 +468,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 45,
                 'hari' => 'Rabu',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Dr. Mesran, M.Pdi',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'VIII',
@@ -478,7 +478,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 46,
                 'hari' => 'Rabu',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VIII',
@@ -488,7 +488,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 47,
                 'hari' => 'Rabu',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VIII',
@@ -498,7 +498,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 48,
                 'hari' => 'Rabu',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VIII',
@@ -508,7 +508,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 49,
                 'hari' => 'Rabu',
-                'jam' => '10.45-11.15',
+                'jam' => '10.45 - 11.15',
                 'nama_guru' => 'Jessica Yolanda, S.Pd',
                 'bidang_studi' => 'SBK',
                 'Kelas' => 'IX',
@@ -518,7 +518,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 50,
                 'hari' => 'Rabu',
-                'jam' => '11.15-11.45',
+                'jam' => '11.15 - 11.45',
                 'nama_guru' => 'Jessica Yolanda, S.Pd',
                 'bidang_studi' => 'SBK',
                 'Kelas' => 'IX',
@@ -528,7 +528,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 51,
                 'hari' => 'Rabu',
-                'jam' => '11.45-12.15',
+                'jam' => '11.45 - 12.15',
                 'nama_guru' => 'Almas Adlina,S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'IX',
@@ -538,7 +538,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 52,
                 'hari' => 'Rabu',
-                'jam' => '12.15-12.45',
+                'jam' => '12.15 - 12.45',
                 'nama_guru' => 'Almas Adlina,S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'IX',
@@ -548,7 +548,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 53,
                 'hari' => 'Rabu',
-                'jam' => '12.45-13.15',
+                'jam' => '12.45 - 13.15',
                 'nama_guru' => 'Almas Adlina,S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'IX',
@@ -558,7 +558,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 54,
                 'hari' => 'Rabu',
-                'jam' => '13.15-13.45',
+                'jam' => '13.15 - 13.45',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'Bahasa Inggris',
                 'Kelas' => 'IX',
@@ -568,7 +568,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 55,
                 'hari' => 'Kamis',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VII',
@@ -578,7 +578,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 56,
                 'hari' => 'Kamis',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VII',
@@ -588,7 +588,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 57,
                 'hari' => 'Kamis',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Jessica Yolanda, S.Pd',
                 'bidang_studi' => 'SBK',
                 'Kelas' => 'VII',
@@ -598,7 +598,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 58,
                 'hari' => 'Kamis',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'IPS',
                 'Kelas' => 'VII',
@@ -608,7 +608,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 59,
                 'hari' => 'Kamis',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'VII',
@@ -618,7 +618,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 60,
                 'hari' => 'Kamis',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'VII',
@@ -628,7 +628,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 61,
                 'hari' => 'Kamis',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika',
                 'Kelas' => 'VIII',
@@ -638,7 +638,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 62,
                 'hari' => 'Kamis',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Siti Agustina Julita, S.Pd',
                 'bidang_studi' => 'Matematika	',
                 'Kelas' => 'VIII',
@@ -648,7 +648,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 63,
                 'hari' => 'Kamis',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Hengki S. Sianturi, S.Pd',
                 'bidang_studi' => 'Penjas',
                 'Kelas' => 'VIII',
@@ -658,7 +658,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 64,
                 'hari' => 'Kamis',
-                'jam' => '09.00-09.30',
+                'jam' => '09.00 - 09.30',
                 'nama_guru' => 'Hengki S. Sianturi, S.Pd',
                 'bidang_studi' => 'Penjas',
                 'Kelas' => 'VIII',
@@ -668,7 +668,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 65,
                 'hari' => 'Kamis',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VIII',
@@ -678,7 +678,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 66,
                 'hari' => 'Kamis',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Intan Sari Siregar, S.Pd',
                 'bidang_studi' => 'IPA',
                 'Kelas' => 'VIII',
@@ -688,7 +688,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 67,
                 'hari' => 'Kamis',
-                'jam' => '10.45-11.15',
+                'jam' => '10.45 - 11.15',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'IX',
@@ -698,7 +698,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 68,
                 'hari' => 'Kamis',
-                'jam' => '11.15-11.45',
+                'jam' => '11.15 - 11.45',
                 'nama_guru' => 'Diana Susanti, Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'IX',
@@ -708,7 +708,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 69,
                 'hari' => 'Kamis',
-                'jam' => '11.45-12.15',
+                'jam' => '11.45 - 12.15',
                 'nama_guru' => 'Hengki S. Sianturi, S.Pd',
                 'bidang_studi' => 'Penjas',
                 'Kelas' => 'IX',
@@ -718,7 +718,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 70,
                 'hari' => 'Kamis',
-                'jam' => '12.15-12.45',
+                'jam' => '12.15 - 12.45',
                 'nama_guru' => 'Hengki S. Sianturi, S.Pd',
                 'bidang_studi' => 'Penjas',
                 'Kelas' => 'IX',
@@ -728,7 +728,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 71,
                 'hari' => 'Kamis',
-                'jam' => '12.45-13.15',
+                'jam' => '12.45 - 13.15',
                 'nama_guru' => 'Novenna Nurmalasari, S.Kom',
                 'bidang_studi' => 'Prakarya',
                 'Kelas' => 'IX',
@@ -738,7 +738,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 72,
                 'hari' => 'Kamis',
-                'jam' => '13.15-13.45',
+                'jam' => '13.15 - 13.45',
                 'nama_guru' => 'Novenna Nurmalasari, S.Kom',
                 'bidang_studi' => 'Prakarya',
                 'Kelas' => 'IX',
@@ -748,7 +748,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 73,
                 'hari' => 'Jumat',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Hengki S. Sianturi, S.Pd',
                 'bidang_studi' => 'Penjas',
                 'Kelas' => 'VII',
@@ -758,7 +758,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 74,
                 'hari' => 'Jumat',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Hengki S. Sianturi, S.Pd',
                 'bidang_studi' => 'Penjas',
                 'Kelas' => 'VII',
@@ -768,7 +768,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 75,
                 'hari' => 'Jumat',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama	',
                 'Kelas' => 'VII',
@@ -778,7 +778,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 76,
                 'hari' => 'Jumat',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama	',
                 'Kelas' => 'VIII',
@@ -788,7 +788,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 77,
                 'hari' => 'Jumat',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama	',
                 'Kelas' => 'VIII',
@@ -798,7 +798,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 78,
                 'hari' => 'Jumat',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VIII',
@@ -808,7 +808,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 79,
                 'hari' => 'Jumat',
-                'jam' => '09.15-09.45',
+                'jam' => '09.15 - 09.45',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama',
                 'Kelas' => 'IX',
@@ -818,7 +818,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 80,
                 'hari' => 'Jumat',
-                'jam' => '09.45-10.15',
+                'jam' => '09.45 - 10.15',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama',
                 'Kelas' => 'IX',
@@ -828,7 +828,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 81,
                 'hari' => 'Jumat',
-                'jam' => '10.15-10.40',
+                'jam' => '10.15 - 10.40',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'IX',
@@ -838,7 +838,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 82,
                 'hari' => 'Sabtu',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Pramuka',
                 'bidang_studi' => 'Salamuddin',
                 'Kelas' => 'VII',
@@ -848,7 +848,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 83,
                 'hari' => 'Sabtu',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Pramuka',
                 'bidang_studi' => 'Salamuddin',
                 'Kelas' => 'VII',
@@ -858,7 +858,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 84,
                 'hari' => 'Sabtu',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama	',
                 'Kelas' => 'VII',
@@ -868,7 +868,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 85,
                 'hari' => 'Sabtu',
-                'jam' => '09.30-10.00',
+                'jam' => '09.30 - 10.00',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama	',
                 'Kelas' => 'VII',
@@ -878,7 +878,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 86,
                 'hari' => 'Sabtu',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VII',
@@ -888,7 +888,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 87,
                 'hari' => 'Sabtu',
-                'jam' => '07.30-08.00',
+                'jam' => '07.30 - 08.00',
                 'nama_guru' => 'Pramuka',
                 'bidang_studi' => 'Salamuddin',
                 'Kelas' => 'VIII',
@@ -898,7 +898,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 88,
                 'hari' => 'Sabtu',
-                'jam' => '08.00-08.30',
+                'jam' => '08.00 - 08.30',
                 'nama_guru' => 'Pramuka',
                 'bidang_studi' => 'Salamuddin',
                 'Kelas' => 'VIII',
@@ -908,7 +908,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 89,
                 'hari' => 'Sabtu',
-                'jam' => '08.30-09.00',
+                'jam' => '08.30 - 09.00',
                 'nama_guru' => 'Diana Susanti Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VIII',
@@ -918,7 +918,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 90,
                 'hari' => 'Sabtu',
-                'jam' => '09.35-10.00',
+                'jam' => '09.35 - 10.00',
                 'nama_guru' => 'Diana Susanti Siregar, S.Pd',
                 'bidang_studi' => 'B.Indonesia',
                 'Kelas' => 'VIII',
@@ -928,7 +928,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 91,
                 'hari' => 'Sabtu',
-                'jam' => '10.00-10.30',
+                'jam' => '10.00 - 10.30',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VIII',
@@ -938,7 +938,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 92,
                 'hari' => 'Sabtu',
-                'jam' => '10.15-10.45',
+                'jam' => '10.15 - 10.45',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama',
                 'Kelas' => 'IX',
@@ -948,7 +948,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 93,
                 'hari' => 'Sabtu',
-                'jam' => '10.45-11.15',
+                'jam' => '10.45 - 11.15',
                 'nama_guru' => 'Gaya Baiduri, S.Pdi',
                 'bidang_studi' => 'Agama',
                 'Kelas' => 'IX',
@@ -958,7 +958,7 @@ class CreateGedmiMapelTable extends Migration
             [
                 'id' => 94,
                 'hari' => 'Sabtu',
-                'jam' => '11.15-11.45',
+                'jam' => '11.15 - 11.45',
                 'nama_guru' => 'Keti Suyati, S.Pd',
                 'bidang_studi' => 'B.Inggris',
                 'Kelas' => 'VIII',
