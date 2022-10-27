@@ -43,8 +43,10 @@ Route::prefix('dedi')->name('dedi.')->namespace('App\Http\Controllers\Dedi')->gr
     Route::get('/dashboard','UserController@dashboard')->name('dashboard');
     Route::get('/daftarsiswa','UserController@daftarsiswa')->name('siswa.daftar');
     Route::get('/siswatambah','UserController@tambahsiswa')->name('siswa.tambah');
+    Route::get('/login','UserController@login')->name('login');
     Route::post('/siswatambah/post','UserController@tambahsiswapost')->name('siswa.tambah.post');
     Route::delete('/siswadelete/{id}','UserController@siswadelete')->name('siswa.delete');
+    Route::post('/login/post', 'UserController@LoginPost')->name('login.post');
 
     Route::get('/materiindex','MateriController@materiindex')->name('materi.index');
     Route::get('/materitambah','MateriController@materitambah')->name('materi.tambah');
@@ -117,7 +119,7 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
-    
+
 });
 
 
