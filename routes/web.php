@@ -123,6 +123,7 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
     Route::post('/login/post', 'AuthController@loginPost')->name('login.post');
+    Route::get('/logout/post', 'AuthController@logout')->name('logout.post');
     
 });
 

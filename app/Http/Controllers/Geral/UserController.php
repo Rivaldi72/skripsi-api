@@ -6,11 +6,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Geral\user;
 use Illuminate\Support\Facades\Hash;
+use Session;
 
 class UserController extends Controller
 {
    public function userPage() {
       $dataUser= User::where('isAdmin',0)->get();
+      $isLogin = Session::get('username') != null;
+      if(!$isLogin) {
+          return redirect()->route('geral.page.login');
+      }
       return view('content.pages.geral.data-user.user', compact('dataUser'));
    }
 
@@ -20,7 +25,6 @@ class UserController extends Controller
    }
 
    public function userTambahPost(Request $request) {
-      dd($request->all());
       $registerData = new User();
       $registerData->username = $request->username;
       $registerData->password = bcrypt($request->password);
