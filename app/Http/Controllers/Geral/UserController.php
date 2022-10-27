@@ -17,4 +17,9 @@ class UserController extends Controller
         $dataUser= User::all();
         return $dataUser;
      }
+
+     public function userTambahPost() {
+      User::create( $request->all());
+         // return redirect()->route('geral.index.lowongan');
+   }
 }

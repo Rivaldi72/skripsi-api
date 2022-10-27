@@ -72,6 +72,7 @@ class MateriController extends Controller
             $materi = MateriModel::find($id);
             $materi ->delete();
         return redirect()->route('dedi.materi.index', ['message' => 'succes']);
+
 }
 
 }

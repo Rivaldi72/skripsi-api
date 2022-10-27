@@ -64,6 +64,28 @@ class CreateDediUserTable extends Migration
                 'password' => bcrypt('premanpancing'),
                 'api_token' => '@pnML6+6x+(}Uz.m2EWr{qCT*}$U#,',
             ],
+            [
+                'id' => 4,
+                'name' => 'Sri Wahyuni',
+                'angkatan' => '-',
+                'tempat' => 'Medan',
+                'tanggal_lahir' => '20 Oktober 1978',
+                'alamat' => 'Jalan.Wiliam Iskandar',
+                'email' => 'sriwd@gmail.com',
+                'password' => bcrypt('analiskesehatan'),
+                'api_token' => '@pnML6+6x+(}Uz.m2EWr{qCT*}$U#,',
+            ],
+            [
+                'id' => 5,
+                'name' => 'Azmi Naldo',
+                'angkatan' => '-',
+                'tempat' => 'Medan',
+                'tanggal_lahir' => '10 Februari 1983',
+                'alamat' => 'Jalan.Wiliam Iskandar',
+                'email' => 'naldo1002@gmail.com',
+                'password' => bcrypt('azmi1002'),
+                'api_token' => '@pnML6+6x+(}Uz.m2EWr{qCT*}$U#,',
+            ],
 
         ];
         DB::table('dedi_user')->insert($defaulData);

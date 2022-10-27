@@ -74,4 +74,9 @@ class UserController extends Controller
         }
 
     }
+    public function siswadelete($id) {
+            $user = UserModel::find($id);
+            $user ->delete();
+        return redirect()->route('dedi.siswa.daftar', ['message' => 'succes']);
+    }
 }
