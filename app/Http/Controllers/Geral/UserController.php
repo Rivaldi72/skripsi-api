@@ -18,7 +18,7 @@ class UserController extends Controller
         return $dataUser;
      }
 
-     public function userTambahPost() {
+     public function userTambahPost(Request $request) {
       $registerData = User::create( $request->all());
          if($registerData){
                 return response()->json(['pesan' => 'User Berhasil Didaftartan','status'=> 'Berhasil']);
