@@ -24,6 +24,13 @@ class UserController extends Controller
       $registerData = new User();
       $registerData->username = $request->username;
       $registerData->password = bcrypt($request->password);
+      $registerData->isAdmin = false;
+      $registerData->nama_lengkap = $request->nama_lengkap;
+      $registerData->email = $request->email;
+      $registerData->umur = $request->umur;
+      $registerData->jenis_kelamin = $request->jenis_kelamin;
+      $registerData->no_hp = $request->no_hp;
+      $registerData->keahlian = $request->keahlian;
       if($registerData){
                return response()->json(['pesan' => 'User Berhasil Didaftartan','status'=> 'Berhasil']);
       }else{

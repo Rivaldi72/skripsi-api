@@ -25,8 +25,9 @@
                                     <th>Username</th>
                                     <th>Nama</th>
                                     <th>Email</th>
-                                    <th>Tanggal Lahir</th>
+                                    <th>Umur</th>
                                     <th>No. Handphone</th>
+                                    <th>Jenis Kelamin</th>
                                     <th>Keahlian</th>
                                     <th>Dibuat</th>
                                     <th>Diperbarui</th>
@@ -39,8 +40,9 @@
                                         <td>{{ $item->username }}</td>
                                         <td>{{ $item->nama_lengkap }}</td>
                                         <td>{{ $item->email }}</td>
-                                        <td>{{ $item->tanggal_lahir }}</td>
+                                        <td>{{ $item->umur }}</td>
                                         <td>{{ $item->no_hp }}</td>
+                                        <td>{{ $item->jenis_kelamin }}</td>
                                         <td>{{ $item->keahlian }}</td>
                                         <td>{{ $item->created_at }}</td>
                                         <td>{{ $item->updated_at }}</td>
