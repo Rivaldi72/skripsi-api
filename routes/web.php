@@ -30,6 +30,7 @@ use App\Http\Controllers\ChartsController;
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/login','AuthController@login')->name('login');
+    Route::post('/login/post','AuthController@loginPost')->name('login.post');
     Route::get('/register','AuthController@register')->name('register');
     Route::post('/register/post','AuthController@registerPost')->name('register.post');
     Route::get('/','GudangController@index');

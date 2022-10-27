@@ -6,10 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Chairiah\GudangModel;
 use Str;
+use Session;
 
 class GudangController extends Controller
 {
     public function index(){
+        dd(Session::get('username'));
         return view('content.pages.chairiah.index');
     }
 
