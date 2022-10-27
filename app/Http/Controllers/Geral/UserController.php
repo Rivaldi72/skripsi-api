@@ -19,7 +19,11 @@ class UserController extends Controller
      }
 
      public function userTambahPost() {
-      User::create( $request->all());
-         // return redirect()->route('geral.index.lowongan');
+      $registerData = User::create( $request->all());
+         if($registerData){
+                return response()->json(['pesan' => 'User Berhasil Didaftartan','status'=> 'Berhasil']);
+         }else{
+            return response()->json(['pesan' => 'User tidak berhasil di daftarkan data yang anda masukkan salah','status'=> 'gagal']);
+         }
    }
 }
