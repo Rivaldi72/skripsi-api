@@ -275,14 +275,13 @@
                                                 <fieldset class="form-group">
                                                     <label for="basicInput">PKn</label>
                                                     <input type="number" name="pkn_1" class="form-control" disabled
-                                                        id="pkn_1"
-                                                        placeholder="Nilai Penddisabled idikan Kewarganegaraan"
+                                                        id="pkn_1" placeholder="Nilai Pendidikan Kewarganegaraan"
                                                         value="{{ $dataSiswa->pkn_1 ?? '' }}">
                                                 </fieldset>
                                             </div>
                                             <div class="col-3 mt-2">
                                                 <fieldset class="form-group">
-                                                    <label for="basicInput">Penddisabled idikan Agama Islam</label>
+                                                    <label for="basicInput">Pendidikan Agama Islam</label>
                                                     <input type="number" name="agama_1" class="form-control" disabled
                                                         id="agama_1" placeholder="Nilai PAI"
                                                         value="{{ $dataSiswa->agama_1 ?? '' }}">
@@ -351,13 +350,13 @@
                                                         <label for="basicInput">PKn</label>
                                                         <input type="number" name="pkn_2" class="form-control"
                                                             disabled id="pkn_2"
-                                                            placeholder="Nilai Penddisabled idikan Kewarganegaraan"
+                                                            placeholder="Nilai Pendidikan Kewarganegaraan"
                                                             value="{{ $dataSiswa->pkn_2 ?? '' }}">
                                                     </fieldset>
                                                 </div>
                                                 <div class="col-3 mt-2">
                                                     <fieldset class="form-group">
-                                                        <label for="basicInput">Penddisabled idikan Agama Islam</label>
+                                                        <label for="basicInput">Pendidikan Agama Islam</label>
                                                         <input type="number" name="agama_2" class="form-control"
                                                             disabled id="agama_2" placeholder="Nilai PAI"
                                                             value="{{ $dataSiswa->agama_2 ?? '' }}">
@@ -430,13 +429,13 @@
                                                             <label for="basicInput">PKn</label>
                                                             <input type="number" name="pkn_3" class="form-control"
                                                                 disabled id="pkn_3"
-                                                                placeholder="Nilai Penddisabled idikan Kewarganegaraan"
+                                                                placeholder="Nilai Pendidikan Kewarganegaraan"
                                                                 value="{{ $dataSiswa->pkn_3 ?? '' }}">
                                                         </fieldset>
                                                     </div>
                                                     <div class="col-3 mt-2">
                                                         <fieldset class="form-group">
-                                                            <label for="basicInput">Penddisabled idikan Agama Islam</label>
+                                                            <label for="basicInput">Pendidikan Agama Islam</label>
                                                             <input type="number" name="agama_3" class="form-control"
                                                                 disabled id="agama_3" placeholder="Nilai PAI"
                                                                 value="{{ $dataSiswa->agama_3 ?? '' }}">
@@ -509,13 +508,13 @@
                                                                 <label for="basicInput">PKn</label>
                                                                 <input type="number" name="pkn_4" class="form-control"
                                                                     disabled id="pkn_4"
-                                                                    placeholder="Nilai Penddisabled idikan Kewarganegaraan"
+                                                                    placeholder="Nilai Pendidikan Kewarganegaraan"
                                                                     value="{{ $dataSiswa->pkn_4 ?? '' }}">
                                                             </fieldset>
                                                         </div>
                                                         <div class="col-3 mt-2">
                                                             <fieldset class="form-group">
-                                                                <label for="basicInput">Penddisabled idikan Agama
+                                                                <label for="basicInput">Pendidikan Agama
                                                                     Islam</label>
                                                                 <input type="number" name="agama_4" class="form-control"
                                                                     disabled id="agama_4" placeholder="Nilai PAI"
@@ -593,13 +592,13 @@
                                                                     <label for="basicInput">PKn</label>
                                                                     <input type="number" name="pkn_5"
                                                                         class="form-control" disabled id="pkn_5"
-                                                                        placeholder="Nilai Penddisabled idikan Kewarganegaraan"
+                                                                        placeholder="Nilai Pendidikan Kewarganegaraan"
                                                                         value="{{ $dataSiswa->pkn_5 ?? '' }}">
                                                                 </fieldset>
                                                             </div>
                                                             <div class="col-3 mt-2">
                                                                 <fieldset class="form-group">
-                                                                    <label for="basicInput">Penddisabled idikan Agama
+                                                                    <label for="basicInput">Pendidikan Agama
                                                                         Islam</label>
                                                                     <input type="number" name="agama_5"
                                                                         class="form-control" disabled id="agama_5"
@@ -679,13 +678,13 @@
                                                                         <label for="basicInput">PKn</label>
                                                                         <input type="number" name="pkn_6"
                                                                             class="form-control" disabled id="pkn_6"
-                                                                            placeholder="Nilai Penddisabled idikan Kewarganegaraan"
+                                                                            placeholder="Nilai Pendidikan Kewarganegaraan"
                                                                             value="{{ $dataSiswa->pkn_6 ?? '' }}">
                                                                     </fieldset>
                                                                 </div>
                                                                 <div class="col-3 mt-2">
                                                                     <fieldset class="form-group">
-                                                                        <label for="basicInput">Penddisabled idikan Agama
+                                                                        <label for="basicInput">Pendidikan Agama
                                                                             Islam</label>
                                                                         <input type="number" name="agama_6"
                                                                             class="form-control" disabled id="agama_6"
@@ -723,4 +722,8 @@
 
         <!--/ Zero configuration table -->
     </div>
-@endsection
+    <a href="{{ route('gedmi.siswa.index') }}"><button type="button"
+            class="btn btn-relief-primary mr-1 mb-1 float-right">Simpan
+
+        </button>
+    @endsection
