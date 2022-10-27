@@ -46,7 +46,6 @@
                             </div>
                         </div>
                     @endforeach
-                    @endforeach
                     <form class="auth-login-form mt-2" action="{{ route('geral.login.post') }}" method="POST">
                         @csrf
                         <div class="mb-1">
