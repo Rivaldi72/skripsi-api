@@ -1,5 +1,5 @@
 @php
-$configData = Helper::applClassesGedmi();
+    $configData = Helper::applClassesGedmi();
 @endphp
 @extends('layouts/gedmi/fullLayoutMaster')
 
@@ -38,20 +38,28 @@ $configData = Helper::applClassesGedmi();
                 <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                     <h2 class="card-title fw-bold mb-1">Selamat Datang di SMP BINA TARUNA MEDAN</h2>
                     <p class="card-text mb-2">silahkan login terlebih dahulu</p>
-                    <form class="auth-login-form mt-2" action="/" method="GET">
+                    @foreach ($errors->all() as $error)
+                        <div class="alert alert-danger" role="alert">
+                            <h6 class="alert-heading">Warning</h6>
+                            <div class="alert-body">
+                                {{ $error }}
+                            </div>
+                        </div>
+                    @endforeach
+                    <form class="auth-login-form mt-2" action="{{ route('gedmi.login.post') }}" method="POST">
+                        @csrf
                         <div class="mb-1">
-                            <label class="form-label" for="login-email">Username</label>
-                            <input class="form-control" id="login-email" type="text" name="login-email"
-                                placeholder="username" aria-describedby="login-email" autofocus="" tabindex="1" />
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" id="username" type="text" name="username" placeholder="username"
+                                aria-describedby="username" autofocus="" tabindex="1" />
                         </div>
                         <div class="mb-1">
                             <div class="d-flex justify-content-between">
-                                <label class="form-label" for="login-password">Password</label>
+                                <label class="form-label" for="password">Password</label>
                             </div>
                             <div class="input-group input-group-merge form-password-toggle">
-                                <input class="form-control form-control-merge" id="login-password" type="password"
-                                    name="login-password" placeholder="············" aria-describedby="login-password"
-                                    tabindex="2" />
+                                <input class="form-control form-control-merge" id="password" type="password"
+                                    name="password" placeholder="············" aria-describedby="password" tabindex="2" />
                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                             </div>
                         </div>
