@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Gedmi;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gedmi\SiswaModel;
+use App\Models\Gedmi\UserModel;
 use Session;
 
 class SiswaController extends Controller
@@ -37,6 +38,7 @@ class SiswaController extends Controller
         $userData = new UserModel();
         $userData->username = $request->username;
         $userData->password = bcrypt($request->password);
+        $userData->role = "Siswa";
         $userData->save();
 
         $siswaData = new SiswaModel();
