@@ -18,7 +18,7 @@ class CreateDediPratikumTable extends Migration
             $table->integer('id_mapel');
             $table->string('judul_pratikum');
             $table->text('detail_pratikum');
-            $table->string('gambar')->nullable();
+            // $table->string('gambar')->nullable();
             $table->timestamps();
         });
          $defaulData = [

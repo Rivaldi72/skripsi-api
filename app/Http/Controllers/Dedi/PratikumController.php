@@ -29,19 +29,19 @@ class PratikumController extends Controller
     }
 
     public function pratikumtambahpost(Request $request){
-        //  dd($request->toArray());
-        $getFileExt = $request->gambar->getClientOriginalExtension();
-        $fileName = 'pratikum-image'.Str::uuid().'.'. $getFileExt;
-        $request->file('gambar')->storeAs(
-            'public/dedi/pratikum-image',$fileName
-        );
+        // dd($request->toArray());
+        // $getFileExt = $request->gambar->getClientOriginalExtension();
+        // $fileName = 'pratikum-image'.Str::uuid().'.'. $getFileExt;
+        // $request->file('gambar')->storeAs(
+        //     'public/dedi/pratikum-image',$fileName
+        // );
 
         PratikumModel::create(
             [
             "id_mapel" => $request->mata_pelajaran,
             "judul_pratikum" => $request->judul_pratikum,
             "detail_pratikum" => $request->detail_pratikum,
-            "gambar"=> $fileName,
+            // "gambar"=> $fileName,
             ]
         );
         return redirect()->route('dedi.pratikum.index');
@@ -60,7 +60,7 @@ class PratikumController extends Controller
             [
                 "id_mapel" => $request->mata_pelajaran ?? $pratikum->mata_pelajaran,
                 "judul_pratikum" => $request->judul_pratikum ?? $pratikum->judul_pratikum,
-                // "detail_pratikum" => $request->detail_pratikum ?? $pratikum->detail_pratikum,
+                "detail_pratikum" => $request->detail_pratikum ?? $pratikum->detail_pratikum,
                 // "gambar"=>$fileName,
             ]
         );

@@ -27,6 +27,26 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
+                                        Username
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="username" class="form-control form-control-lg"
+                                            id="username" placeholder="Masukkan Username">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Password
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="password" class="form-control form-control-lg"
+                                            id="password" placeholder="Masukkan Password">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
                                         Nama Guru
                                     </div>
                                     <fieldset class="form-label-group">

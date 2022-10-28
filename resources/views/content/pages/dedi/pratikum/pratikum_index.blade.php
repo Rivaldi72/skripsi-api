@@ -27,7 +27,6 @@
                                     <th>Mata Pelajaran</th>
                                     <th>Judul Pratikum</th>
                                     <th>Isi Pratikum</th>
-                                    <th>Gambar</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -40,7 +39,7 @@
                                         <td width="200px">
                                             {{ $item->detail_pratikum }}
                                         </td>
-                                        <td width="60px"> {{ $item->gambar }}</td>
+                                        {{-- <td width="60px"> {{ $item->gambar }}</td> --}}
                                         <td>
                                             <a href="{{ route('dedi.pratikum.edit', ['id' => $item->id]) }}" type="button"
                                                 class="btn btn-icon btn-icon rounded-circle btn-success">

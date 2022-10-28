@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Gedmi;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gedmi\SiswaModel;
+use App\Models\Gedmi\UserModel;
 use Session;
 
 class SiswaController extends Controller
@@ -34,7 +35,78 @@ class SiswaController extends Controller
     }
     public function tambahSiswaPost(Request $request){
         // dd($request->all());
-        SiswaModel::create($request->all());
+        $userData = new UserModel();
+        $userData->username = $request->username;
+        $userData->password = bcrypt($request->password);
+        $userData->role = "Siswa";
+        $userData->save();
+
+        $siswaData = new SiswaModel();
+        $siswaData->id_user = $userData->id;
+        $siswaData->nis = $request->nis;
+        $siswaData->nama = $request->nama;
+        $siswaData->kelas = $request->kelas;
+        $siswaData->tempat_lahir = $request->tempat_lahir;
+        $siswaData->tanggal_lahir = $request->tanggal_lahir;
+        $siswaData->tahun_masuk = $request->tahun_masuk;
+        $siswaData->jenis_kelamin = $request->jenis_kelamin;
+        $siswaData->agama = $request->agama;
+        $siswaData->alamat = $request->alamat;
+        $siswaData->matematika_1 = $request->matematika_1;
+        $siswaData->bindo_1 = $request->bindo_1;
+        $siswaData->bing_1 = $request->bing_1;
+        $siswaData->ipa_1 = $request->ipa_1;
+        $siswaData->ips_1 = $request->ips_1;
+        $siswaData->pkn_1 = $request->pkn_1;
+        $siswaData->agama_1 = $request->agama_1;
+        $siswaData->penjas_1 = $request->penjas_1;
+        $siswaData->senbud_1 = $request->senbud_1;
+        $siswaData->matematika_2 = $request->matematika_2;
+        $siswaData->bindo_2 = $request->bindo_2;
+        $siswaData->bing_2 = $request->bing_2;
+        $siswaData->ipa_2 = $request->ipa_2;
+        $siswaData->ips_2 = $request->ips_2;
+        $siswaData->pkn_2 = $request->pkn_2;
+        $siswaData->agama_2 = $request->agama_2;
+        $siswaData->penjas_2 = $request->penjas_2;
+        $siswaData->senbud_2 = $request->senbud_2;
+        $siswaData->matematika_3 = $request->matematika_3;
+        $siswaData->bindo_3 = $request->bindo_3;
+        $siswaData->bing_3 = $request->bing_3;
+        $siswaData->ipa_3 = $request->ipa_3;
+        $siswaData->ips_3 = $request->ips_3;
+        $siswaData->pkn_3 = $request->pkn_3;
+        $siswaData->agama_3 = $request->agama_3;
+        $siswaData->penjas_3 = $request->penjas_3;
+        $siswaData->senbud_3 = $request->senbud_3;
+        $siswaData->matematika_4 = $request->matematika_4;
+        $siswaData->bindo_4 = $request->bindo_4;
+        $siswaData->bing_4 = $request->bing_4;
+        $siswaData->ipa_4 = $request->ipa_4;
+        $siswaData->ips_4 = $request->ips_4;
+        $siswaData->pkn_4 = $request->pkn_4;
+        $siswaData->agama_4 = $request->agama_4;
+        $siswaData->penjas_4 = $request->penjas_4;
+        $siswaData->senbud_4 = $request->senbud_4;
+        $siswaData->matematika_5 = $request->matematika_5;
+        $siswaData->bindo_5 = $request->bindo_5;
+        $siswaData->bing_5 = $request->bing_5;
+        $siswaData->ipa_5 = $request->ipa_5;
+        $siswaData->ips_5 = $request->ips_5;
+        $siswaData->pkn_5 = $request->pkn_5;
+        $siswaData->agama_5 = $request->agama_5;
+        $siswaData->penjas_5 = $request->penjas_5;
+        $siswaData->senbud_5 = $request->senbud_5;
+        $siswaData->matematika_6 = $request->matematika_6;
+        $siswaData->bindo_6 = $request->bindo_6;
+        $siswaData->bing_6 = $request->bing_6;
+        $siswaData->ipa_6 = $request->ipa_6;
+        $siswaData->ips_6 = $request->ips_6;
+        $siswaData->pkn_6 = $request->pkn_6;
+        $siswaData->agama_6 = $request->agama_6;
+        $siswaData->penjas_6 = $request->penjas_6;
+        $siswaData->senbud_6 = $request->senbud_6;
+        $siswaData->save();
         return redirect()->route('gedmi.siswa.index');
     }
    
