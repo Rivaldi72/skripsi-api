@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Gedmi;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gedmi\GuruModel;
+use App\Models\Gedmi\UserModel;
 use Session;
 
 class GuruController extends Controller
@@ -27,7 +28,25 @@ class GuruController extends Controller
     }
     public function tambahGuruPost(Request $request){
         // dd($request->all());
-        GuruModel::create($request->all());
+        $userData = new UserModel();
+        $userData->username = $request->username;
+        $userData->password = bcrypt($request->password);
+        $userData->role = "Guru";
+        $userData->save();
+
+        $guruData = new GuruModel();
+        $guruData->id_user = $userData->id;
+        $guruData->nama = $request->nama;
+        $guruData->tempat_lahir = $request->tempat_lahir;
+        $guruData->tanggal_lahir = $request->tanggal_lahir;
+        $guruData->jabatan = $request->jabatan;
+        $guruData->tamatan = $request->tamatan;
+        $guruData->gelar = $request->gelar;
+        $guruData->bidang_studi = $request->bidang_studi;
+        $guruData->agama = $request->agama;
+        $guruData->alamat = $request->alamat;
+        $guruData->save();
+
         return redirect()->route('gedmi.guru.index');
     }
 

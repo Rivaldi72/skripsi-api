@@ -27,6 +27,26 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="text-bold-600 font-medium-2 mb-1">
+                                        Username
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="username" class="form-control form-control-lg"
+                                            id="username" placeholder="Masukkan Username">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
+                                        Password
+                                    </div>
+                                    <fieldset class="form-label-group">
+                                        <input type="text" name="password" class="form-control form-control-lg"
+                                            id="password" placeholder="Masukkan Password">
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-bold-600 font-medium-2 mb-1">
                                         NIS
                                     </div>
                                     <fieldset class="form-label-group">
@@ -123,8 +143,9 @@
                                     <div class="col-3 mt-2">
                                         <fieldset class="form-group">
                                             <label for="basicInput">Matematika</label>
-                                            <input type="number" name="matematika_1" class="form-control" id="matematika_1"
-                                                placeholder="Nilai Matematika" value="{{ $dataSiswa->matematika_1 ?? '' }}">
+                                            <input type="number" name="matematika_1" class="form-control"
+                                                id="matematika_1" placeholder="Nilai Matematika"
+                                                value="{{ $dataSiswa->matematika_1 ?? '' }}">
                                         </fieldset>
                                     </div>
                                     <div class="col-3 mt-2">

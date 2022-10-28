@@ -35,8 +35,9 @@ class UserController extends Controller
       $registerData->jenis_kelamin = $request->jenis_kelamin;
       $registerData->no_hp = $request->no_hp;
       $registerData->keahlian = $request->keahlian;
+      $registerData->save();
       if($registerData){
-               return response()->json(['pesan' => 'User Berhasil Didaftartan','status'=> 'Berhasil']);
+         return response()->json(['pesan' => 'User Berhasil Didaftarkan','status'=> 'Berhasil']);
       }else{
          return response()->json(['pesan' => 'User tidak berhasil di daftarkan data yang anda masukkan salah','status'=> 'gagal']);
       }
