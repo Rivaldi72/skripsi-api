@@ -105,6 +105,7 @@ Route::prefix('gedmi')->name('gedmi.')->namespace('App\Http\Controllers\Gedmi')-
     Route::delete('/mapel/hapus/{id}','MapelController@deleteMapel')->name('delete.mapel');
 
     Route::get('/login', 'UserController@login')->name('page.login');
+    Route::post('/login/post', 'UserController@loginPost')->name('login.post');
 });
 
 // Route Geral
