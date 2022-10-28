@@ -31,10 +31,11 @@ class AuthController extends Controller
         $password = $request->password;
         $loginData = UserModel::where('email', $email)
                                 ->first();
-        $gudangData = GudangModel::where('id_user', $loginData->id)->first();
+                                
         if($loginData == null) {
             return redirect()->back()->withErrors('email tidak ditemukan');
         } else {
+            $gudangData = GudangModel::where('id_user', $loginData->id)->first();
             if(Hash::check($password, $loginData->password)) {
                 Session::put('username', $loginData->username);
                 Session::put('email', $loginData->email);
