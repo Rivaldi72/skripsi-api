@@ -91,8 +91,7 @@
                                     </div>
                                 </div>
                             </section> --}}
-                            <div id="editor_detail_pratikum" name="detail_pratikum"
-                                value='{{ $pratikum->detail_pratikum }}'>
+                            <div id="editor_detail_pratikum" value=''>
 
                             </div>
                             {{-- <div class="text-bold-600 font-medium-2 ml-2 mb-1">
@@ -150,6 +149,10 @@
     <script>
         var quill = new Quill('#editor_detail_pratikum', {
             theme: 'snow'
+        });
+
+        $(document).ready(function() {
+            quill.setText(`{{ $pratikum->detail_pratikum }}`)
         });
 
         quill.on('text-change', function(delta, oldDelta, source) {
