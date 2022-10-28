@@ -17,7 +17,6 @@ class MateriModel extends Model
         'id_mapel',
         'judul_materi',
         'detail_materi',
-        'gambar',
 
     ];
      public function matapelajaran()
