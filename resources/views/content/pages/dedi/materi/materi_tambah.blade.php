@@ -37,6 +37,7 @@
                         <form action="{{ route('dedi.materi.tambah.post') }}" method="POST" id="tambahmateri"
                             enctype="multipart/form-data">
                             {{ csrf_field() }}
+                            <input type="hidden" name="detail_materi" id="detail_materi">
                             <div class="col-xl-12 col-md-12 col-12">
                                 <div class="mb-1">
                                     <div class="text-bold-600 font-medium-2 mb-1">
@@ -69,21 +70,22 @@
                                 <div class="text-bold-600 font-medium-2 ml-2 mb-1">
                                     Masukkan Isi Materi
                                 </div>
-                                <section class="full-editor" name="detail_materi" id="detail_materi">
+                                {{-- <section class="full-editor" name="detail_materi" id="detail_materi">
                                     <div id="full-wrapper">
                                         <div id="full-container">
                                             <div class="editor">
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-                                <div class="text-bold-600 font-medium-2 ml-2 mb-1">
+                                </section> --}}
+                                <div id="editor_detail_materi"></div>
+                                {{-- <div class="text-bold-600 font-medium-2 ml-2 mb-1">
                                     Masukkan Gambar
                                 </div>
                                 <div class="col-lg-6 col-md-12">
                                     <input class="form-control" type="file" name="gambar" id="formFileMultiple"
                                         multiple />
-                                </div>
+                                </div> --}}
 
                                 <button type="button" class="btn btn-success pull-right mb-2 mt-2 ml-5 font-weight-bold"
                                     data-bs-toggle="modal" data-bs-target="#small">
@@ -131,5 +133,14 @@
 @endsection
 @section('page-script')
     <!-- Page js files -->
+    <script>
+        var quill = new Quill('#editor_detail_materi', {
+            theme: 'snow'
+        });
+
+        quill.on('text-change', function(delta, oldDelta, source) {
+            $('#detail_materi').val(quill.getText());
+        });
+    </script>
     <script src="{{ asset(mix('js/scripts/forms/form-quill-editor.js')) }}"></script>
 @endsection

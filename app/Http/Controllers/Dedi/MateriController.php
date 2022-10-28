@@ -32,18 +32,18 @@ class MateriController extends Controller
 
     public function materitambahpost(Request $request){
         // dd($request->mata_pelajaran);
-        $getFileExt = $request->gambar->getClientOriginalExtension();
-        $fileName = 'materi-image'.Str::uuid().'.'. $getFileExt;
-        $request->file('gambar')->storeAs(
-            'public/dedi/materi-image',$fileName
-        );
+        // $getFileExt = $request->gambar->getClientOriginalExtension();
+        // $fileName = 'materi-image'.Str::uuid().'.'. $getFileExt;
+        // $request->file('gambar')->storeAs(
+        //     'public/dedi/materi-image',$fileName
+        // );
 
         MateriModel::create(
             [
             "id_mapel" => $request->mata_pelajaran,
             "judul_materi" => $request->judul_materi,
             "detail_materi" => $request->detail_materi,
-            "gambar"=>$fileName,
+            // "gambar"=>$fileName,
             ]
         );
         return redirect()->route('dedi.materi.index');
@@ -62,7 +62,7 @@ class MateriController extends Controller
             [
                 "id_mapel" => $request->mata_pelajaran ?? $materi->mata_pelajaran,
                 "judul_materi" => $request->judul_materi ?? $materi->judul_materi,
-                // "detail_pratikum" => $request->detail_pratikum ?? $pratikum->detail_pratikum,
+                "detail_materi" => $request->detail_materi ?? $pratikum->detail_materi,
                 // "gambar"=>$fileName,
             ]
         );

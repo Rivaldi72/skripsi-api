@@ -81,12 +81,12 @@
                                 </div>
                             </section> --}}
                             <div id="editor_detail_pratikum"></div>
-                            <div class="text-bold-600 font-medium-2 ml-2 mb-1">
+                            {{-- <div class="text-bold-600 font-medium-2 ml-2 mb-1">
                                 Masukkan Gambar
-                            </div>
-                            <div class="col-lg-6 col-md-12">
+                            </div> --}}
+                            {{-- <div class="col-lg-6 col-md-12">
                                 <input class="form-control" type="file" name="gambar" id="gambar" multiple />
-                            </div>
+                            </div> --}}
                             <button type="button" class="btn btn-success pull-right mb-2 mt-2 ml-5 font-weight-bold"
                                 data-bs-toggle="modal" data-bs-target="#small">
                                 Simpan</button>

@@ -26,7 +26,7 @@
                                     <th>Mata Pelajaran</th>
                                     <th>Judul Materi</th>
                                     <th>Isi Materi</th>
-                                    <th>Gambar</th>
+
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -39,7 +39,7 @@
                                         <td>
                                             {{ $item->detail_materi }}
                                         </td>
-                                        <td>{{ $item->gambar }}</td>
+                                        {{-- <td>{{ $item->gambar }}</td> --}}
                                         <td>
                                             <a href="{{ route('dedi.materi.edit', ['id' => $item->id]) }}" type="button"
                                                 class="btn btn-icon btn-icon rounded-circle btn-success">

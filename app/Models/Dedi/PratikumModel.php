@@ -18,7 +18,6 @@ class PratikumModel extends Model
         'id_mapel',
         'judul_pratikum',
         'detail_pratikum',
-        'gambar',
     ];
      public function matapelajaran()
     {
