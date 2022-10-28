@@ -20,7 +20,7 @@ class CreateGeralUserTable extends Migration
             $table->boolean('isAdmin')->default(false);
             $table->string('nama_lengkap')->nullable();
             $table->string('email')->nullable();
-            $table->date('umur')->nullable();
+            $table->integer('umur')->nullable();
             $table->string('jenis_kelamin')->nullable();
             $table->string('no_hp')->nullable();
             $table->string('keahlian')->nullable();
@@ -38,7 +38,7 @@ class CreateGeralUserTable extends Migration
                     'isAdmin'                   =>      false,
                     'nama_lengkap'              =>      'Geral Aditya Hanif',
                     'email'                     =>      'geral141100@gmail.com',
-                    'tanggal_lahir'             =>      '22',
+                    'umur'                      =>      22,
                     'jenis_kelamin'             =>      'Laki-laki',
                     'no_hp'                     =>      '08512812383',
                     'keahlian'                  =>      'Programmer',
@@ -53,7 +53,7 @@ class CreateGeralUserTable extends Migration
                     'isAdmin'                   =>      true,
                     'nama_lengkap'              =>      'Geral Aditya Hanif',
                     'email'                     =>      'geral141100@gmail.com',
-                    'tanggal_lahir'             =>      '22',
+                    'umur'                      =>      22,
                     'jenis_kelamin'             =>      'Laki-laki',
                     'no_hp'                     =>      '08512812383',
                     'keahlian'                  =>      'Programmer',
