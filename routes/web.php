@@ -31,6 +31,7 @@ use App\Http\Controllers\ChartsController;
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/login','AuthController@login')->name('login');
     Route::get('/register','AuthController@register')->name('register');
+    Route::post('/register/post','AuthController@registerPost')->name('register.post');
     Route::get('/','GudangController@index');
     Route::get('/index','GudangController@index')->name('index');
     Route::get('/profil-gudang','GudangController@profilGudang')->name('profil.gudang');
