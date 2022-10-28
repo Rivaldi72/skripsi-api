@@ -83,7 +83,7 @@
                         @if (Auth::check())
                             {{ Auth::user()->name }}
                         @else
-                            Dedi Syaputra
+                            SMK Dharma Analitika
                         @endif
                     </span>
                     <span class="user-status">
@@ -98,7 +98,7 @@
                 </span> --}}
             </a>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
-                <h6 class="dropdown-header">Manage Profile</h6>
+                {{-- <h6 class="dropdown-header">Manage Profile</h6>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item"
                     href="{{ Route::has('profile.show') ? route('profile.show') : 'javascript:void(0)' }}">
@@ -136,10 +136,10 @@
                         @foreach (Auth::user()->allTeams() as $team)
                             {{-- Below commented code read by artisan command while installing jetstream. !! Do not remove if you want to use jetstream. --}}
 
-                            {{-- <x-jet-switchable-team :team="$team" /> --}}
-                        @endforeach
-                    @endif
+                {{-- <x-jet-switchable-team :team="$team" /> --}}
+                {{-- @endforeach
                 @endif
+                @endif --}}
                 @if (Auth::check())
                     <a class="dropdown-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -149,9 +149,8 @@
                         @csrf
                     </form>
                 @else
-                    <a class="dropdown-item"
-                        href="{{ Route::has('login') ? route('login') : 'javascript:void(0)' }}">
-                        <i class="me-50" data-feather="log-in"></i> Login
+                    <a class="dropdown-item" href="{{ route('dedi.login') }}">
+                        <i class="me-50" data-feather="log-in"></i> Logout
                     </a>
                 @endif
             </div>
