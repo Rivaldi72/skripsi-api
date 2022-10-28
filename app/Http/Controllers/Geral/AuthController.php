@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Geral\user;
 use Illuminate\Support\Facades\Hash;
+use Session;
 // use Auth;
 
 class AuthController extends Controller
@@ -35,6 +36,34 @@ class AuthController extends Controller
                
             } else {
                 return response()->json(['pesan' => 'Kata sandi yang anda masukkan salah']);
+            }
+        }
+        
+    }
+
+    public function loginPost(Request $request)
+    {
+        $username = $request -> username;
+        $password = $request->password;
+        
+
+        $loginData = User::where('username', $username)->first();
+
+        if($loginData == null) {
+            return redirect()->back()->withErrors('User tidak di temukan');
+        } else {
+
+            if(Hash::check($password, $loginData->password)) {
+                if(!$loginData->isAdmin) {
+                    return redirect()->back()->withErrors('User tidak di temukan');
+                } 
+                Session::put('username', $loginData->username);
+                Session::put('nama_lengkap', $loginData->nama_lengkap);
+                
+                return redirect()->route('geral.index');
+               
+            } else {
+                return redirect()->back()->withErrors('Katasandi yang anda masukkan salah');
             }
         }
     }

@@ -30,6 +30,7 @@ use App\Http\Controllers\ChartsController;
 // Route Chairiah
 Route::prefix('chairiah')->name('chairiah.')->namespace('App\Http\Controllers\Chairiah')->group(function () {
     Route::get('/login','AuthController@login')->name('login');
+    Route::post('/login/post','AuthController@loginPost')->name('login.post');
     Route::get('/register','AuthController@register')->name('register');
     Route::post('/register/post','AuthController@registerPost')->name('register.post');
     Route::get('/','GudangController@index');
@@ -119,6 +120,7 @@ Route::prefix('geral')->name('geral.')->namespace('App\Http\Controllers\Geral')-
     Route::post('/data-lowongan/edit/update/{id}', 'LowonganController@update')->name('edit.lowongan.update');
     Route::get('/data-user/user', 'UserController@userPage')->name('index.user');
     Route::get('/login', 'AuthController@login')->name('page.login');
+    Route::post('/login', 'AuthController@loginPost')->name('geral.login.post');
     
 });
 
