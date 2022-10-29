@@ -38,7 +38,7 @@ class SiswaController extends Controller
         $userData = new UserModel();
         $userData->username = $request->username;
         $userData->password = bcrypt($request->password);
-        $userData->role = "Siswa";
+        $userData->role = "siswa";
         $userData->save();
 
         $siswaData = new SiswaModel();

@@ -31,7 +31,7 @@ class GuruController extends Controller
         $userData = new UserModel();
         $userData->username = $request->username;
         $userData->password = bcrypt($request->password);
-        $userData->role = "Guru";
+        $userData->role = "guru";
         $userData->save();
 
         $guruData = new GuruModel();
