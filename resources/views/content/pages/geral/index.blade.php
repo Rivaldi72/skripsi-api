@@ -12,7 +12,7 @@
                     <div class="card-body text-center">
                         <h2>Selamat Datang Admin</h2>
                         <br>
-                        <p style="font: 18">RANCANG BANGUN APLIKASI PENCARIAN TEMPAT MAGANG DI SUMATERA UTARA BERBASIS
+                        <p style="font: 18">RANCANG BANGUN APLIKASI PENCARIAN TEMPAT MAGANG DI RAKYAT SERVICE COMP BERBASIS
                             ANDROID DENGAN
                             FLUTTER SDK</p>
                     </div>
