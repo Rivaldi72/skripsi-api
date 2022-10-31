@@ -51,6 +51,7 @@ class GudangController extends Controller
             [
                 "nama" => $request->nama,
                 "alamat" => $request->alamat,
+                "url_alamat" => $request->url_alamat,
                 "no_hp" => $request->no_hp,
                 "gambar" => $fileName ?? $dataGudang->gambar,
                 "harga_kopi_gelondong" => $request->harga_kopi_gelondong,
@@ -58,6 +59,9 @@ class GudangController extends Controller
                 "harga_kopi_biji_hijau" => $request->harga_kopi_biji_hijau,
             ]
         );
+        Session::put('nama', $request->nama ?? '');
+        Session::put('alamat', $request->alamat ?? '');
+
         return redirect()->route('chairiah.profil.gudang');
     }
 }

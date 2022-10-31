@@ -50,7 +50,15 @@ class UserController extends Controller
 
 
     public function tambahsiswapost(Request $request){
-        UserModel::create($request->all());
+        $userData = new UserModel();
+        $userData->name = $request->name;
+        $userData->angkatan = $request->angkatan;
+        $userData->tempat = $request->tempat;
+        $userData->tanggal_lahir = $request->tanggal_lahir;
+        $userData->alamat = $request->alamat;
+        $userData->email = $request->email;
+        $userData->password = bcrypt($request->password);
+        $userData->save();
         return redirect()->route('dedi.siswa.daftar');
     }
 

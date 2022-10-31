@@ -64,11 +64,11 @@
                         @if (Auth::check())
                             {{ Auth::user()->name }}
                         @else
-                            {{ session('nama') }}
+                            {{ session('nama') != '' ? session('nama') : 'Gudang Kopi' }}
                         @endif
                     </span>
                     <span class="user-status">
-                        {{ session('alamat') }}
+                        {{ session('nama') != '' ? session('alamat') : 'Alamat Gudang' }}
                     </span>
                 </div>
                 <span class="avatar">

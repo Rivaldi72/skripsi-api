@@ -40,8 +40,8 @@ class AuthController extends Controller
                 Session::put('username', $loginData->username);
                 Session::put('email', $loginData->email);
                 Session::put('id', $loginData->id);
-                Session::put('nama', $gudangData->nama);
-                Session::put('alamat', $gudangData->alamat);
+                Session::put('nama', $gudangData->nama ?? '');
+                Session::put('alamat', $gudangData->alamat ?? '');
                 return redirect()->route('chairiah.index');
             } else {
                 return redirect()->back()->withErrors('Kata sandi yang anda masukkan salah');
