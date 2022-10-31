@@ -8,7 +8,7 @@
             <li class="nav-item me-auto">
                 <a class="navbar-brand" href="">
                     <h2 class="brand-text mb-0" style="font-size: 18px !important;">
-                        {{ session()->has('nama', 'Gudang Kopi') }}
+                        {{ session('nama') == '' ? session('nama') : 'Gudang Kopi' }}
                     </h2>
                 </a>
             </li>
