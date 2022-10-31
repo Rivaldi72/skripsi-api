@@ -64,7 +64,8 @@
                         @if (Auth::check())
                             {{ Auth::user()->name }}
                         @else
-                            {{ session('nama') == null ? session('nama') : 'Gudang Kopi' }}
+                            {{ dd(session('nama')) }}
+                            {{ session('nama') == '' ? session('nama') : 'Gudang Kopi' }}
                         @endif
                     </span>
                     <span class="user-status">
