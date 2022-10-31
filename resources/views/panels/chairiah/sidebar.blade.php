@@ -7,7 +7,8 @@
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item me-auto">
                 <a class="navbar-brand" href="">
-                    <h2 class="brand-text mb-0" style="font-size: 18px !important;">{{ session('nama') ?? Gudang Kopi }}
+                    <h2 class="brand-text mb-0" style="font-size: 18px !important;">
+                        {{ session()->has('nama', 'Gudang Kopi') }}
                     </h2>
                 </a>
             </li>
