@@ -59,8 +59,8 @@ class GudangController extends Controller
                 "harga_kopi_biji_hijau" => $request->harga_kopi_biji_hijau,
             ]
         );
-        Session::put('nama', $gudangData->nama ?? '');
-        Session::put('alamat', $gudangData->alamat ?? '');
+        Session::put('nama', $request->nama ?? '');
+        Session::put('alamat', $request->alamat ?? '');
 
         return redirect()->route('chairiah.profil.gudang');
     }
