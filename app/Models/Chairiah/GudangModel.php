@@ -17,6 +17,7 @@ class GudangModel extends Model
         'id_user',
         'nama',
         'alamat',
+        'url_alamat',
         'gambar',
         'no_hp',
         'harga_kopi_gelondong',
