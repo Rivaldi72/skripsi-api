@@ -12,7 +12,7 @@ class UserController extends Controller
         $username = $request -> username;
 
         $loginData = UserModel::where('username', $username)
-                                ->get();
+                                ->first();
 
         return $loginData;
     }
