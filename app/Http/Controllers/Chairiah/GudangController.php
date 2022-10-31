@@ -51,6 +51,7 @@ class GudangController extends Controller
             [
                 "nama" => $request->nama,
                 "alamat" => $request->alamat,
+                "url_alamat" => $request->url_alamat,
                 "no_hp" => $request->no_hp,
                 "gambar" => $fileName ?? $dataGudang->gambar,
                 "harga_kopi_gelondong" => $request->harga_kopi_gelondong,
