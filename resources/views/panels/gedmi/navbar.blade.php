@@ -86,6 +86,10 @@
                     <a class="dropdown-item" href="{{ route('gedmi.page.logout') }}">
                         <i class="me-50" data-feather="power"></i> Logout
                     </a>
+                @else
+                    <a class="dropdown-item" href="{{ route('gedmi.page.login') }}">
+                        <i class="me-50" data-feather="power"></i> Login
+                    </a>
                 @endif
             </div>
         </li>
