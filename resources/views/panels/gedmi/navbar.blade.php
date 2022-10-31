@@ -64,11 +64,11 @@
                         @if (Auth::check())
                             {{ Auth::user()->name }}
                         @else
-                            Admin
+                            {{ session('username') }}
                         @endif
                     </span>
                     <span class="user-status">
-                        Admin
+                        {{ session('role') }}
                     </span>
                 </div>
                 <span class="avatar">
